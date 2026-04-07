@@ -4,7 +4,6 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
-<!--    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />-->
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -29,21 +28,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PDFViewer"
         tools:replace="android:label">
-        <activity
-            android:name="com.documentpro.office.business.fileviewer.ui.splash.BusinessSplashScreenActivity"
-            android:exported="false"
-            android:launchMode="singleTop"
-            android:screenOrientation="portrait"
-            android:theme="@style/Theme.PDFViewer">
-        </activity>
-
-        <!-- Launcher 加载遮罩 Activity，用于非默认桌面场景覆盖白屏 -->
-        <activity
-            android:name="com.documentpro.office.business.fileviewer.ui.splash.LauncherLoadingActivity"
-            android:exported="false"
-            android:launchMode="singleTop"
-            android:screenOrientation="portrait"
-            android:theme="@style/Theme.LauncherGuide" />
 
         <activity
             android:name="com.documentpro.office.business.fileviewer.ui.pdf.BusinessDocumentActivity"
@@ -207,12 +191,6 @@
             android:theme="@style/Theme.PDFViewer" />
         <activity
             android:name="com.documentpro.office.business.fileviewer.ui.pdf.PdfPageGridActivity"
-            android:exported="false"
-            android:launchMode="singleTop"
-            android:screenOrientation="portrait"
-            android:theme="@style/Theme.PDFViewer" />
-        <activity
-            android:name="com.documentpro.office.business.fileviewer.ui.earthquake.EarthquakeDetailActivity"
             android:exported="false"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"

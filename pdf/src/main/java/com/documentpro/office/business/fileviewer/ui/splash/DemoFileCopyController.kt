@@ -14,8 +14,8 @@ import java.io.File
 class DemoFileCopyController(private val context: Context) {
 
     companion object {
-        private const val TAG = BusinessSplashScreenActivity.TAG
-        
+        private const val TAG = ""
+
         // 需要复制的示例文件列表
         private val DEMO_FILES = listOf(
             "Demo.pdf" to "doc/Demo.pdf",

@@ -470,21 +470,7 @@
     <string name="floating_window_resize_handle">창 크기 조정</string>
     <string name="floating_window_permission_required">플로팅 창 권한이 필요합니다</string>
     <string name="floating_window_show_failed">플로팅 창 표시 실패: %1$s</string>
-    <string name="floating_window_open_file_failed">파일 열기 실패: %1$s</string>
-
-    <!-- Earthquake -->
-    <string name="earthquake_quick_alert">지진 빠른 경보</string>
-    <string name="earthquake_focal_depth">진원 깊이</string>
-    <string name="earthquake_tsunami_threat">쓰나미 위협</string>
-    <string name="earthquake_usgs_warning">USGS 경고</string>
-    <string name="earthquake_origin_time">발진 시간</string>
-    <string name="earthquake_magnitude_type">규모 유형</string>
-    <string name="earthquake_data_status">데이터 상태</string>
-    <string name="earthquake_data_km">킬로미터</string>
-    
-    <!-- Notification - Override notification module strings -->
-    <string name="noti_earthquake_click_text">- 영향 범위 보기……</string>
-    
+    <string name="floating_window_open_file_failed">파일 열기 실패: %1$s</string>    
     <string name="lock_screen_slide_to_unlock">슬라이드하여 잠금 해제</string>
     <string name="lock_screen_scan_pdf">PDF 스캔</string>
 

@@ -5,12 +5,16 @@ import androidx.activity.viewModels
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.fragment.app.commit
+import androidx.lifecycle.lifecycleScope
+import com.android.common.bill.ads.PreloadController
 import com.documentpro.office.business.fileviewer.R
 import com.documentpro.office.business.fileviewer.base.BaseActivity
 import com.documentpro.office.business.fileviewer.databinding.ActivityWorkspaceContainerBinding
+import com.documentpro.office.business.fileviewer.ui.splash.DemoFileCopyController
 import com.documentpro.office.business.fileviewer.utils.LauncherApplyTrack
 import com.gyf.immersionbar.BarHide
 import com.gyf.immersionbar.ImmersionBar
+import kotlinx.coroutines.launch
 
 class BusinessWorkspaceActivity : BaseActivity<ActivityWorkspaceContainerBinding, BusinessMainModel>() {
 
@@ -19,6 +23,7 @@ class BusinessWorkspaceActivity : BaseActivity<ActivityWorkspaceContainerBinding
     }
 
     private var workspaceFragment: BusinessWorkspaceFragment? = null
+    private lateinit var demoFileCopyController: DemoFileCopyController
 
     override fun initBinding(): ActivityWorkspaceContainerBinding {
         return ActivityWorkspaceContainerBinding.inflate(layoutInflater)
@@ -30,6 +35,7 @@ class BusinessWorkspaceActivity : BaseActivity<ActivityWorkspaceContainerBinding
 
     override fun initView() {
         LauncherApplyTrack.appMainAcTrack(this)
+        demoFileCopyController = DemoFileCopyController(this)
         // 设置状态栏
         ImmersionBar.with(this)
             .statusBarDarkFont(true)
@@ -40,6 +46,18 @@ class BusinessWorkspaceActivity : BaseActivity<ActivityWorkspaceContainerBinding
         workspaceFragment = BusinessWorkspaceFragment()
         supportFragmentManager.commit {
             replace(R.id.fragment_container, workspaceFragment!!)
+            runOnCommit {
+            }
+        }
+        copyDemoFilesIfNeeded()
+        PreloadController.preloadAll(this)
+    }
+
+    private fun copyDemoFilesIfNeeded() {
+        lifecycleScope.launch {
+            if (demoFileCopyController.copyDemoFiles()) {
+                model.refreshAllDataSources()
+            }
         }
     }
 

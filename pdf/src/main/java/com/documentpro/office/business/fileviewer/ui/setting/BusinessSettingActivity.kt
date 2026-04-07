@@ -6,20 +6,13 @@ import com.documentpro.office.business.fileviewer.databinding.ActivityBusinessSe
 import com.documentpro.office.business.fileviewer.ui.web.WebActivity
 import android.net.Uri
 import android.content.Intent
-import androidx.core.view.isVisible
 import com.blankj.utilcode.util.AppUtils
-import com.blankj.utilcode.util.ToastUtils
-import com.documentpro.office.business.fileviewer.PdfAppRuntime
 import com.documentpro.office.business.fileviewer.ad.BusinessPointLog
 import com.documentpro.office.business.fileviewer.dialog.BusinessStoreScoreDialog
-import com.documentpro.office.business.fileviewer.receiver.EarthquakeAlarmReceiver
 import com.documentpro.office.business.fileviewer.ui.language.LanguageActivity
 import com.documentpro.office.business.fileviewer.utils.BusinessSplashForegroundController
-import io.docview.push.check.CheckCtrl
 import io.docview.push.controller.TriggerCtrl
-import io.docview.push.earthquake.EarthquakeController
 import net.corekit.core.report.ReportDataManager
-import com.android.common.bill.ads.interceptor.GlobalAdSwitchInterceptor
 
 class BusinessSettingActivity : BaseActivity<ActivityBusinessSettingBinding, BusinessSettingModel>() {
 
@@ -68,23 +61,6 @@ class BusinessSettingActivity : BaseActivity<ActivityBusinessSettingBinding, Bus
 //            WebActivity.launch(this, getString(R.string.setting_user_agreement_url))
 //        }
         binding.tvVersion.text = "v${AppUtils.getAppVersionName()}(${AppUtils.getAppVersionCode()})"
-
-        // 开发调试入口，正式包无效
-        binding.toggleAd.isVisible = PdfAppRuntime.appLogEnable
-        binding.pushInterval.isVisible = PdfAppRuntime.appLogEnable
-        binding.earthQuakeTest.isVisible = PdfAppRuntime.appLogEnable
-        binding.toggleAd.setOnClickListener {
-            GlobalAdSwitchInterceptor.disableGlobalAd()
-            ToastUtils.showShort("good")
-        }
-        binding.pushInterval.setOnClickListener {
-            CheckCtrl.debugZeroInterval = true
-            ToastUtils.showShort("good")
-        }
-
-        binding.earthQuakeTest.setOnClickListener {
-            EarthquakeController.start()
-        }
     }
 
     override fun initObserve() {

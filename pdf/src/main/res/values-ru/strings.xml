@@ -406,21 +406,7 @@
     <string name="floating_window_resize_handle">Изменить размер окна</string>
     <string name="floating_window_permission_required">Требуется разрешение на плавающее окно</string>
     <string name="floating_window_show_failed">Не удалось показать плавающее окно: %1$s</string>
-    <string name="floating_window_open_file_failed">Не удалось открыть файл: %1$s</string>
-
-    <!-- Earthquake -->
-    <string name="earthquake_quick_alert">Быстрое оповещение о землетрясении</string>
-    <string name="earthquake_focal_depth">Глубина очага</string>
-    <string name="earthquake_tsunami_threat">Угроза цунами</string>
-    <string name="earthquake_usgs_warning">Предупреждение USGS</string>
-    <string name="earthquake_origin_time">Время возникновения</string>
-    <string name="earthquake_magnitude_type">Тип магнитуды</string>
-    <string name="earthquake_data_status">Статус данных</string>
-    <string name="earthquake_data_km">КМ</string>
-    
-    <!-- Notification - Override notification module strings -->
-    <string name="noti_earthquake_click_text">- Просмотреть радиус воздействия……</string>
-    
+    <string name="floating_window_open_file_failed">Не удалось открыть файл: %1$s</string>    
     <string name="lock_screen_slide_to_unlock">Смахните для разблокировки</string>
     <string name="lock_screen_scan_pdf">Сканировать PDF</string>
 

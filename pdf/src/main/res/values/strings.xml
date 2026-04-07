@@ -481,20 +481,6 @@
     <string name="floating_window_permission_required">Floating window permission required</string>
     <string name="floating_window_show_failed">Failed to show floating window: %1$s</string>
     <string name="floating_window_open_file_failed">Failed to open file: %1$s</string>
-
-    <!-- Earthquake -->
-    <string name="earthquake_quick_alert">Earthquake Quick Alert</string>
-    <string name="earthquake_focal_depth">Focal Depth</string>
-    <string name="earthquake_tsunami_threat">Tsunami Threat</string>
-    <string name="earthquake_usgs_warning">USGS Warning</string>
-    <string name="earthquake_origin_time">Origin Time</string>
-    <string name="earthquake_magnitude_type">Magnitude Type</string>
-    <string name="earthquake_data_status">Data Status</string>
-    <string name="earthquake_data_km">KM</string>
-
-    <!-- Notification - Override notification module strings -->
-    <string name="noti_earthquake_click_text">- See Impact Radius……</string>
-
     <string name="lock_screen_slide_to_unlock">Slide to unlock</string>
     <string name="lock_screen_scan_pdf">Scan PDF</string>
 

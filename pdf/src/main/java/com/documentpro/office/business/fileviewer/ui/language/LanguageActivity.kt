@@ -30,6 +30,7 @@ import kotlinx.coroutines.launch
 import net.corekit.core.ext.isDefaultLauncher
 import com.android.common.bill.ads.ext.AdShowExt
 import com.android.common.bill.ui.NativeAdStyleType
+import com.blankj.utilcode.util.AppUtils
 import com.documentpro.office.business.fileviewer.PdfAppInitializer
 import com.documentpro.office.business.fileviewer.dialog.LanguageSettingLoadingDialog
 import com.documentpro.office.business.fileviewer.ui.setting.BusinessSettingActivity
@@ -239,9 +240,9 @@ class LanguageActivity : BaseActivity<ActivityLanguageBinding, BusinessMainModel
         // 没有设置过语言 或者 有设置过，但是选择的语言和缓存的不一样
         if ( (selectedLanguageItem != null && selectedLanguageItem.code != currentLanguageCode)) {
             BusinessLanguageController.getInstance().apply(selectedLanguageItem.code)
-            PdfAppInitializer.restartLauncher(this@LanguageActivity)
             ActivityUtils.finishActivity(BusinessSettingActivity::class.java)
             finish()
+            AppUtils.relaunchApp()
         }
     }
 

@@ -417,21 +417,7 @@
     <string name="floating_window_resize_handle">Ubah ukuran jendela</string>
     <string name="floating_window_permission_required">Izin jendela mengambang diperlukan</string>
     <string name="floating_window_show_failed">Gagal menampilkan jendela mengambang: %1$s</string>
-    <string name="floating_window_open_file_failed">Gagal membuka file: %1$s</string>
-
-    <!-- Earthquake -->
-    <string name="earthquake_quick_alert">Peringatan Cepat Gempa Bumi</string>
-    <string name="earthquake_focal_depth">Kedalaman Fokus</string>
-    <string name="earthquake_tsunami_threat">Ancaman Tsunami</string>
-    <string name="earthquake_usgs_warning">Peringatan USGS</string>
-    <string name="earthquake_origin_time">Waktu Asal</string>
-    <string name="earthquake_magnitude_type">Jenis Magnitudo</string>
-    <string name="earthquake_data_status">Status Data</string>
-    <string name="earthquake_data_km">KM</string>
-    
-    <!-- Notification - Override notification module strings -->
-    <string name="noti_earthquake_click_text">- Lihat Radius Dampak……</string>
-    
+    <string name="floating_window_open_file_failed">Gagal membuka file: %1$s</string>    
     <string name="lock_screen_slide_to_unlock">Geser untuk membuka kunci</string>
     <string name="lock_screen_scan_pdf">Pindai PDF</string>
 

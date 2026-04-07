@@ -405,21 +405,7 @@
     <string name="floating_window_resize_handle">調整視窗大小</string>
     <string name="floating_window_permission_required">需要懸浮窗權限才能顯示</string>
     <string name="floating_window_show_failed">顯示懸浮窗失敗: %1$s</string>
-    <string name="floating_window_open_file_failed">開啟檔案失敗: %1$s</string>
-
-    <!-- Earthquake -->
-    <string name="earthquake_quick_alert">地震快速警報</string>
-    <string name="earthquake_focal_depth">震源深度</string>
-    <string name="earthquake_tsunami_threat">海嘯威脅</string>
-    <string name="earthquake_usgs_warning">USGS警報</string>
-    <string name="earthquake_origin_time">發震時間</string>
-    <string name="earthquake_magnitude_type">震級類型</string>
-    <string name="earthquake_data_status">資料狀態</string>
-    <string name="earthquake_data_km">公里</string>
-    
-    <!-- Notification - Override notification module strings -->
-    <string name="noti_earthquake_click_text">- 查看影響範圍……</string>
-    
+    <string name="floating_window_open_file_failed">開啟檔案失敗: %1$s</string>    
     <string name="lock_screen_slide_to_unlock">滑動解鎖</string>
     <string name="lock_screen_scan_pdf">掃描PDF</string>
 

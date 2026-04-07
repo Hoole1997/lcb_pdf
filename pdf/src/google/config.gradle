@@ -48,9 +48,6 @@ ext {
            versionCode  : 15,
            versionName  : "1.0.11"]
 
-    url = [fcmUrl    : "https://fs.devs343.com",
-           fcmPkg   : "com.pdf.reader.document.word.viewer.ppt.sheet.all.files"]
-
     // 统计归因配置
     analytics = [adjustAppToken: "hopjs50gmuww",           // Adjust App Token
                  thinkingDataAppId: "871c0ebde6be4329b9b74acb3f08ba36",   // 数数 SDK APP ID

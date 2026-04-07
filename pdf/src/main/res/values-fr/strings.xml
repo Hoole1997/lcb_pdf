@@ -411,21 +411,7 @@
     <string name="floating_window_resize_handle">Redimensionner la fenêtre</string>
     <string name="floating_window_permission_required">Permission de fenêtre flottante requise</string>
     <string name="floating_window_show_failed">Échec de l\'affichage de la fenêtre flottante: %1$s</string>
-    <string name="floating_window_open_file_failed">Échec de l\'ouverture du fichier: %1$s</string>
-
-    <!-- Earthquake -->
-    <string name="earthquake_quick_alert">Alerte Rapide de Séisme</string>
-    <string name="earthquake_focal_depth">Profondeur du Foyer</string>
-    <string name="earthquake_tsunami_threat">Menace de Tsunami</string>
-    <string name="earthquake_usgs_warning">Avertissement USGS</string>
-    <string name="earthquake_origin_time">Heure d\'Origine</string>
-    <string name="earthquake_magnitude_type">Type de Magnitude</string>
-    <string name="earthquake_data_status">État des Données</string>
-    <string name="earthquake_data_km">KM</string>
-    
-    <!-- Notification - Override notification module strings -->
-    <string name="noti_earthquake_click_text">- Voir le Rayon d\'Impact……</string>
-    
+    <string name="floating_window_open_file_failed">Échec de l\'ouverture du fichier: %1$s</string>    
     <string name="lock_screen_slide_to_unlock">Glisser pour déverrouiller</string>
     <string name="lock_screen_scan_pdf">Scanner PDF</string>
 

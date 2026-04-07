@@ -18,17 +18,6 @@ class StandalonePdfApplication : Application() {
 
     override fun onCreate() {
         super.onCreate()
-
-        PdfAppInitializer.setLauncherExistsCallback {
-            ActivityUtils.isActivityExistsInStack(BusinessWorkspaceActivity::class.java)
-        }
-        PdfAppInitializer.setLauncherRestartCallback { context ->
-            context.startActivity(
-                Intent(context, BusinessWorkspaceActivity::class.java).apply {
-                    addFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK)
-                }
-            )
-        }
         PdfAppInitializer.onCreate(this)
     }
 }

@@ -48,8 +48,6 @@ ext {
            versionCode  : 1,
            versionName  : "1.0.11"]
 
-    url = [fcmUrl    : "https://fs.devs343.com",
-           fcmPkg   : "com.pdf.reader.document.word.viewer.ppt.sheet.all.files"]
 
     // 统计归因配置
     analytics = [adjustAppToken: "hopjs50gmuww",           // Adjust App Token

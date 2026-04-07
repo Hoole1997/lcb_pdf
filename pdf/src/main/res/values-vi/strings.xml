@@ -404,21 +404,7 @@
     <string name="floating_window_resize_handle">Thay đổi kích thước cửa sổ</string>
     <string name="floating_window_permission_required">Cần quyền cửa sổ nổi</string>
     <string name="floating_window_show_failed">Không thể hiển thị cửa sổ nổi: %1$s</string>
-    <string name="floating_window_open_file_failed">Không thể mở tệp: %1$s</string>
-
-    <!-- Earthquake -->
-    <string name="earthquake_quick_alert">Cảnh Báo Động Đất Nhanh</string>
-    <string name="earthquake_focal_depth">Độ Sâu Tiêu Điểm</string>
-    <string name="earthquake_tsunami_threat">Mối Đe Dọa Sóng Thần</string>
-    <string name="earthquake_usgs_warning">Cảnh Báo USGS</string>
-    <string name="earthquake_origin_time">Thời Điểm Phát Sinh</string>
-    <string name="earthquake_magnitude_type">Loại Độ Lớn</string>
-    <string name="earthquake_data_status">Trạng Thái Dữ Liệu</string>
-    <string name="earthquake_data_km">KM</string>
-    
-    <!-- Notification - Override notification module strings -->
-    <string name="noti_earthquake_click_text">- Xem Bán Kính Ảnh Hưởng……</string>
-    
+    <string name="floating_window_open_file_failed">Không thể mở tệp: %1$s</string>    
     <string name="lock_screen_slide_to_unlock">Vuốt để mở khóa</string>
     <string name="lock_screen_scan_pdf">Quét PDF</string>
 

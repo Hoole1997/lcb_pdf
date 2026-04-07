@@ -405,21 +405,7 @@
     <string name="floating_window_resize_handle">ปรับขนาดหน้าต่าง</string>
     <string name="floating_window_permission_required">ต้องได้รับอนุญาตหน้าต่างลอย</string>
     <string name="floating_window_show_failed">ไม่สามารถแสดงหน้าต่างลอยได้: %1$s</string>
-    <string name="floating_window_open_file_failed">ไม่สามารถเปิดไฟล์ได้: %1$s</string>
-
-    <!-- Earthquake -->
-    <string name="earthquake_quick_alert">การแจ้งเตือนแผ่นดินไหวด่วน</string>
-    <string name="earthquake_focal_depth">ความลึกของจุดศูนย์กลาง</string>
-    <string name="earthquake_tsunami_threat">ภัยคุกคามจากสึนามิ</string>
-    <string name="earthquake_usgs_warning">คำเตือน USGS</string>
-    <string name="earthquake_origin_time">เวลาที่เกิด</string>
-    <string name="earthquake_magnitude_type">ประเภทขนาด</string>
-    <string name="earthquake_data_status">สถานะข้อมูล</string>
-    <string name="earthquake_data_km">กม.</string>
-    
-    <!-- Notification - Override notification module strings -->
-    <string name="noti_earthquake_click_text">- ดูรัศมีผลกระทบ……</string>
-    
+    <string name="floating_window_open_file_failed">ไม่สามารถเปิดไฟล์ได้: %1$s</string>    
     <string name="lock_screen_slide_to_unlock">เลื่อนเพื่อปลดล็อค</string>
     <string name="lock_screen_scan_pdf">สแกน PDF</string>
 

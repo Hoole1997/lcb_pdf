@@ -11,11 +11,20 @@ import net.corekit.core.report.ReportDataManager
 
 object BusinessPermissionDialogUtils {
 
+    private var pendingStoragePermissionSettingsReturn = false
+
+    fun consumePendingStoragePermissionSettingsReturn(): Boolean {
+        val pending = pendingStoragePermissionSettingsReturn
+        pendingStoragePermissionSettingsReturn = false
+        return pending
+    }
+
     fun showFilePermissionDialog(
         context: Context,
         needDialog: Boolean,
         needStartPermissionPage: Boolean,
         nextAction: (Boolean) -> Unit,
+        onStartPermissionPageListener: (() -> Unit)? = null,
         onConfirmListener: (() -> Unit)? = null,
         onDismissListener: (() -> Unit)? = null,
         onRejectListener: (() -> Unit)? = null,
@@ -50,6 +59,8 @@ object BusinessPermissionDialogUtils {
                         ReportDataManager.reportData("permission_read_files_result",mapOf("result" to "deny"))
                         nextAction.invoke(false)
                         if (needStartPermissionPage && doNotAskAgain) {
+                            pendingStoragePermissionSettingsReturn = true
+                            onStartPermissionPageListener?.invoke()
                             XXPermissions.startPermissionActivity(context, permissions)
                         }
                     }

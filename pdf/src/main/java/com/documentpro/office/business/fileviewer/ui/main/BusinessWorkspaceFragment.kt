@@ -15,7 +15,9 @@ import com.blankj.utilcode.util.ActivityUtils
 import com.blankj.utilcode.util.ToastUtils
 import com.android.common.bill.ads.AdException
 import com.android.common.bill.ads.AdResult
+import com.android.common.bill.ads.PreloadController
 import com.android.common.bill.ads.ext.AdShowExt
+import com.documentpro.office.business.fileviewer.PdfAppInitializer
 import com.documentpro.office.business.fileviewer.R
 import com.documentpro.office.business.fileviewer.ad.BusinessPointLog
 import com.documentpro.office.business.fileviewer.base.BaseFragment
@@ -70,9 +72,6 @@ class BusinessWorkspaceFragment : BaseFragment<ActivityMainBinding, BusinessMain
             }
         }
 
-    // 默认桌面权限控制器（必须在 onCreate 之前初始化）
-    private lateinit var defaultLauncherController: DefaultLauncherController
-
     override fun initBinding(): ActivityMainBinding {
         return ActivityMainBinding.inflate(layoutInflater)
     }
@@ -84,9 +83,7 @@ class BusinessWorkspaceFragment : BaseFragment<ActivityMainBinding, BusinessMain
 
     override fun onResume() {
         super.onResume()
-        Log.d(TAG, "onResume")
         tabController.setSelectedTab(binding.pageContainer.currentItem)
-//        requestDefaultDesktop()
     }
 
     override fun initView() {
@@ -104,11 +101,6 @@ class BusinessWorkspaceFragment : BaseFragment<ActivityMainBinding, BusinessMain
         // 触发 insets 应用
         binding.root.requestApplyInsets()
 
-        defaultLauncherController = DefaultLauncherController(
-            activity = requireActivity(),
-            lifecycleOwner = this
-        )
-
         // 监听存储权限返回
         permissionDetector = BusinessPermissionDetector(
             requireActivity(),
@@ -118,9 +110,14 @@ class BusinessWorkspaceFragment : BaseFragment<ActivityMainBinding, BusinessMain
                 intent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP or Intent.FLAG_ACTIVITY_CLEAR_TOP)
                 startActivity(intent)
             })
-        initNavigation()
 
-        if(!BusinessGuideCallbackController.hasGuideShown(requireContext())){
+        initNavigation()
+        loadBottomBannerAd()
+
+        // 是否展示过引导页
+        if(BusinessGuideCallbackController.hasGuideShown(requireContext())){
+            requestStorage()
+        } else{
             // 没展示过需要等待用户点击引导页的skip或者从demo pdf页返回
             // guide1和BusinessFileListFragment中设置的对应
             BusinessGuideCallbackController.setListener(
@@ -133,12 +130,6 @@ class BusinessWorkspaceFragment : BaseFragment<ActivityMainBinding, BusinessMain
                 },
             )
         }
-
-//        lifecycleScope.launch {
-//            delay(300L)
-//            requestDefaultDesktop()
-//        }
-
     }
 
     private fun loadBottomBannerAd() {
@@ -159,36 +150,6 @@ class BusinessWorkspaceFragment : BaseFragment<ActivityMainBinding, BusinessMain
         }
     }
 
-    fun launcherRequestPermission() {
-        if(BusinessGuideCallbackController.hasGuideShown(requireContext())){
-            requestStorage()
-        }else{
-            //没展示过监听，已经在初始化设置了
-        }
-        loadInterAdOnce()
-        loadBottomBannerAd()
-    }
-
-    fun loadInterAdOnce(){
-        val key = "inter_ad_loaded_once"
-        if (BusinessStorageUtils.getBoolean(key, false)) {
-            return
-        }
-        BusinessStorageUtils.putBoolean(key, true)
-        requireActivity().loadInterstitial {  }
-    }
-
-    fun requestDefaultDesktop() {
-        lifecycleScope.launch {
-            if(OverlayTipDialog.getHasShown()){
-                LauncherApplyTrack.Home_Launcher()
-                defaultLauncherController.requestDefaultLauncher (onResult = {
-
-                })
-            }
-        }
-    }
-
     private fun requestStorage() {
         BusinessPermissionDialogUtils.showFilePermissionDialog(
             requireActivity(),
@@ -203,6 +164,7 @@ class BusinessWorkspaceFragment : BaseFragment<ActivityMainBinding, BusinessMain
                             "File_Request_Position" to 4
                         )
                     )
+                    refreshHomeAfterStoragePermissionGranted()
                 }
             },
             onShowListener = {
@@ -220,6 +182,11 @@ class BusinessWorkspaceFragment : BaseFragment<ActivityMainBinding, BusinessMain
                 )
             },
         )
+    }
+
+    private fun refreshHomeAfterStoragePermissionGranted() {
+        model?.refreshFileScan()
+        model?.refreshAllDataSources()
     }
 
     private fun showExitBusinessDialog() {

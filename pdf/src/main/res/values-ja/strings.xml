@@ -410,21 +410,7 @@
     <string name="floating_window_resize_handle">ウィンドウサイズを変更</string>
     <string name="floating_window_permission_required">フローティングウィンドウの権限が必要です</string>
     <string name="floating_window_show_failed">フローティングウィンドウの表示に失敗しました: %1$s</string>
-    <string name="floating_window_open_file_failed">ファイルのオープンに失敗しました: %1$s</string>
-
-    <!-- Earthquake -->
-    <string name="earthquake_quick_alert">地震速報</string>
-    <string name="earthquake_focal_depth">震源深度</string>
-    <string name="earthquake_tsunami_threat">津波の脅威</string>
-    <string name="earthquake_usgs_warning">USGS警告</string>
-    <string name="earthquake_origin_time">発震時刻</string>
-    <string name="earthquake_magnitude_type">マグニチュードタイプ</string>
-    <string name="earthquake_data_status">データステータス</string>
-    <string name="earthquake_data_km">キロメートル</string>
-    
-    <!-- Notification - Override notification module strings -->
-    <string name="noti_earthquake_click_text">- 影響範囲を確認……</string>
-    
+    <string name="floating_window_open_file_failed">ファイルのオープンに失敗しました: %1$s</string>    
     <string name="lock_screen_slide_to_unlock">スライドしてロック解除</string>
     <string name="lock_screen_scan_pdf">PDFをスキャン</string>
 

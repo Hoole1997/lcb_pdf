@@ -125,63 +125,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="10dp" />
 
-            <!--        调试入口-->
-            <com.noober.background.view.BLTextView
-                android:id="@+id/toggleAd"
-                android:layout_width="match_parent"
-                android:layout_height="55dp"
-                android:layout_marginStart="15dp"
-                android:layout_marginEnd="15dp"
-                android:drawableEnd="@drawable/chevron_right_24px"
-                android:gravity="center_vertical"
-                android:paddingStart="16dp"
-                android:paddingEnd="16dp"
-                android:text="关闭广告"
-                android:textColor="@color/text_primary"
-                android:textSize="16sp"
-                app:bl_corners_radius="8dp"
-                app:bl_ripple_color="@color/setting_ripple_color"
-                app:bl_ripple_enable="true"
-                app:bl_solid_color="@android:color/white" />
-
-            <com.noober.background.view.BLTextView
-                android:layout_marginTop="10dp"
-                android:id="@+id/pushInterval"
-                android:layout_width="match_parent"
-                android:layout_height="55dp"
-                android:layout_marginStart="15dp"
-                android:layout_marginEnd="15dp"
-                android:drawableEnd="@drawable/chevron_right_24px"
-                android:gravity="center_vertical"
-                android:paddingStart="16dp"
-                android:paddingEnd="16dp"
-                android:text="推送压后台0间隔"
-                android:textColor="@color/text_primary"
-                android:textSize="16sp"
-                app:bl_corners_radius="8dp"
-                app:bl_ripple_color="@color/setting_ripple_color"
-                app:bl_ripple_enable="true"
-                app:bl_solid_color="@android:color/white" />
-
-            <com.noober.background.view.BLTextView
-                android:layout_marginTop="10dp"
-                android:id="@+id/earthQuakeTest"
-                android:layout_width="match_parent"
-                android:layout_height="55dp"
-                android:layout_marginStart="15dp"
-                android:layout_marginEnd="15dp"
-                android:drawableEnd="@drawable/chevron_right_24px"
-                android:gravity="center_vertical"
-                android:paddingStart="16dp"
-                android:paddingEnd="16dp"
-                android:text="新建地震推送"
-                android:textColor="@color/text_primary"
-                android:textSize="16sp"
-                app:bl_corners_radius="8dp"
-                app:bl_ripple_color="@color/setting_ripple_color"
-                app:bl_ripple_enable="true"
-                app:bl_solid_color="@android:color/white" />
-
             <TextView
                 android:layout_marginTop="10dp"
                 android:id="@+id/tvVersion"

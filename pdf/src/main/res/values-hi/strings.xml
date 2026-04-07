@@ -411,21 +411,7 @@
     <string name="floating_window_resize_handle">विंडो का आकार बदलें</string>
     <string name="floating_window_permission_required">फ़्लोटिंग विंडो अनुमति आवश्यक</string>
     <string name="floating_window_show_failed">फ़्लोटिंग विंडो दिखाने में विफल: %1$s</string>
-    <string name="floating_window_open_file_failed">फ़ाइल खोलने में विफल: %1$s</string>
-
-    <!-- Earthquake -->
-    <string name="earthquake_quick_alert">तेज़ भूकंप चेतावनी</string>
-    <string name="earthquake_focal_depth">फोकस गहराई</string>
-    <string name="earthquake_tsunami_threat">सुनामी खतरा</string>
-    <string name="earthquake_usgs_warning">USGS चेतावनी</string>
-    <string name="earthquake_origin_time">उत्पत्ति समय</string>
-    <string name="earthquake_magnitude_type">परिमाण प्रकार</string>
-    <string name="earthquake_data_status">डेटा स्थिति</string>
-    <string name="earthquake_data_km">किमी</string>
-    
-    <!-- Notification - Override notification module strings -->
-    <string name="noti_earthquake_click_text">- प्रभाव त्रिज्या देखें……</string>
-    
+    <string name="floating_window_open_file_failed">फ़ाइल खोलने में विफल: %1$s</string>    
     <string name="lock_screen_slide_to_unlock">अनलॉक करने के लिए स्लाइड करें</string>
     <string name="lock_screen_scan_pdf">PDF स्कैन करें</string>
 

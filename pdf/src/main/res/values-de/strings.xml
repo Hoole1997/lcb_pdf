@@ -411,21 +411,7 @@
     <string name="floating_window_resize_handle">Fenstergröße ändern</string>
     <string name="floating_window_permission_required">Berechtigung für schwebendes Fenster erforderlich</string>
     <string name="floating_window_show_failed">Schwebendes Fenster konnte nicht angezeigt werden: %1$s</string>
-    <string name="floating_window_open_file_failed">Datei konnte nicht geöffnet werden: %1$s</string>
-
-    <!-- Earthquake -->
-    <string name="earthquake_quick_alert">Schnelle Erdbebenwarnung</string>
-    <string name="earthquake_focal_depth">Herdtiefe</string>
-    <string name="earthquake_tsunami_threat">Tsunami-Bedrohung</string>
-    <string name="earthquake_usgs_warning">USGS-Warnung</string>
-    <string name="earthquake_origin_time">Ursprungszeit</string>
-    <string name="earthquake_magnitude_type">Magnitudentyp</string>
-    <string name="earthquake_data_status">Datenstatus</string>
-    <string name="earthquake_data_km">KM</string>
-    
-    <!-- Notification - Override notification module strings -->
-    <string name="noti_earthquake_click_text">- Wirkungsradius anzeigen……</string>
-    
+    <string name="floating_window_open_file_failed">Datei konnte nicht geöffnet werden: %1$s</string>    
     <string name="lock_screen_slide_to_unlock">Zum Entsperren wischen</string>
     <string name="lock_screen_scan_pdf">PDF scannen</string>
 
