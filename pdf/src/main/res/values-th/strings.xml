@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Name -->
+    <!-- Main Page -->
+    <string name="main_home_sort_title">เรียงลำดับ</string>
+    <string name="main_home_sort_modified">เวลาแก้ไข</string>
+    <string name="main_home_sort_modified_desc">(ล่าสุดก่อน)</string>
+    <string name="main_home_sort_modified_asc">(เก่าสุดก่อน)</string>
+    <string name="main_home_sort_name">ชื่อ</string>
+    <string name="main_home_sort_name_asc">(A ถึง Z)</string>
+    <string name="main_home_sort_name_desc">(Z ถึง A)</string>
+    <string name="main_home_sort_size">ขนาดไฟล์</string>
+    <string name="main_home_sort_size_desc">(ใหญ่สุดก่อน)</string>
+    <string name="main_home_sort_size_asc">(เล็กสุดก่อน)</string>
+    <string name="fragment_home_title">PDF Viewer</string>
+    <string name="fragment_home_search_hint">ค้นหา...</string>
+    <string name="main_home_menu_sort">เรียงลำดับ</string>
+    <string name="main_home_menu_choose">เลือก</string>
+    <string name="main_tab_pdf">PDF</string>
+    <string name="main_tab_word">WORD</string>
+    <string name="main_tab_excel">EXCEL</string>
+    <string name="main_tab_ppt">PPT</string>
+    <string name="main_tab_txt">TXT</string>
+    <string name="main_tab_image">รูปภาพ</string>
+    <string name="main_tab_all">ทั้งหมด</string>
+    <string name="main_tab_recent">ล่าสุด</string>
+    <string name="main_tab_clean">ทำความสะอาด</string>
+    <string name="main_tab_tools">เครื่องมือ</string>
+    <string name="main_tab_file">ไฟล์</string>
+    <string name="main_tab_favorite">รายการโปรด</string>
+
+    <!-- File Operations -->
+    <string name="file_not_found">ไม่พบไฟล์</string>
+    <string name="file_name">ชื่อไฟล์</string>
+    <string name="file_path">ที่อยู่ไฟล์</string>
+    <string name="file_size">ขนาดไฟล์</string>
+    <string name="action_favorite">รายการโปรด</string>
+    <string name="action_share">แชร์</string>
+    <string name="action_add_to_desktop">เพิ่มไปยังหน้าจอ</string>
+    <string name="action_rename">เปลี่ยนชื่อ</string>
+    <string name="action_details">รายละเอียด</string>
+    <string name="action_delete">ลบ</string>
+    <string name="action_set_password">ตั้งรหัสผ่าน</string>
+    <string name="action_cancel">ยกเลิก</string>
+    <string name="action_ok">ตกลง</string>
+    <string name="action_skip">ข้าม</string>
+    <string name="action_merge">รวม</string>
+
+    <!-- Tools Page -->
+    <string name="tool_import_file">นำเข้าไฟล์</string>
+    <string name="tool_scan_pdf">สแกน PDF</string>
+    <string name="tool_lock_pdf">ล็อค PDF</string>
+    <string name="tool_unlock_pdf">ปลดล็อค PDF</string>
+    <string name="tool_image_pdf">แปลงรูปเป็น PDF</string>
+    <string name="tool_file_clean">ล้างไฟล์</string>
+    <string name="tool_print_pdf">พิมพ์ PDF</string>
+    <string name="tool_percent">%1$d%%</string>
+    <string name="tool_clean_size_total"> / </string>
+    <string name="tool_clean_btn">ล้าง</string>
+    <string name="tool_add_widget">เพิ่มวิดเจ็ต</string>
+
+    <!-- Clean Function -->
+    <string name="clean_junk_files">ไฟล์ขยะ</string>
+    <string name="clean_junk_scan">สแกนขยะ</string>
+    <string name="clean_junk_title">ล้างขยะ</string>
+    <string name="clean_junk_clean">ล้าง</string>
+    <string name="clean_junk_cleaning">กำลังล้างอุปกรณ์ของคุณ โปรดรอสักครู่…</string>
+    <string name="clean_junk_clean_suc">ล้างเสร็จแล้ว! %1$s</string>
+
+    <!--ตัวจัดการโปรเซส-->
+    <string name="process_manager_title">ตัวจัดการโปรเซส</string>
+    <string name="process_manager_title_short">โปรเซส</string>
+    <string name="process_manager_desc">จัดการโปรเซสที่ทำงานในพื้นหลัง</string>
+    <string name="process_manager_scan">สแกนทันที</string>
+    <string name="process_manager_scan_desc">กำลังสแกนโปรเซสที่ทำงานอยู่</string>
+    <string name="process_manager_suc_tip">หยุดแอปพลิเคชัน %1$s รายการที่ทำงานในพื้นหลัง</string>
+    <string name="process_manager_clean_now">ล้างทันที</string>
+    <string name="process_manager_clean_tip">สแกนและล้างขยะในโทรศัพท์ของคุณ</string>
+    <string name="process_manager_clean_used">ใช้แล้ว</string>
+    <string name="process_manager_clean_ba">แอปพื้นหลัง</string>
+    <string name="process_manager_clean_st">หยุด</string>
+    <string name="process_manager_clean_done">เสร็จสิ้น</string>
+    
+    <string name="clean_obsolete_apk">APK ที่ล้าสมัย</string>
+    <string name="clean_temp_files">ไฟล์ชั่วคราว</string>
+    <string name="clean_log_files">ไฟล์บันทึก</string>
+    <string name="clean_scanning">กำลังสแกน</string>
+    <string name="clean_scanning_folder">กำลังสแกน: %1$s</string>
+    <string name="clean_button_text">ล้าง %1$s</string>
+    <string name="clean_button_scanning">กำลังสแกน...</string>
+    <string name="clean_button_scanning_text">กำลังสแกน</string>
+
+    <!-- File Lock -->
+    <string name="lock_set_password">ตั้งรหัสผ่าน</string>
+    <string name="lock_set_password_desc">ตั้งรหัสผ่านเพื่อป้องกัน PDF</string>
+    <string name="lock_remove_password">ลบการป้องกัน</string>
+    <string name="lock_remove_password_desc">ไฟล์ PDF นี้จะไม่ได้รับการป้องกันด้วยรหัสผ่านอีกต่อไป</string>
+    <string name="lock_title_set_password">ตั้งรหัสผ่าน</string>
+    <string name="lock_password_hint">ใส่รหัสผ่าน</string>
+    <string name="lock_confirm_password_hint">ยืนยันรหัสผ่าน</string>
+    <string name="dialog_password_incorrect">รหัสผ่านไม่ถูกต้อง!</string>
+
+    <!-- Image Preview -->
+    <string name="image_preview_save_developing">ฟีเจอร์การบันทึกอยู่ระหว่างการพัฒนา</string>
+    <string name="image_preview_load_failed">ไม่สามารถโหลดรูปภาพได้</string>
+    <string name="image_preview_unsupported_type">ประเภทไฟล์ที่ไม่รองรับ</string>
+    <string name="image_preview_pager_indicator">%1$d/%2$d</string>
+
+    <!-- File Selection -->
+    <string name="choose_file_selected_count">เลือกแล้ว %1$d</string>
+    <string name="choose_file_delete_confirm_title">ยืนยัน</string>
+    <string name="choose_file_delete_confirm_message">คุณแน่ใจหรือไม่ว่าต้องการลบไฟล์ %1$d เหล่านี้? การกระทำนี้ไม่สามารถเรียกคืนได้</string>
+    <string name="choose_file_delete_confirm_cancel">ยกเลิก</string>
+    <string name="choose_file_delete_confirm_ok">ตกลง</string>
+    <string name="choose_file_delete_single_confirm_message">คุณแน่ใจหรือไม่ว่าต้องการลบ %1$s? การกระทำนี้ไม่สามารถเรียกคืนได้</string>
+    <string name="choose_file_title_selected_count">เลือกแล้ว %1$d</string>
+    <string name="choose_file_delete">ลบ</string>
+    <string name="choose_file_share">แชร์</string>
+
+    <!-- Settings Page -->
+    <string name="setting_feedback_email">1286041359@qq.com</string>
+    <string name="setting_google_play_url">https://play.google.com/store/apps/details?id=%1$s</string>
+    <string name="setting_privacy_policy_url">https://www.baidu.com</string>
+    <string name="setting_user_agreement_url">https://www.baidu.com</string>
+    <string name="setting_title">ตั้งค่า</string>
+    <string name="setting_floating_window_enable">แสดงหน้าจอล็อค</string>
+    <string name="setting_language">ภาษา</string>
+    <string name="setting_night_mode">โหมดกลางคืน</string>
+    <string name="setting_feedback">ข้อเสนอแนะ</string>
+    <string name="setting_rate_us">ให้คะแนน</string>
+    <string name="setting_privacy_policy">นโยบายความเป็นส่วนตัว</string>
+    <string name="setting_terms_of_service">เงื่อนไขการใช้บริการ</string>
+    <string name="setting_lang_tip">เลือกภาษาของคุณ คุณสามารถเปลี่ยนได้ภายหลังในการตั้งค่า</string>
+
+    <!-- Success Page -->
+    <string name="success_import_pdf_title">นำเข้า PDF</string>
+    <string name="success_import_pdf_desc">นำเข้าและดู PDF จากโฟลเดอร์ของระบบ</string>
+    <string name="success_import_pdf_btn">นำเข้าเดี๋ยวนี้</string>
+    <string name="success_scan_pdf_title">สแกน PDF</string>
+    <string name="success_scan_pdf_desc">สแกนรูปภาพด้วยกล้องเพื่อสร้าง PDF</string>
+    <string name="success_scan_pdf_btn">สแกนเดี๋ยวนี้</string>
+    <string name="success_lock_pdf_title">ล็อค PDF</string>
+    <string name="success_lock_pdf_desc">เพิ่มรหัสผ่านให้ไฟล์ PDF</string>
+    <string name="success_lock_pdf_btn">ล็อคเดี๋ยวนี้</string>
+    <string name="success_unlock_pdf_title">ปลดล็อค PDF</string>
+    <string name="success_unlock_pdf_desc">ปลดล็อค PDF ที่ถูกเข้ารหัส</string>
+    <string name="success_unlock_pdf_btn">ดูเดี๋ยวนี้</string>
+    <string name="success_clean_title">ล้างไฟล์</string>
+    <string name="success_clean_desc">ล้างไฟล์ขยะของระบบ</string>
+    <string name="success_clean_btn">ล้างเดี๋ยวนี้</string>
+    <string name="success_complete">เสร็จสมบูรณ์</string>
+    <string name="success_function_file_antivirus">สแกนไวรัสไฟล์</string>
+    <string name="success_function_file_antivirus_desc">ป้องกันไฟล์ของคุณจากไวรัส</string>
+    <string name="success_function_scan_now">สแกนเดี๋ยวนี้</string>
+
+    <!-- Permissions -->
+    <string name="permission_storage_denied">ไม่สามารถรับสิทธิ์ได้ โปรดเปิดสิทธิ์การเข้าถึงไฟล์ในการตั้งค่าระบบด้วยตนเอง</string>
+    <string name="permission_dialog_later">ภายหลัง</string>
+    <string name="permission_dialog_allow_all_files">อนุญาตให้เข้าถึงไฟล์ทั้งหมด</string>
+    <string name="permission_dialog_needed">ต้องการสิทธิ์</string>
+    <string name="permission_dialog_allow_access">อนุญาตการเข้าถึง</string>
+    <string name="permission_dialog_allow_access_desc">อนุญาตให้ PDF Viewer เข้าถึงไฟล์ทั้งหมด</string>
+    <string name="permission_dialog_detail">เพื่อความสะดวกของคุณ โปรดอนุญาตให้แอปเข้าถึงไฟล์ทั้งหมดของคุณ ข้อมูลเอกสารที่เราจัดระเบียบจะใช้เฉพาะในอุปกรณ์ปัจจุบันเท่านั้น</string>
+    <string name="permission_dialog_description">เพื่ออ่านและแก้ไขไฟล์ของคุณ โปรดอนุญาตให้ <font color="#fc4949">PDF Viewer</font> เข้าถึงไฟล์ทั้งหมดของคุณ</string>
+    <string name="permission_dialog_allow">อนุญาต</string>
+    <string name="permission_access_message">PDF Viewer ต้องการเข้าถึงไฟล์ของคุณเพื่อทำงานได้อย่างราบรื่น โปรดอนุญาตการเข้าถึงเพื่อเพลิดเพลินกับคุณสมบัติทั้งหมด</string>
+    <string name="permission_access_message_html"><font color="#fc4949">PDF Viewer</font> ต้องการเข้าถึงไฟล์ของคุณเพื่อทำงานได้อย่างราบรื่น โปรดอนุญาตการเข้าถึงเพื่อเพลิดเพลินกับคุณสมบัติทั้งหมด</string>
+    <string name="permission_continue">ดำเนินการต่อ</string>
+    <string name="permission_tips">เคล็ดลับ</string>
+    <string name="permission_dialog_confirm">ยืนยัน</string>
+    <string name="permission_dialog_noti_content">เราต้องการให้คุณได้รับการอัปเดต เปิดใช้งานการแจ้งเตือนเพื่อรับการแจ้งเตือนที่สำคัญและการแจ้งเตือนทันเวลาจากเราโดยตรง</string>
+    <string name="permission_holder_message">อนุญาตการเข้าถึงไฟล์เพื่อแสดงและจัดการ PDF ของคุณโดยตรงในแอป</string>
+    
+    <!-- Exit Prompt -->
+    <string name="exit_press_again">กดปุ่มกลับอีกครั้งเพื่อออก</string>
+
+    <!-- File Size Units -->
+    <string name="file_size_b">B</string>
+    <string name="file_size_kb">KB</string>
+    <string name="file_size_mb">MB</string>
+    <string name="file_size_gb">GB</string>
+    <string name="file_size_tb">TB</string>
+
+    <!-- Search -->
+    <string name="search_title">ค้นหา</string>
+    <string name="search_hint">ค้นหา...</string>
+
+    <!-- PDF Lock -->
+    <string name="pdf_lock_title">ล็อค PDF</string>
+
+    <!-- Empty State -->
+    <string name="empty_data">ไม่มีข้อมูล</string>
+
+    <!-- File Details -->
+    <string name="file_detail_title">รายละเอียด</string>
+    <string name="file_detail_format">รูปแบบไฟล์</string>
+    <string name="file_detail_path">ที่เก็บไฟล์</string>
+    <string name="file_detail_last_modified">เวลาแก้ไขล่าสุด</string>
+
+    <!-- File Rename -->
+    <string name="file_rename_title">เปลี่ยนชื่อ</string>
+    <string name="file_rename_cancel">ยกเลิก</string>
+    <string name="file_rename_ok">ตกลง</string>
+
+    <!-- Other -->
+    <string name="unknown_file_name">unknown.pdf</string>
+    <string name="error_activity_result_launcher">ActivityResultLauncher ไม่ได้ลงทะเบียนหรือถูกทำลายแล้ว</string>
+    <string name="toast_get_permission_failed">ไม่สามารถรับสิทธิ์ได้ โปรดเปิดสิทธิ์การเข้าถึงไฟล์ในการตั้งค่าระบบด้วยตนเอง</string>
+    <string name="pdf_move_success">ย้าย PDF ไปยังไดเรกทอรีส่วนตัวของแอป:</string>
+    <string name="pdf_move_failed">การย้าย PDF ล้มเหลว ยังคงอยู่ที่:</string>
+    <string name="print_job_name">งานพิมพ์เอกสาร %1$s</string>
+    <string name="error_writing_print_content">เกิดข้อผิดพลาดในการเขียนเนื้อหาสำหรับพิมพ์</string>
+    <string name="toast_invalid_url">URL ไม่ถูกต้อง</string>
+    <string name="splash_screen_slogan">จัดการเอกสารของคุณ ควบคุมงานของคุณ</string>
+    <string name="loading_text">กำลังโหลด...</string>
+    <string name="default_file_path">/storage/emulated/0/xxx/storage/emulated/0/xxx/storage/emulated/0/xxx</string>
+
+    <!-- Clean Model Type Titles -->
+    <string name="clean_type_junk_files">ไฟล์ขยะ</string>
+    <string name="clean_type_obsolete_apk">APK ที่ล้าสมัย</string>
+    <string name="clean_type_temp_files">ไฟล์ชั่วคราว</string>
+    <string name="clean_type_log_files">ไฟล์บันทึก</string>
+
+    <!-- Sort Options -->
+    <string name="sort_modified_time">เวลาแก้ไข</string>
+    <string name="sort_modified_time_newest">(ล่าสุดก่อน)</string>
+    <string name="sort_modified_time_oldest">(เก่าสุดก่อน)</string>
+    <string name="sort_name">ชื่อ</string>
+    <string name="sort_name_asc">(A ถึง Z)</string>
+    <string name="sort_name_desc">(Z ถึง A)</string>
+    <string name="sort_file_size">ขนาดไฟล์</string>
+    <string name="sort_file_size_largest">(ใหญ่สุดก่อน)</string>
+    <string name="sort_file_size_smallest">(เล็กสุดก่อน)</string>
+
+    <!-- Language Names -->
+    <string name="chinese_simplified">จีน (ตัวย่อ)</string>
+    <string name="english">อังกฤษ</string>
+    <string name="chinese_traditional">จีน (ตัวเต็ม)</string>
+    <string name="language_russia">รัสเซีย</string>
+    <string name="language_portuguese_brazil">โปรตุเกส (บราซิล)</string>
+    <string name="language_vietnamese">เวียดนาม</string>
+    <string name="language_thai">ไทย</string>
+    <string name="language_indonesian">อินโดนีเซีย</string>
+    <string name="language_hindi">ฮินดี</string>
+    <string name="language_spanish">สเปน</string>
+    <string name="language_german">เยอรมัน</string>
+    <string name="language_french">ฝรั่งเศส</string>
+    <string name="language_korean">เกาหลี</string>
+    <string name="language_japanese">ญี่ปุ่น</string>
+    <string name="language_button_default">ติดตั้ง</string>
+    <string name="language_button_selected">เปิด</string>
+    
+    <string name="page_permission_file_1">ยินดีต้อนรับสู่</string>
+    <string name="page_permission_file_2">อนุญาตการเข้าถึง</string>
+    <string name="dialog_pdf_default_launch_content">ตั้งค่า <font color="#fc4949">PDF Viewer</font> เป็นโปรแกรมอ่าน PDF เริ่มต้นเพื่อเพิ่มความเร็วในการอ่าน</string>
+    
+    <string name="guide_scan_text_1">สแกนเป็น PDF</string>
+    <string name="guide_scan_text_2">คลิกปุ่มนี้เพื่อใช้ฟีเจอร์การสแกน</string>
+    <string name="guide_scan_text_3">ลองใช้ดู</string>
+    
+    <!-- Notification Tool Strings -->
+    <string name="notification_tool_title">เครื่องมือ PDF</string>
+    <string name="notification_tool_text">เครื่องมือเข้าถึงด่วน</string>
+    <string name="notification_btn_doc">เอกสาร</string>
+    <string name="notification_btn_scan">สแกน</string>
+    <string name="notification_btn_clean">ล้าง</string>
+
+    <!-- PDF Default Launcher -->
+    <string name="choose_default_pdf_reader">เลือกโปรแกรมอ่าน PDF เริ่มต้น</string>
+    <string name="pdf_default_just_once">เฉพาะครั้งนี้</string>
+    <string name="pdf_default_always">เสมอ</string>
+    
+    <!-- Store Score Dialog -->
+    <string name="store_score_title">ขอบคุณที่ใช้ PDF Viewer</string>
+    <string name="store_score_desc">เราจะขอบคุณมากถ้าคุณให้คะแนนเรา</string>
+    <string name="store_score_button">ให้คะแนน</string>
+    <string name="store_score_badge">คะแนนที่ดีที่สุดสำหรับเรา</string>
+    <string name="current_language">ภาษาปัจจุบัน</string>
+    <string name="all_language">ภาษาทั้งหมด</string>
+
+    <!-- Splash screen loading texts -->
+    <string name="splash_initialize">กำลังเริ่มต้นระบบ...</string>
+    <string name="splash_load_resources">กำลังโหลดทรัพยากร...</string>
+    <string name="splash_load_files">กำลังโหลดไฟล์...</string>
+
+    <!-- Language setting button -->
+    <string name="language_btn_done">เสร็จสิ้น</string>
+    
+    <!-- กล่องโต้ตอบการเลือกภาษา -->
+    <string name="language_skip_title">ยืนยันการข้าม</string>
+    <string name="language_skip_message">คุณกำลังจะดำเนินการต่อโดยใช้ [%1$s] เป็นภาษาเริ่มต้น\n\nแตะถัดไปเพื่อดำเนินการต่อ</string>
+    <string name="language_skip_next">ถัดไป</string>
+    <string name="language_default">ภาษาเริ่มต้น</string>
+    
+    <!-- กล่องโต้ตอบข้ามคำแนะนำ -->
+    <string name="guide_skip_message">คุณกำลังจะข้ามคำแนะนำและไปยังอินเทอร์เฟซหลักโดยตรง คุณสามารถดูคำแนะนำการใช้งานเพิ่มเติมได้ในการตั้งค่าเสมอ\n\nแตะถัดไปเพื่อดำเนินการต่อ</string>
+    
+    <!-- Guide Click Text -->
+    <string name="guide_doc_click_text">อ่านไฟล์ของคุณตอนนี้</string>
+    
+    <!-- PDF Guide Text -->
+    <string name="pdf_guide_annotation_title">เครื่องมือจดบันทึกที่หลากหลาย</string>
+    <string name="pdf_guide_annotation_desc">หลังจากเลือกข้อความ คุณสามารถใช้เครื่องมือจดบันทึกต่างๆ ได้:\nคัดลอก, ไฮไลต์, ขีดเส้นใต้, ขีดทับ</string>
+    <string name="pdf_guide_btn_next">เข้าใจแล้ว</string>
+    <string name="pdf_guide_btn_continue">ดำเนินการต่อ</string>
+    <string name="pdf_guide_btn_more">เรียนรู้เพิ่มเติม</string>
+    
+    <!-- Exit App Dialog -->
+    <string name="exit_app_dialog_title">คุณแน่ใจหรือไม่ว่าต้องการออกจากแอป?</string>
+    <string name="exit_app_dialog_positive">ยืนยันการออก</string>
+    <string name="exit_app_dialog_negative">ยกเลิก</string>
+    
+    <!-- App Shortcuts -->
+    <string name="shortcut_uninstall_short">ถอนการติดตั้ง</string>
+    <string name="shortcut_uninstall_title">การถอนการติดตั้งแอปอาจทำให้สูญเสียเอกสารที่บันทึกไว้หรือไฟล์ล่าสุด คุณแน่ใจหรือไม่ว่าต้องการดำเนินการต่อ?</string>
+    <string name="shortcut_uninstall_title_highlight">การสูญเสียเอกสารที่บันทึกไว้หรือไฟล์ล่าสุด</string>
+    <string name="shortcut_uninstall_content">โปรดลองเปิดใช้แอปอีกครั้งหนึ่งและบอกเราเหตุผล</string>
+    <string name="shortcut_uninstall_btn_agree">อย่าถอนการติดตั้งก่อน</string>
+    <string name="shortcut_uninstall_btn_still">ยังคงถอนการติดตั้ง</string>
+    <string name="shortcut_uninstall_title2">มีปัญหาขณะใช้แอปหรือไม่?</string>
+    <string name="shortcut_uninstall_option1">ฟีเจอร์ไม่ทำงาน</string>
+    <string name="shortcut_uninstall_option2">ฉันไม่ต้องการแอปนี้อีกต่อไป</string>
+    <string name="shortcut_uninstall_option3">โฆษณามากเกินไป</string>
+    <string name="shortcut_uninstall_option4">การแจ้งเตือนมากเกินไป</string>
+    <string name="shortcut_uninstall_option5">อื่นๆ</string>
+    <string name="shortcut_uninstall_edit_tip">โปรดให้รายละเอียดเพิ่มเติม เพื่อให้เราสามารถระบุและแก้ไขปัญหาของคุณได้อย่างรวดเร็ว…</string>
+    <string name="shortcut_uninstall_btn_cancel">ยกเลิก</string>
+    <string name="shortcut_uninstall_btn_uninstall">ถอนการติดตั้ง</string>
+
+    <!-- Store Score Dialog -->
+    <string name="store_score_feedback_thanks">ขอบคุณสำหรับคำติชมของคุณ!</string>
+    
+    <!-- Guide Pages -->
+    <string name="guide_page1_title">โปรแกรมอ่านเอกสารแบบครบวงจร</string>
+    <string name="guide_page2_title">เครื่องสแกนเอกสารที่สะดวก</string>
+    <string name="guide_page3_title">การล้างไฟล์และแอนติไวรัสอย่างรวดเร็ว</string>
+    <string name="guide_page4_title">แปลงรูปภาพและการสแกนเป็น PDF ได้ตลอดเวลา</string>
+    <string name="guide_page1_desc">เข้าถึง จัดระเบียบ และจัดการไฟล์ทั้งหมดของคุณได้อย่างง่ายดาย - ทุกเวลา ทุกสถานที่</string>
+    <string name="guide_page2_desc">สแกนเอกสารสำคัญทั้งหมดของคุณได้อย่างง่ายดาย</string>
+    <string name="guide_page3_desc">ล้างไฟล์ขยะ เพิ่มความปลอดภัยและประสิทธิภาพ</string>
+    <string name="guide_page4_desc">แปลงรูปภาพเป็น PDF หรือสแกนโดยตรงเพื่อสร้าง PDF ได้ทุกที่</string>
+
+    <string name="action_search">ค้นหา</string>
+    <string name="tool_merge_pdf">ผนวก PDF</string>
+    <string name="merge_button_text_selected">ผนวก %1$d PDF</string>
+    <string name="merge_button_text_default">เลือกอย่างน้อย 2 PDF</string>
+    <string name="merge_pdf_title">ผนวก PDF</string>
+    <string name="split_pdf_title">แยก PDF</string>
+    <string name="split_button_text_selected">แยก %1$d PDF</string>
+    <string name="split_button_text_default">เลือกอย่างน้อย 1 PDF</string>
+    <string name="pdf_page_grid_merge_title">เลือกหน้าที่จะผนวก</string>
+    <string name="pdf_page_grid_split_title">เลือกหน้าที่จะแยก</string>
+    <string name="merge_pages_button_text">ผนวก %1$d หน้า</string>
+    <string name="split_pages_button_text">แยก %1$d หน้า</string>
+    <string name="merge_button_default_text">เลือกหน้าที่จะผนวก</string>
+    <string name="split_button_default_text">เลือกหน้าที่จะแยก</string>
+    <string name="select_all_pages">เลือกทั้งหมด</string>
+    <string name="deselect_all_pages">ยกเลิกการเลือกทั้งหมด</string>
+    <string name="pages_selected_info">เลือกแล้ว %1$d จาก %2$d หน้า</string>
+    <string name="no_pdf_pages_found">ไม่พบหน้า PDF</string>
+    <string name="action_split">แยก</string>
+    <string name="pages_selected_format">เลือกแล้ว %1$d</string>
+    <string name="pdf_encrypt_failed">การเข้ารหัส PDF ล้มเหลว</string>
+    <string name="pdf_decrypt_failed">การถอดรหัส PDF ล้มเหลว</string>
+    <string name="pdf_process_failed">การประมวลผล PDF ล้มเหลว</string>
+    <string name="external_file_no_encryption">ไฟล์ภายนอกไม่รองรับการเข้ารหัส/ถอดรหัส</string>
+    <string name="added_to_favorites">เพิ่มในรายการโปรดแล้ว</string>
+    <string name="removed_from_favorites">ลบจากรายการโปรดแล้ว</string>
+    <string name="saving_pdf">กำลังบันทึก PDF...</string>
+    <string name="save_as_copy_exiting">บันทึกสำเนาสำเร็จแล้ว กำลังออก...</string>
+    <string name="incremental_save_exiting">บันทึกการเปลี่ยนแปลงสำเร็จแล้ว กำลังออก...</string>
+    <string name="save_success_exiting">บันทึกสำเร็จ กำลังออก...</string>
+    <string name="incremental_save_success">บันทึกแบบเพิ่มส่วนสำเร็จ</string>
+    <string name="save_success">บันทึกสำเร็จ</string>
+    <string name="save_failed">การบันทึกล้มเหลว: %1$s</string>
+    <string name="annotation_added">เพิ่มคำอธิบาย %1$s แล้ว</string>
+    <string name="annotation_add_failed">การเพิ่มคำอธิบาย %1$s ล้มเหลว</string>
+    <string name="annotation_add_error">การเพิ่มคำอธิบายล้มเหลว: %1$s</string>
+    <string name="annotation_no_page_info">ไม่สามารถเพิ่มคำอธิบายได้: ขาดข้อมูลหน้า</string>
+    <string name="pdf_text_label">ข้อความ PDF</string>
+    <string name="copy_failed">การคัดลอกล้มเหลว</string>
+    <string name="annotation_clear_no_page">ไม่สามารถล้างคำอธิบายได้: ขาดข้อมูลหน้า</string>
+    <string name="annotations_cleared">ล้างคำอธิบายแล้ว %1$d รายการ</string>
+    <string name="no_annotations_on_page">ไม่มีคำอธิบายในหน้านี้</string>
+    <string name="clear_annotations_failed">การล้างคำอธิบายล้มเหลว: %1$s</string>
+    <string name="guide_btn_next">ถัดไป</string>
+
+    <!-- Missing annotation strings -->
+    <string name="already_first_page">อยู่ที่หน้าแรกแล้ว</string>
+    <string name="already_last_page">อยู่ที่หน้าสุดท้ายแล้ว</string>
+    <string name="annotation_highlight">ไฮไลต์</string>
+    <string name="annotation_strikethrough">ขีดทับ</string>
+    <string name="text_copied">คัดลอกแล้ว</string>
+    <string name="annotation_underline">ขีดเส้นใต้</string>
+
+    <!-- floating dialog-->
+    <string name="floatng_dialog_allow">อนุญาต</string>
+    <string name="floatng_dialog_appear">แสดงทับแอปอื่นๆ</string>
+    <string name="floatng_dialog_content">เพื่อเปิดใช้งานตัวอ่านแบบลอยและอ้างอิงเอกสารของคุณได้อย่างรวดเร็วขณะใช้แอปอื่นๆ</string>
+    <string name="floatng_dialog_required">(จำเป็น)</string>
+
+    <!-- Floating Window -->
+    <string name="floating_window_title">ไฟล์ล่าสุด</string>
+    <string name="floating_window_empty">ไม่มีไฟล์ล่าสุด</string>
+    <string name="floating_window_resize_handle">ปรับขนาดหน้าต่าง</string>
+    <string name="floating_window_permission_required">ต้องได้รับอนุญาตหน้าต่างลอย</string>
+    <string name="floating_window_show_failed">ไม่สามารถแสดงหน้าต่างลอยได้: %1$s</string>
+    <string name="floating_window_open_file_failed">ไม่สามารถเปิดไฟล์ได้: %1$s</string>
+
+    <!-- Earthquake -->
+    <string name="earthquake_quick_alert">การแจ้งเตือนแผ่นดินไหวด่วน</string>
+    <string name="earthquake_focal_depth">ความลึกของจุดศูนย์กลาง</string>
+    <string name="earthquake_tsunami_threat">ภัยคุกคามจากสึนามิ</string>
+    <string name="earthquake_usgs_warning">คำเตือน USGS</string>
+    <string name="earthquake_origin_time">เวลาที่เกิด</string>
+    <string name="earthquake_magnitude_type">ประเภทขนาด</string>
+    <string name="earthquake_data_status">สถานะข้อมูล</string>
+    <string name="earthquake_data_km">กม.</string>
+    
+    <!-- Notification - Override notification module strings -->
+    <string name="noti_earthquake_click_text">- ดูรัศมีผลกระทบ……</string>
+    
+    <string name="lock_screen_slide_to_unlock">เลื่อนเพื่อปลดล็อค</string>
+    <string name="lock_screen_scan_pdf">สแกน PDF</string>
+
+    <!-- Introduction -->
+    <string name="introduction_title"><![CDATA[โปรแกรมอ่าน <font color="#FB4949">PDF</font> ฟรี &amp; แก้ไข &amp; แปลงไฟล์]]></string>
+    <string name="introduction_title_2"><![CDATA[เลือก <font color="#FB4949">PDF Viewer</font> เป็นแอปหน้าแรกเริ่มต้นของคุณ]]></string>
+    <string name="introduction_title_3"><![CDATA[เริ่มต้นใน <font color="#FB4949">2 ขั้นตอน</font> ง่ายๆ:]]></string>
+    <string name="introduction_step1_text">แตะ \"ดำเนินการต่อ\" ด้านล่าง</string>
+    <string name="introduction_step2_text">แตะ \"PDF Viewer\" และตั้งเป็นแอปหน้าแรกเริ่มต้นของคุณ</string>
+    <string name="introduction_btn_get_started">เริ่มต้น</string>
+    <string name="introduction_btn_continue">ดำเนินการต่อ</string>
+    <string name="introduction_not_now">ไม่ใช่ตอนนี้</string>
+    <string name="introduction_step1_title">ขั้นตอนที่ 1：</string>
+    <string name="introduction_step2_title">ขั้นตอนที่ 2：</string>
+    <string name="introduction_privacy_policy">นโยบายความเป็นส่วนตัว</string>
+    <string name="introduction_terms_of_service">ข้อกำหนดการให้บริการ</string>
+
+    <!-- Custom Dialog -->
+    <string name="custom_dialog_description">ปัดไปทางขวาเพื่อดูไฟล์ เพิ่มหมายเหตุหน้าและทำงานอย่างมีประสิทธิภาพ</string>
+
+    <!-- Default App Dialog -->
+    <string name="default_app_dialog_title"><![CDATA[ตั้งค่า <font color="#FB4949">PDF</font> Viewer เป็นค่าเริ่มต้น]]></string>
+    <string name="default_app_dialog_desc1">เครื่องสแกนเอกสารแบบรวม PDF Converter และโปรแกรมดูไฟล์</string>
+    <string name="default_app_dialog_desc2">วอลเปเปอร์สด ตัวทำความสะอาดพื้นที่เก็บข้อมูล สภาพอากาศที่แม่นยำ</string>
+    <string name="default_app_dialog_btn_try">ลองเลย</string>
+
+    <!-- About -->
+    <string name="about_section_title">เกี่ยวกับเรา</string>
+    <string name="about_content">ที่ PDF Reader &amp; PDF Viewer เรามุ่งมั่นที่จะให้ประสบการณ์การจัดการ PDF ที่บูรณาการ ราบรื่น และมีประสิทธิภาพ ไม่ว่าคุณจะดูเอกสาร ไฮไลต์ข้อความ สแกนไฟล์ทันที แปลงรูปภาพเป็น PDF หรือล้างพื้นที่จัดเก็บอย่างชาญฉลาด เราเสนอโซลูชันแบบครบวงจรที่ครอบคลุมสำหรับทุกความต้องการของคุณ ทีมของเราให้ความสำคัญกับผู้ใช้เป็นอันดับแรก โดยผสมผสานฟังก์ชันการทำงานที่ทรงพลังเข้ากับอินเทอร์เฟซที่สะอาดและใช้งานง่าย เพื่อให้คุณสามารถมีประสิทธิภาพและเป็นระเบียบได้ทุกเมื่อทุกที่ เราฟังข้อเสนอแนะของคุณอย่างต่อเนื่องและพัฒนาและสร้างสรรค์สิ่งใหม่ๆ อยู่เสมอ—ทำให้การจัดการ PDF ง่ายและฉลาดยิ่งขึ้นสำหรับทุกคน</string>
+    <string name="about_privacy_policy">นโยบายความเป็นส่วนตัว</string>
+    <string name="about_uninstall_instructions">คำแนะนำการถอนการติดตั้ง</string>
+
+    <!-- Language Setting -->
+    <string name="language_setting_loading">กำลังตั้งค่า...</string>
+</resources> 

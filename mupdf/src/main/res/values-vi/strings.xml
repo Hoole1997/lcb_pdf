@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="cancel">Hủy</string>
+	<string name="cannot_open_document">Không thể mở tài liệu</string>
+	<string name="cannot_open_document_Reason">Không thể mở tài liệu: %1$s</string>
+	<string name="dismiss">Đóng</string>
+	<string name="enter_password">Nhập mật khẩu</string>
+	<string name="no_further_occurrences_found">Không tìm thấy kết quả khớp tiếp theo</string>
+	<string name="not_supported">Không được hỗ trợ</string>
+	<string name="okay">OK</string>
+	<string name="search">Tìm kiếm&#x2026;</string>
+	<string name="searching_">Đang tìm kiếm&#x2026;</string>
+	<string name="text_not_found">Không tìm thấy văn bản</string>
+
+	<!-- PDF相关字符串 -->
+	<string name="pdf_page_content_description">Nội dung trang PDF</string>
+	<string name="pdf_icon_description">Biểu tượng tài liệu PDF</string>
+	<string name="loading_pdf_page">Đang tải trang PDF</string>
+	<string name="please_wait">Vui lòng chờ...</string>
+	
+	<!-- Toast messages -->
+	<string name="text_copied">Đã sao chép văn bản</string>
+	<string name="menu_display_failed">Hiển thị menu thất bại, văn bản được sao chép tự động</string>
+	<string name="back_button_clicked">Đã nhấn nút quay lại</string>
+	<string name="search_button_clicked">Đã nhấn nút tìm kiếm</string>
+	<string name="bookmark_added">Đã thêm dấu trang</string>
+	<string name="bookmark_removed">Đã xóa dấu trang</string>
+	<string name="file_name_format">Tệp: %1$s</string>
+	<string name="unknown_file">Tệp không xác định</string>
+	<string name="current_page_format">Trang hiện tại: %1$d/%2$d</string>
+	<string name="cannot_jump_to_page">Không thể chuyển đến trang %1$d</string>
+	<string name="already_first_page">Đã ở trang đầu tiên</string>
+	<string name="already_last_page">Đã ở trang cuối cùng</string>
+	<string name="android_file_link_error">Android không cho phép theo liên kết file://: %1$s</string>
+	<string name="long_press_function_pending">Chức năng nhấn giữ đang được phát triển</string>
+	<string name="search_query_format">Tìm kiếm: \"%1$s\"</string>
+	<string name="search_result_found_format">Tìm thấy \"%1$s\" ở trang %2$d (tổng %3$d kết quả khớp)</string>
+	<string name="search_not_found_format">Không tìm thấy \"%1$s\"</string>
+	<string name="search_result_format">%1$d / %2$d</string>
+	<string name="no_search_results">Không tìm thấy kết quả</string>
+	<string name="search_error">Lỗi tìm kiếm</string>
+	
+	<!-- PDF Save Options -->
+	<string name="file_size_unavailable">Thông tin kích thước không khả dụng</string>
+	<string name="file_size_reduced_format">Kích thước tệp đã giảm %1$.1f%%</string>
+	<string name="file_size_increased_format">Kích thước tệp đã tăng %1$.1f%%</string>
+	<string name="file_size_no_change">Kích thước tệp không thay đổi</string>
+	
+	<!-- Error messages -->
+	<string name="error_loading_page">Lỗi tải trang</string>
+	<string name="error_rendering_page">Lỗi hiển thị trang</string>
+	<string name="error_rendering_patch">Lỗi hiển thị bản vá</string>
+	<string name="error_updating_page">Lỗi cập nhật trang</string>
+	
+	<!-- Enum descriptions -->
+	<string name="action_previous">Trang trước</string>
+	<string name="action_next">Trang tiếp theo</string>
+	<string name="action_jump">Nhảy đến</string>
+	<string name="action_first">Trang đầu tiên</string>
+	<string name="action_last">Trang cuối cùng</string>
+	<string name="category_page_navigation">Điều hướng trang</string>
+	<string name="category_thumbnail">Hình thu nhỏ</string>
+	<string name="category_direction_toggle">Chuyển đổi hướng xem</string>
+	<string name="category_visibility">Điều khiển hiển thị</string>
+	<string name="direction_horizontal">Ngang</string>
+	<string name="direction_vertical">Dọc</string>
+	<string name="event_click">Nhấp</string>
+	<string name="event_long_press">Nhấn giữ</string>
+	<string name="event_scroll">Cuộn</string>
+	<string name="event_load">Tải</string>
+	<string name="event_visibility_change">Thay đổi hiển thị</string>
+	<string name="state_loading">Đang tải</string>
+	<string name="state_loaded">Đã tải</string>
+	<string name="state_error">Lỗi tải</string>
+	<string name="state_current">Trang hiện tại</string>
+	<string name="state_normal">Trạng thái bình thường</string>
+	<string name="annotation_highlight">Tô sáng</string>
+	<string name="annotation_underline">Gạch chân</string>
+	<string name="annotation_strikethrough">Gạch ngang</string>
+	<string name="annotation_unknown_type">Loại không xác định (%1$d)</string>
+	<string name="pdf_reader_v2">PDF Reader V2</string>
+	
+	<!-- Button labels -->
+	<string name="copy">Sao chép</string>
+	<string name="clear">Xóa</string>
+	
+	<!-- Loading messages -->
+	<string name="loading_pdf_document">Đang tải tài liệu PDF</string>
+	<string name="preparing_reader">Vui lòng đợi, đang chuẩn bị trình đọc...</string>
+	
+	<!-- Search related -->
+	<string name="search_pdf_content">Tìm kiếm nội dung PDF...</string>
+	<string name="pdf_search">Tìm kiếm PDF</string>
+	<string name="search_keywords">Nhập từ khóa...</string>
+	<string name="searching">Đang tìm kiếm...</string>
+	<string name="search_progress_format">Đang tìm kiếm... %1$d/%2$d</string>
+	<string name="search_results_found_format">Tìm thấy %1$d kết quả</string>
+	<string name="search_no_results_format">Không tìm thấy kết quả cho \"%1$s\"</string>
+	<string name="search_error_message_format">Lỗi tìm kiếm: %1$s</string>
+	<string name="start_search_hint">Nhập từ khóa để bắt đầu tìm kiếm</string>
+	<string name="match_case">Phân biệt chữ hoa/thường</string>
+	<string name="whole_words">Toàn bộ từ</string>
+	
+	<!-- UI labels -->
+	<string name="hide_thumbnails">Ẩn hình thu nhỏ</string>
+	<string name="document_navigation">Diễn tài liệu</string>
+	<string name="page_number_format">Trang %1$d</string>
+	<string name="search_context_text">Văn bản ngữ cảnh kết quả tìm kiếm...</string>
+	<string name="matched_keyword">Từ khóa khớp</string>
+	<string name="zoom_level">100%</string>
+</resources>

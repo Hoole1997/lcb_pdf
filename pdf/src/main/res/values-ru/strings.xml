@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Name -->
+    <!-- Main Page -->
+    <string name="main_home_sort_title">Сортировка</string>
+    <string name="main_home_sort_modified">Изменено</string>
+    <string name="main_home_sort_modified_desc">(Сначала новые)</string>
+    <string name="main_home_sort_modified_asc">(Сначала старые)</string>
+    <string name="main_home_sort_name">Имя</string>
+    <string name="main_home_sort_name_asc">(От А до Я)</string>
+    <string name="main_home_sort_name_desc">(От Я до А)</string>
+    <string name="main_home_sort_size">Размер файла</string>
+    <string name="main_home_sort_size_desc">(Сначала большие)</string>
+    <string name="main_home_sort_size_asc">(Сначала малые)</string>
+    <string name="fragment_home_title">PDF Просмотр</string>
+    <string name="fragment_home_search_hint">Поиск...</string>
+    <string name="main_home_menu_sort">Сортировка</string>
+    <string name="main_home_menu_choose">Выбрать</string>
+    <string name="main_tab_pdf">PDF</string>
+    <string name="main_tab_word">WORD</string>
+    <string name="main_tab_excel">EXCEL</string>
+    <string name="main_tab_ppt">PPT</string>
+    <string name="main_tab_txt">TXT</string>
+    <string name="main_tab_image">ФОТО</string>
+    <string name="main_tab_all">ВСЕ</string>
+    <string name="main_tab_recent">Недавние</string>
+    <string name="main_tab_clean">Очистка</string>
+    <string name="main_tab_tools">Инструменты</string>
+    <string name="main_tab_file">Файлы</string>
+    <string name="main_tab_favorite">Избранное</string>
+
+    <!-- File Operations -->
+    <string name="file_not_found">Файл не найден</string>
+    <string name="file_name">Имя файла</string>
+    <string name="file_path">Путь к файлу</string>
+    <string name="file_size">Размер файла</string>
+    <string name="action_favorite">Избранное</string>
+    <string name="action_share">Поделиться</string>
+    <string name="action_add_to_desktop">На рабочий стол</string>
+    <string name="action_rename">Переименовать</string>
+    <string name="action_details">Детали</string>
+    <string name="action_delete">Удалить</string>
+    <string name="action_set_password">Установить пароль</string>
+    <string name="action_cancel">Отмена</string>
+    <string name="action_ok">OK</string>
+    <string name="action_skip">Пропустить</string>
+    <string name="action_merge">Объединить</string>
+    <string name="action_split">Разделить</string>
+    <string name="pages_selected_format">%1$d Выбрано</string>
+
+    <!-- Tools Page -->
+    <string name="tool_import_file">Импорт файла</string>
+    <string name="tool_scan_pdf">Сканировать PDF</string>
+    <string name="tool_lock_pdf">Заблокировать PDF</string>
+    <string name="tool_unlock_pdf">Разблокировать PDF</string>
+    <string name="tool_image_pdf">Фото в PDF</string>
+    <string name="tool_file_clean">Очистка файлов</string>
+    <string name="tool_print_pdf">Печать PDF</string>
+    <string name="tool_percent">%1$d%%</string>
+    <string name="tool_clean_size_total"> / </string>
+    <string name="tool_clean_btn">Очистить</string>
+    <string name="tool_add_widget">Добавить виджет</string>
+    
+    <!-- Clean Function -->
+    <string name="clean_junk_files">Ненужные файлы</string>
+    <string name="clean_junk_scan">Сканирование мусора</string>
+    <string name="clean_junk_title">Очистка мусора</string>
+    <string name="clean_junk_clean">Очистить</string>
+    <string name="clean_junk_cleaning">Очистка вашего устройства, пожалуйста, подождите…</string>
+    <string name="clean_junk_clean_suc">Очищено! %1$s</string>
+
+    <!--Диспетчер процессов-->
+    <string name="process_manager_title">Диспетчер процессов</string>
+    <string name="process_manager_title_short">Процессы</string>
+    <string name="process_manager_desc">Управление процессами, работающими в фоновом режиме</string>
+    <string name="process_manager_scan">Сканировать сейчас</string>
+    <string name="process_manager_scan_desc">Сканирование запущенных процессов</string>
+    <string name="process_manager_suc_tip">Остановлено %1$s приложений, работающих в фоновом режиме</string>
+    <string name="process_manager_clean_now">Очистить сейчас</string>
+    <string name="process_manager_clean_tip">Сканирование и очистка мусора на телефоне</string>
+    <string name="process_manager_clean_used">Использовано</string>
+    <string name="process_manager_clean_ba">Фоновые приложения</string>
+    <string name="process_manager_clean_st">Остановить</string>
+    <string name="process_manager_clean_done">Готово</string>
+    
+    <string name="clean_obsolete_apk">Устаревшие APK</string>
+    <string name="clean_temp_files">Временные файлы</string>
+    <string name="clean_log_files">Файлы журналов</string>
+    <string name="clean_scanning">Сканирование</string>
+    <string name="clean_scanning_folder">Сканирование: %1$s</string>
+    <string name="clean_button_text">Очистить %1$s</string>
+    <string name="clean_button_scanning">Сканирование...</string>
+    <string name="clean_button_scanning_text">Сканирование</string>
+
+    <!-- File Lock -->
+    <string name="lock_set_password">Установить пароль</string>
+    <string name="lock_set_password_desc">Установить пароль для защиты PDF</string>
+    <string name="lock_remove_password">Удалить защиту</string>
+    <string name="lock_remove_password_desc">Этот PDF файл больше не будет защищен паролем</string>
+    <string name="lock_title_set_password">Установить пароль</string>
+    <string name="lock_password_hint">Введите пароль</string>
+    <string name="lock_confirm_password_hint">Подтвердите пароль</string>
+    <string name="dialog_password_incorrect">Неверный пароль!</string>
+
+    <!-- Image Preview -->
+    <string name="image_preview_save_developing">Функция сохранения в разработке</string>
+    <string name="image_preview_load_failed">Не удалось загрузить изображение</string>
+    <string name="image_preview_unsupported_type">Неподдерживаемый тип файла</string>
+    <string name="image_preview_pager_indicator">%1$d/%2$d</string>
+
+    <!-- File Selection -->
+    <string name="choose_file_selected_count">Выбрано: %1$d</string>
+    <string name="choose_file_delete_confirm_title">Подтверждение</string>
+    <string name="choose_file_delete_confirm_message">Вы уверены, что хотите удалить эти %1$d файлов? Это действие нельзя отменить.</string>
+    <string name="choose_file_delete_confirm_cancel">Отмена</string>
+    <string name="choose_file_delete_confirm_ok">OK</string>
+    <string name="choose_file_delete_single_confirm_message">Вы уверены, что хотите удалить %1$s? Это действие нельзя отменить.</string>
+    <string name="choose_file_title_selected_count">Выбрано: %1$d</string>
+    <string name="choose_file_delete">Удалить</string>
+    <string name="choose_file_share">Поделиться</string>
+
+    <!-- Settings Page -->
+    <string name="setting_feedback_email">1286041359@qq.com</string>
+    <string name="setting_google_play_url">https://play.google.com/store/apps/details?id=%1$s</string>
+    <string name="setting_privacy_policy_url">https://www.baidu.com</string>
+    <string name="setting_user_agreement_url">https://www.baidu.com</string>
+    <string name="setting_title">Настройки</string>
+    <string name="setting_floating_window_enable">Показывать экран блокировки</string>
+    <string name="setting_language">Язык</string>
+    <string name="setting_night_mode">Ночной режим</string>
+    <string name="setting_feedback">Обратная связь</string>
+    <string name="setting_rate_us">Оценить нас</string>
+    <string name="setting_privacy_policy">Политика конфиденциальности</string>
+    <string name="setting_terms_of_service">Условия использования</string>
+    <string name="setting_lang_tip">Выберите ваш язык. Вы можете изменить его позже в настройках.</string>
+
+    <!-- Success Page -->
+    <string name="success_import_pdf_title">Импорт PDF</string>
+    <string name="success_import_pdf_desc">Импорт и просмотр PDF из системных папок</string>
+    <string name="success_import_pdf_btn">Импортировать сейчас</string>
+    <string name="success_scan_pdf_title">Сканировать PDF</string>
+    <string name="success_scan_pdf_desc">Сканировать изображения камерой для создания PDF</string>
+    <string name="success_scan_pdf_btn">Сканировать сейчас</string>
+    <string name="success_lock_pdf_title">Заблокировать PDF</string>
+    <string name="success_lock_pdf_desc">Добавить пароль к PDF файлу</string>
+    <string name="success_lock_pdf_btn">Заблокировать сейчас</string>
+    <string name="success_unlock_pdf_title">Разблокировать PDF</string>
+    <string name="success_unlock_pdf_desc">Разблокировать зашифрованный PDF</string>
+    <string name="success_unlock_pdf_btn">Просмотреть сейчас</string>
+    <string name="success_clean_title">Очистка файлов</string>
+    <string name="success_clean_desc">Очистить системные ненужные файлы</string>
+    <string name="success_clean_btn">Очистить сейчас</string>
+    <string name="success_complete">Завершено</string>
+    <string name="success_function_file_antivirus">Антивирус для файлов</string>
+    <string name="success_function_file_antivirus_desc">Защитите ваши файлы от вирусов</string>
+    <string name="success_function_scan_now">Сканировать сейчас</string>
+
+    <!-- Permissions -->
+    <string name="permission_storage_denied">Не удалось получить разрешение. Пожалуйста, вручную включите разрешение для файлов в настройках системы.</string>
+    <string name="permission_dialog_later">Позже</string>
+    <string name="permission_dialog_allow_all_files">Разрешить доступ ко всем файлам</string>
+    <string name="permission_dialog_needed">Требуется разрешение</string>
+    <string name="permission_dialog_allow_access">Разрешить доступ</string>
+    <string name="permission_dialog_allow_access_desc">Разрешить PDF Viewer доступ ко всем файлам</string>
+    <string name="permission_dialog_detail">Для вашего удобства разрешите приложению доступ ко всем вашим файлам. Информация о документах, которую мы организуем, будет использоваться только на текущем устройстве</string>
+    <string name="permission_dialog_description">Чтобы читать и редактировать ваши файлы, пожалуйста, разрешите <font color="#fc4949">PDF Viewer</font> доступ ко всем вашим файлам</string>
+    <string name="permission_dialog_allow">Разрешить</string>
+    <string name="permission_access_message">PDF Viewer требуется доступ к вашим файлам для нормальной работы. Пожалуйста, разрешите доступ, чтобы использовать все функции.</string>
+    <string name="permission_access_message_html"><font color="#fc4949">PDF Viewer</font> требуется доступ к вашим файлам для нормальной работы. Пожалуйста, разрешите доступ, чтобы использовать все функции.</string>
+    <string name="permission_continue">Продолжить</string>
+    <string name="permission_tips">Советы</string>
+    <string name="permission_dialog_confirm">Подтвердить</string>
+    <string name="permission_dialog_noti_content">Мы хотим держать вас в курсе. Включите уведомления, чтобы получать важные напоминания и своевременные предупреждения напрямую от нас.</string>
+    <string name="permission_holder_message">Разрешите доступ к файлам для отображения и управления вашими PDF прямо в приложении.</string>
+    
+    <!-- Exit Prompt -->
+    <string name="exit_press_again">Нажмите назад еще раз для выхода</string>
+
+    <!-- File Size Units -->
+    <string name="file_size_b">Б</string>
+    <string name="file_size_kb">КБ</string>
+    <string name="file_size_mb">МБ</string>
+    <string name="file_size_gb">ГБ</string>
+    <string name="file_size_tb">ТБ</string>
+
+    <!-- Search -->
+    <string name="search_title">Поиск</string>
+    <string name="search_hint">Поиск...</string>
+
+    <!-- PDF Lock -->
+    <string name="pdf_lock_title">Заблокировать PDF</string>
+
+    <!-- Empty State -->
+    <string name="empty_data">Нет данных</string>
+
+    <!-- File Details -->
+    <string name="file_detail_title">Детали</string>
+    <string name="file_detail_format">Формат файла</string>
+    <string name="file_detail_path">Путь хранения</string>
+    <string name="file_detail_last_modified">Время последнего изменения</string>
+
+    <!-- File Rename -->
+    <string name="file_rename_title">Переименовать</string>
+    <string name="file_rename_cancel">Отмена</string>
+    <string name="file_rename_ok">OK</string>
+
+    <!-- Other -->
+    <string name="unknown_file_name">неизвестный.pdf</string>
+    <string name="error_activity_result_launcher">ActivityResultLauncher не зарегистрирован или уже уничтожен</string>
+    <string name="toast_get_permission_failed">Не удалось получить разрешение. Пожалуйста, вручную включите разрешение для файлов в настройках системы.</string>
+    <string name="pdf_move_success">PDF перемещен в приватную директорию приложения:</string>
+    <string name="pdf_move_failed">Не удалось переместить PDF, по-прежнему в:</string>
+    <string name="print_job_name">Задание печати документа %1$s</string>
+    <string name="error_writing_print_content">Ошибка при записи содержимого для печати</string>
+    <string name="toast_invalid_url">Недействительный URL</string>
+    <string name="splash_screen_slogan">Управляйте документами. Владейте работой.</string>
+    <string name="loading_text">Загрузка...</string>
+    <string name="default_file_path">/storage/emulated/0/xxx/storage/emulated/0/xxx/storage/emulated/0/xxx</string>
+
+    <!-- Clean Model Type Titles -->
+    <string name="clean_type_junk_files">Ненужные файлы</string>
+    <string name="clean_type_obsolete_apk">Устаревшие APK</string>
+    <string name="clean_type_temp_files">Временные файлы</string>
+    <string name="clean_type_log_files">Файлы журналов</string>
+
+    <!-- Sort Options -->
+    <string name="sort_modified_time">Время изменения</string>
+    <string name="sort_modified_time_newest">(Сначала новые)</string>
+    <string name="sort_modified_time_oldest">(Сначала старые)</string>
+    <string name="sort_name">Имя</string>
+    <string name="sort_name_asc">(От А до Я)</string>
+    <string name="sort_name_desc">(От Я до А)</string>
+    <string name="sort_file_size">Размер файла</string>
+    <string name="sort_file_size_largest">(Сначала большие)</string>
+    <string name="sort_file_size_smallest">(Сначала малые)</string>
+
+    <!-- Language Names -->
+    <string name="chinese_simplified">Китайский (упрощ.)</string>
+    <string name="english">Английский</string>
+    <string name="chinese_traditional">Китайский (трад.)</string>
+    <string name="language_russia">Русский</string>
+    <string name="language_portuguese_brazil">Португальский (Бразилия)</string>
+    <string name="language_vietnamese">Вьетнамский</string>
+    <string name="language_thai">Тайский</string>
+    <string name="language_indonesian">Индонезийский</string>
+    <string name="language_hindi">Хинди</string>
+    <string name="language_spanish">Испанский</string>
+    <string name="language_german">Немецкий</string>
+    <string name="language_french">Французский</string>
+    <string name="language_korean">Корейский</string>
+    <string name="language_japanese">Японский</string>
+    <string name="language_button_default">Установить</string>
+    <string name="language_button_selected">Открыть</string>
+    
+    <string name="page_permission_file_1">Добро пожаловать в</string>
+    <string name="page_permission_file_2">Предоставить доступ</string>
+    <string name="dialog_pdf_default_launch_content">Установите <font color="#fc4949">PDF Viewer</font> в качестве PDF-читалки по умолчанию для повышения скорости чтения.</string>
+    
+    <string name="guide_scan_text_1">Сканировать в PDF</string>
+    <string name="guide_scan_text_2">Нажмите эту кнопку, чтобы использовать функцию сканирования</string>
+    <string name="guide_scan_text_3">Попробуйте</string>
+    
+    <!-- Notification Tool Strings -->
+    <string name="notification_tool_title">Инструменты PDF</string>
+    <string name="notification_tool_text">Быстрый доступ к инструментам</string>
+    <string name="notification_btn_doc">Док</string>
+    <string name="notification_btn_scan">Скан</string>
+    <string name="notification_btn_clean">Очистка</string>
+
+    <!-- PDF Default Launcher -->
+    <string name="choose_default_pdf_reader">Выбрать PDF-ридер по умолчанию</string>
+    <string name="pdf_default_just_once">Только сейчас</string>
+    <string name="pdf_default_always">Всегда</string>
+    
+    <!-- Store Score Dialog -->
+    <string name="store_score_title">Спасибо за использование PDF Viewer</string>
+    <string name="store_score_desc">Мы были бы благодарны, если бы вы оценили нас.</string>
+    <string name="store_score_button">Оценить</string>
+    <string name="store_score_feedback_thanks">Спасибо за ваш отзыв!</string>
+    <string name="store_score_badge">Лучшая оценка для нас</string>
+    
+    <!-- Guide Pages -->
+    <string name="guide_page1_title">Универсальный просмотрщик документов</string>
+    <string name="guide_page1_desc">Получайте доступ, организуйте и управляйте всеми вашими файлами с легкостью - в любое время, в любом месте.</string>
+    <string name="guide_page2_title">Удобный сканер документов</string>
+    <string name="guide_page2_desc">Легко сканируйте все ваши важные документы.</string>
+    <string name="guide_page3_title">Быстрая очистка файлов и антивирус</string>
+    <string name="guide_page3_desc">Очищайте ненужные файлы, повышайте безопасность и производительность.</string>
+    <string name="guide_page4_title">Конвертируйте изображения и сканы в PDF в любое время</string>
+    <string name="guide_page4_desc">Превращайте изображения в PDF или сканируйте напрямую для создания PDF где угодно.</string>
+    <string name="guide_btn_next">Далее</string>
+    
+    <string name="current_language">Текущий язык</string>
+    <string name="all_language">Все языки</string>
+
+    <!-- Splash screen loading texts -->
+    <string name="splash_initialize">Инициализация...</string>
+    <string name="splash_load_resources">Загрузка ресурсов...</string>
+    <string name="splash_load_files">Загрузка файлов...</string>
+
+    <!-- Language setting button -->
+    <string name="language_btn_done">Готово</string>
+    
+    <!-- Диалог выбора языка -->
+    <string name="language_skip_title">Подтвердите пропуск</string>
+    <string name="language_skip_message">Вы собираетесь продолжить с [%1$s] в качестве языка по умолчанию.\n\nНажмите Далее, чтобы продолжить.</string>
+    <string name="language_skip_next">Далее</string>
+    <string name="language_default">Язык по умолчанию</string>
+    
+    <!-- Диалог пропуска руководства -->
+    <string name="guide_skip_message">Вы собираетесь пропустить руководство и перейти непосредственно к главному интерфейсу. Вы всегда можете просмотреть дополнительные сведения о функциях в настройках.\n\nНажмите Далее, чтобы продолжить.</string>
+    
+    <!-- Guide Click Text -->
+    <string name="guide_doc_click_text">Читайте ваш файл сейчас</string>
+    
+    <!-- PDF Guide Text -->
+    <string name="pdf_guide_annotation_title">Богатые инструменты аннотаций</string>
+    <string name="pdf_guide_annotation_desc">После выбора текста вы можете использовать различные инструменты аннотаций:\nКопировать, Маркер, Подчеркивание, Зачеркивание</string>
+    <string name="pdf_guide_btn_next">Понятно</string>
+    <string name="pdf_guide_btn_continue">Продолжить</string>
+    <string name="pdf_guide_btn_more">Узнать больше</string>
+    
+    <!-- Exit App Dialog -->
+    <string name="exit_app_dialog_title">Вы уверены, что хотите выйти из приложения?</string>
+    <string name="exit_app_dialog_positive">Подтвердить Выход</string>
+    <string name="exit_app_dialog_negative">Отмена</string>
+    
+    <!-- App Shortcuts -->
+    <string name="shortcut_uninstall_short">Удалить</string>
+    <string name="shortcut_uninstall_title">Удаление приложения может привести к потере сохраненных документов или недавних файлов. Вы уверены, что хотите продолжить?</string>
+    <string name="shortcut_uninstall_title_highlight">потере сохраненных документов или недавних файлов</string>
+    <string name="shortcut_uninstall_content">Пожалуйста, попробуйте активировать приложение еще раз и сообщите нам причину.</string>
+    <string name="shortcut_uninstall_btn_agree">Пока не удалять</string>
+    <string name="shortcut_uninstall_btn_still">Все равно удалить</string>
+    <string name="shortcut_uninstall_title2">Проблемы при использовании приложения?</string>
+    <string name="shortcut_uninstall_option1">Функция не работает</string>
+    <string name="shortcut_uninstall_option2">Мне больше не нужно это приложение</string>
+    <string name="shortcut_uninstall_option3">Слишком много рекламы</string>
+    <string name="shortcut_uninstall_option4">Слишком много уведомлений</string>
+    <string name="shortcut_uninstall_option5">Другое</string>
+    <string name="shortcut_uninstall_edit_tip">Пожалуйста, предоставьте больше деталей, чтобы мы могли быстрее выявить и решить вашу проблему…</string>
+    <string name="shortcut_uninstall_btn_cancel">Отмена</string>
+    <string name="shortcut_uninstall_btn_uninstall">Удалить</string>
+
+    <!-- PDF Operations -->
+    <string name="pdf_encrypt_failed">Ошибка шифрования PDF</string>
+    <string name="pdf_decrypt_failed">Ошибка дешифрования PDF</string>
+    <string name="pdf_process_failed">Ошибка обработки PDF</string>
+    <string name="external_file_no_encryption">Внешние файлы не поддерживают шифрование/дешифрование</string>
+    <string name="added_to_favorites">Добавлено в избранное</string>
+    <string name="removed_from_favorites">Удалено из избранного</string>
+    <string name="already_first_page">Уже на первой странице</string>
+    <string name="already_last_page">Уже на последней странице</string>
+    <string name="saving_pdf">Сохранение PDF...</string>
+    <string name="save_as_copy_exiting">Копия успешно сохранена, выход...</string>
+    <string name="incremental_save_exiting">Изменения успешно сохранены, выход...</string>
+    <string name="save_success_exiting">Сохранение успешно, выход...</string>
+    <string name="incremental_save_success">Последовательное сохранение успешно</string>
+    <string name="save_success">Сохранение успешно</string>
+    <string name="save_failed">Ошибка сохранения: %1$s</string>
+    
+    <!-- Text Selection and Annotation -->
+    <string name="annotation_highlight">Выделить</string>
+    <string name="annotation_underline">Подчеркнуть</string>
+    <string name="annotation_strikethrough">Зачеркнуть</string>
+    <string name="annotation_added">Добавлена %1$s аннотация</string>
+    <string name="annotation_add_failed">Ошибка добавления %1$s аннотации</string>
+    <string name="annotation_add_error">Ошибка добавления аннотации: %1$s</string>
+    <string name="annotation_no_page_info">Невозможно добавить аннотацию: отсутствует информация о странице</string>
+    <string name="pdf_text_label">Текст PDF</string>
+    <string name="text_copied">Скопировано</string>
+    <string name="copy_failed">Ошибка копирования</string>
+    <string name="annotation_clear_no_page">Невозможно очистить аннотации: отсутствует информация о странице</string>
+    <string name="annotations_cleared">Очищено %1$d аннотаций</string>
+    <string name="no_annotations_on_page">На текущей странице нет аннотаций</string>
+    <string name="clear_annotations_failed">Ошибка очистки аннотаций: %1$s</string>
+
+    <string name="action_search">Поиск</string>
+    <string name="tool_merge_pdf">Объединить PDF</string>
+    <string name="merge_button_text_selected">Объединить %1$d PDF</string>
+    <string name="merge_button_text_default">Выберите минимум 2 PDF</string>
+    <string name="merge_pdf_title">Объединение PDF</string>
+    <string name="split_pdf_title">Разделить PDF</string>
+    <string name="split_button_text_selected">Разделить %1$d PDF</string>
+    <string name="split_button_text_default">Выберите минимум 1 PDF</string>
+    <string name="pdf_page_grid_merge_title">Выберите страницы для объединения</string>
+    <string name="pdf_page_grid_split_title">Выберите страницы для разделения</string>
+    <string name="merge_pages_button_text">Объединить %1$d страниц</string>
+    <string name="split_pages_button_text">Разделить %1$d страниц</string>
+    <string name="merge_button_default_text">Выберите страницы для объединения</string>
+    <string name="split_button_default_text">Выберите страницы для разделения</string>
+    <string name="select_all_pages">Выбрать все</string>
+    <string name="deselect_all_pages">Отменить выбор</string>
+    <string name="pages_selected_info">Выбрано %1$d из %2$d страниц</string>
+    <string name="no_pdf_pages_found">Страницы PDF не найдены</string>
+
+    <!-- floating dialog-->
+    <string name="floatng_dialog_allow">Разрешить</string>
+    <string name="floatng_dialog_appear">отображаться поверх других приложений</string>
+    <string name="floatng_dialog_content">Чтобы включить плавающий мини-ридер и быстро просматривать документы при использовании других приложений.</string>
+    <string name="floatng_dialog_required">(обязательно)</string>
+
+    <!-- Floating Window -->
+    <string name="floating_window_title">Недавние файлы</string>
+    <string name="floating_window_empty">Нет недавних файлов</string>
+    <string name="floating_window_resize_handle">Изменить размер окна</string>
+    <string name="floating_window_permission_required">Требуется разрешение на плавающее окно</string>
+    <string name="floating_window_show_failed">Не удалось показать плавающее окно: %1$s</string>
+    <string name="floating_window_open_file_failed">Не удалось открыть файл: %1$s</string>
+
+    <!-- Earthquake -->
+    <string name="earthquake_quick_alert">Быстрое оповещение о землетрясении</string>
+    <string name="earthquake_focal_depth">Глубина очага</string>
+    <string name="earthquake_tsunami_threat">Угроза цунами</string>
+    <string name="earthquake_usgs_warning">Предупреждение USGS</string>
+    <string name="earthquake_origin_time">Время возникновения</string>
+    <string name="earthquake_magnitude_type">Тип магнитуды</string>
+    <string name="earthquake_data_status">Статус данных</string>
+    <string name="earthquake_data_km">КМ</string>
+    
+    <!-- Notification - Override notification module strings -->
+    <string name="noti_earthquake_click_text">- Просмотреть радиус воздействия……</string>
+    
+    <string name="lock_screen_slide_to_unlock">Смахните для разблокировки</string>
+    <string name="lock_screen_scan_pdf">Сканировать PDF</string>
+
+    <!-- Introduction -->
+    <string name="introduction_title"><![CDATA[Бесплатный <font color="#FB4949">PDF-ридер</font> &amp; редактор &amp; конвертер]]></string>
+    <string name="introduction_title_2"><![CDATA[Выберите <font color="#FB4949">PDF Viewer</font> в качестве домашнего приложения по умолчанию]]></string>
+    <string name="introduction_title_3"><![CDATA[Начните за <font color="#FB4949">2 простых</font> шага:]]></string>
+    <string name="introduction_step1_text">Нажмите \"Продолжить\" ниже</string>
+    <string name="introduction_step2_text">Нажмите \"PDF Viewer\" и установите как домашнее приложение по умолчанию</string>
+    <string name="introduction_btn_get_started">Начать</string>
+    <string name="introduction_btn_continue">Продолжить</string>
+    <string name="introduction_not_now">Не сейчас</string>
+    <string name="introduction_step1_title">Шаг 1：</string>
+    <string name="introduction_step2_title">Шаг 2：</string>
+    <string name="introduction_privacy_policy">Политика конфиденциальности</string>
+    <string name="introduction_terms_of_service">Условия использования</string>
+
+    <!-- Custom Dialog -->
+    <string name="custom_dialog_description">Смахните вправо, чтобы просматривать файлы, комментировать страницы и эффективно работать</string>
+
+    <!-- Default App Dialog -->
+    <string name="default_app_dialog_title"><![CDATA[Установить <font color="#FB4949">PDF</font> Viewer по умолчанию]]></string>
+    <string name="default_app_dialog_desc1">Встроенный сканер документов, PDF-конвертер и просмотрщик файлов</string>
+    <string name="default_app_dialog_desc2">Живые обои, очиститель хранилища, точная погода.</string>
+    <string name="default_app_dialog_btn_try">Попробовать сейчас</string>
+
+    <!-- About -->
+    <string name="about_section_title">О нас</string>
+    <string name="about_content">В PDF Reader &amp; PDF Viewer мы стремимся предоставить интегрированный, плавный и эффективный опыт управления PDF. Независимо от того, просматриваете ли вы документы, выделяете текст, мгновенно сканируете файлы, конвертируете изображения в PDF или интеллектуально очищаете место для хранения, мы предлагаем продуманное комплексное решение для всех ваших потребностей. Наша команда ставит пользователей на первое место, сочетая мощные функции с чистым и интуитивно понятным интерфейсом, чтобы вы могли оставаться продуктивными и организованными в любое время и в любом месте. Мы постоянно прислушиваемся к вашим отзывам и продолжаем совершенствоваться и внедрять инновации, делая работу с PDF проще и умнее для всех.</string>
+    <string name="about_privacy_policy">Политика конфиденциальности</string>
+    <string name="about_uninstall_instructions">Инструкции по удалению</string>
+
+    <!-- Language Setting -->
+    <string name="language_setting_loading">Настройка...</string>
+</resources> 

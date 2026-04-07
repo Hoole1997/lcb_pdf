@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- 白色背景容器 -->
+    <View
+        android:id="@+id/ll_content"
+        android:background="@drawable/bg_store_score"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+    <!-- 顶部图片 -->
+    <ImageView
+        android:id="@+id/iv_top"
+        android:src="@mipmap/ic_store_score_top"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"/>
+
+    <!-- 右上角红色标签 -->
+    <TextView
+        android:id="@+id/tv_badge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/store_score_badge"
+        android:textSize="11sp"
+        android:textColor="#FFFFFF"
+        android:background="@mipmap/ic_rate_tip"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingTop="9dp"
+        android:paddingBottom="12dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@id/rating_bar"
+        app:layout_constraintEnd_toEndOf="@id/rating_bar"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="12dp"
+
+       />
+
+    <!-- 标题 -->
+    <TextView
+        android:id="@+id/tv_1"
+        android:text="@string/store_score_title"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingStart="40dp"
+        android:paddingEnd="40dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- 描述文字 -->
+    <TextView
+        android:id="@+id/tv_2"
+        android:text="@string/store_score_desc"
+        android:textColor="#999999"
+        android:textSize="14sp"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:paddingStart="34dp"
+        android:paddingEnd="34dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- 评分条 -->
+    <per.wsj.library.AndRatingBar
+        android:id="@+id/rating_bar"
+        android:layout_marginTop="64dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:stepSize="1"
+        app:starSpacing="10dp"
+        app:starColor="#FFCC3B"
+        app:starDrawable="@drawable/star_filled" />
+
+    <!-- Rate按钮 -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_score"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:text="@string/store_score_button"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:cornerRadius="24dp"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp"
+        android:backgroundTint="#FB4949"
+        app:layout_constraintTop_toBottomOf="@id/rating_bar"
+        android:layout_marginTop="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- 底部间距 -->
+    <Space
+        app:layout_constraintTop_toBottomOf="@id/btn_score"
+        app:layout_constraintBottom_toBottomOf="@id/ll_content"
+        android:id="@+id/space_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

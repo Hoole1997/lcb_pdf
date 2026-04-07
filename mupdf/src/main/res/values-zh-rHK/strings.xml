@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="cancel">取消</string>
+	<string name="cannot_open_document">無法開啟文件</string>
+	<string name="cannot_open_document_Reason">無法開啟文件：%1$s</string>
+	<string name="dismiss">關閉</string>
+	<string name="enter_password">請輸入密碼</string>
+	<string name="no_further_occurrences_found">找不到更多符合項目</string>
+	<string name="not_supported">不支援</string>
+	<string name="okay">確定</string>
+	<string name="search">搜尋&#x2026;</string>
+	<string name="searching_">搜尋中&#x2026;</string>
+	<string name="text_not_found">找不到文字</string>
+
+	<!-- PDF相关字符串 -->
+	<string name="pdf_page_content_description">PDF 頁面內容</string>
+	<string name="pdf_icon_description">PDF 文件圖示</string>
+	<string name="loading_pdf_page">正在載入 PDF 頁面</string>
+	<string name="please_wait">請稍候...</string>
+	
+	<!-- Toast messages -->
+	<string name="text_copied">已複製文字</string>
+	<string name="menu_display_failed">選單顯示失敗，文字已自動複製</string>
+	<string name="back_button_clicked">已按下返回按鈕</string>
+	<string name="search_button_clicked">已按下搜尋按鈕</string>
+	<string name="bookmark_added">已新增書籤</string>
+	<string name="bookmark_removed">已移除書籤</string>
+	<string name="file_name_format">檔案：%1$s</string>
+	<string name="unknown_file">未知檔案</string>
+	<string name="current_page_format">目前頁面：%1$d/%2$d</string>
+	<string name="cannot_jump_to_page">無法跳至第 %1$d 頁</string>
+	<string name="already_first_page">已在第一頁</string>
+	<string name="already_last_page">已在最後一頁</string>
+	<string name="android_file_link_error">Android 不允許跟隨 file:// 連結：%1$s</string>
+	<string name="long_press_function_pending">長按功能開發中</string>
+	<string name="search_query_format">搜尋：「%1$s」</string>
+	<string name="search_result_found_format">在第 %2$d 頁找到「%1$s」（共 %3$d 筆符合項目）</string>
+	<string name="search_not_found_format">找不到「%1$s」</string>
+	<string name="search_result_format">%1$d / %2$d</string>
+	<string name="no_search_results">找不到結果</string>
+	<string name="search_error">搜尋錯誤</string>
+	
+	<!-- PDF Save Options -->
+	<string name="file_size_unavailable">檔案大小資訊無法取得</string>
+	<string name="file_size_reduced_format">檔案大小減少了 %1$.1f%%</string>
+	<string name="file_size_increased_format">檔案大小增加了 %1$.1f%%</string>
+	<string name="file_size_no_change">檔案大小無變化</string>
+	
+	<!-- Error messages -->
+	<string name="error_loading_page">載入頁面錯誤</string>
+	<string name="error_rendering_page">頁面渲染錯誤</string>
+	<string name="error_rendering_patch">修補程式渲染錯誤</string>
+	<string name="error_updating_page">更新頁面錯誤</string>
+	
+	<!-- Enum descriptions -->
+	<string name="action_previous">上一頁</string>
+	<string name="action_next">下一頁</string>
+	<string name="action_jump">跳至</string>
+	<string name="action_first">第一頁</string>
+	<string name="action_last">最後一頁</string>
+	<string name="category_page_navigation">頁面導航</string>
+	<string name="category_thumbnail">縮圖</string>
+	<string name="category_direction_toggle">檢視方向切換</string>
+	<string name="category_visibility">可見性控制</string>
+	<string name="direction_horizontal">水平</string>
+	<string name="direction_vertical">垂直</string>
+	<string name="event_click">點擊</string>
+	<string name="event_long_press">長按</string>
+	<string name="event_scroll">滾動</string>
+	<string name="event_load">載入</string>
+	<string name="event_visibility_change">可見性變更</string>
+	<string name="state_loading">載入中</string>
+	<string name="state_loaded">已載入</string>
+	<string name="state_error">載入錯誤</string>
+	<string name="state_current">目前頁面</string>
+	<string name="state_normal">正常狀態</string>
+	<string name="annotation_highlight">螢光標示</string>
+	<string name="annotation_underline">底線</string>
+	<string name="annotation_strikethrough">刪除線</string>
+	<string name="annotation_unknown_type">未知類型 (%1$d)</string>
+	<string name="pdf_reader_v2">PDF Reader V2</string>
+	
+	<!-- Button labels -->
+	<string name="copy">複製</string>
+	<string name="clear">清除</string>
+	
+	<!-- Loading messages -->
+	<string name="loading_pdf_document">正在載入PDF文件</string>
+	<string name="preparing_reader">請稍候，正在準備閱讀器...</string>
+	
+	<!-- Search related -->
+	<string name="search_pdf_content">搜尋PDF內容...</string>
+	<string name="pdf_search">PDF搜尋</string>
+	<string name="search_keywords">輸入搜尋關鍵字...</string>
+	<string name="searching">搜尋中...</string>
+	<string name="search_progress_format">搜尋中... %1$d/%2$d</string>
+	<string name="search_results_found_format">找到 %1$d 個結果</string>
+	<string name="search_no_results_format">未找到\"%1$s\"</string>
+	<string name="search_error_message_format">搜尋出錯: %1$s</string>
+	<string name="start_search_hint">輸入關鍵字開始搜尋</string>
+	<string name="match_case">匹配大小寫</string>
+	<string name="whole_words">全字匹配</string>
+	
+	<!-- UI labels -->
+	<string name="hide_thumbnails">隱藏縮圖</string>
+	<string name="document_navigation">文件導航</string>
+	<string name="page_number_format">第 %1$d 頁</string>
+	<string name="search_context_text">搜尋結果上下文文本...</string>
+	<string name="matched_keyword">匹配的關鍵字</string>
+	<string name="zoom_level">100%</string>
+</resources>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="cancel">रद्द करें</string>
+	<string name="cannot_open_document">दस्तावेज़ नहीं खोला जा सकता</string>
+	<string name="cannot_open_document_Reason">दस्तावेज़ नहीं खोला जा सकता: %1$s</string>
+	<string name="dismiss">बंद करें</string>
+	<string name="enter_password">पासवर्ड दर्ज करें</string>
+	<string name="no_further_occurrences_found">कोई और मिलान नहीं मिला</string>
+	<string name="not_supported">समर्थित नहीं</string>
+	<string name="okay">ठीक है</string>
+	<string name="search">खोजें&#x2026;</string>
+	<string name="searching_">खोज रहे हैं&#x2026;</string>
+	<string name="text_not_found">टेक्स्ट नहीं मिला</string>
+
+	<!-- PDF相关字符串 -->
+	<string name="pdf_page_content_description">PDF पेज कंटेंट</string>
+	<string name="pdf_icon_description">PDF दस्तावेज़ आइकन</string>
+	<string name="loading_pdf_page">PDF पेज लोड हो रहा है</string>
+	<string name="please_wait">कृपया प्रतीक्षा करें...</string>
+	
+	<!-- Toast messages -->
+	<string name="text_copied">टेक्स्ट कॉपी किया गया</string>
+	<string name="menu_display_failed">मेनू डिस्प्ले विफल, टेक्स्ट स्वचालित रूप से कॉपी किया गया</string>
+	<string name="back_button_clicked">बैक बटन दबाया गया</string>
+	<string name="search_button_clicked">सर्च बटन दबाया गया</string>
+	<string name="bookmark_added">बुकमार्क जोड़ा गया</string>
+	<string name="bookmark_removed">बुकमार्क हटाया गया</string>
+	<string name="file_name_format">फ़ाइल: %1$s</string>
+	<string name="unknown_file">अज्ञात फ़ाइल</string>
+	<string name="current_page_format">वर्तमान पेज: %1$d/%2$d</string>
+	<string name="cannot_jump_to_page">पेज %1$d पर जा नहीं सकते</string>
+	<string name="already_first_page">पहले से ही पहले पेज पर हैं</string>
+	<string name="already_last_page">पहले से ही आखिरी पेज पर हैं</string>
+	<string name="android_file_link_error">Android file:// लिंक फॉलो करने की अनुमति नहीं देता: %1$s</string>
+	<string name="long_press_function_pending">लॉन्ग प्रेस फंक्शन डेवलपमेंट में है</string>
+	<string name="search_query_format">खोज: \"%1$s\"</string>
+	<string name="search_result_found_format">\"%1$s\" पेज %2$d पर मिला (कुल %3$d मैच)</string>
+	<string name="search_not_found_format">\"%1$s\" नहीं मिला</string>
+	<string name="search_result_format">%1$d / %2$d</string>
+	<string name="no_search_results">कोई परिणाम नहीं मिले</string>
+	<string name="search_error">खोज त्रुटि</string>
+	
+	<!-- PDF Save Options -->
+	<string name="file_size_unavailable">साइज़ जानकारी उपलब्ध नहीं</string>
+	<string name="file_size_reduced_format">फ़ाइल साइज़ %1$.1f%% कम हुआ</string>
+	<string name="file_size_increased_format">फ़ाइल साइज़ %1$.1f%% बढ़ा</string>
+	<string name="file_size_no_change">फ़ाइल साइज़ अपरिवर्तित</string>
+	
+	<!-- Error messages -->
+	<string name="error_loading_page">पेज लोड करने में त्रुटि</string>
+	<string name="error_rendering_page">पेज रेंडर करने में त्रुटि</string>
+	<string name="error_rendering_patch">पैच रेंडर करने में त्रुटि</string>
+	<string name="error_updating_page">पेज अपडेट करने में त्रुटि</string>
+	
+	<!-- Enum descriptions -->
+	<string name="action_previous">पिछला पेज</string>
+	<string name="action_next">अगला पेज</string>
+	<string name="action_jump">जाएं</string>
+	<string name="action_first">पहला पेज</string>
+	<string name="action_last">आखिरी पेज</string>
+	<string name="category_page_navigation">पेज नेवीगेशन</string>
+	<string name="category_thumbnail">थंबनेल</string>
+	<string name="category_direction_toggle">व्यू दिशा टॉगल</string>
+	<string name="category_visibility">दृश्यता नियंत्रण</string>
+	<string name="direction_horizontal">क्षैतिज</string>
+	<string name="direction_vertical">लंबवत</string>
+	<string name="event_click">क्लिक</string>
+	<string name="event_long_press">लंबा दबाना</string>
+	<string name="event_scroll">स्क्रॉल</string>
+	<string name="event_load">लोड</string>
+	<string name="event_visibility_change">दृश्यता परिवर्तन</string>
+	<string name="state_loading">लोड हो रहा है</string>
+	<string name="state_loaded">लोड हुआ</string>
+	<string name="state_error">लोड त्रुटि</string>
+	<string name="state_current">वर्तमान पेज</string>
+	<string name="state_normal">सामान्य स्थिति</string>
+	<string name="annotation_highlight">हाइलाइट</string>
+	<string name="annotation_underline">अंडरलाइन</string>
+	<string name="annotation_strikethrough">स्ट्राइकथ्रू</string>
+	<string name="annotation_unknown_type">अज्ञात प्रकार (%1$d)</string>
+	<string name="pdf_reader_v2">PDF Reader V2</string>
+	
+	<!-- Button labels -->
+	<string name="copy">कॉपी</string>
+	<string name="clear">साफ करें</string>
+	
+	<!-- Loading messages -->
+	<string name="loading_pdf_document">PDF दस्तावेज लोड हो रहा है</string>
+	<string name="preparing_reader">कृपया प्रतीक्षा करें, रीडर तैयार किया जा रहा है...</string>
+	
+	<!-- Search related -->
+	<string name="search_pdf_content">PDF सामग्री में खोजें...</string>
+	<string name="pdf_search">PDF खोज</string>
+	<string name="search_keywords">खोज कीवर्ड दर्ज करें...</string>
+	<string name="searching">खोज या रहा है...</string>
+	<string name="search_progress_format">खोज या रहा है... %1$d/%2$d</string>
+	<string name="search_results_found_format">%1$d परिणाम मिले</string>
+	<string name="search_no_results_format">\"%1$s\" के लिए कोई परिणाम नहीं मिला</string>
+	<string name="search_error_message_format">खोज त्रुटि: %1$s</string>
+	<string name="start_search_hint">खोज शुरू करने के लिए कीवर्ड दर्ज करें</string>
+	<string name="match_case">केस मैच</string>
+	<string name="whole_words">पूरे शब्द</string>
+	
+	<!-- UI labels -->
+	<string name="hide_thumbnails">थंबनेल छिपाएं</string>
+	<string name="document_navigation">दस्तावेज नेविगेशन</string>
+	<string name="page_number_format">पृष्ठ %1$d</string>
+	<string name="search_context_text">खोज परिणाम संदर्भ पाठ...</string>
+	<string name="matched_keyword">मेल खाता कीवर्ड</string>
+	<string name="zoom_level">100%</string>
+</resources>

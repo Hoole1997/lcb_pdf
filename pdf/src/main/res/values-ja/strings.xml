@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Name -->
+    <!-- Main Page -->
+    <string name="main_home_sort_title">並べ替え</string>
+    <string name="main_home_sort_modified">更新日時</string>
+    <string name="main_home_sort_modified_desc">(新しい順)</string>
+    <string name="main_home_sort_modified_asc">(古い順)</string>
+    <string name="main_home_sort_name">名前</string>
+    <string name="main_home_sort_name_asc">(A〜Z)</string>
+    <string name="main_home_sort_name_desc">(Z〜A)</string>
+    <string name="main_home_sort_size">ファイルサイズ</string>
+    <string name="main_home_sort_size_desc">(大きい順)</string>
+    <string name="main_home_sort_size_asc">(小さい順)</string>
+    <string name="fragment_home_title">PDFビューア</string>
+    <string name="fragment_home_search_hint">検索...</string>
+    <string name="main_home_menu_sort">並べ替え</string>
+    <string name="main_home_menu_choose">選択</string>
+    <string name="main_tab_pdf">PDF</string>
+    <string name="main_tab_word">WORD</string>
+    <string name="main_tab_excel">EXCEL</string>
+    <string name="main_tab_ppt">PPT</string>
+    <string name="main_tab_txt">TXT</string>
+    <string name="main_tab_image">画像</string>
+    <string name="main_tab_all">すべて</string>
+    <string name="main_tab_recent">最近</string>
+    <string name="main_tab_clean">クリーン</string>
+    <string name="main_tab_tools">ツール</string>
+    <string name="main_tab_file">ファイル</string>
+    <string name="main_tab_favorite">お気に入り</string>
+
+    <!-- File Operations -->
+    <string name="file_not_found">ファイルが見つかりません</string>
+    <string name="file_name">ファイル名</string>
+    <string name="file_path">ファイルパス</string>
+    <string name="file_size">ファイルサイズ</string>
+    <string name="action_favorite">お気に入り</string>
+    <string name="action_share">共有</string>
+    <string name="action_add_to_desktop">ホーム画面に追加</string>
+    <string name="action_rename">名前の変更</string>
+    <string name="action_details">詳細</string>
+    <string name="action_delete">削除</string>
+    <string name="action_set_password">パスワード設定</string>
+    <string name="action_cancel">キャンセル</string>
+    <string name="action_ok">OK</string>
+    <string name="action_skip">スキップ</string>
+    <string name="action_merge">結合</string>
+    <string name="action_split">分割</string>
+    <string name="pages_selected_format">%1$d 選択済み</string>
+
+    <!-- Tools Page -->
+    <string name="tool_import_file">ファイルのインポート</string>
+    <string name="tool_scan_pdf">PDFをスキャン</string>
+    <string name="tool_lock_pdf">PDFをロック</string>
+    <string name="tool_unlock_pdf">PDFのロック解除</string>
+    <string name="tool_image_pdf">画像からPDFへ</string>
+    <string name="tool_file_clean">ファイルクリーン</string>
+    <string name="tool_print_pdf">PDFを印刷</string>
+    <string name="tool_percent">%1$d%%</string>
+    <string name="tool_clean_size_total"> / </string>
+    <string name="tool_clean_btn">クリーン</string>
+    <string name="tool_add_widget">ウィジェット追加</string>
+
+    <!-- Clean Function -->
+    <string name="clean_junk_files">不要ファイル</string>
+    <string name="clean_junk_scan">ジャンクスキャン</string>
+    <string name="clean_junk_title">ジャンククリーンアップ</string>
+    <string name="clean_junk_clean">クリーン</string>
+    <string name="clean_junk_cleaning">デバイスをクリーニング中です。しばらくお待ちください…</string>
+    <string name="clean_junk_clean_suc">クリーン完了！%1$s</string>
+
+    <!--プロセスマネージャー-->
+    <string name="process_manager_title">プロセスマネージャー</string>
+    <string name="process_manager_title_short">プロセス</string>
+    <string name="process_manager_desc">バックグラウンドで実行中のプロセスを管理</string>
+    <string name="process_manager_scan">今すぐスキャン</string>
+    <string name="process_manager_scan_desc">実行中のプロセスをスキャン中</string>
+    <string name="process_manager_suc_tip">バックグラウンドで実行中の %1$s 個のアプリケーションを停止しました</string>
+    <string name="process_manager_clean_now">今すぐクリーン</string>
+    <string name="process_manager_clean_tip">スマートフォンのジャンクをスキャンしてクリーン</string>
+    <string name="process_manager_clean_used">使用中</string>
+    <string name="process_manager_clean_ba">バックグラウンドアプリ</string>
+    <string name="process_manager_clean_st">停止</string>
+    <string name="process_manager_clean_done">完了</string>
+    
+    <string name="clean_obsolete_apk">古いAPK</string>
+    <string name="clean_temp_files">一時ファイル</string>
+    <string name="clean_log_files">ログファイル</string>
+    <string name="clean_scanning">スキャン中</string>
+    <string name="clean_scanning_folder">スキャン中: %1$s</string>
+    <string name="clean_button_text">%1$sをクリーン</string>
+    <string name="clean_button_scanning">スキャン中...</string>
+    <string name="clean_button_scanning_text">スキャン中</string>
+
+    <!-- File Lock -->
+    <string name="lock_set_password">パスワード設定</string>
+    <string name="lock_set_password_desc">PDFを保護するためのパスワードを設定</string>
+    <string name="lock_remove_password">ロック解除</string>
+    <string name="lock_remove_password_desc">このPDFファイルはパスワード保護されなくなります</string>
+    <string name="lock_title_set_password">パスワード設定</string>
+    <string name="lock_password_hint">パスワードを入力</string>
+    <string name="lock_confirm_password_hint">パスワードを確認</string>
+    <string name="dialog_password_incorrect">パスワードが間違っています！</string>
+
+    <!-- Image Preview -->
+    <string name="image_preview_save_developing">保存機能は開発中です</string>
+    <string name="image_preview_load_failed">画像の読み込みに失敗しました</string>
+    <string name="image_preview_unsupported_type">サポートされていないファイル形式</string>
+    <string name="image_preview_pager_indicator">%1$d/%2$d</string>
+
+    <!-- File Selection -->
+    <string name="choose_file_selected_count">%1$d 選択中</string>
+    <string name="choose_file_delete_confirm_title">確認</string>
+    <string name="choose_file_delete_confirm_message">これら %1$d 個のファイルを削除してもよろしいですか？この操作は元に戻せません。</string>
+    <string name="choose_file_delete_confirm_cancel">キャンセル</string>
+    <string name="choose_file_delete_confirm_ok">OK</string>
+    <string name="choose_file_delete_single_confirm_message">%1$s を削除してもよろしいですか？この操作は元に戻せません。</string>
+    <string name="choose_file_title_selected_count">%1$d 選択中</string>
+    <string name="choose_file_delete">削除</string>
+    <string name="choose_file_share">共有</string>
+
+    <!-- Settings Page -->
+    <string name="setting_feedback_email">1286041359@qq.com</string>
+    <string name="setting_google_play_url">https://play.google.com/store/apps/details?id=%1$s</string>
+    <string name="setting_privacy_policy_url">https://www.baidu.com</string>
+    <string name="setting_user_agreement_url">https://www.baidu.com</string>
+    <string name="setting_title">設定</string>
+    <string name="setting_floating_window_enable">ロック画面を表示</string>
+    <string name="setting_language">言語</string>
+    <string name="setting_night_mode">ダークモード</string>
+    <string name="setting_feedback">フィードバック</string>
+    <string name="setting_rate_us">評価する</string>
+    <string name="setting_privacy_policy">プライバシーポリシー</string>
+    <string name="setting_terms_of_service">利用規約</string>
+    <string name="setting_lang_tip">言語を選択してください。後で設定で変更できます。</string>
+
+    <!-- Success Page -->
+    <string name="success_import_pdf_title">PDFをインポート</string>
+    <string name="success_import_pdf_desc">システムフォルダからPDFをインポートして表示</string>
+    <string name="success_import_pdf_btn">今すぐインポート</string>
+    <string name="success_scan_pdf_title">PDFをスキャン</string>
+    <string name="success_scan_pdf_desc">カメラで画像をスキャンしてPDFを作成</string>
+    <string name="success_scan_pdf_btn">今すぐスキャン</string>
+    <string name="success_lock_pdf_title">PDFをロック</string>
+    <string name="success_lock_pdf_desc">PDFファイルにパスワードを追加</string>
+    <string name="success_lock_pdf_btn">今すぐロック</string>
+    <string name="success_unlock_pdf_title">PDFのロック解除</string>
+    <string name="success_unlock_pdf_desc">暗号化されたPDFのロックを解除</string>
+    <string name="success_unlock_pdf_btn">今すぐ表示</string>
+    <string name="success_clean_title">ファイルクリーン</string>
+    <string name="success_clean_desc">システムの不要ファイルをクリーン</string>
+    <string name="success_clean_btn">今すぐクリーン</string>
+    <string name="success_complete">完了</string>
+    <string name="success_function_file_antivirus">ファイルアンチウイルス</string>
+    <string name="success_function_file_antivirus_desc">ファイルをウイルスから保護</string>
+    <string name="success_function_scan_now">今すぐスキャン</string>
+
+    <!-- Permissions -->
+    <string name="permission_storage_denied">権限の取得に失敗しました。システム設定でファイル権限を手動で有効にしてください。</string>
+    <string name="permission_dialog_later">後で</string>
+    <string name="permission_dialog_allow_all_files">すべてのファイルへのアクセスを許可</string>
+    <string name="permission_dialog_needed">権限が必要です</string>
+    <string name="permission_dialog_allow_access">アクセスを許可</string>
+    <string name="permission_dialog_allow_access_desc">PDF Viewerにすべてのファイルへのアクセスを許可</string>
+    <string name="permission_dialog_detail">利便性のため、アプリにすべてのファイルへのアクセスを許可してください。整理するドキュメント情報は現在のデバイスでのみ使用されます</string>
+    <string name="permission_dialog_description">ファイルの読み取りと編集のため、<font color="#fc4949">PDF Viewer</font>にすべてのファイルへのアクセスを許可してください</string>
+    <string name="permission_dialog_allow">許可</string>
+    <string name="permission_access_message">PDF Viewerがスムーズに動作するには、ファイルへのアクセスが必要です。すべての機能を利用するには、アクセスを許可してください。</string>
+    <string name="permission_access_message_html"><font color="#fc4949">PDF Viewer</font>がスムーズに動作するには、ファイルへのアクセスが必要です。すべての機能を利用するには、アクセスを許可してください。</string>
+    <string name="permission_continue">続行</string>
+    <string name="permission_tips">ヒント</string>
+    <string name="permission_dialog_confirm">確認</string>
+    <string name="permission_dialog_noti_content">最新情報をお届けしたいと考えています。通知を有効にして、重要なリマインダーとタイムリーなアラートを直接受信してください。</string>
+    <string name="permission_holder_message">ファイルアクセスを許可して、アプリ内でPDFを直接表示・管理できるようにしてください。</string>
+    
+    <!-- Exit Prompt -->
+    <string name="exit_press_again">もう一度押すと終了します</string>
+
+    <!-- File Size Units -->
+    <string name="file_size_b">B</string>
+    <string name="file_size_kb">KB</string>
+    <string name="file_size_mb">MB</string>
+    <string name="file_size_gb">GB</string>
+    <string name="file_size_tb">TB</string>
+
+    <!-- Search -->
+    <string name="search_title">検索</string>
+    <string name="search_hint">検索...</string>
+
+    <!-- PDF Lock -->
+    <string name="pdf_lock_title">PDFをロック</string>
+
+    <!-- Empty State -->
+    <string name="empty_data">データがありません</string>
+
+    <!-- File Details -->
+    <string name="file_detail_title">詳細</string>
+    <string name="file_detail_format">ファイル形式</string>
+    <string name="file_detail_path">保存パス</string>
+    <string name="file_detail_last_modified">最終更新日時</string>
+
+    <!-- File Rename -->
+    <string name="file_rename_title">名前の変更</string>
+    <string name="file_rename_cancel">キャンセル</string>
+    <string name="file_rename_ok">OK</string>
+
+    <!-- Other -->
+    <string name="unknown_file_name">不明.pdf</string>
+    <string name="error_activity_result_launcher">ActivityResultLauncherが登録されていないか、すでに破棄されています</string>
+    <string name="toast_get_permission_failed">権限の取得に失敗しました。システム設定でファイル権限を手動で有効にしてください。</string>
+    <string name="pdf_move_success">PDFがアプリのプライベートディレクトリに移動されました:</string>
+    <string name="pdf_move_failed">PDFの移動に失敗しました、まだこちらにあります:</string>
+    <string name="print_job_name">ドキュメント印刷ジョブ %1$s</string>
+    <string name="error_writing_print_content">印刷内容の書き込み中にエラーが発生しました</string>
+    <string name="toast_invalid_url">無効なURL</string>
+    <string name="splash_screen_slogan">ドキュメントを管理。仕事を掌握。</string>
+    <string name="loading_text">読み込み中...</string>
+    <string name="default_file_path">/storage/emulated/0/xxx/storage/emulated/0/xxx/storage/emulated/0/xxx</string>
+
+    <!-- Clean Model Type Titles -->
+    <string name="clean_type_junk_files">不要ファイル</string>
+    <string name="clean_type_obsolete_apk">古いAPK</string>
+    <string name="clean_type_temp_files">一時ファイル</string>
+    <string name="clean_type_log_files">ログファイル</string>
+
+    <!-- Sort Options -->
+    <string name="sort_modified_time">更新日時</string>
+    <string name="sort_modified_time_newest">(新しい順)</string>
+    <string name="sort_modified_time_oldest">(古い順)</string>
+    <string name="sort_name">名前</string>
+    <string name="sort_name_asc">(A〜Z)</string>
+    <string name="sort_name_desc">(Z〜A)</string>
+    <string name="sort_file_size">ファイルサイズ</string>
+    <string name="sort_file_size_largest">(大きい順)</string>
+    <string name="sort_file_size_smallest">(小さい順)</string>
+
+    <!-- Language Names -->
+    <string name="chinese_simplified">中国語 (簡体字)</string>
+    <string name="english">英語</string>
+    <string name="chinese_traditional">中国語 (繁体字)</string>
+    <string name="language_russia">ロシア語</string>
+    <string name="language_portuguese_brazil">ポルトガル語 (ブラジル)</string>
+    <string name="language_vietnamese">ベトナム語</string>
+    <string name="language_thai">タイ語</string>
+    <string name="language_indonesian">インドネシア語</string>
+    <string name="language_hindi">ヒンディー語</string>
+    <string name="language_spanish">スペイン語</string>
+    <string name="language_german">ドイツ語</string>
+    <string name="language_french">フランス語</string>
+    <string name="language_korean">韓国語</string>
+    <string name="language_japanese">日本語</string>
+    <string name="language_button_default">インストール</string>
+    <string name="language_button_selected">開く</string>
+
+    <string name="page_permission_file_1">ようこそ</string>
+    <string name="page_permission_file_2">アクセス許可</string>
+    <string name="dialog_pdf_default_launch_content">読み込み速度を向上させるために <font color="#fc4949">PDF Viewer</font> をデフォルトのPDFリーダーとして設定してください。</string>
+    
+    <string name="guide_scan_text_1">PDFにスキャン</string>
+    <string name="guide_scan_text_2">スキャン機能を使用するにはこのボタンをクリック</string>
+    <string name="guide_scan_text_3">今すぐ試す</string>
+    
+    <!-- Notification Tool Strings -->
+    <string name="notification_tool_title">PDFツール</string>
+    <string name="notification_tool_text">クイックアクセスツール</string>
+    <string name="notification_btn_doc">文書</string>
+    <string name="notification_btn_scan">スキャン</string>
+    <string name="notification_btn_clean">クリーン</string>
+
+    <!-- PDF Default Launcher -->
+    <string name="choose_default_pdf_reader">デフォルトのPDFリーダーを選択</string>
+    <string name="pdf_default_just_once">今回のみ</string>
+    <string name="pdf_default_always">常に</string>
+    
+    <!-- Store Score Dialog -->
+    <string name="store_score_title">PDF Viewerをご利用いただきありがとうございます</string>
+    <string name="store_score_desc">評価していただけると嬉しいです。</string>
+    <string name="store_score_button">評価する</string>
+    <string name="store_score_feedback_thanks">フィードバックありがとうございます！</string>
+    <string name="store_score_badge">最高の評価をお願いします</string>
+    
+    <!-- Guide Pages -->
+    <string name="guide_page1_title">オールインワン文書リーダー</string>
+    <string name="guide_page1_desc">いつでもどこでも簡単にすべてのファイルにアクセス、整理、管理できます。</string>
+    <string name="guide_page2_title">便利な文書スキャナー</string>
+    <string name="guide_page2_desc">すべての重要な文書を簡単にスキャンできます。</string>
+    <string name="guide_page3_title">クイックファイルクリーンアップとアンチウイルス</string>
+    <string name="guide_page3_desc">不要ファイルを削除し、セキュリティとパフォーマンスを向上させます。</string>
+    <string name="guide_page4_title">いつでも画像やスキャンをPDFに変換</string>
+    <string name="guide_page4_desc">どこでも画像をPDFに変換したり、直接スキャンしてPDFを作成できます。</string>
+    <string name="guide_btn_next">次へ</string>
+    <string name="current_language">現在の言語</string>
+    <string name="all_language">すべての言語</string>
+
+    <!-- Splash screen loading texts -->
+    <string name="splash_initialize">初期化中...</string>
+    <string name="splash_load_resources">リソースを読み込み中...</string>
+    <string name="splash_load_files">ファイルを読み込み中...</string>
+
+    <!-- Language setting button -->
+    <string name="language_btn_done">完了</string>
+    
+    <!-- 言語選択ダイアログ -->
+    <string name="language_skip_title">スキップを確認</string>
+    <string name="language_skip_message">【%1$s】をデフォルト言語として続行します。\n\n次へをタップして続行します。</string>
+    <string name="language_skip_next">次へ</string>
+    <string name="language_default">デフォルト言語</string>
+    
+    <!-- ガイドスキップダイアログ -->
+    <string name="guide_skip_message">ガイドをスキップしてメインインターフェースに直接進みます。設定でいつでも機能紹介をさらに見ることができます。\n\n次へをタップして続行します。</string>
+    
+    <!-- Guide Click Text -->
+    <string name="guide_doc_click_text">今すぐファイルを読む</string>
+    
+    <!-- PDF Guide Text -->
+    <string name="pdf_guide_annotation_title">豊富な注釈ツール</string>
+    <string name="pdf_guide_annotation_desc">テキストを選択した後、様々な注釈ツールを使用できます：\nコピー、ハイライト、下線、取り消し線</string>
+    <string name="pdf_guide_btn_next">分かりました</string>
+    <string name="pdf_guide_btn_continue">続行</string>
+    <string name="pdf_guide_btn_more">詳細</string>
+    
+    <!-- Exit App Dialog -->
+    <string name="exit_app_dialog_title">アプリを終了してもよろしいですか？</string>
+    <string name="exit_app_dialog_positive">終了を確認</string>
+    <string name="exit_app_dialog_negative">キャンセル</string>
+    
+    <!-- App Shortcuts -->
+    <string name="shortcut_uninstall_short">アンインストール</string>
+    <string name="shortcut_uninstall_title">アプリをアンインストールすると、保存されたドキュメントや最近のファイルが失われる可能性があります。続行してもよろしいですか？</string>
+    <string name="shortcut_uninstall_title_highlight">保存されたドキュメントや最近のファイルの損失</string>
+    <string name="shortcut_uninstall_content">もう一度アプリを起動して、理由をお聞かせください。</string>
+    <string name="shortcut_uninstall_btn_agree">まだアンインストールしない</string>
+    <string name="shortcut_uninstall_btn_still">それでもアンインストール</string>
+    <string name="shortcut_uninstall_title2">アプリの使用中に問題がありましたか？</string>
+    <string name="shortcut_uninstall_option1">機能が動作しない</string>
+    <string name="shortcut_uninstall_option2">このアプリはもう必要ない</string>
+    <string name="shortcut_uninstall_option3">広告が多すぎる</string>
+    <string name="shortcut_uninstall_option4">通知が多すぎる</string>
+    <string name="shortcut_uninstall_option5">その他</string>
+    <string name="shortcut_uninstall_edit_tip">問題をより迅速に特定して解決できるよう、詳細をお聞かせください…</string>
+    <string name="shortcut_uninstall_btn_cancel">キャンセル</string>
+    <string name="shortcut_uninstall_btn_uninstall">アンインストール</string>
+
+    <!-- PDF Operations -->
+    <string name="pdf_encrypt_failed">PDF暗号化に失敗しました</string>
+    <string name="pdf_decrypt_failed">PDF復号化に失敗しました</string>
+    <string name="pdf_process_failed">PDF処理に失敗しました</string>
+    <string name="external_file_no_encryption">外部ファイルは暗号化/復号化をサポートしていません</string>
+    <string name="added_to_favorites">お気に入りに追加されました</string>
+    <string name="removed_from_favorites">お気に入りから削除されました</string>
+    <string name="already_first_page">すでに最初のページです</string>
+    <string name="already_last_page">すでに最後のページです</string>
+    <string name="saving_pdf">PDFを保存中...</string>
+    <string name="save_as_copy_exiting">コピーの保存が成功しました、終了しています...</string>
+    <string name="incremental_save_exiting">変更の保存が成功しました、終了しています...</string>
+    <string name="save_success_exiting">保存成功、終了しています...</string>
+    <string name="incremental_save_success">増分保存成功</string>
+    <string name="save_success">保存成功</string>
+    <string name="save_failed">保存失敗: %1$s</string>
+    
+    <!-- Text Selection and Annotation -->
+    <string name="annotation_highlight">ハイライト</string>
+    <string name="annotation_underline">下線</string>
+    <string name="annotation_strikethrough">取り消し線</string>
+    <string name="annotation_added">%1$s注釈を追加しました</string>
+    <string name="annotation_add_failed">%1$s注釈の追加に失敗しました</string>
+    <string name="annotation_add_error">注釈の追加に失敗しました: %1$s</string>
+    <string name="annotation_no_page_info">注釈を追加できません: ページ情報が不足しています</string>
+    <string name="pdf_text_label">PDFテキスト</string>
+    <string name="text_copied">コピーされました</string>
+    <string name="copy_failed">コピーに失敗しました</string>
+    <string name="annotation_clear_no_page">注釈をクリアできません: ページ情報が不足しています</string>
+    <string name="annotations_cleared">%1$d件の注釈をクリアしました</string>
+    <string name="no_annotations_on_page">現在のページに注釈はありません</string>
+    <string name="clear_annotations_failed">注釈のクリアに失敗しました: %1$s</string>
+
+    <!-- Search -->
+    <string name="action_search">検索</string>
+
+    <!-- PDF Merge -->
+    <string name="tool_merge_pdf">PDF結合</string>
+    <string name="merge_button_text_selected">%1$d個PDFを結合</string>
+    <string name="merge_button_text_default">最低2個PDFを選択</string>
+    <string name="merge_pdf_title">PDF結合</string>
+    <string name="split_pdf_title">PDF分割</string>
+    <string name="split_button_text_selected">%1$d個PDFを分割</string>
+    <string name="split_button_text_default">最低1個PDFを選択</string>
+
+    <!-- PDF Page Grid -->
+    <string name="pdf_page_grid_merge_title">結合するページを選択</string>
+    <string name="pdf_page_grid_split_title">分割するページを選択</string>
+    <string name="merge_pages_button_text">%1$dページを結合</string>
+    <string name="split_pages_button_text">%1$dページを分割</string>
+    <string name="merge_button_default_text">結合するページを選択</string>
+    <string name="split_button_default_text">分割するページを選択</string>
+    <string name="select_all_pages">すべて選択</string>
+    <string name="deselect_all_pages">すべて選択解除</string>
+    <string name="pages_selected_info">%2$dページ中%1$dページを選択</string>
+    <string name="no_pdf_pages_found">PDFページが見つかりません</string>
+
+    <!-- floating dialog-->
+    <string name="floatng_dialog_allow">許可</string>
+    <string name="floatng_dialog_appear">他のアプリの上に表示</string>
+    <string name="floatng_dialog_content">フローティングミニリーダーを有効にして、他のアプリを使用している間もドキュメントをすばやく参照できます。</string>
+    <string name="floatng_dialog_required">(必須)</string>
+
+    <!-- Floating Window -->
+    <string name="floating_window_title">最近開いたファイル</string>
+    <string name="floating_window_empty">最近開いたファイルがありません</string>
+    <string name="floating_window_resize_handle">ウィンドウサイズを変更</string>
+    <string name="floating_window_permission_required">フローティングウィンドウの権限が必要です</string>
+    <string name="floating_window_show_failed">フローティングウィンドウの表示に失敗しました: %1$s</string>
+    <string name="floating_window_open_file_failed">ファイルのオープンに失敗しました: %1$s</string>
+
+    <!-- Earthquake -->
+    <string name="earthquake_quick_alert">地震速報</string>
+    <string name="earthquake_focal_depth">震源深度</string>
+    <string name="earthquake_tsunami_threat">津波の脅威</string>
+    <string name="earthquake_usgs_warning">USGS警告</string>
+    <string name="earthquake_origin_time">発震時刻</string>
+    <string name="earthquake_magnitude_type">マグニチュードタイプ</string>
+    <string name="earthquake_data_status">データステータス</string>
+    <string name="earthquake_data_km">キロメートル</string>
+    
+    <!-- Notification - Override notification module strings -->
+    <string name="noti_earthquake_click_text">- 影響範囲を確認……</string>
+    
+    <string name="lock_screen_slide_to_unlock">スライドしてロック解除</string>
+    <string name="lock_screen_scan_pdf">PDFをスキャン</string>
+
+    <!-- Introduction -->
+    <string name="introduction_title"><![CDATA[無料 <font color="#FB4949">PDFリーダー</font> &amp; エディター &amp; コンバーター]]></string>
+    <string name="introduction_title_2"><![CDATA[<font color="#FB4949">PDF Viewer</font> をデフォルトのホームアプリとして選択]]></string>
+    <string name="introduction_title_3"><![CDATA[<font color="#FB4949">2つの簡単な</font>ステップで開始：]]></string>
+    <string name="introduction_step1_text">下の「続行」をタップ</string>
+    <string name="introduction_step2_text">「PDF Viewer」をタップしてデフォルトのホームアプリに設定</string>
+    <string name="introduction_btn_get_started">始める</string>
+    <string name="introduction_btn_continue">続行</string>
+    <string name="introduction_not_now">後で</string>
+    <string name="introduction_step1_title">ステップ1：</string>
+    <string name="introduction_step2_title">ステップ2：</string>
+    <string name="introduction_privacy_policy">プライバシーポリシー</string>
+    <string name="introduction_terms_of_service">利用規約</string>
+
+    <!-- Custom Dialog -->
+    <string name="custom_dialog_description">右にスワイプしてファイルを表示し、ページに注釈を付け、効率的に作業する</string>
+
+    <!-- Default App Dialog -->
+    <string name="default_app_dialog_title"><![CDATA[<font color="#FB4949">PDF</font> ビューアーをデフォルトに設定]]></string>
+    <string name="default_app_dialog_desc1">統合ドキュメントスキャナー、PDFコンバーター、ファイルビューアー</string>
+    <string name="default_app_dialog_desc2">ライブ壁紙、ストレージクリーナー、精密天気。</string>
+    <string name="default_app_dialog_btn_try">今すぐ試す</string>
+
+    <!-- About -->
+    <string name="about_section_title">私たちについて</string>
+    <string name="about_content">PDF Reader &amp; PDF Viewerでは、統合された滑らかで効率的なPDF管理体験を提供することに取り組んでいます。ドキュメントの表示、テキストのハイライト、ファイルの即座のスキャン、画像のPDF変換、またはストレージスペースのインテリジェントなクリーニングなど、すべてのニーズに対する思慮深いエンドツーエンドのソリューションを提供します。私たちのチームはユーザーを最優先に考え、強力な機能とクリーンで直感的なインターフェースを組み合わせることで、いつでもどこでも生産的で整理された状態を保つことができます。お客様のフィードバックを継続的に聞き、改善と革新を続けています。すべての人にとってPDFの取り扱いをよりシンプルでスマートにします。</string>
+    <string name="about_privacy_policy">プライバシーポリシー</string>
+    <string name="about_uninstall_instructions">アンインストール手順</string>
+
+    <!-- Language Setting -->
+    <string name="language_setting_loading">設定中...</string>
+</resources> 

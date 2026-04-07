@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="cancel">ยกเลิก</string>
+	<string name="cannot_open_document">ไม่สามารถเปิดเอกสารได้</string>
+	<string name="cannot_open_document_Reason">ไม่สามารถเปิดเอกสารได้: %1$s</string>
+	<string name="dismiss">ปิด</string>
+	<string name="enter_password">ป้อนรหัสผ่าน</string>
+	<string name="no_further_occurrences_found">ไม่พบรายการที่ตรงกันเพิ่มเติม</string>
+	<string name="not_supported">ไม่รองรับ</string>
+	<string name="okay">ตกลง</string>
+	<string name="search">ค้นหา&#x2026;</string>
+	<string name="searching_">กำลังค้นหา&#x2026;</string>
+	<string name="text_not_found">ไม่พบข้อความ</string>
+
+	<!-- PDF相关字符串 -->
+	<string name="pdf_page_content_description">เนื้อหาหน้า PDF</string>
+	<string name="pdf_icon_description">ไอคอนเอกสาร PDF</string>
+	<string name="loading_pdf_page">กำลังโหลดหน้า PDF</string>
+	<string name="please_wait">กรุณารอสักครู่...</string>
+	
+	<!-- Toast messages -->
+	<string name="text_copied">คัดลอกข้อความแล้ว</string>
+	<string name="menu_display_failed">การแสดงเมนูล้มเหลว ข้อความถูกคัดลอกโดยอัตโนมัติ</string>
+	<string name="back_button_clicked">กดปุ่มย้อนกลับแล้ว</string>
+	<string name="search_button_clicked">กดปุ่มค้นหาแล้ว</string>
+	<string name="bookmark_added">เพิ่มบุ๊กมาร์กแล้ว</string>
+	<string name="bookmark_removed">ลบบุ๊กมาร์กแล้ว</string>
+	<string name="file_name_format">ไฟล์: %1$s</string>
+	<string name="unknown_file">ไฟล์ที่ไม่รู้จัก</string>
+	<string name="current_page_format">หน้าปัจจุบัน: %1$d/%2$d</string>
+	<string name="cannot_jump_to_page">ไม่สามารถข้ามไปหน้า %1$d ได้</string>
+	<string name="already_first_page">อยู่ที่หน้าแรกแล้ว</string>
+	<string name="already_last_page">อยู่ที่หน้าสุดท้ายแล้ว</string>
+	<string name="android_file_link_error">Android ไม่อนุญาตให้ติดตามลิงก์ file://: %1$s</string>
+	<string name="long_press_function_pending">ฟังก์ชันการกดค้างอยู่ในระหว่างการพัฒนา</string>
+	<string name="search_query_format">ค้นหา: \"%1$s\"</string>
+	<string name="search_result_found_format">พบ \"%1$s\" ในหน้า %2$d (ทั้งหมด %3$d รายการ)</string>
+	<string name="search_not_found_format">ไม่พบ \"%1$s\"</string>
+	<string name="search_result_format">%1$d / %2$d</string>
+	<string name="no_search_results">ไม่พบผลลัพธ์</string>
+	<string name="search_error">ข้อผิดพลาดในการค้นหา</string>
+	
+	<!-- PDF Save Options -->
+	<string name="file_size_unavailable">ข้อมูลขนาดไม่พร้อมใช้งาน</string>
+	<string name="file_size_reduced_format">ขนาดไฟล์ลดลง %1$.1f%%</string>
+	<string name="file_size_increased_format">ขนาดไฟล์เพิ่มขึ้น %1$.1f%%</string>
+	<string name="file_size_no_change">ขนาดไฟล์ไม่เปลี่ยนแปลง</string>
+	
+	<!-- Error messages -->
+	<string name="error_loading_page">ข้อผิดพลาดในการโหลดหน้า</string>
+	<string name="error_rendering_page">ข้อผิดพลาดในการเรนเดอร์หน้า</string>
+	<string name="error_rendering_patch">ข้อผิดพลาดในการเรนเดอร์แพทช์</string>
+	<string name="error_updating_page">ข้อผิดพลาดในการอัปเดตหน้า</string>
+	
+	<!-- Enum descriptions -->
+	<string name="action_previous">หน้าก่อนหน้า</string>
+	<string name="action_next">หน้าถัดไป</string>
+	<string name="action_jump">ข้าม</string>
+	<string name="action_first">หน้าแรก</string>
+	<string name="action_last">หน้าสุดท้าย</string>
+	<string name="category_page_navigation">การนำทางหน้า</string>
+	<string name="category_thumbnail">ภาพย่อ</string>
+	<string name="category_direction_toggle">สลับทิศทางการดู</string>
+	<string name="category_visibility">การควบคุมการมองเห็น</string>
+	<string name="direction_horizontal">แนวนอน</string>
+	<string name="direction_vertical">แนวตั้ง</string>
+	<string name="event_click">คลิก</string>
+	<string name="event_long_press">กดค้าง</string>
+	<string name="event_scroll">เลื่อน</string>
+	<string name="event_load">โหลด</string>
+	<string name="event_visibility_change">การเปลี่ยนแปลงการมองเห็น</string>
+	<string name="state_loading">กำลังโหลด</string>
+	<string name="state_loaded">โหลดแล้ว</string>
+	<string name="state_error">ข้อผิดพลาดในการโหลด</string>
+	<string name="state_current">หน้าปัจจุบัน</string>
+	<string name="state_normal">สถานะปกติ</string>
+	<string name="annotation_highlight">ไฮไลท์</string>
+	<string name="annotation_underline">ขีดเส้นใต้</string>
+	<string name="annotation_strikethrough">ขีดฆ่า</string>
+	<string name="annotation_unknown_type">ประเภทที่ไม่รู้จัก (%1$d)</string>
+	<string name="pdf_reader_v2">PDF Reader V2</string>
+	
+	<!-- Button labels -->
+	<string name="copy">คัดลอก</string>
+	<string name="clear">ล้าง</string>
+	
+	<!-- Loading messages -->
+	<string name="loading_pdf_document">กำลังโหลดเอกสาร PDF</string>
+	<string name="preparing_reader">โปรดรอสักครู่ กำลังเตรียมตัวอ่าน...</string>
+	
+	<!-- Search related -->
+	<string name="search_pdf_content">ค้นหาเนื้อหา PDF...</string>
+	<string name="pdf_search">ค้นหา PDF</string>
+	<string name="search_keywords">ป้อนคำหลัก...</string>
+	<string name="searching">กำลังค้นหา...</string>
+	<string name="search_progress_format">กำลังค้นหา... %1$d/%2$d</string>
+	<string name="search_results_found_format">พบ %1$d ผลลัพธ์</string>
+	<string name="search_no_results_format">ไม่พบผลลัพธ์สำหรับ \"%1$s\"</string>
+	<string name="search_error_message_format">ข้อผิดพลาดในการค้นหา: %1$s</string>
+	<string name="start_search_hint">ป้อนคำหลักเพื่อเริ่มค้นหา</string>
+	<string name="match_case">จับคู่ตัวเล็ก-ใหญ่</string>
+	<string name="whole_words">ทั้งคำ</string>
+	
+	<!-- UI labels -->
+	<string name="hide_thumbnails">ซ่อนภาพย่อ</string>
+	<string name="document_navigation">การนำทางเอกสาร</string>
+	<string name="page_number_format">หน้า %1$d</string>
+	<string name="search_context_text">ข้อความบริบทของผลการค้นหา...</string>
+	<string name="matched_keyword">คำหลักที่ตรงกัน</string>
+	<string name="zoom_level">100%</string>
+</resources>

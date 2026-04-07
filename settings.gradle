@@ -1,0 +1,45 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+        maven { url 'https://artifact.bytedance.com/repository/pangle/' }
+        maven { url 'https://repo.itextsupport.com/android' }
+        maven { url 'https://repo.dgtverse.cn/repository/maven-public/' }
+        maven { url 'https://dl-maven-android.mintegral.com/repository/mbridge_android_sdk_oversea' }
+        maven { url 'https://android-sdk.is.com/' }
+        maven { url 'https://jfrog.anythinktech.com/artifactory/overseas_sdk' }
+        maven { url 'https://artifacts.applovin.com/android' }
+        maven {
+            url 'https://maven.pkg.github.com/toukaRemax/remax_sdk'
+            credentials {
+                def props = new Properties()
+                def candidateFiles = [
+                    new File(rootDir, "build.config.properties"),
+                    new File(rootDir, "../PDF_Launcher/build.config.properties"),
+                ]
+                def configFile = candidateFiles.find { it.exists() }
+                if (configFile != null) {
+                    configFile.withInputStream { props.load(it) }
+                }
+                username = props.getProperty("github.user") ?: System.getenv("GITHUB_ACTOR") ?: ""
+                password = props.getProperty("github.token") ?: System.getenv("GITHUB_TOKEN") ?: System.getenv("GH_PAT_FOR_SCRIPTS") ?: ""
+            }
+        }
+    }
+}
+
+rootProject.name = "lcb_pdf"
+
+include(":pdf")
+include(":metrics")
+include(":mupdf")

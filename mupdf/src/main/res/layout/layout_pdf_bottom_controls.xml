@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- PDF底部控制栏模块 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/pdfControls"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:orientation="horizontal"
+    android:background="@color/card_background"
+    android:elevation="2dp"
+    android:gravity="center_vertical"
+    android:paddingHorizontal="16dp">
+
+    <!-- 上一页按钮 -->
+    <ImageButton
+        android:id="@+id/prevPageBtn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/control_button_background"
+        android:src="@drawable/ic_arrow_left"
+        android:scaleType="centerInside"
+        app:tint="@color/text_secondary"
+        android:contentDescription="@string/previous" />
+
+    <!-- 页码导航区域 -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginHorizontal="16dp"
+        android:background="@drawable/page_area_background">
+
+        <!-- 当前页码输入框 -->
+        <EditText
+            android:id="@+id/pageInput"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="36dp"
+            android:text="1"
+            android:textSize="14sp"
+            android:textColor="@color/text_primary"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@android:color/transparent"
+            android:inputType="number"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:imeOptions="actionDone"
+            android:singleLine="true" />
+
+        <!-- 分隔符 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" / "
+            android:textSize="14sp"
+            android:textColor="@color/text_secondary"
+            android:layout_marginHorizontal="8dp" />
+
+        <!-- 总页数 -->
+        <TextView
+            android:id="@+id/pageTotal"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="10"
+            android:textSize="14sp"
+            android:textColor="@color/text_secondary"
+            android:minWidth="30dp"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <!-- 下一页按钮 -->
+    <ImageButton
+        android:id="@+id/nextPageBtn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/control_button_background"
+        android:src="@drawable/ic_arrow_right"
+        android:scaleType="centerInside"
+        app:tint="@color/text_secondary"
+        android:contentDescription="@string/next" />
+
+    <!-- 控制间隔 -->
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.2" />
+
+    <!-- 缩略图切换按钮 -->
+    <ImageButton
+        android:id="@+id/thumbnailToggle"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/thumbnail_toggle_button_background"
+        android:src="@drawable/ic_grid_thumbnails"
+        android:scaleType="centerInside"
+        android:contentDescription="@string/toggle_thumbnails"
+        android:layout_marginEnd="8dp" />
+
+    <!-- 方向切换按钮 -->
+    <ImageButton
+        android:id="@+id/directionToggleBtn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/control_button_background"
+        android:src="@drawable/ic_direction_horizontal"
+        android:scaleType="centerInside"
+        app:tint="@color/text_secondary"
+        android:contentDescription="@string/toggle_view_direction" />
+
+</LinearLayout>

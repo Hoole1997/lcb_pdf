@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bottom_sheet_background">
+
+    <!-- 顶部拖拽指示器 -->
+    <View
+        android:layout_width="32dp"
+        android:layout_height="4dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bottom_sheet_handle" />
+
+    <!-- 搜索标题 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:text="@string/pdf_search"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- 搜索输入区域 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="horizontal"
+        android:background="@drawable/search_input_background"
+        android:padding="8dp"
+        android:gravity="center_vertical">
+
+        <!-- 搜索图标 -->
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/ic_search"
+            android:tint="@color/iconColorSecondary" />
+
+        <!-- 搜索输入框 -->
+        <EditText
+            android:id="@+id/et_search_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="12dp"
+            android:background="@null"
+            android:hint="@string/search_keywords"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textColor="@color/textColorPrimary"
+            android:textColorHint="@color/textColorSecondary"
+            android:textSize="16sp" />
+
+        <!-- 清除按钮 -->
+        <ImageView
+            android:id="@+id/iv_clear"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/ic_clear"
+            android:tint="@color/iconColorSecondary"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:padding="4dp"
+            android:visibility="gone" />
+
+        <!-- 搜索按钮 -->
+        <ImageView
+            android:id="@+id/iv_search"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginEnd="4dp"
+            android:src="@drawable/ic_search"
+            android:tint="@color/colorPrimary"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:padding="6dp" />
+
+    </LinearLayout>
+
+    <!-- 搜索状态区域 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="8dp">
+
+        <!-- 进度条 -->
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:visibility="gone" />
+
+        <!-- 状态文本 -->
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/searching"
+            android:textColor="@color/textColorSecondary"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <!-- 分割线 -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/dividerColor"
+        android:layout_marginHorizontal="16dp" />
+
+    <!-- 搜索结果区域 -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:minHeight="150dp">
+
+        <!-- 搜索结果列表 -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_search_results"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="8dp"
+            android:paddingBottom="16dp"
+            android:clipToPadding="false"
+            android:visibility="gone" />
+
+        <!-- 空视图 -->
+        <TextView
+            android:id="@+id/tv_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/start_search_hint"
+            android:textColor="@color/textColorSecondary"
+            android:textSize="16sp"
+            android:drawableTop="@drawable/ic_search_large"
+            android:drawableTint="@color/iconColorSecondary"
+            android:drawablePadding="16dp"
+            android:gravity="center" />
+
+    </FrameLayout>
+
+</LinearLayout>

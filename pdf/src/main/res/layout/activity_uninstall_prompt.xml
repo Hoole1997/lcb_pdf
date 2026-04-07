@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:lineSpacingExtra="3dp"
+                android:text="@string/shortcut_uninstall_title"
+                android:textColor="@color/uninstall_prompt_text"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
+                android:src="@mipmap/ic_short_page_bg" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
+                android:gravity="center_horizontal"
+                android:lineSpacingExtra="3dp"
+                android:text="@string/shortcut_uninstall_content"
+                android:textColor="@color/uninstall_prompt_text"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tvAgree"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bg_button_primary"
+                android:gravity="center"
+                android:text="@string/shortcut_uninstall_btn_agree"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvStill"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                android:text="@string/shortcut_uninstall_btn_still"
+                android:textColor="#909298"
+                android:textSize="16sp" />
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <FrameLayout
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/ad_Container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

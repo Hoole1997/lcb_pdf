@@ -1,0 +1,22 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    
+    <!-- 垂直滑动图标 - 上下箭头表示竖向滑动 -->
+    <!-- 上下双向箭头 - 完美居中 -->
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M12,5L9,8L10.5,8L10.5,16L9,16L12,19L15,16L13.5,16L13.5,8L15,8L12,5Z"/>
+    
+    <!-- 左侧装饰线 -->
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M7,2L7,22L5,22L5,2L7,2Z"/>
+    
+    <!-- 右侧装饰线 -->
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M19,2L19,22L17,22L17,2L19,2Z"/>
+</vector>

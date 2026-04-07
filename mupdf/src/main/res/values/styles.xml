@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- 搜索对话框动画样式 -->
+    <style name="SearchDialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_in_top</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_top</item>
+    </style>
+    
+    <!-- 对话框背景样式 -->
+    <style name="DialogBackground">
+        <item name="android:background">@drawable/dialog_background</item>
+    </style>
+    
+</resources>

@@ -1,0 +1,29 @@
+{
+    "project_info": {
+        "project_number": "863368972098",
+        "project_id": "pdf-reader-pdf-viewer-75fcb",
+        "storage_bucket": "pdf-reader-pdf-viewer-75fcb.firebasestorage.app"
+    },
+    "client": [
+        {
+            "client_info": {
+                "mobilesdk_app_id": "1:863368972098:android:392c4f34ec13d91d372adb",
+                "android_client_info": {
+                    "package_name": "com.pdf.reader.document.word.viewer.ppt.sheet.all.files"
+                }
+            },
+            "oauth_client": [],
+            "api_key": [
+                {
+                    "current_key": "AIzaSyAwn6ngxO3AZwAlLqdzU9dK81SN6kNjiuQ"
+                }
+            ],
+            "services": {
+                "appinvite_service": {
+                    "other_platform_oauth_client": []
+                }
+            }
+        }
+    ],
+    "configuration_version": "1"
+}

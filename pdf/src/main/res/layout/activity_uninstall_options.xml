@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <!-- 顶部标题栏 -->
+    <FrameLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="4dp"
+            android:src="@drawable/ic_arrow_left" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:gravity="center_horizontal"
+            android:text="@string/shortcut_uninstall_title2"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </FrameLayout>
+
+    <!-- 主要内容区域 -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:fadeScrollbars="true"
+        android:isScrollContainer="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/headerLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- 插图 -->
+            <ImageView
+                android:id="@+id/illustrationImage"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/ic_short_page2_bg" />
+
+            <!-- 选项区域 -->
+            <LinearLayout
+                android:id="@+id/optionsContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical">
+
+                <!-- 选项1 -->
+                <LinearLayout
+                    android:id="@+id/option1Layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:background="@drawable/bg_edit_text_border"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp">
+
+                    <TextView
+                        android:id="@+id/option1Text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/shortcut_uninstall_option1"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:drawableEnd="@drawable/ic_option_unchecked"
+                        android:drawablePadding="8dp" />
+
+                </LinearLayout>
+
+                <!-- 选项2 -->
+                <LinearLayout
+                    android:id="@+id/option2Layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_edit_text_border"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp">
+
+                    <TextView
+                        android:id="@+id/option2Text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/shortcut_uninstall_option2"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:drawableEnd="@drawable/ic_option_unchecked"
+                        android:drawablePadding="8dp" />
+
+                </LinearLayout>
+
+                <!-- 选项3 -->
+                <LinearLayout
+                    android:id="@+id/option3Layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_edit_text_border"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp">
+
+                    <TextView
+                        android:id="@+id/option3Text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/shortcut_uninstall_option3"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:drawableEnd="@drawable/ic_option_unchecked"
+                        android:drawablePadding="8dp" />
+
+                </LinearLayout>
+
+                <!-- 选项4 -->
+                <LinearLayout
+                    android:id="@+id/option4Layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_edit_text_border"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp">
+
+                    <TextView
+                        android:id="@+id/option4Text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/shortcut_uninstall_option4"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:drawableEnd="@drawable/ic_option_unchecked"
+                        android:drawablePadding="8dp" />
+
+                </LinearLayout>
+
+                <!-- 选项5 -->
+                <LinearLayout
+                    android:id="@+id/option5Layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_edit_text_border"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp">
+
+                    <TextView
+                        android:id="@+id/option5Text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/shortcut_uninstall_option5"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:drawableEnd="@drawable/ic_option_unchecked"
+                        android:drawablePadding="8dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- 文本输入区域 -->
+            <EditText
+                android:id="@+id/editTextDetails"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/bg_edit_text_border"
+                android:gravity="top|start"
+                android:hint="@string/shortcut_uninstall_edit_tip"
+                android:inputType="textMultiLine"
+                android:padding="16dp"
+                android:textColorHint="#909298"
+                android:textSize="14sp" />
+
+            <!-- 底部按钮区域 -->
+            <LinearLayout
+                android:id="@+id/bottomButtonsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="20dp"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <TextView
+                    android:id="@+id/btnCancel"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_button_secondary"
+                    android:gravity="center"
+                    android:text="@string/shortcut_uninstall_btn_cancel"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/btnUninstall"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_button_primary"
+                    android:gravity="center"
+                    android:text="@string/shortcut_uninstall_btn_uninstall"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <!-- 广告容器 -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

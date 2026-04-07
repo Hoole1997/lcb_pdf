@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- PDF缩略图栏模块 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/pdfThumbnails"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:orientation="vertical"
+    android:background="@color/card_background"
+    android:elevation="4dp"
+    android:visibility="gone">
+
+    <!-- 缩略图头部 - 对应HTML版本的thumbnails-header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="16dp"
+        android:background="@color/card_background">
+
+        <!-- 缩略图切换按钮 - 对应HTML版本的thumbnails-toggle -->
+        <LinearLayout
+            android:id="@+id/thumbnailsToggleBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@drawable/thumbnails_toggle_background"
+            android:paddingHorizontal="12dp"
+            android:layout_marginEnd="8dp"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/ic_chevron_down"
+                android:layout_marginEnd="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hide_thumbnails"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <!-- 其他操作按钮区域（预留） -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <!-- 关闭按钮 -->
+            <ImageButton
+                android:id="@+id/closeThumbnailBtn"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_close"
+                android:scaleType="centerInside"
+                app:tint="@color/text_secondary"
+                android:contentDescription="@string/close_thumbnails" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- 缩略图列表 -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/thumbnailRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:clipToPadding="false"
+        android:overScrollMode="never"
+        android:scrollbars="none" />
+
+</LinearLayout>

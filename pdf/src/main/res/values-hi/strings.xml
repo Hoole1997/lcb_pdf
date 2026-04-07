@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Name -->
+    <!-- Main Page -->
+    <string name="main_home_sort_title">क्रमबद्ध करें</string>
+    <string name="main_home_sort_modified">संशोधित समय</string>
+    <string name="main_home_sort_modified_desc">(नवीनतम पहले)</string>
+    <string name="main_home_sort_modified_asc">(पुराने पहले)</string>
+    <string name="main_home_sort_name">नाम</string>
+    <string name="main_home_sort_name_asc">(A से Z)</string>
+    <string name="main_home_sort_name_desc">(Z से A)</string>
+    <string name="main_home_sort_size">फ़ाइल का आकार</string>
+    <string name="main_home_sort_size_desc">(बड़े पहले)</string>
+    <string name="main_home_sort_size_asc">(छोटे पहले)</string>
+    <string name="fragment_home_title">PDF व्यूअर</string>
+    <string name="fragment_home_search_hint">खोजें...</string>
+    <string name="main_home_menu_sort">क्रमबद्ध करें</string>
+    <string name="main_home_menu_choose">चुनें</string>
+    <string name="main_tab_pdf">PDF</string>
+    <string name="main_tab_word">WORD</string>
+    <string name="main_tab_excel">EXCEL</string>
+    <string name="main_tab_ppt">PPT</string>
+    <string name="main_tab_txt">TXT</string>
+    <string name="main_tab_image">चित्र</string>
+    <string name="main_tab_all">सभी</string>
+    <string name="main_tab_recent">हाल ही में</string>
+    <string name="main_tab_clean">सफाई</string>
+    <string name="main_tab_tools">उपकरण</string>
+    <string name="main_tab_file">फ़ाइलें</string>
+    <string name="main_tab_favorite">पसंदीदा</string>
+
+    <!-- File Operations -->
+    <string name="file_not_found">फ़ाइल नहीं मिली</string>
+    <string name="file_name">फ़ाइल का नाम</string>
+    <string name="file_path">फ़ाइल का पथ</string>
+    <string name="file_size">फ़ाइल का आकार</string>
+    <string name="action_favorite">पसंदीदा</string>
+    <string name="action_share">साझा करें</string>
+    <string name="action_add_to_desktop">होम स्क्रीन पर जोड़ें</string>
+    <string name="action_rename">नाम बदलें</string>
+    <string name="action_details">विवरण</string>
+    <string name="action_delete">हटाएं</string>
+    <string name="action_set_password">पासवर्ड सेट करें</string>
+    <string name="action_cancel">रद्द करें</string>
+    <string name="action_ok">ठीक है</string>
+    <string name="action_skip">छोड़ें</string>
+    <string name="action_merge">मर्ज करें</string>
+    <string name="action_split">विभाजित करें</string>
+    <string name="pages_selected_format">%1$d चयनित</string>
+
+    <!-- Tools Page -->
+    <string name="tool_import_file">फ़ाइल आयात करें</string>
+    <string name="tool_scan_pdf">PDF स्कैन करें</string>
+    <string name="tool_lock_pdf">PDF लॉक करें</string>
+    <string name="tool_unlock_pdf">PDF अनलॉक करें</string>
+    <string name="tool_image_pdf">छवि से PDF</string>
+    <string name="tool_file_clean">फ़ाइल सफाई</string>
+    <string name="tool_print_pdf">PDF प्रिंट करें</string>
+    <string name="tool_percent">%1$d%%</string>
+    <string name="tool_clean_size_total"> / </string>
+    <string name="tool_clean_btn">सफाई</string>
+    <string name="tool_add_widget">विजेट जोड़ें</string>
+
+    <!-- Clean Function -->
+    <string name="clean_junk_files">अनावश्यक फ़ाइलें</string>
+    <string name="clean_junk_scan">जंक स्कैन</string>
+    <string name="clean_junk_title">जंक सफाई</string>
+    <string name="clean_junk_clean">सफाई</string>
+    <string name="clean_junk_cleaning">आपका डिवाइस साफ़ किया जा रहा है, कृपया प्रतीक्षा करें…</string>
+    <string name="clean_junk_clean_suc">साफ़ हो गया! %1$s</string>
+
+    <!--प्रक्रिया प्रबंधक-->
+    <string name="process_manager_title">प्रक्रिया प्रबंधक</string>
+    <string name="process_manager_title_short">प्रक्रिया</string>
+    <string name="process_manager_desc">बैकग्राउंड में चल रही प्रक्रियाओं को प्रबंधित करें</string>
+    <string name="process_manager_scan">अभी स्कैन करें</string>
+    <string name="process_manager_scan_desc">चल रही प्रक्रियाओं को स्कैन किया जा रहा है</string>
+    <string name="process_manager_suc_tip">बैकग्राउंड में चल रहे %1$s एप्लिकेशन बंद किए गए</string>
+    <string name="process_manager_clean_now">अभी साफ़ करें</string>
+    <string name="process_manager_clean_tip">अपने फ़ोन पर जंक स्कैन करें और साफ़ करें</string>
+    <string name="process_manager_clean_used">उपयोग में</string>
+    <string name="process_manager_clean_ba">बैकग्राउंड ऐप्स</string>
+    <string name="process_manager_clean_st">बंद करें</string>
+    <string name="process_manager_clean_done">पूर्ण</string>
+    
+    <string name="clean_obsolete_apk">पुरानी APK</string>
+    <string name="clean_temp_files">अस्थायी फ़ाइलें</string>
+    <string name="clean_log_files">लॉग फ़ाइलें</string>
+    <string name="clean_scanning">स्कैनिंग हो रही है</string>
+    <string name="clean_scanning_folder">स्कैनिंग: %1$s</string>
+    <string name="clean_button_text">%1$s साफ करें</string>
+    <string name="clean_button_scanning">स्कैनिंग हो रही है...</string>
+    <string name="clean_button_scanning_text">स्कैनिंग</string>
+
+    <!-- File Lock -->
+    <string name="lock_set_password">पासवर्ड सेट करें</string>
+    <string name="lock_set_password_desc">PDF को सुरक्षित करने के लिए पासवर्ड सेट करें</string>
+    <string name="lock_remove_password">लॉक हटाएं</string>
+    <string name="lock_remove_password_desc">यह PDF फ़ाइल अब पासवर्ड से सुरक्षित नहीं होगी</string>
+    <string name="lock_title_set_password">पासवर्ड सेट करें</string>
+    <string name="lock_password_hint">पासवर्ड दर्ज करें</string>
+    <string name="lock_confirm_password_hint">पासवर्ड की पुष्टि करें</string>
+    <string name="dialog_password_incorrect">गलत पासवर्ड!</string>
+
+    <!-- Image Preview -->
+    <string name="image_preview_save_developing">सहेजने की सुविधा विकास में है</string>
+    <string name="image_preview_load_failed">छवि लोड करने में विफल</string>
+    <string name="image_preview_unsupported_type">असमर्थित फ़ाइल प्रकार</string>
+    <string name="image_preview_pager_indicator">%1$d/%2$d</string>
+
+    <!-- File Selection -->
+    <string name="choose_file_selected_count">%1$d चयनित</string>
+    <string name="choose_file_delete_confirm_title">पुष्टि करें</string>
+    <string name="choose_file_delete_confirm_message">क्या आप वाकई इन %1$d फ़ाइलों को हटाना चाहते हैं? यह क्रिया पूर्ववत नहीं की जा सकती है।</string>
+    <string name="choose_file_delete_confirm_cancel">रद्द करें</string>
+    <string name="choose_file_delete_confirm_ok">ठीक है</string>
+    <string name="choose_file_delete_single_confirm_message">क्या आप वाकई %1$s को हटाना चाहते हैं? यह क्रिया पूर्ववत नहीं की जा सकती है।</string>
+    <string name="choose_file_title_selected_count">%1$d चयनित</string>
+    <string name="choose_file_delete">हटाएं</string>
+    <string name="choose_file_share">साझा करें</string>
+
+    <!-- Settings Page -->
+    <string name="setting_feedback_email">1286041359@qq.com</string>
+    <string name="setting_google_play_url">https://play.google.com/store/apps/details?id=%1$s</string>
+    <string name="setting_privacy_policy_url">https://www.baidu.com</string>
+    <string name="setting_user_agreement_url">https://www.baidu.com</string>
+    <string name="setting_title">सेटिंग</string>
+    <string name="setting_floating_window_enable">लॉक स्क्रीन दिखाएं</string>
+    <string name="setting_language">भाषा</string>
+    <string name="setting_night_mode">रात्रि मोड</string>
+    <string name="setting_feedback">प्रतिक्रिया</string>
+    <string name="setting_rate_us">हमें रेट करें</string>
+    <string name="setting_privacy_policy">गोपनीयता नीति</string>
+    <string name="setting_terms_of_service">सेवा की शर्तें</string>
+    <string name="setting_lang_tip">अपनी भाषा चुनें। आप इसे बाद में सेटिंग्स में बदल सकते हैं।</string>
+
+    <!-- Success Page -->
+    <string name="success_import_pdf_title">PDF आयात करें</string>
+    <string name="success_import_pdf_desc">सिस्टम फ़ोल्डर से PDF आयात करें और देखें</string>
+    <string name="success_import_pdf_btn">अभी आयात करें</string>
+    <string name="success_scan_pdf_title">PDF स्कैन करें</string>
+    <string name="success_scan_pdf_desc">PDF बनाने के लिए कैमरे से छवियों को स्कैन करें</string>
+    <string name="success_scan_pdf_btn">अभी स्कैन करें</string>
+    <string name="success_lock_pdf_title">PDF लॉक करें</string>
+    <string name="success_lock_pdf_desc">PDF फ़ाइल में पासवर्ड जोड़ें</string>
+    <string name="success_lock_pdf_btn">अभी लॉक करें</string>
+    <string name="success_unlock_pdf_title">PDF अनलॉक करें</string>
+    <string name="success_unlock_pdf_desc">एन्क्रिप्टेड PDF अनलॉक करें</string>
+    <string name="success_unlock_pdf_btn">अभी देखें</string>
+    <string name="success_clean_title">फ़ाइल सफाई</string>
+    <string name="success_clean_desc">सिस्टम की अनावश्यक फ़ाइलें साफ करें</string>
+    <string name="success_clean_btn">अभी साफ करें</string>
+    <string name="success_complete">पूर्ण</string>
+    <string name="success_function_file_antivirus">फ़ाइल एंटीवायरस</string>
+    <string name="success_function_file_antivirus_desc">अपनी फ़ाइलों को वायरस से सुरक्षित करें</string>
+    <string name="success_function_scan_now">अभी स्कैन करें</string>
+
+    <!-- Permissions -->
+    <string name="permission_storage_denied">अनुमति प्राप्त करने में विफल। कृपया सिस्टम सेटिंग में फ़ाइल अनुमति को मैन्युअल रूप से सक्षम करें।</string>
+    <string name="permission_dialog_later">बाद में</string>
+    <string name="permission_dialog_allow_all_files">सभी फ़ाइलों तक पहुंच की अनुमति दें</string>
+    <string name="permission_dialog_needed">अनुमति आवश्यक है</string>
+    <string name="permission_dialog_allow_access">पहुंच की अनुमति दें</string>
+    <string name="permission_dialog_allow_access_desc">PDF Viewer को सभी फ़ाइलों तक पहुंचने की अनुमति दें</string>
+    <string name="permission_dialog_detail">आपकी सुविधा के लिए, कृपया ऐप को आपकी सभी फ़ाइलों तक पहुंचने की अनुमति दें। हम जो दस्तावेज़ जानकारी व्यवस्थित करते हैं वह केवल वर्तमान डिवाइस पर उपयोग की जाएगी</string>
+    <string name="permission_dialog_description">अपनी फ़ाइलें पढ़ने और संपादित करने के लिए, कृपया <font color="#fc4949">PDF Viewer</font> को अपनी सभी फ़ाइलों तक पहुंचने की अनुमति दें</string>
+    <string name="permission_dialog_allow">अनुमति दें</string>
+    <string name="permission_access_message">PDF रीडर को सुचारू रूप से काम करने के लिए आपकी फ़ाइलों तक पहुंच की आवश्यकता है। कृपया सभी सुविधाओं का आनंद लेने के लिए पहुंच की अनुमति दें।</string>
+    <string name="permission_access_message_html"><font color="#fc4949">PDF रीडर</font> को सुचारू रूप से काम करने के लिए आपकी फ़ाइलों तक पहुंच की आवश्यकता है। कृपया सभी सुविधाओं का आनंद लेने के लिए पहुंच की अनुमति दें।</string>
+    <string name="permission_continue">जारी रखें</string>
+    <string name="permission_tips">सुझाव</string>
+    <string name="permission_dialog_confirm">पुष्टि करें</string>
+    <string name="permission_dialog_noti_content">हम आपको अपडेट रखना चाहते हैं। महत्वपूर्ण अनुस्मारक और समय पर चेतावनियां सीधे हमसे प्राप्त करने के लिए सूचनाएं सक्षम करें।</string>
+    <string name="permission_holder_message">अपने PDF को सीधे ऐप में प्रदर्शित और प्रबंधित करने के लिए फ़ाइल एक्सेस की अनुमति दें।</string>
+    
+    <!-- Exit Prompt -->
+    <string name="exit_press_again">बाहर निकलने के लिए दोबारा दबाएं</string>
+
+    <!-- File Size Units -->
+    <string name="file_size_b">B</string>
+    <string name="file_size_kb">KB</string>
+    <string name="file_size_mb">MB</string>
+    <string name="file_size_gb">GB</string>
+    <string name="file_size_tb">TB</string>
+
+    <!-- Search -->
+    <string name="action_search">खोजें</string>
+
+    <!-- PDF Merge -->
+    <string name="tool_merge_pdf">PDF मिलाएं</string>
+    <string name="merge_button_text_selected">%1$d PDF मिलाएं</string>
+    <string name="merge_button_text_default">कम से कम 2 PDF चुनें</string>
+    <string name="merge_pdf_title">PDF मिलाएं</string>
+    <string name="split_pdf_title">PDF विभाजित करें</string>
+    <string name="split_button_text_selected">%1$d PDF विभाजित करें</string>
+    <string name="split_button_text_default">कम से कम 1 PDF चुनें</string>
+
+    <!-- PDF Page Grid -->
+    <string name="pdf_page_grid_merge_title">मिलाने के लिए पृष्ठ चुनें</string>
+    <string name="pdf_page_grid_split_title">विभाजित करने के लिए पृष्ठ चुनें</string>
+    <string name="merge_pages_button_text">%1$d पृष्ठ मिलाएं</string>
+    <string name="split_pages_button_text">%1$d पृष्ठ विभाजित करें</string>
+    <string name="merge_button_default_text">मिलाने के लिए पृष्ठ चुनें</string>
+    <string name="split_button_default_text">विभाजित करने के लिए पृष्ठ चुनें</string>
+    <string name="select_all_pages">सभी चुनें</string>
+    <string name="deselect_all_pages">सभी अचुनें</string>
+    <string name="pages_selected_info">%2$d में से %1$d पृष्ठ चुने गए</string>
+    <string name="no_pdf_pages_found">कोई PDF पृष्ठ नहीं मिला</string>
+
+    <!-- Search -->
+    <string name="search_title">खोज</string>
+    <string name="search_hint">खोजें...</string>
+
+    <!-- PDF Lock -->
+    <string name="pdf_lock_title">PDF लॉक करें</string>
+
+    <!-- Empty State -->
+    <string name="empty_data">कोई डेटा नहीं</string>
+
+    <!-- File Details -->
+    <string name="file_detail_title">विवरण</string>
+    <string name="file_detail_format">फ़ाइल प्रारूप</string>
+    <string name="file_detail_path">स्टोरेज पथ</string>
+    <string name="file_detail_last_modified">अंतिम संशोधित समय</string>
+
+    <!-- File Rename -->
+    <string name="file_rename_title">नाम बदलें</string>
+    <string name="file_rename_cancel">रद्द करें</string>
+    <string name="file_rename_ok">ठीक है</string>
+
+    <!-- Other -->
+    <string name="unknown_file_name">अज्ञात.pdf</string>
+    <string name="error_activity_result_launcher">ActivityResultLauncher पंजीकृत नहीं है या पहले से ही नष्ट हो चुका है</string>
+    <string name="toast_get_permission_failed">अनुमति प्राप्त करने में विफल। कृपया सिस्टम सेटिंग में फ़ाइल अनुमति को मैन्युअल रूप से सक्षम करें।</string>
+    <string name="pdf_move_success">PDF ऐप के निजी डायरेक्टरी में ले जाया गया:</string>
+    <string name="pdf_move_failed">PDF ले जाने में विफल, अभी भी यहां है:</string>
+    <string name="print_job_name">दस्तावेज़ प्रिंट जॉब %1$s</string>
+    <string name="error_writing_print_content">प्रिंट सामग्री लिखने में त्रुटि</string>
+    <string name="toast_invalid_url">अमान्य URL</string>
+    <string name="splash_screen_slogan">आसानी से विभिन्न फ़ाइलें पढ़ें</string>
+    <string name="loading_text">लोड हो रहा है...</string>
+    <string name="default_file_path">/storage/emulated/0/xxx/storage/emulated/0/xxx/storage/emulated/0/xxx</string>
+
+    <!-- Clean Model Type Titles -->
+    <string name="clean_type_junk_files">अनावश्यक फ़ाइलें</string>
+    <string name="clean_type_obsolete_apk">पुरानी APK</string>
+    <string name="clean_type_temp_files">अस्थायी फ़ाइलें</string>
+    <string name="clean_type_log_files">लॉग फ़ाइलें</string>
+
+    <!-- Sort Options -->
+    <string name="sort_modified_time">संशोधित समय</string>
+    <string name="sort_modified_time_newest">(नवीनतम पहले)</string>
+    <string name="sort_modified_time_oldest">(पुराने पहले)</string>
+    <string name="sort_name">नाम</string>
+    <string name="sort_name_asc">(A से Z)</string>
+    <string name="sort_name_desc">(Z से A)</string>
+    <string name="sort_file_size">फ़ाइल का आकार</string>
+    <string name="sort_file_size_largest">(बड़े पहले)</string>
+    <string name="sort_file_size_smallest">(छोटे पहले)</string>
+
+    <!-- Language Names -->
+    <string name="chinese_simplified">चीनी (सरलीकृत)</string>
+    <string name="english">अंग्रेज़ी</string>
+    <string name="chinese_traditional">चीनी (पारंपरिक)</string>
+    <string name="language_russia">रूसी</string>
+    <string name="language_portuguese_brazil">पुर्तगाली (ब्राज़ील)</string>
+    <string name="language_vietnamese">वियतनामी</string>
+    <string name="language_thai">थाई</string>
+    <string name="language_indonesian">इंडोनेशियाई</string>
+    <string name="language_hindi">हिंदी</string>
+    <string name="language_spanish">स्पेनिश</string>
+    <string name="language_german">जर्मन</string>
+    <string name="language_french">फ्रेंच</string>
+    <string name="language_korean">कोरियाई</string>
+    <string name="language_japanese">जापानी</string>
+    <string name="language_button_default">इंस्टॉल करें</string>
+    <string name="language_button_selected">खोलें</string>
+
+    <string name="page_permission_file_1">में आपका स्वागत है</string>
+    <string name="page_permission_file_2">पहुंच प्रदान करें</string>
+    <string name="dialog_pdf_default_launch_content">पढ़ने की गति बढ़ाने के लिए <font color="#fc4949">PDF रीडर</font> को डिफ़ॉल्ट PDF रीडर के रूप में सेट करें।</string>
+    
+    <string name="guide_scan_text_1">PDF में स्कैन करें</string>
+    <string name="guide_scan_text_2">स्कैनिंग सुविधा का उपयोग करने के लिए इस बटन पर क्लिक करें</string>
+    <string name="guide_scan_text_3">इसे आज़माएं</string>
+    
+    <!-- Notification Tool Strings -->
+    <string name="notification_tool_title">PDF उपकरण</string>
+    <string name="notification_tool_text">त्वरित पहुंच उपकरण</string>
+    <string name="notification_btn_doc">दस्तावेज़</string>
+    <string name="notification_btn_scan">स्कैन</string>
+    <string name="notification_btn_clean">सफाई</string>
+
+    <!-- PDF Default Launcher -->
+    <string name="choose_default_pdf_reader">डिफ़ॉल्ट PDF रीडर चुनें</string>
+    <string name="pdf_default_just_once">सिर्फ एक बार</string>
+    <string name="pdf_default_always">हमेशा</string>
+    
+    <!-- Store Score Dialog -->
+    <string name="store_score_title">PDF Viewer का उपयोग करने के लिए धन्यवाद</string>
+    <string name="store_score_desc">हम बहुत आभारी होंगे अगर आप हमें रेट कर सकें।</string>
+    <string name="store_score_button">रेट करें</string>
+    <string name="store_score_feedback_thanks">आपके फीडबैक के लिए धन्यवाद!</string>
+    <string name="store_score_badge">हमारे लिए सर्वश्रेष्ठ रेटिंग</string>
+    
+    <!-- Guide Pages -->
+    <string name="guide_page1_title">ऑल-इन-वन डॉक्यूमेंट रीडर</string>
+    <string name="guide_page1_desc">किसी भी समय, कहीं भी अपनी सभी फ़ाइलों को आसानी से एक्सेस, व्यवस्थित और प्रबंधित करें।</string>
+    <string name="guide_page2_title">सुविधाजनक दस्तावेज़ स्कैनर</string>
+    <string name="guide_page2_desc">अपने सभी महत्वपूर्ण दस्तावेज़ों को आसानी से स्कैन करें।</string>
+    <string name="guide_page3_title">त्वरित फ़ाइल सफाई और एंटीवायरस</string>
+    <string name="guide_page3_desc">अनावश्यक फ़ाइलों को साफ करें, सुरक्षा और प्रदर्शन बढ़ाएं।</string>
+    <string name="guide_page4_title">किसी भी समय छवियों और स्कैन को PDF में बदलें</string>
+    <string name="guide_page4_desc">कहीं भी छवियों को PDF में बदलें या सीधे स्कैन करके PDF बनाएं।</string>
+    <string name="guide_btn_next">अगला</string>
+
+    <string name="current_language">वर्तमान भाषा</string>
+    <string name="all_language">सभी भाषाएँ</string>
+
+    <!-- Splash screen loading texts -->
+    <string name="splash_initialize">आरंभ कर रहा है...</string>
+    <string name="splash_load_resources">संसाधन लोड हो रहे हैं...</string>
+    <string name="splash_load_files">फ़ाइलें लोड हो रही हैं...</string>
+
+    <!-- Language setting button -->
+    <string name="language_btn_done">हो गया</string>
+    
+    <!-- भाषा चयन संवाद -->
+    <string name="language_skip_title">छोड़ना पुष्टि करें</string>
+    <string name="language_skip_message">आप [%1$s] को अपनी डिफ़ॉल्ट भाषा के रूप में जारी रखने वाले हैं।\n\nजारी रखने के लिए अगला टैप करें।</string>
+    <string name="language_skip_next">अगला</string>
+    <string name="language_default">डिफॉल्ट भाषा</string>
+    
+    <!-- मार्गदर्शक छोड़ना संवाद -->
+    <string name="guide_skip_message">आप गाइड को छोड़कर सीधे मुख्य इंटरफेस पर जाने वाले हैं। आप हमेशा सेटिंग्स में अधिक सुविधा परिचय देख सकते हैं।\n\nजारी रखने के लिए अगला टैप करें।</string>
+    
+    <!-- Guide Click Text -->
+    <string name="guide_doc_click_text">अब अपनी फाइल पढ़ें</string>
+    
+    <!-- PDF Guide Text -->
+    <string name="pdf_guide_annotation_title">समृद्ध एनोटेशन उपकरण</string>
+    <string name="pdf_guide_annotation_desc">टेक्स्ट चुनने के बाद, आप विभिन्न एनोटेशन उपकरणों का उपयोग कर सकते हैं:\nकॉपी, हाइलाइट, अंडरलाइन, स्ट्राइकथ्रू</string>
+    <string name="pdf_guide_btn_next">समझ गया</string>
+    <string name="pdf_guide_btn_continue">जारी रखें</string>
+    <string name="pdf_guide_btn_more">और जानें</string>
+    
+    <!-- Exit App Dialog -->
+    <string name="exit_app_dialog_title">क्या आप वाकई एप से बाहर निकलना चाहते हैं?</string>
+    <string name="exit_app_dialog_positive">बाहर निकलने की पुष्टि करें</string>
+    <string name="exit_app_dialog_negative">रद्द करें</string>
+    
+    <!-- App Shortcuts -->
+    <string name="shortcut_uninstall_short">अनिंस्टॉल करें</string>
+    <string name="shortcut_uninstall_title">एप को अनिंस्टॉल करने से सेव किए गए दस्तावेज़ या हाल की फाइलें खो सकती हैं। क्या आप वाकई जारी रखना चाहते हैं?</string>
+    <string name="shortcut_uninstall_title_highlight">सेव किए गए दस्तावेज़ या हाल की फाइलों का नुकसान</string>
+    <string name="shortcut_uninstall_content">कृपया एप को एक बार और सक्रिय करने की कोशिश करें और हमें कारण बताएं।</string>
+    <string name="shortcut_uninstall_btn_agree">अभी अनिंस्टॉल न करें</string>
+    <string name="shortcut_uninstall_btn_still">फिर भी अनिंस्टॉल करें</string>
+    <string name="shortcut_uninstall_title2">एप का उपयोग करते समय कोई समस्या?</string>
+    <string name="shortcut_uninstall_option1">फीचर काम नहीं कर रहा</string>
+    <string name="shortcut_uninstall_option2">मुझे इस एप की आवश्यकता नहीं है</string>
+    <string name="shortcut_uninstall_option3">बहुत ज्यादा विज्ञापन</string>
+    <string name="shortcut_uninstall_option4">बहुत ज्यादा नोटिफिकेशन</string>
+    <string name="shortcut_uninstall_option5">अन्य</string>
+    <string name="shortcut_uninstall_edit_tip">कृपया अधिक विवरण प्रदान करें ताकि हम आपकी समस्या को तेज़ी से पहचान और हल कर सकें…</string>
+    <string name="shortcut_uninstall_btn_cancel">रद्द करें</string>
+    <string name="shortcut_uninstall_btn_uninstall">अनिंस्टॉल करें</string>
+
+    <!-- PDF Operations -->
+    <string name="pdf_encrypt_failed">PDF एन्क्रिप्शन असफल</string>
+    <string name="pdf_decrypt_failed">PDF डिक्रिप्शन असफल</string>
+    <string name="pdf_process_failed">PDF प्रोसेसिंग असफल</string>
+    <string name="external_file_no_encryption">बाहरी फ़ाइलें एन्क्रिप्शन/डिक्रिप्शन का समर्थन नहीं करतीं</string>
+    <string name="added_to_favorites">पसंदीदा में जोड़ा गया</string>
+    <string name="removed_from_favorites">पसंदीदा से हटाया गया</string>
+    <string name="already_first_page">पहले से ही पहले पेज पर</string>
+    <string name="already_last_page">पहले से ही आखिरी पेज पर</string>
+    <string name="saving_pdf">PDF सेव कर रहे हैं...</string>
+    <string name="save_as_copy_exiting">कॉपी सफलतापूर्वक सेव हो गई, बाहर निकल रहे हैं...</string>
+    <string name="incremental_save_exiting">बदलाव सफलतापूर्वक सेव हो गए, बाहर निकल रहे हैं...</string>
+    <string name="save_success_exiting">सेव सफल, बाहर निकल रहे हैं...</string>
+    <string name="incremental_save_success">वृद्धिशील सेव सफल</string>
+    <string name="save_success">सेव सफल</string>
+    <string name="save_failed">सेव असफल: %1$s</string>
+    
+    <!-- Text Selection and Annotation -->
+    <string name="annotation_highlight">हाइलाइट</string>
+    <string name="annotation_underline">अंडरलाइन</string>
+    <string name="annotation_strikethrough">स्ट्राइकथ्रू</string>
+    <string name="annotation_added">%1$s एनोटेशन जोड़ा गया</string>
+    <string name="annotation_add_failed">%1$s एनोटेशन जोड़ने में असफल</string>
+    <string name="annotation_add_error">एनोटेशन जोड़ने में असफल: %1$s</string>
+    <string name="annotation_no_page_info">एनोटेशन नहीं जोड़ सकते: पेज जानकारी गायब</string>
+    <string name="pdf_text_label">PDF टेक्स्ट</string>
+    <string name="text_copied">कॉपी हो गया</string>
+    <string name="copy_failed">कॉपी असफल</string>
+    <string name="annotation_clear_no_page">एनोटेशन साफ नहीं कर सकते: पेज जानकारी गायब</string>
+    <string name="annotations_cleared">%1$d एनोटेशन साफ किए गए</string>
+    <string name="no_annotations_on_page">वर्तमान पेज पर कोई एनोटेशन नहीं</string>
+    <string name="clear_annotations_failed">एनोटेशन साफ करने में असफल: %1$s</string>
+
+    <!-- floating dialog-->
+    <string name="floatng_dialog_allow">अनुमति दें</string>
+    <string name="floatng_dialog_appear">दूसरे एप्स के ऊपर दिखाई देने के लिए</string>
+    <string name="floatng_dialog_content">एक फ़्लोटिंग मिनी-रीडर सक्षम करने और अन्य एप्स का उपयोग करते समय अपने दस्तावेज़ों को जल्दी से संदर्भित करने के लिए।</string>
+    <string name="floatng_dialog_required">(आवश्यक)</string>
+
+    <!-- Floating Window -->
+    <string name="floating_window_title">हाल की फ़ाइलें</string>
+    <string name="floating_window_empty">कोई हाल की फ़ाइलें नहीं</string>
+    <string name="floating_window_resize_handle">विंडो का आकार बदलें</string>
+    <string name="floating_window_permission_required">फ़्लोटिंग विंडो अनुमति आवश्यक</string>
+    <string name="floating_window_show_failed">फ़्लोटिंग विंडो दिखाने में विफल: %1$s</string>
+    <string name="floating_window_open_file_failed">फ़ाइल खोलने में विफल: %1$s</string>
+
+    <!-- Earthquake -->
+    <string name="earthquake_quick_alert">तेज़ भूकंप चेतावनी</string>
+    <string name="earthquake_focal_depth">फोकस गहराई</string>
+    <string name="earthquake_tsunami_threat">सुनामी खतरा</string>
+    <string name="earthquake_usgs_warning">USGS चेतावनी</string>
+    <string name="earthquake_origin_time">उत्पत्ति समय</string>
+    <string name="earthquake_magnitude_type">परिमाण प्रकार</string>
+    <string name="earthquake_data_status">डेटा स्थिति</string>
+    <string name="earthquake_data_km">किमी</string>
+    
+    <!-- Notification - Override notification module strings -->
+    <string name="noti_earthquake_click_text">- प्रभाव त्रिज्या देखें……</string>
+    
+    <string name="lock_screen_slide_to_unlock">अनलॉक करने के लिए स्लाइड करें</string>
+    <string name="lock_screen_scan_pdf">PDF स्कैन करें</string>
+
+    <!-- Introduction -->
+    <string name="introduction_title"><![CDATA[मुफ्त <font color="#FB4949">PDF रीडर</font> &amp; एडिटर &amp; कनवर्टर]]></string>
+    <string name="introduction_title_2"><![CDATA[<font color="#FB4949">PDF Viewer</font> को अपने डिफ़ॉल्ट होम ऐप के रूप में चुनें]]></string>
+    <string name="introduction_title_3"><![CDATA[<font color="#FB4949">2 आसान</font> चरणों में शुरू करें:]]></string>
+    <string name="introduction_step1_text">नीचे \"जारी रखें\" पर टैप करें</string>
+    <string name="introduction_step2_text">\"PDF Viewer\" पर टैप करें और इसे अपने डिफ़ॉल्ट होम ऐप के रूप में सेट करें</string>
+    <string name="introduction_btn_get_started">शुरू करें</string>
+    <string name="introduction_btn_continue">जारी रखें</string>
+    <string name="introduction_not_now">अभी नहीं</string>
+    <string name="introduction_step1_title">चरण 1：</string>
+    <string name="introduction_step2_title">चरण 2：</string>
+    <string name="introduction_privacy_policy">गोपनीयता नीति</string>
+    <string name="introduction_terms_of_service">सेवा की शर्तें</string>
+
+    <!-- Custom Dialog -->
+    <string name="custom_dialog_description">फ़ाइलें देखने, पृष्ठों पर टिप्पणी करने और कुशलतापूर्वक कार्य करने के लिए दाईं ओर स्वाइप करें</string>
+
+    <!-- Default App Dialog -->
+    <string name="default_app_dialog_title"><![CDATA[<font color="#FB4949">PDF</font> व्यूअर को डिफ़ॉल्ट के रूप में सेट करें]]></string>
+    <string name="default_app_dialog_desc1">एकीकृत दस्तावेज़ स्कैनर, PDF कनवर्टर और फ़ाइल व्यूअर</string>
+    <string name="default_app_dialog_desc2">लाइव वॉलपेपर, स्टोरेज क्लीनर, सटीक मौसम।</string>
+    <string name="default_app_dialog_btn_try">अभी आज़माएं</string>
+
+    <!-- About -->
+    <string name="about_section_title">हमारे बारे में</string>
+    <string name="about_content">PDF Reader &amp; PDF Viewer में, हम एक एकीकृत, सुगम और कुशल PDF प्रबंधन अनुभव प्रदान करने के लिए प्रतिबद्ध हैं। चाहे आप दस्तावेज़ देख रहे हों, टेक्स्ट को हाइलाइट कर रहे हों, फ़ाइलों को तुरंत स्कैन कर रहे हों, छवियों को PDF में परिवर्तित कर रहे हों, या स्टोरेज स्पेस को बुद्धिमानी से साफ़ कर रहे हों, हम आपकी सभी आवश्यकताओं के लिए एक विचारशील एंड-टू-एंड समाधान प्रदान करते हैं। हमारी टीम उपयोगकर्ताओं को पहले रखती है, शक्तिशाली कार्यक्षमता को एक स्वच्छ, सहज इंटरफ़ेस के साथ जोड़ती है ताकि आप कभी भी, कहीं भी उत्पादक और व्यवस्थित रह सकें। हम लगातार आपकी प्रतिक्रिया सुनते हैं और सुधार और नवाचार जारी रखते हैं—सभी के लिए PDF संचालन को सरल और अधिक स्मार्ट बनाते हैं।</string>
+    <string name="about_privacy_policy">गोपनीयता नीति</string>
+    <string name="about_uninstall_instructions">अनइंस्टॉल निर्देश</string>
+
+    <!-- Language Setting -->
+    <string name="language_setting_loading">सेटिंग...</string>
+</resources> 

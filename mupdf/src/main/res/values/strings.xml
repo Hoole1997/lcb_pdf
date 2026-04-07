@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name" translatable="false">MuPDF Viewer</string>
+	<string name="cancel">Cancel</string>
+	<string name="cannot_open_document">Cannot open document</string>
+	<string name="cannot_open_document_Reason">Cannot open document: %1$s</string>
+	<string name="dismiss">Dismiss</string>
+	<string name="enter_password">Enter password</string>
+	<string name="no_further_occurrences_found">No further occurrences found</string>
+	<string name="not_supported">Not supported</string>
+	<string name="okay">Okay</string>
+	<string name="search">Search&#x2026;</string>
+	<string name="searching_">Searching&#x2026;</string>
+	<string name="text_not_found">Text not found</string>
+
+	<!-- PDF相关字符串 -->
+	<string name="pdf_page_content_description">PDF page content</string>
+	<string name="pdf_icon_description">PDF document icon</string>
+	<string name="loading_pdf_page">Loading PDF page</string>
+	<string name="please_wait">Please wait...</string>
+	
+	<!-- Toast messages -->
+	<string name="text_copied">Text copied</string>
+	<string name="menu_display_failed">Menu display failed, text automatically copied</string>
+	<string name="back_button_clicked">Back button clicked</string>
+	<string name="search_button_clicked">Search button clicked</string>
+	<string name="bookmark_added">Bookmark added</string>
+	<string name="bookmark_removed">Bookmark removed</string>
+	<string name="file_name_format">File: %1$s</string>
+	<string name="unknown_file">Unknown file</string>
+	<string name="current_page_format">Current page: %1$d/%2$d</string>
+	<string name="cannot_jump_to_page">Cannot jump to page %1$d</string>
+	<string name="already_first_page">Already on first page</string>
+	<string name="already_last_page">Already on last page</string>
+	<string name="android_file_link_error">Android does not allow following file:// link: %1$s</string>
+	<string name="long_press_function_pending">Long press function pending development</string>
+	<string name="search_query_format">Search: \"%1$s\"</string>
+	<string name="search_result_found_format">Found \"%1$s\" on page %2$d (total %3$d matches)</string>
+	<string name="search_not_found_format">Not found \"%1$s\"</string>
+	<string name="search_result_format">%1$d / %2$d</string>
+	<string name="no_search_results">No results found</string>
+	<string name="search_error">Search error</string>
+	
+	<!-- PDF Save Options -->
+	<string name="file_size_unavailable">Size information unavailable</string>
+	<string name="file_size_reduced_format">File size reduced by %1$.1f%%</string>
+	<string name="file_size_increased_format">File size increased by %1$.1f%%</string>
+	<string name="file_size_no_change">File size unchanged</string>
+	
+	<!-- Error messages -->
+	<string name="error_loading_page">Error loading page</string>
+	<string name="error_rendering_page">Error rendering page</string>
+	<string name="error_rendering_patch">Error rendering patch</string>
+	<string name="error_updating_page">Error updating page</string>
+	
+	<!-- Enum descriptions -->
+	<string name="action_previous">Previous page</string>
+	<string name="action_next">Next page</string>
+	<string name="action_jump">Jump</string>
+	<string name="action_first">First page</string>
+	<string name="action_last">Last page</string>
+	<string name="category_page_navigation">Page navigation</string>
+	<string name="category_thumbnail">Thumbnail</string>
+	<string name="category_direction_toggle">View direction toggle</string>
+	<string name="category_visibility">Visibility control</string>
+	<string name="direction_horizontal">Horizontal</string>
+	<string name="direction_vertical">Vertical</string>
+	<string name="event_click">Click</string>
+	<string name="event_long_press">Long press</string>
+	<string name="event_scroll">Scroll</string>
+	<string name="event_load">Load</string>
+	<string name="event_visibility_change">Visibility change</string>
+	<string name="state_loading">Loading</string>
+	<string name="state_loaded">Loaded</string>
+	<string name="state_error">Load error</string>
+	<string name="state_current">Current page</string>
+	<string name="state_normal">Normal state</string>
+	<string name="annotation_highlight">Highlight</string>
+	<string name="annotation_underline">Underline</string>
+	<string name="annotation_strikethrough">Strikethrough</string>
+	<string name="annotation_unknown_type">Unknown type (%1$d)</string>
+	<string name="pdf_reader_v2">PDF Reader V2</string>
+	
+	<!-- Button labels -->
+	<string name="copy">Copy</string>
+	<string name="clear">Clear</string>
+	
+	<!-- Loading messages -->
+	<string name="loading_pdf_document">Loading PDF document</string>
+	<string name="preparing_reader">Please wait, preparing reader...</string>
+	
+	<!-- Search related -->
+	<string name="search_pdf_content">Search PDF content...</string>
+	<string name="pdf_search">PDF Search</string>
+	<string name="search_keywords">Enter search keywords...</string>
+	<string name="searching">Searching...</string>
+	<string name="search_progress_format">Searching... %1$d/%2$d</string>
+	<string name="search_results_found_format">Found %1$d results</string>
+	<string name="search_no_results_format">No results found for \"%1$s\"</string>
+	<string name="search_error_message_format">Search error: %1$s</string>
+	<string name="start_search_hint">Enter keywords to start search</string>
+	<string name="match_case">Match case</string>
+	<string name="whole_words">Whole words</string>
+	
+	<!-- UI labels -->
+	<string name="hide_thumbnails">Hide thumbnails</string>
+	<string name="document_navigation">Document navigation</string>
+	<string name="page_number_format">Page %1$d</string>
+	<string name="search_context_text">Search result context text...</string>
+	<string name="matched_keyword">Matched keyword</string>
+	<string name="zoom_level">100%</string>
+	
+	<!-- Content descriptions -->
+	<string name="back">Back</string>
+	<string name="bookmark">Bookmark</string>
+	<string name="save">Save</string>
+	<string name="more">More</string>
+	<string name="close">Close</string>
+	<string name="previous">Previous</string>
+	<string name="next">Next</string>
+	<string name="no_results_found">No results found</string>
+	<string name="close_thumbnails">Close thumbnails</string>
+	<string name="close_sidebar">Close sidebar</string>
+	<string name="zoom_out">Zoom out</string>
+	<string name="zoom_in">Zoom in</string>
+	<string name="fit_width">Fit width</string>
+	<string name="toggle_thumbnails">Toggle thumbnails</string>
+	<string name="toggle_view_direction">Toggle view direction</string>
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <!-- 精准闹钟权限（Android 12+） -->
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    
+    <application>
+        <!-- 地震信息获取模拟广播接收器 -->
+        <receiver
+            android:name="com.documentpro.office.business.fileviewer.receiver.EarthquakeAlarmReceiver"
+            android:exported="false"
+            android:enabled="true" />
+    </application>
+    
+</manifest>
+

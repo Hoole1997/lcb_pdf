@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- PDF预览头部模块 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/pdfHeader"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:layout_height="56dp"
+    android:minHeight="56dp"
+    android:orientation="horizontal"
+    android:background="@color/card_background"
+    android:elevation="2dp"
+    android:gravity="center_vertical"
+    android:paddingHorizontal="16dp">
+
+    <!-- 左侧区域 -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <!-- 返回按钮 -->
+        <ImageButton
+            android:id="@+id/pdfBackBtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_arrow_left"
+            android:scaleType="centerInside"
+            app:tint="@color/text_primary"
+            android:contentDescription="@string/back" />
+
+        <!-- PDF标题和页码信息 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginStart="12dp">
+
+            <!-- PDF文件名 -->
+            <TextView
+                android:id="@+id/pdfFileName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Demo.pdf"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_primary"
+                android:maxLines="1"
+                android:ellipsize="end" />
+
+            <!-- 页码信息 -->
+            <TextView
+                android:id="@+id/pdfPageInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 / 10"
+                android:textSize="12sp"
+                android:textColor="@color/text_secondary"
+                android:layout_marginTop="2dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- 右侧操作按钮 -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- 搜索按钮 -->
+        <ImageButton
+            android:id="@+id/searchPdfBtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_search"
+            android:scaleType="centerInside"
+            app:tint="@color/black"
+            tools:tint="@color/black"
+            android:contentDescription="@string/search"
+            android:layout_marginEnd="4dp" />
+
+        <!-- 书签按钮 -->
+        <ImageButton
+            android:id="@+id/bookmarkPdfBtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_bookmark_border"
+            android:scaleType="centerInside"
+            app:tint="@color/black"
+            android:contentDescription="@string/bookmark"
+            android:layout_marginEnd="4dp" />
+
+        <!-- 分享按钮 -->
+        <ImageButton
+            android:id="@+id/savePdfBtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_pdf_file_save_24px"
+            android:scaleType="centerInside"
+            app:tint="@color/black"
+            tools:tint="@color/black"
+            android:contentDescription="@string/save"
+            android:layout_marginEnd="4dp" />
+
+        <!-- 更多按钮 -->
+        <ImageButton
+            android:id="@+id/menuPdfBtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_more_vert"
+            android:scaleType="centerInside"
+            app:tint="@color/black"
+            android:contentDescription="@string/more" />
+
+    </LinearLayout>
+
+</LinearLayout>

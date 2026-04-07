@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8f9fa"
+    android:fitsSystemWindows="true"
+    tools:context=".PDFViewerActivity">
+
+    <!-- 主内容区域 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        
+        <!-- PDF预览头部 (使用include引入) -->
+        <include layout="@layout/layout_pdf_header" />
+
+        <!-- PDF工具栏 (使用include引入) -->
+        <include layout="@layout/layout_pdf_toolbar" />
+
+        <!-- PDF查看器区域 -->
+        <FrameLayout
+            android:id="@+id/pdfViewerContainer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#f8f9fa">
+
+
+
+            <!-- PDF加载状态覆盖层 -->
+            <FrameLayout
+                android:id="@+id/loadingOverlay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#f8f9fa"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <!-- PDF图标 -->
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/ic_pdf_logo"
+                        android:alpha="0.6"
+                        app:tint="#6366f1" />
+
+                    <!-- 标题 -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/loading_pdf_document"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="#1f2937"
+                        android:layout_marginTop="16dp" />
+
+                    <!-- 描述 -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/preparing_reader"
+                        android:textSize="14sp"
+                        android:textColor="#6b7280"
+                        android:layout_marginTop="8dp" />
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </FrameLayout>
+
+        <!-- PDF底部控制栏 (使用include引入) -->
+        <include layout="@layout/layout_pdf_bottom_controls" />
+
+    </LinearLayout>
+
+    <!-- PDF缩略图栏 -->
+    <include 
+        layout="@layout/layout_pdf_thumbnails" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="56dp" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    
+    <com.noober.background.view.BLConstraintLayout
+        android:id="@+id/cl_1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        app:bl_solid_color="@android:color/white"
+        android:paddingHorizontal="16dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="16dp"
+        app:bl_corners_radius="16dp">
+        <ImageView
+            android:id="@+id/ivClose"
+            android:src="@mipmap/ic_noti_no_close"
+            android:layout_width="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:text="@string/permission_tips"
+            android:layout_marginTop="5dp"
+            android:textSize="18sp"
+            android:textColor="#333333"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/ivClose"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+        <TextView
+            android:id="@+id/tv_4"
+            android:textSize="14sp"
+            android:layout_marginTop="16dp"
+            android:text="@string/permission_dialog_noti_content"
+            app:layout_constraintTop_toBottomOf="@id/tv_title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:gravity="center"
+            android:lineSpacingExtra="3dp"
+            android:layout_width="0dp"
+            android:textColor="#333"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:text="@string/permission_dialog_confirm"
+            app:cornerRadius="24dp"
+            android:backgroundTint="#FB4949"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/tv_4"
+            android:id="@+id/btn_confirm"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </com.noober.background.view.BLConstraintLayout>
+
+
+
+    <FrameLayout
+        app:layout_constraintBottom_toTopOf="@id/cl_1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="-35dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@mipmap/ic_noti_no_per"
+            android:layout_width="100dp"
+            android:layout_height="100dp"/>
+    </FrameLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

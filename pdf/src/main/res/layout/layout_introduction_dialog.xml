@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+
+    <!-- 标题文本 -->
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@id/fl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="Free PDF Reader &amp; Editor &amp; Converter" />
+
+    <!-- 图片 -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/fl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="40dp"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintBottom_toTopOf="@id/btn_get_started"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_title2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="42dp"
+                android:layout_marginTop="24dp"
+                android:gravity="center"
+                android:text="@string/introduction_title_2"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+            <FrameLayout
+                android:id="@+id/cardApp"
+                android:layout_width="match_parent"
+                android:layout_height="74dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/bg_launcher_guide_card">
+
+                <!-- Logo -->
+                <ImageView
+                    android:id="@+id/ivLogo"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_gravity="start|center_vertical"
+                    android:layout_marginStart="16dp"
+                    android:src="@mipmap/app_icon_round" />
+
+                <!-- 应用名称 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center_vertical"
+                    android:layout_marginStart="70dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="PDF"
+                        android:textColor="#E90100"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Viewer"
+                        android:textColor="#333333"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <!-- 勾选图标 -->
+                <ImageView
+                    android:id="@+id/ivSelect"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginEnd="35dp"
+                    android:src="@drawable/ic_launcher_guide_select" />
+
+                <!-- 手势指示 -->
+                <ImageView
+                    android:id="@+id/ivHand"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="end|bottom"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="-6dp"
+                    android:src="@drawable/ic_launcher_guide_hand" />
+
+            </FrameLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Get Started 按钮 -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_get_started"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="115dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#FB4949"
+        android:fontFamily="sans-serif"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/introduction_btn_get_started"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:cornerRadius="24dp"
+        app:layout_constraintBottom_toTopOf="@id/ll_bottom_links"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fl" />
+
+    <!-- 底部链接容器 -->
+    <LinearLayout
+        android:id="@+id/ll_bottom_links"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_get_started">
+
+        <TextView
+            android:id="@+id/tv_privacy_policy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="sans-serif"
+            android:padding="4dp"
+            android:text="@string/introduction_privacy_policy"
+            android:textColor="#888888"
+            android:textSize="12sp" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

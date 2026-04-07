@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+   android:layout_weight="1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1868FF">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:text="@string/process_manager_title_short"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            app:layout_scrollFlags="noScroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="24dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="25dp"
+                android:paddingTop="35dp">
+
+                <!-- Used 标签 -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/process_manager_clean_used"
+                    android:textSize="12sp"
+                    android:textColor="#D1E1FF"
+                    android:layout_gravity="start"/>
+
+                <!-- 百分比显示 -->
+                <TextView
+                    android:id="@+id/tv_memory_percent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="52.9%"
+                    android:textSize="32sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="8dp"
+                    android:layout_gravity="start"/>
+
+                <!-- 内存使用详情 -->
+                <TextView
+                    android:id="@+id/tv_memory_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5.9GB/11.2GB"
+                    android:textSize="14sp"
+                    android:textColor="#D1E1FF"
+                    android:layout_marginTop="8dp"
+                    android:layout_gravity="end"/>
+
+                <!-- 进度条 -->
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_marginTop="16dp">
+
+                    <!-- 背景进度条 -->
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_progress_background"/>
+
+                    <!-- 前景进度条 -->
+                    <View
+                        android:id="@+id/progress_foreground"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_progress_foreground"/>
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- 白色内容区域 -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/bg_white_top_rounded">
+
+            <!-- Background Apps 标题 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/process_manager_clean_ba"
+                android:textSize="16sp"
+                android:textColor="#333333"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- 应用列表 -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_processes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="16dp"
+                android:paddingBottom="100dp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:orientation="vertical"/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <!-- Done 按钮 -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_done"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="bottom"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/process_manager_clean_done"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:backgroundTint="#FB4949"
+        app:cornerRadius="32dp"
+        app:layout_dodgeInsetEdges="bottom"/>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <FrameLayout
+        android:id="@+id/ad_Container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

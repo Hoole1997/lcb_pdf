@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.noober.background.view.BLConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingTop="26dp"
+    android:paddingBottom="24dp"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    app:bl_solid_color="#F9F9F9"
+    app:bl_corners_topRadius="15dp">
+
+    <!-- 文件信息 -->
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/ic_pdf"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Demo.pdf"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_primary"
+        android:layout_marginStart="12dp"
+        app:layout_constraintStart_toEndOf="@id/iv_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/iv_icon"/>
+
+    <TextView
+        android:id="@+id/tv_path"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="/storage/emulated/0/xxx/storage/emulated/0/xxx/storage/emulated/0/xxx"
+        android:textSize="13sp"
+        android:textColor="#7c7b7a"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="2dp"
+        app:layout_constraintStart_toEndOf="@id/iv_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_name"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_action"
+        app:layout_constraintTop_toBottomOf="@id/tv_path"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- 收藏按钮 -->
+        <com.noober.background.view.BLFrameLayout
+            android:id="@+id/btn_fav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            app:bl_solid_color="@android:color/white"
+            app:bl_corners_radius="12dp"
+            app:bl_ripple_color="#1F000000"
+            app:bl_ripple_enable="true"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btn_share"
+            app:layout_constraintHorizontal_chainStyle="spread">
+
+            <ImageView
+                android:id="@+id/iv_fav"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@mipmap/ic_favorite_outline"/>
+        </com.noober.background.view.BLFrameLayout>
+
+        <TextView
+            android:id="@+id/tv_fav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/action_favorite"
+            android:textSize="14sp"
+            android:textColor="@color/text_primary"
+            android:layout_marginTop="6dp"
+            app:layout_constraintStart_toStartOf="@id/btn_fav"
+            app:layout_constraintEnd_toEndOf="@id/btn_fav"
+            app:layout_constraintTop_toBottomOf="@id/btn_fav"/>
+
+        <!-- 分享按钮 -->
+        <com.noober.background.view.BLFrameLayout
+            android:id="@+id/btn_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:gravity="center"
+            app:bl_solid_color="@android:color/white"
+            app:bl_corners_radius="12dp"
+            app:bl_ripple_color="#1F000000"
+            app:bl_ripple_enable="true"
+            app:layout_constraintTop_toTopOf="@id/btn_fav"
+            app:layout_constraintBottom_toBottomOf="@id/btn_fav"
+            app:layout_constraintStart_toEndOf="@id/btn_fav"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="32dp">
+
+            <ImageView
+                android:id="@+id/iv_share"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@mipmap/ic_share"
+                app:tint="#587df7"/>
+        </com.noober.background.view.BLFrameLayout>
+
+        <TextView
+            android:id="@+id/tv_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/action_share"
+            android:textSize="14sp"
+            android:textColor="@color/text_primary"
+            android:layout_marginTop="6dp"
+            app:layout_constraintStart_toStartOf="@id/btn_share"
+            app:layout_constraintEnd_toEndOf="@id/btn_share"
+            app:layout_constraintTop_toBottomOf="@id/btn_share"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- 操作按钮 -->
+    <com.noober.background.view.BLTextView
+        android:id="@+id/btn_add_desktop"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        android:text="@string/action_add_to_desktop"
+        android:textSize="16sp"
+        android:textColor="@color/text_primary"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:visibility="gone"
+        android:layout_marginTop="12dp"
+        app:bl_solid_color="@android:color/white"
+        app:bl_corners_radius="8dp"
+        app:bl_ripple_color="#1F000000"
+        app:bl_ripple_enable="true"
+        app:layout_constraintTop_toBottomOf="@id/cl_action"/>
+
+    <com.noober.background.view.BLTextView
+        android:id="@+id/btn_rename"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        android:text="@string/action_rename"
+        android:textSize="16sp"
+        android:textColor="@color/text_primary"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:layout_marginTop="12dp"
+        app:bl_solid_color="@android:color/white"
+        app:bl_corners_radius="8dp"
+        app:bl_ripple_color="#1F000000"
+        app:bl_ripple_enable="true"
+        app:layout_constraintTop_toBottomOf="@id/btn_add_desktop"/>
+
+    <com.noober.background.view.BLTextView
+        android:id="@+id/btn_merge"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        android:text="@string/merge_pdf_title"
+        android:textSize="16sp"
+        android:textColor="@color/text_primary"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:layout_marginTop="12dp"
+        app:bl_solid_color="@android:color/white"
+        app:bl_corners_radius="8dp"
+        app:bl_ripple_color="#1F000000"
+        app:bl_ripple_enable="true"
+        app:layout_constraintTop_toBottomOf="@id/btn_rename"/>
+
+    <com.noober.background.view.BLTextView
+        android:id="@+id/btn_file_lock"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        android:text="@string/action_set_password"
+        android:textSize="16sp"
+        android:textColor="@color/text_primary"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:layout_marginTop="12dp"
+        app:bl_solid_color="@android:color/white"
+        app:bl_corners_radius="8dp"
+        app:bl_ripple_color="#1F000000"
+        app:bl_ripple_enable="true"
+        app:layout_constraintTop_toBottomOf="@id/btn_merge"/>
+
+    <com.noober.background.view.BLTextView
+        android:id="@+id/btn_detail"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        android:text="@string/action_details"
+        android:textSize="16sp"
+        android:textColor="@color/text_primary"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:layout_marginTop="12dp"
+        app:bl_solid_color="@android:color/white"
+        app:bl_corners_radius="8dp"
+        app:bl_ripple_color="#1F000000"
+        app:bl_ripple_enable="true"
+        app:layout_constraintTop_toBottomOf="@id/btn_file_lock"/>
+
+    <com.noober.background.view.BLTextView
+        android:id="@+id/btn_delete"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        android:text="@string/action_delete"
+        android:textSize="16sp"
+        android:textColor="@color/text_primary"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:layout_marginTop="12dp"
+        app:bl_solid_color="@android:color/white"
+        app:bl_corners_radius="8dp"
+        app:bl_ripple_color="#1F000000"
+        app:bl_ripple_enable="true"
+        app:layout_constraintTop_toBottomOf="@id/btn_detail"/>
+
+</com.noober.background.view.BLConstraintLayout>

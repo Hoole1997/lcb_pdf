@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_search"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        android:title="@string/search_title"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_sort"
+        android:icon="@mipmap/ic_sort"
+        android:title="Sort"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_choose"
+        android:icon="@mipmap/ic_select"
+        android:title="choose"
+        app:showAsAction="ifRoom" />
+</menu> 

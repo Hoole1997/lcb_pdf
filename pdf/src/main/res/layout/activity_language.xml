@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/bg_language_top" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:text="@string/setting_language"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:includeFontPadding="false"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/setting_lang_tip"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:paddingHorizontal="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_title" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginTop="4dp"
+            android:id="@+id/rv_language"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            tools:listitem="@layout/item_language"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="@string/language_btn_done"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:cornerRadius="32dp"
+            android:backgroundTint="#FB4949"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_gravity="center_horizontal"
+            android:padding="12dp"/>
+
+        <FrameLayout
+            android:id="@+id/ads_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</FrameLayout>

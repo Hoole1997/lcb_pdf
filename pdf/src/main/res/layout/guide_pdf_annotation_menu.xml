@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:elevation="8dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <!-- 注释工具图标组 -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!-- 复制图标 -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            app:cardBackgroundColor="@color/tool_copy_color"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="0dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_copy"
+                app:tint="@android:color/white" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- 高亮图标 -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            app:cardBackgroundColor="@color/tool_highlight_color"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="0dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_highlight"
+                app:tint="@android:color/white" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- 下划线图标 -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            app:cardBackgroundColor="@color/tool_underline_color"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="0dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_underline"
+                app:tint="@android:color/white" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- 删除线图标 -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:cardBackgroundColor="@color/tool_strikethrough_color"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="0dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_strikethrough"
+                app:tint="@android:color/white" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+    <!-- 标题 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:text="@string/pdf_guide_annotation_title"
+        android:textColor="@color/tool_button_text_color"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- 描述 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:lineSpacingExtra="2dp"
+        android:text="@string/pdf_guide_annotation_desc"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:alpha="0.9" />
+
+    <!-- 下一步按钮 -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/white"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="8dp"
+        android:text="@string/pdf_guide_btn_next"
+        android:textAllCaps="false"
+        android:textColor="@color/tool_button_text_color"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:cornerRadius="20dp"
+        app:elevation="0dp" />
+
+</LinearLayout>

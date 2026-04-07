@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    
+    <!-- 橡皮擦主体 - 统一颜色便于着色 -->
+    <path
+        android:fillColor="@android:color/black"
+        android:pathData="M16.24,3.56l4.95,4.94c0.78,0.79 0.78,2.05 0,2.84L12,20.53c-0.39,0.39 -1.02,0.39 -1.41,0L2.81,12.75c-0.78,-0.79 -0.78,-2.05 0,-2.84l8.63,-8.63c0.79,-0.78 2.05,-0.78 2.84,0l1.96,1.96z"/>
+    
+    <!-- 橡皮擦金属环装饰 -->
+    <path
+        android:fillColor="@android:color/black"
+        android:fillAlpha="0.7"
+        android:pathData="M15.83,3.97l2.83,2.83c0.2,0.2 0.2,0.51 0,0.71l-0.71,-0.71l-2.12,-2.12c-0.2,-0.2 -0.2,-0.51 0,-0.71z"/>
+    
+    <!-- 擦除痕迹装饰 -->
+    <path
+        android:fillColor="@android:color/black"
+        android:fillAlpha="0.4"
+        android:pathData="M7,16l1.5,1.5l-0.35,0.35l-1.5,-1.5L7,16z"/>
+    <path
+        android:fillColor="@android:color/black"
+        android:fillAlpha="0.3"
+        android:pathData="M5.5,17.5l1,1l-0.25,0.25l-1,-1L5.5,17.5z"/>
+</vector>

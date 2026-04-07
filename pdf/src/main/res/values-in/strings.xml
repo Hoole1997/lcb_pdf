@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Name -->
+    <!-- Main Page -->
+    <string name="main_home_sort_title">Urutkan</string>
+    <string name="main_home_sort_modified">Waktu Diubah</string>
+    <string name="main_home_sort_modified_desc">(Terbaru)</string>
+    <string name="main_home_sort_modified_asc">(Terlama)</string>
+    <string name="main_home_sort_name">Nama</string>
+    <string name="main_home_sort_name_asc">(A ke Z)</string>
+    <string name="main_home_sort_name_desc">(Z ke A)</string>
+    <string name="main_home_sort_size">Ukuran File</string>
+    <string name="main_home_sort_size_desc">(Terbesar)</string>
+    <string name="main_home_sort_size_asc">(Terkecil)</string>
+    <string name="fragment_home_title">PDF Viewer</string>
+    <string name="fragment_home_search_hint">Cari...</string>
+    <string name="main_home_menu_sort">Urutkan</string>
+    <string name="main_home_menu_choose">Pilih</string>
+    <string name="main_tab_pdf">PDF</string>
+    <string name="main_tab_word">WORD</string>
+    <string name="main_tab_excel">EXCEL</string>
+    <string name="main_tab_ppt">PPT</string>
+    <string name="main_tab_txt">TXT</string>
+    <string name="main_tab_image">GAMBAR</string>
+    <string name="main_tab_all">SEMUA</string>
+    <string name="main_tab_recent">Terbaru</string>
+    <string name="main_tab_clean">Bersihkan</string>
+    <string name="main_tab_tools">Alat</string>
+    <string name="main_tab_file">File</string>
+    <string name="main_tab_favorite">Favorit</string>
+
+    <!-- File Operations -->
+    <string name="file_not_found">File tidak ditemukan</string>
+    <string name="file_name">Nama File</string>
+    <string name="file_path">Lokasi File</string>
+    <string name="file_size">Ukuran File</string>
+    <string name="action_favorite">Favorit</string>
+    <string name="action_share">Bagikan</string>
+    <string name="action_add_to_desktop">Tambah ke Layar</string>
+    <string name="action_rename">Ganti Nama</string>
+    <string name="action_details">Detail</string>
+    <string name="action_delete">Hapus</string>
+    <string name="action_set_password">Atur Kata Sandi</string>
+    <string name="action_cancel">Batal</string>
+    <string name="action_ok">OK</string>
+    <string name="action_skip">Lewati</string>
+    <string name="action_merge">Gabung</string>
+    <string name="action_split">Pisahkan</string>
+    <string name="pages_selected_format">%1$d Dipilih</string>
+
+    <!-- Tools Page -->
+    <string name="tool_import_file">Impor File</string>
+    <string name="tool_scan_pdf">Pindai PDF</string>
+    <string name="tool_lock_pdf">Kunci PDF</string>
+    <string name="tool_unlock_pdf">Buka PDF</string>
+    <string name="tool_image_pdf">Gambar ke PDF</string>
+    <string name="tool_file_clean">Bersihkan File</string>
+    <string name="tool_print_pdf">Cetak PDF</string>
+    <string name="tool_percent">%1$d%%</string>
+    <string name="tool_clean_size_total"> / </string>
+    <string name="tool_clean_btn">Bersihkan</string>
+    <string name="tool_add_widget">Tambah Widget</string>
+
+    <!-- Clean Function -->
+    <string name="clean_junk_files">File Sampah</string>
+    <string name="clean_junk_scan">Pindai Sampah</string>
+    <string name="clean_junk_title">Pembersihan Sampah</string>
+    <string name="clean_junk_clean">Bersihkan</string>
+    <string name="clean_junk_cleaning">Membersihkan perangkat Anda, harap tunggu…</string>
+    <string name="clean_junk_clean_suc">Dibersihkan! %1$s</string>
+
+    <!--Pengelola Proses-->
+    <string name="process_manager_title">Pengelola Proses</string>
+    <string name="process_manager_title_short">Proses</string>
+    <string name="process_manager_desc">Kelola proses yang berjalan di latar belakang</string>
+    <string name="process_manager_scan">Pindai Sekarang</string>
+    <string name="process_manager_scan_desc">Memindai proses yang sedang berjalan</string>
+    <string name="process_manager_suc_tip">Menghentikan %1$s aplikasi yang berjalan di latar belakang</string>
+    <string name="process_manager_clean_now">Bersihkan Sekarang</string>
+    <string name="process_manager_clean_tip">Pindai dan bersihkan sampah di ponsel Anda</string>
+    <string name="process_manager_clean_used">Digunakan</string>
+    <string name="process_manager_clean_ba">Aplikasi Latar Belakang</string>
+    <string name="process_manager_clean_st">Hentikan</string>
+    <string name="process_manager_clean_done">Selesai</string>
+    
+    <string name="clean_obsolete_apk">APK Usang</string>
+    <string name="clean_temp_files">File Sementara</string>
+    <string name="clean_log_files">File Log</string>
+    <string name="clean_scanning">Memindai</string>
+    <string name="clean_scanning_folder">Memindai: %1$s</string>
+    <string name="clean_button_text">Bersihkan %1$s</string>
+    <string name="clean_button_scanning">Memindai...</string>
+    <string name="clean_button_scanning_text">Memindai</string>
+
+    <!-- File Lock -->
+    <string name="lock_set_password">Atur Kata Sandi</string>
+    <string name="lock_set_password_desc">Atur kata sandi untuk melindungi PDF</string>
+    <string name="lock_remove_password">Hapus Kunci</string>
+    <string name="lock_remove_password_desc">File PDF ini tidak akan lagi dilindungi kata sandi</string>
+    <string name="lock_title_set_password">Atur Kata Sandi</string>
+    <string name="lock_password_hint">Masukkan kata sandi</string>
+    <string name="lock_confirm_password_hint">Konfirmasi kata sandi</string>
+    <string name="dialog_password_incorrect">Kata sandi salah!</string>
+
+    <!-- Image Preview -->
+    <string name="image_preview_save_developing">Fitur simpan sedang dalam pengembangan</string>
+    <string name="image_preview_load_failed">Gagal memuat gambar</string>
+    <string name="image_preview_unsupported_type">Jenis file tidak didukung</string>
+    <string name="image_preview_pager_indicator">%1$d/%2$d</string>
+
+    <!-- File Selection -->
+    <string name="choose_file_selected_count">%1$d Dipilih</string>
+    <string name="choose_file_delete_confirm_title">Konfirmasi</string>
+    <string name="choose_file_delete_confirm_message">Apakah Anda yakin ingin menghapus %1$d file ini? Tindakan ini tidak dapat dibatalkan.</string>
+    <string name="choose_file_delete_confirm_cancel">Batal</string>
+    <string name="choose_file_delete_confirm_ok">OK</string>
+    <string name="choose_file_delete_single_confirm_message">Apakah Anda yakin ingin menghapus %1$s? Tindakan ini tidak dapat dibatalkan.</string>
+    <string name="choose_file_title_selected_count">%1$d Dipilih</string>
+    <string name="choose_file_delete">Hapus</string>
+    <string name="choose_file_share">Bagikan</string>
+
+    <!-- Settings Page -->
+    <string name="setting_feedback_email">1286041359@qq.com</string>
+    <string name="setting_google_play_url">https://play.google.com/store/apps/details?id=%1$s</string>
+    <string name="setting_privacy_policy_url">https://www.baidu.com</string>
+    <string name="setting_user_agreement_url">https://www.baidu.com</string>
+    <string name="setting_title">Pengaturan</string>
+    <string name="setting_floating_window_enable">Tampilkan layar kunci</string>
+    <string name="setting_language">Bahasa</string>
+    <string name="setting_night_mode">Mode Gelap</string>
+    <string name="setting_feedback">Umpan Balik</string>
+    <string name="setting_rate_us">Nilai Kami</string>
+    <string name="setting_privacy_policy">Kebijakan Privasi</string>
+    <string name="setting_terms_of_service">Ketentuan Layanan</string>
+    <string name="setting_lang_tip">Pilih bahasa Anda. Anda dapat mengubahnya nanti di Pengaturan.</string>
+
+    <!-- Success Page -->
+    <string name="success_import_pdf_title">Impor PDF</string>
+    <string name="success_import_pdf_desc">Impor dan lihat PDF dari folder sistem</string>
+    <string name="success_import_pdf_btn">Impor Sekarang</string>
+    <string name="success_scan_pdf_title">Pindai PDF</string>
+    <string name="success_scan_pdf_desc">Pindai gambar dengan kamera untuk membuat PDF</string>
+    <string name="success_scan_pdf_btn">Pindai Sekarang</string>
+    <string name="success_lock_pdf_title">Kunci PDF</string>
+    <string name="success_lock_pdf_desc">Tambahkan kata sandi ke file PDF</string>
+    <string name="success_lock_pdf_btn">Kunci Sekarang</string>
+    <string name="success_unlock_pdf_title">Buka PDF</string>
+    <string name="success_unlock_pdf_desc">Buka PDF terenkripsi</string>
+    <string name="success_unlock_pdf_btn">Lihat Sekarang</string>
+    <string name="success_clean_title">Bersihkan File</string>
+    <string name="success_clean_desc">Bersihkan file sampah sistem</string>
+    <string name="success_clean_btn">Bersihkan Sekarang</string>
+    <string name="success_complete">Selesai</string>
+    <string name="success_function_file_antivirus">Antivirus File</string>
+    <string name="success_function_file_antivirus_desc">Lindungi file Anda dari virus</string>
+    <string name="success_function_scan_now">Pindai Sekarang</string>
+
+    <!-- Permissions -->
+    <string name="permission_storage_denied">Gagal mendapatkan izin. Silakan aktifkan izin file secara manual di pengaturan sistem.</string>
+    <string name="permission_dialog_later">Nanti</string>
+    <string name="permission_dialog_allow_all_files">Izinkan akses ke semua file</string>
+    <string name="permission_dialog_needed">Izin Diperlukan</string>
+    <string name="permission_dialog_allow_access">Izinkan Akses</string>
+    <string name="permission_dialog_allow_access_desc">Izinkan PDF Viewer mengakses semua file</string>
+    <string name="permission_dialog_detail">Untuk kenyamanan Anda, izinkan aplikasi mengakses semua file Anda. Informasi dokumen yang kami atur hanya akan digunakan di perangkat saat ini</string>
+    <string name="permission_dialog_description">Untuk membaca dan mengedit file Anda, izinkan <font color="#fc4949">PDF Viewer</font> mengakses semua file Anda</string>
+    <string name="permission_dialog_allow">Izinkan</string>
+    <string name="permission_access_message">PDF Viewer membutuhkan akses ke file Anda untuk bekerja dengan lancar. Harap izinkan akses untuk menikmati semua fitur.</string>
+    <string name="permission_access_message_html"><font color="#fc4949">PDF Viewer</font> membutuhkan akses ke file Anda untuk bekerja dengan lancar. Harap izinkan akses untuk menikmati semua fitur.</string>
+    <string name="permission_continue">Lanjutkan</string>
+    <string name="permission_tips">Tips</string>
+    <string name="permission_dialog_confirm">Konfirmasi</string>
+    <string name="permission_dialog_noti_content">Kami ingin membuat Anda tetap terbarui. Aktifkan notifikasi untuk menerima pengingat penting dan peringatan tepat waktu langsung dari kami.</string>
+    <string name="permission_holder_message">Izinkan akses file untuk menampilkan dan mengelola PDF Anda langsung di aplikasi.</string>
+    
+    <!-- Exit Prompt -->
+    <string name="exit_press_again">Tekan kembali sekali lagi untuk keluar</string>
+
+    <!-- File Size Units -->
+    <string name="file_size_b">B</string>
+    <string name="file_size_kb">KB</string>
+    <string name="file_size_mb">MB</string>
+    <string name="file_size_gb">GB</string>
+    <string name="file_size_tb">TB</string>
+
+    <!-- Search -->
+    <string name="search_title">Cari</string>
+    <string name="search_hint">Cari...</string>
+
+    <!-- PDF Lock -->
+    <string name="pdf_lock_title">Kunci PDF</string>
+
+    <!-- Empty State -->
+    <string name="empty_data">Tidak Ada Data</string>
+
+    <!-- File Details -->
+    <string name="file_detail_title">Detail</string>
+    <string name="file_detail_format">Format File</string>
+    <string name="file_detail_path">Lokasi Penyimpanan</string>
+    <string name="file_detail_last_modified">Waktu Terakhir Diubah</string>
+
+    <!-- File Rename -->
+    <string name="file_rename_title">Ganti Nama</string>
+    <string name="file_rename_cancel">Batal</string>
+    <string name="file_rename_ok">OK</string>
+
+    <!-- Other -->
+    <string name="unknown_file_name">tidak_diketahui.pdf</string>
+    <string name="error_activity_result_launcher">ActivityResultLauncher tidak terdaftar atau sudah dihancurkan</string>
+    <string name="toast_get_permission_failed">Gagal mendapatkan izin. Silakan aktifkan izin file secara manual di pengaturan sistem.</string>
+    <string name="pdf_move_success">PDF dipindahkan ke direktori pribadi aplikasi:</string>
+    <string name="pdf_move_failed">Gagal memindahkan PDF, masih di:</string>
+    <string name="print_job_name">Tugas Cetak Dokumen %1$s</string>
+    <string name="error_writing_print_content">Kesalahan saat menulis konten cetak</string>
+    <string name="toast_invalid_url">URL tidak valid</string>
+    <string name="splash_screen_slogan">Baca berbagai file dengan mudah</string>
+    <string name="loading_text">Memuat...</string>
+    <string name="default_file_path">/storage/emulated/0/xxx/storage/emulated/0/xxx/storage/emulated/0/xxx</string>
+
+    <!-- Clean Model Type Titles -->
+    <string name="clean_type_junk_files">File Sampah</string>
+    <string name="clean_type_obsolete_apk">APK Usang</string>
+    <string name="clean_type_temp_files">File Sementara</string>
+    <string name="clean_type_log_files">File Log</string>
+
+    <!-- Sort Options -->
+    <string name="sort_modified_time">Waktu Diubah</string>
+    <string name="sort_modified_time_newest">(Terbaru)</string>
+    <string name="sort_modified_time_oldest">(Terlama)</string>
+    <string name="sort_name">Nama</string>
+    <string name="sort_name_asc">(A ke Z)</string>
+    <string name="sort_name_desc">(Z ke A)</string>
+    <string name="sort_file_size">Ukuran File</string>
+    <string name="sort_file_size_largest">(Terbesar)</string>
+    <string name="sort_file_size_smallest">(Terkecil)</string>
+
+    <!-- Language Names -->
+    <string name="chinese_simplified">Tionghoa (Sederhana)</string>
+    <string name="english">Inggris</string>
+    <string name="chinese_traditional">Tionghoa (Tradisional)</string>
+    <string name="language_russia">Rusia</string>
+    <string name="language_portuguese_brazil">Portugis (Brasil)</string>
+    <string name="language_vietnamese">Vietnam</string>
+    <string name="language_thai">Thailand</string>
+    <string name="language_indonesian">Indonesia</string>
+    <string name="language_hindi">Hindi</string>
+    <string name="language_spanish">Spanyol</string>
+    <string name="language_german">Jerman</string>
+    <string name="language_french">Prancis</string>
+    <string name="language_korean">Korea</string>
+    <string name="language_japanese">Jepang</string>
+    <string name="language_button_default">Pasang</string>
+    <string name="language_button_selected">Buka</string>
+
+    <string name="page_permission_file_1">Selamat datang di</string>
+    <string name="page_permission_file_2">Berikan Akses</string>
+    <string name="dialog_pdf_default_launch_content">Atur <font color="#fc4949">PDF Viewer</font> sebagai pembaca PDF default untuk meningkatkan kecepatan membaca.</string>
+    
+    <string name="guide_scan_text_1">Pindai ke PDF</string>
+    <string name="guide_scan_text_2">Klik tombol ini untuk menggunakan fitur pemindaian</string>
+    <string name="guide_scan_text_3">Coba sekarang</string>
+    
+    <!-- Notification Tool Strings -->
+    <string name="notification_tool_title">Alat PDF</string>
+    <string name="notification_tool_text">Alat akses cepat</string>
+    <string name="notification_btn_doc">Dok</string>
+    <string name="notification_btn_scan">Pindai</string>
+    <string name="notification_btn_clean">Bersihkan</string>
+    
+    <!-- PDF Default Launcher -->
+    <string name="choose_default_pdf_reader">Pilih pembaca PDF default</string>
+    <string name="pdf_default_just_once">Sekali ini</string>
+    <string name="pdf_default_always">Selalu</string>
+    
+    <!-- Store Score Dialog -->
+    <string name="store_score_title">Terima kasih telah menggunakan PDF Viewer</string>
+    <string name="store_score_desc">Kami akan sangat berterima kasih jika Anda memberi kami nilai.</string>
+    <string name="store_score_button">Beri nilai</string>
+    <string name="store_score_feedback_thanks">Terima kasih atas umpan balik Anda!</string>
+    <string name="store_score_badge">Penilaian terbaik untuk kami</string>
+    
+    <!-- Guide Pages -->
+    <string name="guide_page1_title">Pembaca Dokumen All-in-one</string>
+    <string name="guide_page1_desc">Akses, atur, dan kelola semua file Anda dengan mudah - kapan saja, di mana saja.</string>
+    <string name="guide_page2_title">Pemindai dokumen yang nyaman</string>
+    <string name="guide_page2_desc">Pindai semua dokumen penting Anda dengan mudah.</string>
+    <string name="guide_page3_title">Pembersihan file cepat dan antivirus</string>
+    <string name="guide_page3_desc">Bersihkan file sampah, tingkatkan keamanan dan kinerja.</string>
+    <string name="guide_page4_title">Konversi gambar dan hasil pindaian ke PDF kapan saja</string>
+    <string name="guide_page4_desc">Ubah gambar menjadi PDF atau pindai langsung untuk membuat PDF di mana saja.</string>
+    <string name="guide_btn_next">Selanjutnya</string>
+    
+    <string name="current_language">Bahasa saat ini</string>
+    <string name="all_language">Semua bahasa</string>
+
+    <!-- Splash screen loading texts -->
+    <string name="splash_initialize">Menginisialisasi...</string>
+    <string name="splash_load_resources">Memuat sumber daya...</string>
+    <string name="splash_load_files">Memuat berkas...</string>
+
+    <!-- Language setting button -->
+    <string name="language_btn_done">Selesai</string>
+    
+    <!-- Dialog Pemilihan Bahasa -->
+    <string name="language_skip_title">Konfirmasi Lewati</string>
+    <string name="language_skip_message">Anda akan melanjutkan dengan [%1$s] sebagai bahasa default Anda.\n\nKetuk Selanjutnya untuk melanjutkan.</string>
+    <string name="language_skip_next">Selanjutnya</string>
+    <string name="language_default">Bahasa Default</string>
+    
+    <!-- Dialog Lewati Panduan -->
+    <string name="guide_skip_message">Anda akan melewati panduan dan langsung masuk ke antarmuka utama. Anda selalu dapat melihat lebih banyak pengenalan fitur di pengaturan.\n\nKetuk Selanjutnya untuk melanjutkan.</string>
+    
+    <!-- Guide Click Text -->
+    <string name="guide_doc_click_text">Baca file Anda sekarang</string>
+    
+    <!-- PDF Guide Text -->
+    <string name="pdf_guide_annotation_title">Alat Anotasi Kaya</string>
+    <string name="pdf_guide_annotation_desc">Setelah memilih teks, Anda dapat menggunakan berbagai alat anotasi:\nSalin, Sorot, Garis Bawah, Coret</string>
+    <string name="pdf_guide_btn_next">Mengerti</string>
+    <string name="pdf_guide_btn_continue">Lanjutkan</string>
+    <string name="pdf_guide_btn_more">Pelajari Lebih Lanjut</string>
+    
+    <!-- Exit App Dialog -->
+    <string name="exit_app_dialog_title">Apakah Anda yakin ingin keluar dari aplikasi?</string>
+    <string name="exit_app_dialog_positive">Konfirmasi Keluar</string>
+    <string name="exit_app_dialog_negative">Batal</string>
+    
+    <!-- App Shortcuts -->
+    <string name="shortcut_uninstall_short">Hapus</string>
+    <string name="shortcut_uninstall_title">Menghapus aplikasi dapat mengakibatkan hilangnya dokumen tersimpan atau file terbaru. Apakah Anda yakin ingin melanjutkan?</string>
+    <string name="shortcut_uninstall_title_highlight">hilangnya dokumen tersimpan atau file terbaru</string>
+    <string name="shortcut_uninstall_content">Silakan coba aktifkan aplikasi sekali lagi dan beri tahu kami alasannya.</string>
+    <string name="shortcut_uninstall_btn_agree">Jangan Hapus Dulu</string>
+    <string name="shortcut_uninstall_btn_still">Tetap Hapus</string>
+    <string name="shortcut_uninstall_title2">Ada masalah saat menggunakan aplikasi?</string>
+    <string name="shortcut_uninstall_option1">Fitur tidak berfungsi</string>
+    <string name="shortcut_uninstall_option2">Saya tidak lagi memerlukan aplikasi ini</string>
+    <string name="shortcut_uninstall_option3">Terlalu banyak iklan</string>
+    <string name="shortcut_uninstall_option4">Terlalu banyak notifikasi</string>
+    <string name="shortcut_uninstall_option5">Lainnya</string>
+    <string name="shortcut_uninstall_edit_tip">Harap berikan lebih banyak detail agar kami dapat mengidentifikasi dan menyelesaikan masalah Anda lebih cepat…</string>
+    <string name="shortcut_uninstall_btn_cancel">Batal</string>
+    <string name="shortcut_uninstall_btn_uninstall">Hapus</string>
+
+    <!-- PDF Operations -->
+    <string name="pdf_encrypt_failed">Enkripsi PDF gagal</string>
+    <string name="pdf_decrypt_failed">Dekripsi PDF gagal</string>
+    <string name="pdf_process_failed">Pemrosesan PDF gagal</string>
+    <string name="external_file_no_encryption">File eksternal tidak mendukung enkripsi/dekripsi</string>
+    <string name="added_to_favorites">Ditambahkan ke favorit</string>
+    <string name="removed_from_favorites">Dihapus dari favorit</string>
+    <string name="already_first_page">Sudah di halaman pertama</string>
+    <string name="already_last_page">Sudah di halaman terakhir</string>
+    <string name="saving_pdf">Menyimpan PDF...</string>
+    <string name="save_as_copy_exiting">Salinan berhasil disimpan, keluar...</string>
+    <string name="incremental_save_exiting">Perubahan berhasil disimpan, keluar...</string>
+    <string name="save_success_exiting">Berhasil disimpan, keluar...</string>
+    <string name="incremental_save_success">Penyimpanan bertahap berhasil</string>
+    <string name="save_success">Berhasil disimpan</string>
+    <string name="save_failed">Penyimpanan gagal: %1$s</string>
+    
+    <!-- Text Selection and Annotation -->
+    <string name="annotation_highlight">Sorot</string>
+    <string name="annotation_underline">Garis bawah</string>
+    <string name="annotation_strikethrough">Coret</string>
+    <string name="annotation_added">Anotasi %1$s ditambahkan</string>
+    <string name="annotation_add_failed">Gagal menambahkan anotasi %1$s</string>
+    <string name="annotation_add_error">Gagal menambahkan anotasi: %1$s</string>
+    <string name="annotation_no_page_info">Tidak dapat menambahkan anotasi: informasi halaman hilang</string>
+    <string name="pdf_text_label">Teks PDF</string>
+    <string name="text_copied">Disalin</string>
+    <string name="copy_failed">Salin gagal</string>
+    <string name="annotation_clear_no_page">Tidak dapat menghapus anotasi: informasi halaman hilang</string>
+    <string name="annotations_cleared">%1$d anotasi dihapus</string>
+    <string name="no_annotations_on_page">Tidak ada anotasi di halaman saat ini</string>
+    <string name="clear_annotations_failed">Gagal menghapus anotasi: %1$s</string>
+
+    <!-- Search -->
+    <string name="action_search">Cari</string>
+
+    <!-- PDF Merge -->
+    <string name="tool_merge_pdf">Gabung PDF</string>
+    <string name="merge_button_text_selected">Gabung %1$d PDF</string>
+    <string name="merge_button_text_default">Pilih minimal 2 PDF</string>
+    <string name="merge_pdf_title">Gabung PDF</string>
+    <string name="split_pdf_title">Pisahkan PDF</string>
+    <string name="split_button_text_selected">Pisahkan %1$d PDF</string>
+    <string name="split_button_text_default">Pilih minimal 1 PDF</string>
+
+    <!-- PDF Page Grid -->
+    <string name="pdf_page_grid_merge_title">Pilih Halaman untuk Digabung</string>
+    <string name="pdf_page_grid_split_title">Pilih Halaman untuk Dipisah</string>
+    <string name="merge_pages_button_text">Gabung %1$d Halaman</string>
+    <string name="split_pages_button_text">Pisahkan %1$d Halaman</string>
+    <string name="merge_button_default_text">Pilih halaman untuk digabung</string>
+    <string name="split_button_default_text">Pilih halaman untuk dipisah</string>
+    <string name="select_all_pages">Pilih Semua</string>
+    <string name="deselect_all_pages">Batal Pilih Semua</string>
+    <string name="pages_selected_info">%1$d dari %2$d halaman dipilih</string>
+    <string name="no_pdf_pages_found">Tidak ada halaman PDF ditemukan</string>
+
+    <!-- PDF Operations -->
+    
+    <!-- Text Selection and Annotation -->
+
+    <!-- Guide -->
+
+    <!-- floating dialog-->
+    <string name="floatng_dialog_allow">Izinkan</string>
+    <string name="floatng_dialog_appear">muncul di atas aplikasi lain</string>
+    <string name="floatng_dialog_content">Untuk mengaktifkan Mini-Reader mengambang dan dengan cepat merujuk dokumen Anda saat menggunakan aplikasi lain.</string>
+    <string name="floatng_dialog_required">(diperlukan)</string>
+
+    <!-- Floating Window -->
+    <string name="floating_window_title">File Terbaru</string>
+    <string name="floating_window_empty">Tidak ada file terbaru</string>
+    <string name="floating_window_resize_handle">Ubah ukuran jendela</string>
+    <string name="floating_window_permission_required">Izin jendela mengambang diperlukan</string>
+    <string name="floating_window_show_failed">Gagal menampilkan jendela mengambang: %1$s</string>
+    <string name="floating_window_open_file_failed">Gagal membuka file: %1$s</string>
+
+    <!-- Earthquake -->
+    <string name="earthquake_quick_alert">Peringatan Cepat Gempa Bumi</string>
+    <string name="earthquake_focal_depth">Kedalaman Fokus</string>
+    <string name="earthquake_tsunami_threat">Ancaman Tsunami</string>
+    <string name="earthquake_usgs_warning">Peringatan USGS</string>
+    <string name="earthquake_origin_time">Waktu Asal</string>
+    <string name="earthquake_magnitude_type">Jenis Magnitudo</string>
+    <string name="earthquake_data_status">Status Data</string>
+    <string name="earthquake_data_km">KM</string>
+    
+    <!-- Notification - Override notification module strings -->
+    <string name="noti_earthquake_click_text">- Lihat Radius Dampak……</string>
+    
+    <string name="lock_screen_slide_to_unlock">Geser untuk membuka kunci</string>
+    <string name="lock_screen_scan_pdf">Pindai PDF</string>
+
+    <!-- Introduction -->
+    <string name="introduction_title"><![CDATA[Pembaca <font color="#FB4949">PDF</font> Gratis &amp; Editor &amp; Konverter]]></string>
+    <string name="introduction_title_2"><![CDATA[Pilih <font color="#FB4949">PDF Viewer</font> sebagai aplikasi beranda default Anda]]></string>
+    <string name="introduction_title_3"><![CDATA[Mulai dalam <font color="#FB4949">2 langkah</font> mudah:]]></string>
+    <string name="introduction_step1_text">Ketuk \"Lanjutkan\" di bawah</string>
+    <string name="introduction_step2_text">Ketuk \"PDF Viewer\" dan atur sebagai aplikasi beranda default Anda</string>
+    <string name="introduction_btn_get_started">Mulai</string>
+    <string name="introduction_btn_continue">Lanjutkan</string>
+    <string name="introduction_not_now">Nanti saja</string>
+    <string name="introduction_step1_title">Langkah 1：</string>
+    <string name="introduction_step2_title">Langkah 2：</string>
+    <string name="introduction_privacy_policy">Kebijakan Privasi</string>
+    <string name="introduction_terms_of_service">Ketentuan Layanan</string>
+
+    <!-- Custom Dialog -->
+    <string name="custom_dialog_description">Geser ke kanan untuk melihat file, memberi anotasi halaman dan bekerja secara efisien</string>
+
+    <!-- Default App Dialog -->
+    <string name="default_app_dialog_title"><![CDATA[Setel <font color="#FB4949">PDF</font> Viewer sebagai default]]></string>
+    <string name="default_app_dialog_desc1">Pemindai dokumen terintegrasi, konverter PDF dan penampil file</string>
+    <string name="default_app_dialog_desc2">Wallpaper hidup, pembersih penyimpanan, cuaca yang tepat.</string>
+    <string name="default_app_dialog_btn_try">Coba sekarang</string>
+
+    <!-- About -->
+    <string name="about_section_title">Tentang kami</string>
+    <string name="about_content">Di PDF Reader &amp; PDF Viewer, kami berkomitmen untuk menyediakan pengalaman manajemen PDF yang terintegrasi, lancar, dan efisien. Baik Anda melihat dokumen, menyorot teks, memindai file secara instan, mengonversi gambar ke PDF, atau membersihkan ruang penyimpanan secara cerdas, kami menawarkan solusi end-to-end yang bijaksana untuk semua kebutuhan Anda. Tim kami menempatkan pengguna di tempat pertama, menggabungkan fungsionalitas yang kuat dengan antarmuka yang bersih dan intuitif sehingga Anda dapat tetap produktif dan terorganisir kapan saja, di mana saja. Kami terus mendengarkan masukan Anda dan terus meningkatkan dan berinovasi—membuat penanganan PDF lebih sederhana dan lebih cerdas untuk semua orang.</string>
+    <string name="about_privacy_policy">Kebijakan Privasi</string>
+    <string name="about_uninstall_instructions">Petunjuk Uninstall</string>
+
+    <!-- Language Setting -->
+    <string name="language_setting_loading">Mengatur...</string>
+</resources> 

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- PDF单个缩略图项目布局 - 对应HTML版本的thumbnail-item -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="@drawable/thumbnail_item_background"
+    android:gravity="center"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_margin="4dp">
+
+    <!-- 缩略图容器 - 对应HTML版本的thumbnail-preview -->
+    <FrameLayout
+        android:layout_width="50dp"
+        android:layout_height="65dp"
+        android:background="@drawable/thumbnail_preview_background"
+        android:layout_marginBottom="8dp">
+
+        <!-- 页面缩略图 -->
+        <ImageView
+            android:id="@+id/thumbnailImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:background="@color/card_background" />
+
+        <!-- 加载指示器 -->
+        <ProgressBar
+            android:id="@+id/thumbnailLoading"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:indeterminateTint="@color/primary_color"
+            android:visibility="visible" />
+
+        <!-- 当前页面指示器已移除 - 选中状态现在通过整个项目的背景变化显示 -->
+
+    </FrameLayout>
+
+    <!-- 页码标签 - 对应HTML版本的thumbnail-number -->
+    <TextView
+        android:id="@+id/pageNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textSize="11sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_secondary"
+        android:gravity="center" />
+
+</LinearLayout>

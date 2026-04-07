@@ -1,0 +1,2 @@
+// Reuse the existing Local flavor config as the internal CI config source.
+apply from: "${rootDir}/pdf/src/local/config.gradle"

@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App -->
+    <string name="app_name_main" translatable="false">PDF Viewer</string>
+    <string name="loading">Loading…</string>
+
+    <!-- Launcher Guide -->
+    <string name="launcher_guide_title">Set %1$s as Default Home Screen App</string>
+    <string name="launcher_guide_description">Such applications are known as launchers, which can take the place of your Android home screen.</string>
+
+    <!-- Main -->
+    <string name="main_home_sort_title">Sort by</string>
+    <string name="main_home_sort_modified">Time</string>
+    <string name="main_home_sort_modified_desc">(Newest)</string>
+    <string name="main_home_sort_modified_asc">(Oldest)</string>
+    <string name="main_home_sort_name">Name</string>
+    <string name="main_home_sort_name_asc">(A-Z)</string>
+    <string name="main_home_sort_name_desc">(Z-A)</string>
+    <string name="main_home_sort_size">Size</string>
+    <string name="main_home_sort_size_desc">(Big first)</string>
+    <string name="main_home_sort_size_asc">(Small first)</string>
+    <string name="fragment_home_title">File Viewer</string>
+    <string name="fragment_home_search_hint">Search…</string>
+    <string name="main_home_menu_sort">Sort</string>
+    <string name="main_home_menu_choose">Pick</string>
+    <string name="main_tab_pdf">PDF</string>
+    <string name="main_tab_word">Word</string>
+    <string name="main_tab_excel">Excel</string>
+    <string name="main_tab_ppt">PPT</string>
+    <string name="main_tab_txt">Txt</string>
+    <string name="main_tab_image">Image</string>
+    <string name="main_tab_all">All</string>
+    <string name="main_tab_recent">Recent</string>
+    <string name="main_tab_clean">Clean</string>
+    <string name="main_tab_tools">Tools</string>
+    <string name="main_tab_file">Files</string>
+    <string name="main_tab_favorite">Favorite</string>
+    <string name="action_search">Search</string>
+
+    <!-- File Ops -->
+    <string name="file_not_found">File missing</string>
+    <string name="file_name">Name</string>
+    <string name="file_path">Path</string>
+    <string name="file_size">Size</string>
+    <string name="action_favorite">Like</string>
+    <string name="action_share">Send</string>
+    <string name="action_add_to_desktop">Add to home</string>
+    <string name="action_rename">Rename</string>
+    <string name="action_details">Info</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_set_password">Lock</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_ok">OK</string>
+    <string name="action_skip">Skip</string>
+
+    <!-- Tools -->
+    <string name="tool_import_file">Import</string>
+    <string name="tool_scan_pdf">Scan</string>
+    <string name="tool_lock_pdf">Lock</string>
+    <string name="tool_unlock_pdf">Unlock</string>
+    <string name="tool_image_pdf">Image→PDF</string>
+    <string name="tool_file_clean">Cleaner</string>
+    <string name="tool_print_pdf">Print</string>
+    <string name="tool_merge_pdf">Merge</string>
+    <string name="tool_percent">%1$d%%</string>
+    <string name="tool_clean_size_total">/</string>
+    <string name="tool_clean_btn">Clean</string>
+    <string name="tool_add_widget">Add widget</string>
+
+    <!-- Merge/Split -->
+    <string name="merge_button_text_selected">Merge %1$d</string>
+    <string name="merge_button_text_default">Pick ≥2 files</string>
+    <string name="merge_pdf_title">Merge</string>
+    <string name="split_pdf_title">Split</string>
+    <string name="split_button_text_selected">Split %1$d</string>
+    <string name="split_button_text_default">Pick ≥1 file</string>
+
+    <!-- Page Grid -->
+    <string name="pdf_page_grid_merge_title">Pick pages to merge</string>
+    <string name="pdf_page_grid_split_title">Pick pages to split</string>
+    <string name="merge_pages_button_text">Merge %1$d pages</string>
+    <string name="split_pages_button_text">Split %1$d pages</string>
+    <string name="merge_button_default_text">Choose pages</string>
+    <string name="split_button_default_text">Choose pages</string>
+    <string name="select_all_pages">Select all</string>
+    <string name="deselect_all_pages">Clear</string>
+    <string name="pages_selected_info">%1$d / %2$d</string>
+    <string name="no_pdf_pages_found">No pages</string>
+    <string name="action_merge">Merge</string>
+    <string name="action_split">Split</string>
+    <string name="pages_selected_format">%1$d chosen</string>
+
+    <!-- Clean -->
+    <string name="clean_junk_files">Junk</string>
+    <string name="clean_obsolete_apk">Old APK</string>
+    <string name="clean_temp_files">Temp</string>
+    <string name="clean_log_files">Logs</string>
+    <string name="clean_scanning">Scanning…</string>
+    <string name="clean_scanning_folder">Scan: %1$s</string>
+    <string name="clean_button_text">Clean %1$s</string>
+    <string name="clean_button_scanning">Scanning…</string>
+    <string name="clean_button_scanning_text">Scanning</string>
+    <string name="clean_junk_scan">Junk Scan</string>
+    <string name="clean_junk_title">Junk Cleanup</string>
+    <string name="clean_junk_clean">Clean</string>
+    <string name="clean_junk_cleaning">Cleaning your device, please hold on…</string>
+    <string name="clean_junk_clean_suc">Cleaned! %1$s</string>
+
+    <!--Process Manager-->
+    <string name="process_manager_title">Process Manager</string>
+    <string name="process_manager_title_short">Process</string>
+    <string name="process_manager_desc">Manage processes running in the background</string>
+    <string name="process_manager_scan">Scan Now</string>
+    <string name="process_manager_scan_desc">Scanning for running processes</string>
+    <string name="process_manager_suc_tip">Stopped %1$s applications running in the background.</string>
+    <string name="process_manager_clean_now">Clean Now</string>
+    <string name="process_manager_clean_tip">Scan and clean junk on your phone</string>
+    <string name="process_manager_clean_used">Used</string>
+    <string name="process_manager_clean_ba">Background Apps</string>
+    <string name="process_manager_clean_st">Stop</string>
+    <string name="process_manager_clean_done">Done</string>
+
+    <!-- Lock -->
+    <string name="lock_set_password">Set pass</string>
+    <string name="lock_set_password_desc">Protect with password</string>
+    <string name="lock_remove_password">Remove lock</string>
+    <string name="lock_remove_password_desc">Remove password</string>
+    <string name="lock_title_set_password">Set Password</string>
+    <string name="lock_password_hint">Password</string>
+    <string name="lock_confirm_password_hint">Confirm</string>
+    <string name="dialog_password_incorrect">Wrong pass</string>
+
+    <!-- Image Preview -->
+    <string name="image_preview_save_developing">Coming soon</string>
+    <string name="image_preview_load_failed">Load failed</string>
+    <string name="image_preview_unsupported_type">Unsupported</string>
+    <string name="image_preview_pager_indicator">%1$d/%2$d</string>
+
+    <!-- Selection -->
+    <string name="choose_file_selected_count">%1$d picked</string>
+    <string name="choose_file_delete_confirm_title">Sure?</string>
+    <string name="choose_file_delete_confirm_message">Delete %1$d files? Can\'t undo.</string>
+    <string name="choose_file_delete_confirm_cancel">No</string>
+    <string name="choose_file_delete_confirm_ok">Yes</string>
+    <string name="choose_file_delete_single_confirm_message">Delete %1$s?</string>
+    <string name="choose_file_title_selected_count">%1$d chosen</string>
+    <string name="choose_file_delete">Delete</string>
+    <string name="choose_file_share">Send</string>
+
+    <!-- Settings -->
+    <string name="setting_feedback_email">1286041359@qq.com</string>
+    <string name="setting_google_play_url">https://play.google.com/store/apps/details?id=%1$s</string>
+
+    <!-- Language -->
+    <string name="language_skip_title">Skip?</string>
+    <string name="language_skip_message">Use %1$s as default.</string>
+    <string name="language_skip_next">Next</string>
+    <string name="language_default">System</string>
+
+    <!-- Guide Skip -->
+    <string name="guide_skip_message">Skip intro? You can rewatch in Settings.</string>
+    <string name="setting_privacy_policy_url">https://www.baidu.com</string>
+    <string name="setting_user_agreement_url">https://www.baidu.com</string>
+    <string name="setting_title">Settings</string>
+    <string name="setting_floating_window_enable">Show Lock Screen</string>
+    <string name="setting_language">Language</string>
+    <string name="setting_night_mode">Dark</string>
+    <string name="setting_feedback">Feedback</string>
+    <string name="setting_rate_us">Rate</string>
+    <string name="setting_privacy_policy">Privacy</string>
+    <string name="setting_terms_of_service">Terms</string>
+    <string name="setting_lang_tip">Pick language. Change later in Settings.</string>
+
+    <!-- Success -->
+    <string name="success_import_pdf_title">Import</string>
+    <string name="success_import_pdf_desc">Grab files anywhere</string>
+    <string name="success_import_pdf_btn">Import</string>
+    <string name="success_scan_pdf_title">Scan</string>
+    <string name="success_scan_pdf_desc">Camera to PDF</string>
+    <string name="success_scan_pdf_btn">Scan</string>
+    <string name="success_lock_pdf_title">Lock</string>
+    <string name="success_lock_pdf_desc">Add password</string>
+    <string name="success_lock_pdf_btn">Lock</string>
+    <string name="success_unlock_pdf_title">Unlock</string>
+    <string name="success_unlock_pdf_desc">Remove password</string>
+    <string name="success_unlock_pdf_btn">Open</string>
+    <string name="success_clean_title">Cleaner</string>
+    <string name="success_clean_desc">Free up space</string>
+    <string name="success_clean_btn">Clean</string>
+    <string name="success_complete">Done</string>
+    <string name="success_function_file_antivirus">Antivirus</string>
+    <string name="success_function_file_antivirus_desc">Keep files safe</string>
+    <string name="success_function_scan_now">Scan</string>
+
+    <!-- Permission -->
+    <string name="permission_storage_denied">Need file access</string>
+    <string name="permission_dialog_later">Later</string>
+    <string name="permission_dialog_allow_all_files">Allow all files</string>
+    <string name="permission_dialog_needed">Need Permission</string>
+    <string name="permission_dialog_allow_access">Allow access</string>
+    <string name="permission_dialog_allow_access_desc">Allow File Viewer to access all files</string>
+    <string name="permission_dialog_detail">For your convenience, please allow the App to access all your files. The document information we organize will only be used on the current device</string>
+    <string name="permission_dialog_description">Allow File Viewer to access all files</string>
+    <string name="permission_dialog_allow">Allow</string>
+    <string name="permission_access_message">Need file access to work</string>
+    <string name="permission_access_message_html"><font color="#fc4949">File Viewer</font> needs file access to work</string>
+    <string name="permission_continue">Continue</string>
+    <string name="permission_tips">Tips</string>
+    <string name="permission_dialog_confirm">Confirm</string>
+    <string name="permission_dialog_noti_content">We want to keep you updated. Enable notifications to receive important reminders and timely alerts directly from us.</string>
+    <string name="permission_holder_message">Allow file access to display and manage your PDFs directly in the app.</string>
+
+    <!-- Exit -->
+    <string name="exit_press_again">Tap back again to quit</string>
+
+    <!-- Size Units -->
+    <string name="file_size_b">B</string>
+    <string name="file_size_kb">KB</string>
+    <string name="file_size_mb">MB</string>
+    <string name="file_size_gb">GB</string>
+    <string name="file_size_tb">TB</string>
+
+    <!-- Search -->
+    <string name="search_title">Search</string>
+    <string name="search_hint">Search…</string>
+
+    <!-- PDF Lock -->
+    <string name="pdf_lock_title">Lock</string>
+
+    <!-- Empty -->
+    <string name="empty_data">Empty</string>
+
+    <!-- Details -->
+    <string name="file_detail_title">Info</string>
+    <string name="file_detail_format">Format</string>
+    <string name="file_detail_path">Path</string>
+    <string name="file_detail_last_modified">Modified</string>
+
+    <!-- Rename -->
+    <string name="file_rename_title">Rename</string>
+    <string name="file_rename_cancel">Cancel</string>
+    <string name="file_rename_ok">OK</string>
+
+    <!-- Ops Msg -->
+    <string name="pdf_encrypt_failed">Lock failed</string>
+    <string name="pdf_decrypt_failed">Unlock failed</string>
+    <string name="pdf_process_failed">Process failed</string>
+    <string name="external_file_no_encryption">External files can\'t lock</string>
+    <string name="added_to_favorites">Liked</string>
+    <string name="removed_from_favorites">Unliked</string>
+    <string name="already_first_page">First page</string>
+    <string name="already_last_page">Last page</string>
+    <string name="saving_pdf">Saving…</string>
+    <string name="save_as_copy_exiting">Copy saved. Exit…</string>
+    <string name="incremental_save_exiting">Saved. Exit…</string>
+    <string name="save_success_exiting">Saved. Exit…</string>
+    <string name="incremental_save_success">Saved</string>
+    <string name="save_success">Saved</string>
+    <string name="save_failed">Save failed: %1$s</string>
+
+    <!-- Annotation -->
+    <string name="annotation_highlight">Highlight</string>
+    <string name="annotation_underline">Underline</string>
+    <string name="annotation_strikethrough">Strike</string>
+    <string name="annotation_added">%1$s added</string>
+    <string name="annotation_add_failed">Add %1$s failed</string>
+    <string name="annotation_add_error">Add note failed: %1$s</string>
+    <string name="annotation_no_page_info">Need page info</string>
+    <string name="pdf_text_label">Text</string>
+    <string name="text_copied">Copied</string>
+    <string name="copy_failed">Copy failed</string>
+    <string name="annotation_clear_no_page">Need page info</string>
+    <string name="annotations_cleared">%1$d cleared</string>
+    <string name="no_annotations_on_page">No notes</string>
+    <string name="clear_annotations_failed">Clear notes failed: %1$s</string>
+
+    <!-- Misc -->
+    <string name="unknown_file_name">unknown.pdf</string>
+    <string name="error_activity_result_launcher">Launcher error</string>
+    <string name="toast_get_permission_failed">Need file permission</string>
+    <string name="pdf_move_success">Moved to app folder</string>
+    <string name="pdf_move_failed">Move failed</string>
+    <string name="print_job_name">Print %1$s</string>
+    <string name="error_writing_print_content">Print error</string>
+    <string name="toast_invalid_url">Bad link</string>
+    <string name="splash_screen_slogan">Manage your documents. Master your work.</string>
+    <string name="loading_text">Loading…</string>
+    <string name="default_file_path">/storage/emulated/0/Download</string>
+
+    <!-- Clean Types -->
+    <string name="clean_type_junk_files">Junk</string>
+    <string name="clean_type_obsolete_apk">Old APK</string>
+    <string name="clean_type_temp_files">Temp</string>
+    <string name="clean_type_log_files">Logs</string>
+
+    <!-- Sort -->
+    <string name="sort_modified_time">Time</string>
+    <string name="sort_modified_time_newest">(Newest)</string>
+    <string name="sort_modified_time_oldest">(Oldest)</string>
+    <string name="sort_name">Name</string>
+    <string name="sort_name_asc">(A-Z)</string>
+    <string name="sort_name_desc">(Z-A)</string>
+    <string name="sort_file_size">Size</string>
+    <string name="sort_file_size_largest">(Big first)</string>
+    <string name="sort_file_size_smallest">(Small first)</string>
+
+    <!-- Languages -->
+    <string name="chinese_simplified">简体中文</string>
+    <string name="english">English</string>
+    <string name="chinese_traditional">繁體中文</string>
+    <string name="language_russia">Русский</string>
+    <string name="language_portuguese_brazil">Português (Brasil)</string>
+    <string name="language_vietnamese">Tiếng Việt</string>
+    <string name="language_thai">ไทย</string>
+    <string name="language_indonesian">Bahasa Indonesia</string>
+    <string name="language_hindi">हिंदी</string>
+    <string name="language_spanish">Español</string>
+    <string name="language_german">Deutsch</string>
+    <string name="language_french">Français</string>
+    <string name="language_korean">한국어</string>
+    <string name="language_japanese">日本語</string>
+    <string name="language_button_default">Install</string>
+    <string name="language_button_selected">Open</string>
+
+    <!-- Permission Guide -->
+    <string name="page_permission_file_1">Welcome to</string>
+    <string name="page_permission_file_2">Grant Access</string>
+    <string name="dialog_pdf_default_launch_content">Set File Viewer as default to open faster</string>
+
+    <!-- Guide -->
+    <string name="guide_scan_text_1">Scan to PDF</string>
+    <string name="guide_scan_text_2">Tap to scan</string>
+    <string name="guide_scan_text_3">Try it</string>
+
+    <!-- Notification -->
+    <string name="notification_tool_title">Tools</string>
+    <string name="notification_tool_text">Quick tools</string>
+    <string name="notification_btn_doc">Docs</string>
+    <string name="notification_btn_scan">Scan</string>
+    <string name="notification_btn_clean">Clean</string>
+
+    <!-- Default Reader -->
+    <string name="choose_default_pdf_reader">Set default reader</string>
+    <string name="pdf_default_just_once">Once</string>
+    <string name="pdf_default_always">Always</string>
+
+    <!-- Store Rating -->
+    <string name="store_score_title">Thank you for using PDF Viewer</string>
+    <string name="store_score_desc">We would be very grateful if you could rate us.</string>
+    <string name="store_score_button">Rate</string>
+    <string name="store_score_feedback_thanks">Thanks!</string>
+    <string name="store_score_badge">The best rating for us</string>
+
+    <!-- Onboarding -->
+    <string name="guide_page1_title">All-in-one reader</string>
+    <string name="guide_page1_desc">Access &amp; manage files anywhere</string>
+    <string name="guide_page2_title">Smart scanner</string>
+    <string name="guide_page2_desc">Scan docs in seconds</string>
+    <string name="guide_page3_title">One-tap cleaner</string>
+    <string name="guide_page3_desc">Free up space &amp; speed up</string>
+    <string name="guide_page4_title">Image to PDF</string>
+    <string name="guide_page4_desc">Turn images into PDFs instantly</string>
+    <string name="guide_btn_next">Next</string>
+    <string name="current_language">Current</string>
+    <string name="all_language">All</string>
+
+    <!-- Splash -->
+    <string name="splash_initialize">Init…</string>
+    <string name="splash_load_resources">Load…</string>
+    <string name="splash_load_files">Files…</string>
+
+    <!-- Introduction -->
+    <string name="introduction_title"><![CDATA[Free <font color="#FB4949">PDF Reader</font> &amp; Editor &amp; Converter]]></string>
+    <string name="introduction_title_2"><![CDATA[Select <font color="#FB4949">PDF Viewer</font> As Your Default Home App]]></string>
+    <string name="introduction_title_3"><![CDATA[Get started in <font color="#FB4949">2 easy</font> steps:]]></string>
+    <string name="introduction_step1_text">Tap \"Continue\" below</string>
+    <string name="introduction_step2_text">Tap on \"PDF Viewer\" &amp; set as your default home app</string>
+    <string name="introduction_btn_get_started">Get Started</string>
+    <string name="introduction_btn_continue">Continue</string>
+    <string name="introduction_not_now">Not now</string>
+    <string name="introduction_privacy_policy">Privacy Policy</string>
+    <string name="introduction_terms_of_service">Terms of Service</string>
+    <string name="introduction_step1_title">Step1：</string>
+    <string name="introduction_step2_title">Step2：</string>
+
+    <!-- Custom Dialog -->
+    <string name="custom_dialog_description">Swipe right to view files, annotate pages and work efficiently</string>
+
+    <!-- Default App Dialog -->
+    <string name="default_app_dialog_title"><![CDATA[Set <font color="#FB4949">PDF</font> Viewer as default]]></string>
+    <string name="default_app_dialog_desc1">Integrated Document Scanner, PDF Converter &amp; File Viewer</string>
+    <string name="default_app_dialog_desc2">Live Wallpapers, Storage Cleaner, Precise Weather.</string>
+    <string name="default_app_dialog_btn_try">Try it now</string>
+
+    <!-- Language Done -->
+    <string name="language_btn_done">Confirm</string>
+
+    <!-- Exit Dialog -->
+    <string name="exit_app_dialog_title">Are you sure want to exit the app?</string>
+    <string name="exit_app_dialog_positive">Confirm Exit</string>
+    <string name="exit_app_dialog_negative">Cancel</string>
+
+    <!-- Guide Doc -->
+    <string name="guide_doc_click_text">Start reading</string>
+
+    <!-- PDF Annotation Guide -->
+    <string name="pdf_guide_annotation_title">Mark &amp; Note</string>
+    <string name="pdf_guide_annotation_desc">Select text to highlight, underline or strike</string>
+    <string name="pdf_guide_btn_next">Got it</string>
+    <string name="pdf_guide_btn_continue">Continue</string>
+    <string name="pdf_guide_btn_more">More</string>
+
+    <!-- Uninstall Survey -->
+    <string name="shortcut_uninstall_short">Uninstall</string>
+    <string name="shortcut_uninstall_title">Uninstalling may delete saved docs. Continue?</string>
+    <string name="shortcut_uninstall_title_highlight">delete saved docs</string>
+    <string name="shortcut_uninstall_content">Tell us why, we can improve</string>
+    <string name="shortcut_uninstall_btn_agree">Keep app</string>
+    <string name="shortcut_uninstall_btn_still">Uninstall</string>
+    <string name="shortcut_uninstall_title2">Any problems?</string>
+    <string name="shortcut_uninstall_option1">Feature broken</string>
+    <string name="shortcut_uninstall_option2">No longer need</string>
+    <string name="shortcut_uninstall_option3">Too many ads</string>
+    <string name="shortcut_uninstall_option4">Too many alerts</string>
+    <string name="shortcut_uninstall_option5">Other</string>
+    <string name="shortcut_uninstall_edit_tip">Details help us fix it faster</string>
+    <string name="shortcut_uninstall_btn_cancel">Cancel</string>
+    <string name="shortcut_uninstall_btn_uninstall">Uninstall</string>
+
+    <!-- Save Dialog -->
+    <string name="pdf_save_dialog_title">Save file</string>
+    <string name="pdf_save_dialog_subtitle">Pick save method &amp; name</string>
+    <string name="pdf_save_options_title">Options</string>
+    <string name="pdf_save_as_new">New file</string>
+    <string name="pdf_save_as_new_desc">Keep original</string>
+    <string name="pdf_save_overwrite">Overwrite</string>
+    <string name="pdf_save_file_name_label">Name</string>
+    <string name="pdf_save_file_name_hint">Name it</string>
+    <string name="pdf_save_file_name_helper">Letters &amp; numbers</string>
+    <string name="pdf_save_button">Save</string>
+
+    <!-- Back Save -->
+    <string name="pdf_save_unsaved_changes_title">Unsaved changes</string>
+    <string name="pdf_save_back_options_title">Before exit</string>
+    <string name="pdf_save_dont_save_and_exit">Discard</string>
+    <string name="pdf_save_copy_and_exit">Save copy</string>
+    <string name="pdf_save_overwrite_and_exit">Save</string>
+    <string name="pdf_save_new_file_hint">New name</string>
+    <string name="pdf_save_copy_desc">Creates new file</string>
+    <string name="pdf_save_current_file_hint">Current: %1$s</string>
+    <string name="pdf_save_overwrite_desc">Will overwrite</string>
+    <string name="pdf_save_suggested_name_hint">Suggest name</string>
+
+    <!-- Save Validation -->
+    <string name="pdf_save_error_empty_name">Name empty</string>
+    <string name="pdf_save_error_name_too_long">Too long</string>
+    <string name="pdf_save_error_invalid_chars">Invalid chars</string>
+    <string name="pdf_save_error_must_end_pdf">Must end with .pdf</string>
+
+    <!-- Ops Errors -->
+    <string name="pdf_encrypt_error">Lock failed</string>
+    <string name="pdf_decrypt_error">Unlock failed</string>
+    <string name="pdf_process_error">Process failed</string>
+    <string name="external_files_no_crypto">External files can\'t lock</string>
+    <string name="thumbnail_not_initialized">Thumbs not ready</string>
+
+    <!-- Home branding -->
+    <string name="home_fragment_title" translatable="false"><font color="#fc4949">File </font>Viewer</string>
+    <string name="home_fragment_title_white" translatable="false"><font color="#ffffff">File </font>Viewer</string>
+
+    <!-- floating dialog-->
+    <string name="floatng_dialog_allow">Allow</string>
+    <string name="floatng_dialog_appear">to Appear on top</string>
+    <string name="floatng_dialog_content">To enable a floating Mini-Reader and quickly reference your documents while using other apps.</string>
+    <string name="floatng_dialog_required">(required)</string>
+
+    <!-- Floating Window -->
+    <string name="floating_window_title">Recent Files</string>
+    <string name="floating_window_empty">No recent files</string>
+    <string name="floating_window_resize_handle">Resize window</string>
+    <string name="floating_window_permission_required">Floating window permission required</string>
+    <string name="floating_window_show_failed">Failed to show floating window: %1$s</string>
+    <string name="floating_window_open_file_failed">Failed to open file: %1$s</string>
+
+    <!-- Earthquake -->
+    <string name="earthquake_quick_alert">Earthquake Quick Alert</string>
+    <string name="earthquake_focal_depth">Focal Depth</string>
+    <string name="earthquake_tsunami_threat">Tsunami Threat</string>
+    <string name="earthquake_usgs_warning">USGS Warning</string>
+    <string name="earthquake_origin_time">Origin Time</string>
+    <string name="earthquake_magnitude_type">Magnitude Type</string>
+    <string name="earthquake_data_status">Data Status</string>
+    <string name="earthquake_data_km">KM</string>
+
+    <!-- Notification - Override notification module strings -->
+    <string name="noti_earthquake_click_text">- See Impact Radius……</string>
+
+    <string name="lock_screen_slide_to_unlock">Slide to unlock</string>
+    <string name="lock_screen_scan_pdf">Scan PDF</string>
+
+    <!-- About -->
+    <string name="about_section_title">About us</string>
+    <string name="about_content">At PDF Reader &amp; PDF Viewer, we are committed to providing an integrated, smooth, and efficient PDF management experience. Whether you\'re viewing documents, highlighting text, scanning files instantly, converting images to PDF, or clearing storage space intelligently, we offer a thoughtful end-to-end solution for all your needs. Our team puts users first, combining powerful functionality with a clean, intuitive interface so you can stay productive and organized anytime, anywhere. We continuously listen to your feedback and keep improving and innovating—making PDF handling simpler and smarter for everyone.</string>
+    <string name="about_privacy_policy">Privacy Policy</string>
+    <string name="about_uninstall_instructions">Uninstall Instructions</string>
+
+    <!-- Language Setting -->
+    <string name="language_setting_loading">Setting...</string>
+</resources>

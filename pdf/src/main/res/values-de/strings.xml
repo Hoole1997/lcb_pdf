@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Name -->
+    <!-- Main Page -->
+    <string name="main_home_sort_title">Sortieren</string>
+    <string name="main_home_sort_modified">Änderungszeit</string>
+    <string name="main_home_sort_modified_desc">(Neueste zuerst)</string>
+    <string name="main_home_sort_modified_asc">(Älteste zuerst)</string>
+    <string name="main_home_sort_name">Name</string>
+    <string name="main_home_sort_name_asc">(A bis Z)</string>
+    <string name="main_home_sort_name_desc">(Z bis A)</string>
+    <string name="main_home_sort_size">Dateigröße</string>
+    <string name="main_home_sort_size_desc">(Größte zuerst)</string>
+    <string name="main_home_sort_size_asc">(Kleinste zuerst)</string>
+    <string name="fragment_home_title">PDF Betrachter</string>
+    <string name="fragment_home_search_hint">Suchen...</string>
+    <string name="main_home_menu_sort">Sortieren</string>
+    <string name="main_home_menu_choose">Auswählen</string>
+    <string name="main_tab_pdf">PDF</string>
+    <string name="main_tab_word">WORD</string>
+    <string name="main_tab_excel">EXCEL</string>
+    <string name="main_tab_ppt">PPT</string>
+    <string name="main_tab_txt">TXT</string>
+    <string name="main_tab_image">BILD</string>
+    <string name="main_tab_all">ALLE</string>
+    <string name="main_tab_recent">Kürzlich</string>
+    <string name="main_tab_clean">Bereinigen</string>
+    <string name="main_tab_tools">Werkzeuge</string>
+    <string name="main_tab_file">Dateien</string>
+    <string name="main_tab_favorite">Favoriten</string>
+
+    <!-- File Operations -->
+    <string name="file_not_found">Datei nicht gefunden</string>
+    <string name="file_name">Dateiname</string>
+    <string name="file_path">Dateipfad</string>
+    <string name="file_size">Dateigröße</string>
+    <string name="action_favorite">Favorit</string>
+    <string name="action_share">Teilen</string>
+    <string name="action_add_to_desktop">Zum Startbildschirm</string>
+    <string name="action_rename">Umbenennen</string>
+    <string name="action_details">Details</string>
+    <string name="action_delete">Löschen</string>
+    <string name="action_set_password">Passwort festlegen</string>
+    <string name="action_cancel">Abbrechen</string>
+    <string name="action_ok">OK</string>
+    <string name="action_skip">Überspringen</string>
+    <string name="action_merge">Zusammenführen</string>
+    <string name="action_split">Teilen</string>
+    <string name="pages_selected_format">%1$d Ausgewählt</string>
+
+    <!-- Tools Page -->
+    <string name="tool_import_file">Datei importieren</string>
+    <string name="tool_scan_pdf">PDF scannen</string>
+    <string name="tool_lock_pdf">PDF sperren</string>
+    <string name="tool_unlock_pdf">PDF entsperren</string>
+    <string name="tool_image_pdf">Bild zu PDF</string>
+    <string name="tool_file_clean">Dateien bereinigen</string>
+    <string name="tool_print_pdf">PDF drucken</string>
+    <string name="tool_percent">%1$d%%</string>
+    <string name="tool_clean_size_total"> / </string>
+    <string name="tool_clean_btn">Bereinigen</string>
+    <string name="tool_add_widget">Widget hinzufügen</string>
+
+    <!-- Clean Function -->
+    <string name="clean_junk_files">Junk-Dateien</string>
+    <string name="clean_junk_scan">Junk-Scan</string>
+    <string name="clean_junk_title">Junk-Bereinigung</string>
+    <string name="clean_junk_clean">Bereinigen</string>
+    <string name="clean_junk_cleaning">Gerät wird bereinigt, bitte warten…</string>
+    <string name="clean_junk_clean_suc">Bereinigt! %1$s</string>
+
+    <!--Prozessmanager-->
+    <string name="process_manager_title">Prozessmanager</string>
+    <string name="process_manager_title_short">Prozess</string>
+    <string name="process_manager_desc">Verwaltung von im Hintergrund laufenden Prozessen</string>
+    <string name="process_manager_scan">Jetzt scannen</string>
+    <string name="process_manager_scan_desc">Laufende Prozesse werden gescannt</string>
+    <string name="process_manager_suc_tip">%1$s im Hintergrund laufende Anwendungen gestoppt</string>
+    <string name="process_manager_clean_now">Jetzt bereinigen</string>
+    <string name="process_manager_clean_tip">Junk auf Ihrem Telefon scannen und bereinigen</string>
+    <string name="process_manager_clean_used">Verwendet</string>
+    <string name="process_manager_clean_ba">Hintergrund-Apps</string>
+    <string name="process_manager_clean_st">Stoppen</string>
+    <string name="process_manager_clean_done">Fertig</string>
+    
+    <string name="clean_obsolete_apk">Veraltete APKs</string>
+    <string name="clean_temp_files">Temporäre Dateien</string>
+    <string name="clean_log_files">Protokolldateien</string>
+    <string name="clean_scanning">Wird gescannt</string>
+    <string name="clean_scanning_folder">Scannen: %1$s</string>
+    <string name="clean_button_text">%1$s bereinigen</string>
+    <string name="clean_button_scanning">Wird gescannt...</string>
+    <string name="clean_button_scanning_text">Scannen</string>
+
+    <!-- File Lock -->
+    <string name="lock_set_password">Passwort festlegen</string>
+    <string name="lock_set_password_desc">Passwort zum Schutz der PDF-Datei festlegen</string>
+    <string name="lock_remove_password">Sperre entfernen</string>
+    <string name="lock_remove_password_desc">Diese PDF-Datei wird nicht mehr passwortgeschützt sein</string>
+    <string name="lock_title_set_password">Passwort festlegen</string>
+    <string name="lock_password_hint">Passwort eingeben</string>
+    <string name="lock_confirm_password_hint">Passwort bestätigen</string>
+    <string name="dialog_password_incorrect">Falsches Passwort!</string>
+
+    <!-- Image Preview -->
+    <string name="image_preview_save_developing">Speicherfunktion in Entwicklung</string>
+    <string name="image_preview_load_failed">Bild konnte nicht geladen werden</string>
+    <string name="image_preview_unsupported_type">Nicht unterstützter Dateityp</string>
+    <string name="image_preview_pager_indicator">%1$d/%2$d</string>
+
+    <!-- File Selection -->
+    <string name="choose_file_selected_count">%1$d ausgewählt</string>
+    <string name="choose_file_delete_confirm_title">Bestätigen</string>
+    <string name="choose_file_delete_confirm_message">Sind Sie sicher, dass Sie diese %1$d Dateien löschen möchten? Diese Aktion kann nicht rückgängig gemacht werden.</string>
+    <string name="choose_file_delete_confirm_cancel">Abbrechen</string>
+    <string name="choose_file_delete_confirm_ok">OK</string>
+    <string name="choose_file_delete_single_confirm_message">Sind Sie sicher, dass Sie %1$s löschen möchten? Diese Aktion kann nicht rückgängig gemacht werden.</string>
+    <string name="choose_file_title_selected_count">%1$d ausgewählt</string>
+    <string name="choose_file_delete">Löschen</string>
+    <string name="choose_file_share">Teilen</string>
+
+    <!-- Settings Page -->
+    <string name="setting_feedback_email">1286041359@qq.com</string>
+    <string name="setting_google_play_url">https://play.google.com/store/apps/details?id=%1$s</string>
+    <string name="setting_privacy_policy_url">https://www.baidu.com</string>
+    <string name="setting_user_agreement_url">https://www.baidu.com</string>
+    <string name="setting_title">Einstellungen</string>
+    <string name="setting_floating_window_enable">Sperrbildschirm anzeigen</string>
+    <string name="setting_language">Sprache</string>
+    <string name="setting_night_mode">Nachtmodus</string>
+    <string name="setting_feedback">Feedback</string>
+    <string name="setting_rate_us">Bewerten</string>
+    <string name="setting_privacy_policy">Datenschutzerklärung</string>
+    <string name="setting_terms_of_service">Nutzungsbedingungen</string>
+    <string name="setting_lang_tip">Wählen Sie Ihre Sprache. Sie können sie später in den Einstellungen ändern.</string>
+
+    <!-- Success Page -->
+    <string name="success_import_pdf_title">PDF importieren</string>
+    <string name="success_import_pdf_desc">PDF aus Systemordnern importieren und anzeigen</string>
+    <string name="success_import_pdf_btn">Jetzt importieren</string>
+    <string name="success_scan_pdf_title">PDF scannen</string>
+    <string name="success_scan_pdf_desc">Bilder mit Kamera scannen und PDF erstellen</string>
+    <string name="success_scan_pdf_btn">Jetzt scannen</string>
+    <string name="success_lock_pdf_title">PDF sperren</string>
+    <string name="success_lock_pdf_desc">Passwort für PDF-Datei hinzufügen</string>
+    <string name="success_lock_pdf_btn">Jetzt sperren</string>
+    <string name="success_unlock_pdf_title">PDF entsperren</string>
+    <string name="success_unlock_pdf_desc">Verschlüsselte PDF entsperren</string>
+    <string name="success_unlock_pdf_btn">Jetzt anzeigen</string>
+    <string name="success_clean_title">Dateien bereinigen</string>
+    <string name="success_clean_desc">System-Junk-Dateien bereinigen</string>
+    <string name="success_clean_btn">Jetzt bereinigen</string>
+    <string name="success_complete">Abgeschlossen</string>
+    <string name="success_function_file_antivirus">Datei-Virenschutz</string>
+    <string name="success_function_file_antivirus_desc">Schützen Sie Ihre Dateien vor Viren</string>
+    <string name="success_function_scan_now">Jetzt scannen</string>
+
+    <!-- Permissions -->
+    <string name="permission_storage_denied">Berechtigung nicht erhalten. Bitte aktivieren Sie die Dateiberechtigung manuell in den Systemeinstellungen.</string>
+    <string name="permission_dialog_later">Später</string>
+    <string name="permission_dialog_allow_all_files">Zugriff auf alle Dateien erlauben</string>
+    <string name="permission_dialog_needed">Berechtigung erforderlich</string>
+    <string name="permission_dialog_allow_access">Zugriff erlauben</string>
+    <string name="permission_dialog_allow_access_desc">PDF Viewer den Zugriff auf alle Dateien erlauben</string>
+    <string name="permission_dialog_detail">Für Ihre Bequemlichkeit erlauben Sie bitte der App den Zugriff auf alle Ihre Dateien. Die Dokumentinformationen, die wir organisieren, werden nur auf dem aktuellen Gerät verwendet</string>
+    <string name="permission_dialog_description">Um Ihre Dateien zu lesen und zu bearbeiten, erlauben Sie bitte <font color="#fc4949">PDF Viewer</font> den Zugriff auf alle Ihre Dateien</string>
+    <string name="permission_dialog_allow">Erlauben</string>
+    <string name="permission_access_message">PDF Viewer benötigt Zugriff auf Ihre Dateien, um reibungslos zu funktionieren. Bitte erlauben Sie den Zugriff, um alle Funktionen nutzen zu können.</string>
+    <string name="permission_access_message_html"><font color="#fc4949">PDF Viewer</font> benötigt Zugriff auf Ihre Dateien, um reibungslos zu funktionieren. Bitte erlauben Sie den Zugriff, um alle Funktionen nutzen zu können.</string>
+    <string name="permission_continue">Fortfahren</string>
+    <string name="permission_tips">Tipps</string>
+    <string name="permission_dialog_confirm">Bestätigen</string>
+    <string name="permission_dialog_noti_content">Wir möchten Sie auf dem Laufenden halten. Aktivieren Sie Benachrichtigungen, um wichtige Erinnerungen und zeitnahe Warnungen direkt von uns zu erhalten.</string>
+    <string name="permission_holder_message">Erlauben Sie den Dateizugriff, um Ihre PDFs direkt in der App anzuzeigen und zu verwalten.</string>
+    
+    <!-- Exit Prompt -->
+    <string name="exit_press_again">Drücken Sie erneut, um zu beenden</string>
+
+    <!-- File Size Units -->
+    <string name="file_size_b">B</string>
+    <string name="file_size_kb">KB</string>
+    <string name="file_size_mb">MB</string>
+    <string name="file_size_gb">GB</string>
+    <string name="file_size_tb">TB</string>
+
+    <!-- Search -->
+    <string name="search_title">Suche</string>
+    <string name="search_hint">Suchen...</string>
+
+    <!-- PDF Lock -->
+    <string name="pdf_lock_title">PDF sperren</string>
+
+    <!-- Empty State -->
+    <string name="empty_data">Keine Daten</string>
+
+    <!-- File Details -->
+    <string name="file_detail_title">Details</string>
+    <string name="file_detail_format">Dateiformat</string>
+    <string name="file_detail_path">Speicherort</string>
+    <string name="file_detail_last_modified">Letzte Änderung</string>
+
+    <!-- File Rename -->
+    <string name="file_rename_title">Umbenennen</string>
+    <string name="file_rename_cancel">Abbrechen</string>
+    <string name="file_rename_ok">OK</string>
+
+    <!-- Other -->
+    <string name="unknown_file_name">unbekannt.pdf</string>
+    <string name="error_activity_result_launcher">ActivityResultLauncher nicht registriert oder bereits zerstört</string>
+    <string name="toast_get_permission_failed">Berechtigung konnte nicht erhalten werden. Bitte aktivieren Sie die Dateiberechtigung manuell in den Systemeinstellungen.</string>
+    <string name="pdf_move_success">PDF wurde in das private Verzeichnis der App verschoben:</string>
+    <string name="pdf_move_failed">PDF-Verschiebung fehlgeschlagen, weiterhin in:</string>
+    <string name="print_job_name">Dokument-Druckauftrag %1$s</string>
+    <string name="error_writing_print_content">Fehler beim Schreiben des Druckinhalts</string>
+    <string name="toast_invalid_url">Ungültige URL</string>
+    <string name="splash_screen_slogan">Verwalten Sie Ihre Dokumente. Meistern Sie Ihre Arbeit.</string>
+    <string name="loading_text">Wird geladen...</string>
+    <string name="default_file_path">/storage/emulated/0/xxx/storage/emulated/0/xxx/storage/emulated/0/xxx</string>
+
+    <!-- Clean Model Type Titles -->
+    <string name="clean_type_junk_files">Junk-Dateien</string>
+    <string name="clean_type_obsolete_apk">Veraltete APKs</string>
+    <string name="clean_type_temp_files">Temporäre Dateien</string>
+    <string name="clean_type_log_files">Protokolldateien</string>
+
+    <!-- Sort Options -->
+    <string name="sort_modified_time">Änderungszeit</string>
+    <string name="sort_modified_time_newest">(Neueste zuerst)</string>
+    <string name="sort_modified_time_oldest">(Älteste zuerst)</string>
+    <string name="sort_name">Name</string>
+    <string name="sort_name_asc">(A bis Z)</string>
+    <string name="sort_name_desc">(Z bis A)</string>
+    <string name="sort_file_size">Dateigröße</string>
+    <string name="sort_file_size_largest">(Größte zuerst)</string>
+    <string name="sort_file_size_smallest">(Kleinste zuerst)</string>
+
+    <!-- Language Names -->
+    <string name="chinese_simplified">Chinesisch (Vereinfacht)</string>
+    
+    <!-- PDF Default Launcher -->
+    <string name="choose_default_pdf_reader">Standard-PDF-Reader auswählen</string>
+    <string name="pdf_default_just_once">Nur einmal</string>
+    <string name="pdf_default_always">Immer</string>
+    
+    <!-- Store Score Dialog -->
+    <string name="store_score_title">Vielen Dank für die Nutzung von PDF Viewer</string>
+    <string name="store_score_desc">Wir wären sehr dankbar, wenn Sie uns bewerten könnten.</string>
+    <string name="store_score_button">Bewerten</string>
+    <string name="store_score_feedback_thanks">Vielen Dank für Ihr Feedback!</string>
+    <string name="store_score_badge">Die beste Bewertung für uns</string>
+    
+    <!-- Guide Pages -->
+    <string name="guide_page1_title">All-in-One-Dokumentenleser</string>
+    <string name="guide_page1_desc">Greifen Sie jederzeit und überall einfach auf alle Ihre Dateien zu, organisieren und verwalten Sie sie.</string>
+    <string name="guide_page2_title">Praktischer Dokumentenscanner</string>
+    <string name="guide_page2_desc">Müheloses Scannen aller Ihrer wichtigen Dokumente.</string>
+    <string name="guide_page3_title">Schnelle Dateibereinigung</string>
+    <string name="guide_page3_desc">Bereinigen Sie unerwünschte Dateien, verbessern Sie Sicherheit und Leistung.</string>
+    <string name="guide_page4_title">Konvertieren Sie Bilder und Scans jederzeit in PDF</string>
+    <string name="guide_page4_desc">Wandeln Sie Bilder in PDFs um oder scannen Sie direkt, um überall PDFs zu erstellen.</string>
+    <string name="guide_btn_next">Weiter</string>
+    <string name="english">Englisch</string>
+    <string name="chinese_traditional">Chinesisch (Traditionell)</string>
+    <string name="language_russia">Russisch</string>
+    <string name="language_portuguese_brazil">Portugiesisch (Brasilien)</string>
+    <string name="language_vietnamese">Vietnamesisch</string>
+    <string name="language_thai">Thailändisch</string>
+    <string name="language_indonesian">Indonesisch</string>
+    <string name="language_hindi">Hindi</string>
+    <string name="language_spanish">Spanisch</string>
+    <string name="language_german">Deutsch</string>
+    <string name="language_french">Französisch</string>
+    <string name="language_korean">Koreanisch</string>
+    <string name="language_japanese">Japanisch</string>
+    <string name="language_button_default">Installieren</string>
+    <string name="language_button_selected">Öffnen</string>
+
+    <string name="page_permission_file_1">Willkommen bei</string>
+    <string name="page_permission_file_2">Zugriff gewähren</string>
+    <string name="dialog_pdf_default_launch_content">Stellen Sie <font color="#fc4949">PDF Viewer</font> als Standard-PDF-Reader ein, um die Lesegeschwindigkeit zu verbessern.</string>
+    
+    <string name="guide_scan_text_1">Scannen zu PDF</string>
+    <string name="guide_scan_text_2">Klicken Sie auf diese Schaltfläche, um die Scan-Funktion zu nutzen</string>
+    <string name="guide_scan_text_3">Jetzt ausprobieren</string>
+    
+    <!-- Notification Tool Strings -->
+    <string name="notification_tool_title">PDF Werkzeuge</string>
+    <string name="notification_tool_text">Schnellzugriff-Tools</string>
+    <string name="notification_btn_doc">Dok</string>
+    <string name="notification_btn_scan">Scannen</string>
+    <string name="notification_btn_clean">Bereinigen</string>
+
+    <string name="current_language">Aktuelle Sprache</string>
+    <string name="all_language">Alle Sprachen</string>
+
+    <!-- Splash screen loading texts -->
+    <string name="splash_initialize">Initialisierung...</string>
+    <string name="splash_load_resources">Ressourcen werden geladen...</string>
+    <string name="splash_load_files">Dateien werden geladen...</string>
+
+    <!-- Language setting button -->
+    <string name="language_btn_done">Fertig</string>
+    
+    <!-- Sprachauswahl Dialog -->
+    <string name="language_skip_title">Überspringen bestätigen</string>
+    <string name="language_skip_message">Sie werden mit [%1$s] als Standardsprache fortfahren.\n\nTippen Sie auf Weiter, um fortzufahren.</string>
+    <string name="language_skip_next">Weiter</string>
+    <string name="language_default">Standardsprache</string>
+    
+    <!-- Anleitung überspringen Dialog -->
+    <string name="guide_skip_message">Sie sind dabei, die Anleitung zu überspringen und direkt zur Hauptoberfläche zu gelangen. Sie können jederzeit weitere Funktionseinführungen in den Einstellungen einsehen.\n\nTippen Sie auf Weiter, um fortzufahren.</string>
+    
+    <!-- Guide Click Text -->
+    <string name="guide_doc_click_text">Lesen Sie jetzt Ihre Datei</string>
+    
+    <!-- PDF Guide Text -->
+    <string name="pdf_guide_annotation_title">Umfangreiche Annotationstools</string>
+    <string name="pdf_guide_annotation_desc">Nach der Textauswahl können Sie verschiedene Annotationstools verwenden:\nKopieren, Markieren, Unterstreichen, Durchstreichen</string>
+    <string name="pdf_guide_btn_next">Verstanden</string>
+    <string name="pdf_guide_btn_continue">Fortfahren</string>
+    <string name="pdf_guide_btn_more">Mehr erfahren</string>
+    
+    <!-- Exit App Dialog -->
+    <string name="exit_app_dialog_title">Sind Sie sicher, dass Sie die App beenden möchten?</string>
+    <string name="exit_app_dialog_positive">Beenden Bestätigen</string>
+    <string name="exit_app_dialog_negative">Abbrechen</string>
+    
+    <!-- App Shortcuts -->
+    <string name="shortcut_uninstall_short">Deinstallieren</string>
+    <string name="shortcut_uninstall_title">Das Deinstallieren der App kann zum Verlust gespeicherter Dokumente oder aktueller Dateien führen. Sind Sie sicher, dass Sie fortfahren möchten?</string>
+    <string name="shortcut_uninstall_title_highlight">Verlust gespeicherter Dokumente oder aktueller Dateien</string>
+    <string name="shortcut_uninstall_content">Bitte versuchen Sie, die App noch einmal zu aktivieren und teilen Sie uns den Grund mit.</string>
+    <string name="shortcut_uninstall_btn_agree">Noch nicht deinstallieren</string>
+    <string name="shortcut_uninstall_btn_still">Trotzdem deinstallieren</string>
+    <string name="shortcut_uninstall_title2">Probleme bei der Nutzung der App?</string>
+    <string name="shortcut_uninstall_option1">Funktion funktioniert nicht</string>
+    <string name="shortcut_uninstall_option2">Ich brauche diese App nicht mehr</string>
+    <string name="shortcut_uninstall_option3">Zu viele Anzeigen</string>
+    <string name="shortcut_uninstall_option4">Zu viele Benachrichtigungen</string>
+    <string name="shortcut_uninstall_option5">Andere</string>
+    <string name="shortcut_uninstall_edit_tip">Bitte geben Sie weitere Details an, damit wir Ihr Problem schneller identifizieren und lösen können…</string>
+    <string name="shortcut_uninstall_btn_cancel">Abbrechen</string>
+    <string name="shortcut_uninstall_btn_uninstall">Deinstallieren</string>
+
+    <!-- PDF Merge -->
+    <string name="tool_merge_pdf">PDF zusammenführen</string>
+    <string name="merge_button_text_selected">%1$d PDFs zusammenführen</string>
+    <string name="merge_button_text_default">Mindestens 2 PDFs auswählen</string>
+    <string name="merge_pdf_title">PDF zusammenführen</string>
+    <string name="split_pdf_title">PDF teilen</string>
+    <string name="split_button_text_selected">%1$d PDFs teilen</string>
+    <string name="split_button_text_default">Mindestens 1 PDF auswählen</string>
+
+    <!-- PDF Page Grid -->
+    <string name="pdf_page_grid_merge_title">Seiten zum Zusammenführen auswählen</string>
+    <string name="pdf_page_grid_split_title">Seiten zum Teilen auswählen</string>
+    <string name="merge_pages_button_text">%1$d Seiten zusammenführen</string>
+    <string name="split_pages_button_text">%1$d Seiten teilen</string>
+    <string name="merge_button_default_text">Seiten zum Zusammenführen auswählen</string>
+    <string name="split_button_default_text">Seiten zum Teilen auswählen</string>
+    <string name="select_all_pages">Alle auswählen</string>
+    <string name="deselect_all_pages">Alle abwählen</string>
+    <string name="pages_selected_info">%1$d von %2$d Seiten ausgewählt</string>
+    <string name="no_pdf_pages_found">Keine PDF-Seiten gefunden</string>
+
+    <!-- Search -->
+    <string name="action_search">Suchen</string>
+
+    <!-- PDF Operations -->
+    <string name="pdf_encrypt_failed">PDF-Verschlüsselung fehlgeschlagen</string>
+    <string name="pdf_decrypt_failed">PDF-Entschlüsselung fehlgeschlagen</string>
+    <string name="pdf_process_failed">PDF-Verarbeitung fehlgeschlagen</string>
+    <string name="external_file_no_encryption">Externe Dateien unterstützen keine Verschlüsselung/Entschlüsselung</string>
+    <string name="added_to_favorites">Zu Favoriten hinzugefügt</string>
+    <string name="removed_from_favorites">Aus Favoriten entfernt</string>
+    <string name="already_first_page">Bereits auf der ersten Seite</string>
+    <string name="already_last_page">Bereits auf der letzten Seite</string>
+    <string name="saving_pdf">PDF speichern...</string>
+    <string name="save_as_copy_exiting">Kopie erfolgreich gespeichert, Beenden...</string>
+    <string name="incremental_save_exiting">Änderungen erfolgreich gespeichert, Beenden...</string>
+    <string name="save_success_exiting">Speichern erfolgreich, Beenden...</string>
+    <string name="incremental_save_success">Inkrementelles Speichern erfolgreich</string>
+    <string name="save_success">Speichern erfolgreich</string>
+    <string name="save_failed">Speichern fehlgeschlagen: %1$s</string>
+    
+    <!-- Text Selection and Annotation -->
+    <string name="annotation_highlight">Hervorheben</string>
+    <string name="annotation_underline">Unterstreichen</string>
+    <string name="annotation_strikethrough">Durchstreichen</string>
+    <string name="annotation_added">%1$s Anmerkung hinzugefügt</string>
+    <string name="annotation_add_failed">%1$s Anmerkung hinzufügen fehlgeschlagen</string>
+    <string name="annotation_add_error">Anmerkung hinzufügen fehlgeschlagen: %1$s</string>
+    <string name="annotation_no_page_info">Kann Anmerkung nicht hinzufügen: Seiteninformation fehlt</string>
+    <string name="pdf_text_label">PDF-Text</string>
+    <string name="text_copied">Kopiert</string>
+    <string name="copy_failed">Kopieren fehlgeschlagen</string>
+    <string name="annotation_clear_no_page">Kann Anmerkungen nicht löschen: Seiteninformation fehlt</string>
+    <string name="annotations_cleared">%1$d Anmerkungen gelöscht</string>
+    <string name="no_annotations_on_page">Keine Anmerkungen auf aktueller Seite</string>
+    <string name="clear_annotations_failed">Anmerkungen löschen fehlgeschlagen: %1$s</string>
+
+    <!-- floating dialog-->
+    <string name="floatng_dialog_allow">Erlauben</string>
+    <string name="floatng_dialog_appear">über anderen Apps angezeigt zu werden</string>
+    <string name="floatng_dialog_content">Um einen schwebenden Mini-Reader zu aktivieren und schnell auf Ihre Dokumente zuzugreifen, während Sie andere Apps verwenden.</string>
+    <string name="floatng_dialog_required">(erforderlich)</string>
+
+    <!-- Floating Window -->
+    <string name="floating_window_title">Letzte Dateien</string>
+    <string name="floating_window_empty">Keine letzten Dateien</string>
+    <string name="floating_window_resize_handle">Fenstergröße ändern</string>
+    <string name="floating_window_permission_required">Berechtigung für schwebendes Fenster erforderlich</string>
+    <string name="floating_window_show_failed">Schwebendes Fenster konnte nicht angezeigt werden: %1$s</string>
+    <string name="floating_window_open_file_failed">Datei konnte nicht geöffnet werden: %1$s</string>
+
+    <!-- Earthquake -->
+    <string name="earthquake_quick_alert">Schnelle Erdbebenwarnung</string>
+    <string name="earthquake_focal_depth">Herdtiefe</string>
+    <string name="earthquake_tsunami_threat">Tsunami-Bedrohung</string>
+    <string name="earthquake_usgs_warning">USGS-Warnung</string>
+    <string name="earthquake_origin_time">Ursprungszeit</string>
+    <string name="earthquake_magnitude_type">Magnitudentyp</string>
+    <string name="earthquake_data_status">Datenstatus</string>
+    <string name="earthquake_data_km">KM</string>
+    
+    <!-- Notification - Override notification module strings -->
+    <string name="noti_earthquake_click_text">- Wirkungsradius anzeigen……</string>
+    
+    <string name="lock_screen_slide_to_unlock">Zum Entsperren wischen</string>
+    <string name="lock_screen_scan_pdf">PDF scannen</string>
+
+    <!-- Introduction -->
+    <string name="introduction_title"><![CDATA[Kostenloser <font color="#FB4949">PDF-Reader</font> &amp; Editor &amp; Konverter]]></string>
+    <string name="introduction_title_2"><![CDATA[Wählen Sie <font color="#FB4949">PDF Viewer</font> als Ihre Standard-Home-App]]></string>
+    <string name="introduction_title_3"><![CDATA[Starten Sie in <font color="#FB4949">2 einfachen</font> Schritten:]]></string>
+    <string name="introduction_step1_text">Tippen Sie unten auf \"Weiter\"</string>
+    <string name="introduction_step2_text">Tippen Sie auf \"PDF Viewer\" und legen Sie es als Standard-Home-App fest</string>
+    <string name="introduction_btn_get_started">Loslegen</string>
+    <string name="introduction_btn_continue">Weiter</string>
+    <string name="introduction_not_now">Nicht jetzt</string>
+    <string name="introduction_step1_title">Schritt 1：</string>
+    <string name="introduction_step2_title">Schritt 2：</string>
+    <string name="introduction_privacy_policy">Datenschutzrichtlinie</string>
+    <string name="introduction_terms_of_service">Nutzungsbedingungen</string>
+
+    <!-- Custom Dialog -->
+    <string name="custom_dialog_description">Nach rechts wischen, um Dateien anzuzeigen, Seiten zu kommentieren und effizient zu arbeiten</string>
+
+    <!-- Default App Dialog -->
+    <string name="default_app_dialog_title"><![CDATA[<font color="#FB4949">PDF</font> Viewer als Standard festlegen]]></string>
+    <string name="default_app_dialog_desc1">Integrierter Dokumentenscanner, PDF-Konverter und Datei-Viewer</string>
+    <string name="default_app_dialog_desc2">Live-Hintergrundbilder, Speicherbereiniger, präzises Wetter.</string>
+    <string name="default_app_dialog_btn_try">Jetzt ausprobieren</string>
+
+    <!-- About -->
+    <string name="about_section_title">Über uns</string>
+    <string name="about_content">Bei PDF Reader &amp; PDF Viewer sind wir bestrebt, ein integriertes, reibungsloses und effizientes PDF-Management-Erlebnis zu bieten. Ob Sie Dokumente anzeigen, Text hervorheben, Dateien sofort scannen, Bilder in PDF konvertieren oder Speicherplatz intelligent bereinigen – wir bieten eine durchdachte End-to-End-Lösung für alle Ihre Anforderungen. Unser Team stellt die Nutzer an erste Stelle und kombiniert leistungsstarke Funktionen mit einer übersichtlichen, intuitiven Oberfläche, damit Sie jederzeit und überall produktiv und organisiert bleiben können. Wir hören kontinuierlich auf Ihr Feedback und verbessern und innovieren weiter – um die PDF-Handhabung für jeden einfacher und intelligenter zu machen.</string>
+    <string name="about_privacy_policy">Datenschutzrichtlinie</string>
+    <string name="about_uninstall_instructions">Deinstallationsanleitung</string>
+
+    <!-- Language Setting -->
+    <string name="language_setting_loading">Einstellung...</string>
+</resources> 

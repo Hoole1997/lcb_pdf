@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.noober.background.view.BLConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    app:bl_solid_color="@color/white"
+    app:bl_corners_radius="12dp"
+    android:paddingHorizontal="16dp"
+    android:paddingVertical="20dp"
+    android:layout_margin="16dp"
+    android:elevation="0dp">
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@mipmap/tool_import_file"
+        android:layout_gravity="center_vertical"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_title"
+        tools:text="文件防病毒"
+        app:layout_constraintStart_toEndOf="@id/iv_icon"
+        android:layout_marginStart="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="#000" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_desc"
+        tools:text="保守您的文件免受病毒侵害"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"
+        app:layout_constraintStart_toStartOf="@id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="#999999"
+        android:layout_marginTop="2dp"/>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_action"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/iv_icon"
+        android:layout_marginTop="15dp"
+        tools:text="立即扫描"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:backgroundTint="#FB4949"
+        android:layout_gravity="center_vertical"/>
+</com.noober.background.view.BLConstraintLayout>

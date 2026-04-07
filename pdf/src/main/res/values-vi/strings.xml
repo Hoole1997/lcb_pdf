@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Name -->
+    <!-- Main Page -->
+    <string name="main_home_sort_title">Sắp xếp</string>
+    <string name="main_home_sort_modified">Thời gian sửa đổi</string>
+    <string name="main_home_sort_modified_desc">(Mới nhất)</string>
+    <string name="main_home_sort_modified_asc">(Cũ nhất)</string>
+    <string name="main_home_sort_name">Tên</string>
+    <string name="main_home_sort_name_asc">(A đến Z)</string>
+    <string name="main_home_sort_name_desc">(Z đến A)</string>
+    <string name="main_home_sort_size">Kích thước</string>
+    <string name="main_home_sort_size_desc">(Lớn nhất)</string>
+    <string name="main_home_sort_size_asc">(Nhỏ nhất)</string>
+    <string name="fragment_home_title">PDF Viewer</string>
+    <string name="fragment_home_search_hint">Tìm kiếm...</string>
+    <string name="main_home_menu_sort">Sắp xếp</string>
+    <string name="main_home_menu_choose">Chọn</string>
+    <string name="main_tab_pdf">PDF</string>
+    <string name="main_tab_word">WORD</string>
+    <string name="main_tab_excel">EXCEL</string>
+    <string name="main_tab_ppt">PPT</string>
+    <string name="main_tab_txt">TXT</string>
+    <string name="main_tab_image">ẢNH</string>
+    <string name="main_tab_all">TẤT CẢ</string>
+    <string name="main_tab_recent">Gần đây</string>
+    <string name="main_tab_clean">Dọn dẹp</string>
+    <string name="main_tab_tools">Công cụ</string>
+    <string name="main_tab_file">Tệp</string>
+    <string name="main_tab_favorite">Yêu thích</string>
+
+    <!-- File Operations -->
+    <string name="file_not_found">Không tìm thấy tệp</string>
+    <string name="file_name">Tên tệp</string>
+    <string name="file_path">Đường dẫn</string>
+    <string name="file_size">Kích thước</string>
+    <string name="action_favorite">Yêu thích</string>
+    <string name="action_share">Chia sẻ</string>
+    <string name="action_add_to_desktop">Thêm vào màn hình</string>
+    <string name="action_rename">Đổi tên</string>
+    <string name="action_details">Chi tiết</string>
+    <string name="action_delete">Xóa</string>
+    <string name="action_set_password">Đặt mật khẩu</string>
+    <string name="action_cancel">Hủy</string>
+    <string name="action_ok">OK</string>
+    <string name="action_skip">Bỏ qua</string>
+    <string name="action_merge">Hợp nhất</string>
+
+    <!-- Tools Page -->
+    <string name="tool_import_file">Nhập tệp</string>
+    <string name="tool_scan_pdf">Quét PDF</string>
+    <string name="tool_lock_pdf">Khóa PDF</string>
+    <string name="tool_unlock_pdf">Mở khóa PDF</string>
+    <string name="tool_image_pdf">Ảnh sang PDF</string>
+    <string name="tool_file_clean">Dọn dẹp tệp</string>
+    <string name="tool_print_pdf">In PDF</string>
+    <string name="tool_percent">%1$d%%</string>
+    <string name="tool_clean_size_total"> / </string>
+    <string name="tool_clean_btn">Dọn dẹp</string>
+    <string name="tool_add_widget">Thêm widget</string>
+
+    <!-- Clean Function -->
+    <string name="clean_junk_files">Tệp rác</string>
+    <string name="clean_junk_scan">Quét rác</string>
+    <string name="clean_junk_title">Dọn dẹp rác</string>
+    <string name="clean_junk_clean">Dọn dẹp</string>
+    <string name="clean_junk_cleaning">Đang dọn dẹp thiết bị của bạn, vui lòng đợi…</string>
+    <string name="clean_junk_clean_suc">Đã dọn dẹp! %1$s</string>
+
+    <!--Trình quản lý tiến trình-->
+    <string name="process_manager_title">Trình quản lý tiến trình</string>
+    <string name="process_manager_title_short">Tiến trình</string>
+    <string name="process_manager_desc">Quản lý các tiến trình đang chạy nền</string>
+    <string name="process_manager_scan">Quét ngay</string>
+    <string name="process_manager_scan_desc">Đang quét các tiến trình đang chạy</string>
+    <string name="process_manager_suc_tip">Đã dừng %1$s ứng dụng đang chạy nền</string>
+    <string name="process_manager_clean_now">Dọn dẹp ngay</string>
+    <string name="process_manager_clean_tip">Quét và dọn dẹp rác trên điện thoại của bạn</string>
+    <string name="process_manager_clean_used">Đã sử dụng</string>
+    <string name="process_manager_clean_ba">Ứng dụng nền</string>
+    <string name="process_manager_clean_st">Dừng</string>
+    <string name="process_manager_clean_done">Hoàn thành</string>
+    
+    <string name="clean_obsolete_apk">APK lỗi thời</string>
+    <string name="clean_temp_files">Tệp tạm</string>
+    <string name="clean_log_files">Tệp nhật ký</string>
+    <string name="clean_scanning">Đang quét</string>
+    <string name="clean_scanning_folder">Đang quét: %1$s</string>
+    <string name="clean_button_text">Dọn dẹp %1$s</string>
+    <string name="clean_button_scanning">Đang quét...</string>
+    <string name="clean_button_scanning_text">Đang quét</string>
+
+    <!-- File Lock -->
+    <string name="lock_set_password">Đặt mật khẩu</string>
+    <string name="lock_set_password_desc">Đặt mật khẩu để bảo vệ PDF</string>
+    <string name="lock_remove_password">Xóa bảo vệ</string>
+    <string name="lock_remove_password_desc">Tệp PDF này sẽ không còn được bảo vệ bằng mật khẩu</string>
+    <string name="lock_title_set_password">Đặt mật khẩu</string>
+    <string name="lock_password_hint">Nhập mật khẩu</string>
+    <string name="lock_confirm_password_hint">Xác nhận mật khẩu</string>
+    <string name="dialog_password_incorrect">Mật khẩu không đúng!</string>
+
+    <!-- Image Preview -->
+    <string name="image_preview_save_developing">Tính năng lưu đang được phát triển</string>
+    <string name="image_preview_load_failed">Không thể tải hình ảnh</string>
+    <string name="image_preview_unsupported_type">Loại tệp không được hỗ trợ</string>
+    <string name="image_preview_pager_indicator">%1$d/%2$d</string>
+
+    <!-- File Selection -->
+    <string name="choose_file_selected_count">Đã chọn %1$d</string>
+    <string name="choose_file_delete_confirm_title">Xác nhận</string>
+    <string name="choose_file_delete_confirm_message">Bạn có chắc muốn xóa %1$d tệp này? Hành động này không thể hoàn tác.</string>
+    <string name="choose_file_delete_confirm_cancel">Hủy</string>
+    <string name="choose_file_delete_confirm_ok">OK</string>
+    <string name="choose_file_delete_single_confirm_message">Bạn có chắc muốn xóa %1$s? Hành động này không thể hoàn tác.</string>
+    <string name="choose_file_title_selected_count">Đã chọn %1$d</string>
+    <string name="choose_file_delete">Xóa</string>
+    <string name="choose_file_share">Chia sẻ</string>
+
+    <!-- Settings Page -->
+    <string name="setting_feedback_email">1286041359@qq.com</string>
+    <string name="setting_google_play_url">https://play.google.com/store/apps/details?id=%1$s</string>
+    <string name="setting_privacy_policy_url">https://www.baidu.com</string>
+    <string name="setting_user_agreement_url">https://www.baidu.com</string>
+    <string name="setting_title">Cài đặt</string>
+    <string name="setting_floating_window_enable">Hiển thị màn hình khóa</string>
+    <string name="setting_language">Ngôn ngữ</string>
+    <string name="setting_night_mode">Chế độ tối</string>
+    <string name="setting_feedback">Phản hồi</string>
+    <string name="setting_rate_us">Đánh giá</string>
+    <string name="setting_privacy_policy">Chính sách bảo mật</string>
+    <string name="setting_terms_of_service">Điều khoản dịch vụ</string>
+    <string name="setting_lang_tip">Chọn ngôn ngữ của bạn. Bạn có thể thay đổi sau trong Cài đặt.</string>
+
+    <!-- Success Page -->
+    <string name="success_import_pdf_title">Nhập PDF</string>
+    <string name="success_import_pdf_desc">Nhập và xem PDF từ thư mục hệ thống</string>
+    <string name="success_import_pdf_btn">Nhập ngay</string>
+    <string name="success_scan_pdf_title">Quét PDF</string>
+    <string name="success_scan_pdf_desc">Quét hình ảnh bằng camera để tạo PDF</string>
+    <string name="success_scan_pdf_btn">Quét ngay</string>
+    <string name="success_lock_pdf_title">Khóa PDF</string>
+    <string name="success_lock_pdf_desc">Thêm mật khẩu vào tệp PDF</string>
+    <string name="success_lock_pdf_btn">Khóa ngay</string>
+    <string name="success_unlock_pdf_title">Mở khóa PDF</string>
+    <string name="success_unlock_pdf_desc">Mở khóa PDF đã mã hóa</string>
+    <string name="success_unlock_pdf_btn">Xem ngay</string>
+    <string name="success_clean_title">Dọn dẹp tệp</string>
+    <string name="success_clean_desc">Dọn dẹp tệp rác hệ thống</string>
+    <string name="success_clean_btn">Dọn dẹp ngay</string>
+    <string name="success_complete">Hoàn thành</string>
+    <string name="success_function_file_antivirus">Quét virus tệp</string>
+    <string name="success_function_file_antivirus_desc">Bảo vệ tệp của bạn khỏi virus</string>
+    <string name="success_function_scan_now">Quét ngay</string>
+
+    <!-- Permissions -->
+    <string name="permission_storage_denied">Không thể lấy quyền. Vui lòng bật quyền truy cập tệp trong cài đặt hệ thống.</string>
+    <string name="permission_dialog_later">Để sau</string>
+    <string name="permission_dialog_allow_all_files">Cho phép truy cập tất cả tệp</string>
+    <string name="permission_dialog_needed">Cần quyền truy cập</string>
+    <string name="permission_dialog_allow_access">Cho phép truy cập</string>
+    <string name="permission_dialog_allow_access_desc">Cho phép PDF Viewer truy cập tất cả tệp</string>
+    <string name="permission_dialog_detail">Để thuận tiện cho bạn, vui lòng cho phép ứng dụng truy cập tất cả tệp của bạn. Thông tin tài liệu mà chúng tôi tổ chức sẽ chỉ được sử dụng trên thiết bị hiện tại</string>
+    <string name="permission_dialog_description">Để đọc và chỉnh sửa tệp, vui lòng cho phép <font color="#fc4949">PDF Viewer</font> truy cập tất cả tệp của bạn</string>
+    <string name="permission_dialog_allow">Cho phép</string>
+    <string name="permission_access_message">PDF Viewer cần truy cập tệp của bạn để hoạt động trơn tru. Vui lòng cho phép truy cập để tận hưởng tất cả tính năng.</string>
+    <string name="permission_access_message_html"><font color="#fc4949">PDF Viewer</font> cần truy cập tệp của bạn để hoạt động trơn tru. Vui lòng cho phép truy cập để tận hưởng tất cả tính năng.</string>
+    <string name="permission_continue">Tiếp tục</string>
+    <string name="permission_tips">Mẹo</string>
+    <string name="permission_dialog_confirm">Xác nhận</string>
+    <string name="permission_dialog_noti_content">Chúng tôi muốn cập nhật thông tin cho bạn. Bật thông báo để nhận lời nhắc quan trọng và cảnh báo kịp thời trực tiếp từ chúng tôi.</string>
+    <string name="permission_holder_message">Cho phép truy cập tệp để hiển thị và quản lý PDF của bạn trực tiếp trong ứng dụng.</string>
+    
+    <!-- Exit Prompt -->
+    <string name="exit_press_again">Nhấn lại để thoát</string>
+
+    <!-- File Size Units -->
+    <string name="file_size_b">B</string>
+    <string name="file_size_kb">KB</string>
+    <string name="file_size_mb">MB</string>
+    <string name="file_size_gb">GB</string>
+    <string name="file_size_tb">TB</string>
+
+    <!-- Search -->
+    <string name="search_title">Tìm kiếm</string>
+    <string name="search_hint">Tìm kiếm...</string>
+
+    <!-- PDF Lock -->
+    <string name="pdf_lock_title">Khóa PDF</string>
+
+    <!-- Empty State -->
+    <string name="empty_data">Không có dữ liệu</string>
+
+    <!-- File Details -->
+    <string name="file_detail_title">Chi tiết</string>
+    <string name="file_detail_format">Định dạng tệp</string>
+    <string name="file_detail_path">Đường dẫn lưu trữ</string>
+    <string name="file_detail_last_modified">Thời gian sửa đổi gần nhất</string>
+
+    <!-- File Rename -->
+    <string name="file_rename_title">Đổi tên</string>
+    <string name="file_rename_cancel">Hủy</string>
+    <string name="file_rename_ok">OK</string>
+
+    <!-- Other -->
+    <string name="unknown_file_name">unknown.pdf</string>
+    <string name="error_activity_result_launcher">ActivityResultLauncher chưa đăng ký hoặc đã bị hủy</string>
+    <string name="toast_get_permission_failed">Không thể lấy quyền. Vui lòng bật quyền truy cập tệp trong cài đặt hệ thống.</string>
+    <string name="pdf_move_success">PDF đã được chuyển đến thư mục riêng của ứng dụng:</string>
+    <string name="pdf_move_failed">Không thể chuyển PDF, vẫn ở:</string>
+    <string name="print_job_name">Công việc in tài liệu %1$s</string>
+    <string name="error_writing_print_content">Lỗi khi ghi nội dung in</string>
+    <string name="toast_invalid_url">URL không hợp lệ</string>
+    <string name="splash_screen_slogan">Quản lý tài liệu của bạn. Làm chủ công việc của bạn.</string>
+    <string name="loading_text">Đang tải...</string>
+    <string name="default_file_path">/storage/emulated/0/xxx/storage/emulated/0/xxx/storage/emulated/0/xxx</string>
+
+    <!-- Clean Model Type Titles -->
+    <string name="clean_type_junk_files">Tệp rác</string>
+    <string name="clean_type_obsolete_apk">APK lỗi thời</string>
+    <string name="clean_type_temp_files">Tệp tạm</string>
+    <string name="clean_type_log_files">Tệp nhật ký</string>
+
+    <!-- Sort Options -->
+    <string name="sort_modified_time">Thời gian sửa đổi</string>
+    <string name="sort_modified_time_newest">(Mới nhất)</string>
+    <string name="sort_modified_time_oldest">(Cũ nhất)</string>
+    <string name="sort_name">Tên</string>
+    <string name="sort_name_asc">(A đến Z)</string>
+    <string name="sort_name_desc">(Z đến A)</string>
+    <string name="sort_file_size">Kích thước tệp</string>
+    <string name="sort_file_size_largest">(Lớn nhất)</string>
+    <string name="sort_file_size_smallest">(Nhỏ nhất)</string>
+
+    <!-- Language Names -->
+    <string name="chinese_simplified">Tiếng Trung (Giản thể)</string>
+    <string name="english">Tiếng Anh</string>
+    <string name="chinese_traditional">Tiếng Trung (Phồn thể)</string>
+    <string name="language_russia">Tiếng Nga</string>
+    <string name="language_portuguese_brazil">Tiếng Bồ Đào Nha (Brazil)</string>
+    <string name="language_vietnamese">Tiếng Việt</string>
+    <string name="language_thai">Tiếng Thái</string>
+    <string name="language_indonesian">Tiếng Indonesia</string>
+    <string name="language_hindi">Tiếng Hindi</string>
+    <string name="language_spanish">Tiếng Tây Ban Nha</string>
+    <string name="language_german">Tiếng Đức</string>
+    <string name="language_french">Tiếng Pháp</string>
+    <string name="language_korean">Tiếng Hàn</string>
+    <string name="language_japanese">Tiếng Nhật</string>
+    <string name="language_button_default">Cài đặt</string>
+    <string name="language_button_selected">Mở</string>
+    
+    <string name="page_permission_file_1">Chào mừng đến với</string>
+    <string name="page_permission_file_2">Cấp quyền truy cập</string>
+    <string name="dialog_pdf_default_launch_content">Đặt <font color="#fc4949">PDF Viewer</font> làm trình đọc PDF mặc định để tăng tốc độ đọc.</string>
+    
+    <string name="guide_scan_text_1">Quét sang PDF</string>
+    <string name="guide_scan_text_2">Nhấn nút này để sử dụng tính năng quét</string>
+    <string name="guide_scan_text_3">Hãy thử</string>
+    
+    <!-- Notification Tool Strings -->
+    <string name="notification_tool_title">Công cụ PDF</string>
+    <string name="notification_tool_text">Công cụ truy cập nhanh</string>
+    <string name="notification_btn_doc">Tài liệu</string>
+    <string name="notification_btn_scan">Quét</string>
+    <string name="notification_btn_clean">Dọn dẹp</string>
+
+    <!-- PDF Default Launcher -->
+    <string name="choose_default_pdf_reader">Chọn trình đọc PDF mặc định</string>
+    <string name="pdf_default_just_once">Một lần</string>
+    <string name="pdf_default_always">Luôn luôn</string>
+    
+    <!-- Store Score Dialog -->
+    <string name="store_score_title">Cảm ơn bạn đã sử dụng PDF Viewer</string>
+    <string name="store_score_desc">Chúng tôi rất biết ơn nếu bạn đánh giá cho chúng tôi.</string>
+    <string name="store_score_button">Đánh giá</string>
+    <string name="store_score_feedback_thanks">Cảm ơn phản hồi của bạn!</string>
+    <string name="store_score_badge">Đánh giá tốt nhất cho chúng tôi</string>
+    
+    <!-- Guide Pages -->
+    <string name="guide_page1_title">Trình đọc tài liệu tất cả trong một</string>
+    <string name="guide_page1_desc">Truy cập, tổ chức và quản lý tất cả các tệp của bạn một cách dễ dàng - bất cứ lúc nào, bất cứ nơi đâu.</string>
+    <string name="guide_page2_title">Máy quét tài liệu tiện lợi</string>
+    <string name="guide_page2_desc">Dễ dàng quét tất cả các tài liệu quan trọng của bạn.</string>
+    <string name="guide_page3_title">Dọn dẹp tệp và diệt virus nhanh chóng</string>
+    <string name="guide_page3_desc">Dọn dẹp các tệp không cần thiết, nâng cao bảo mật và hiệu suất.</string>
+    <string name="guide_page4_title">Chuyển đổi hình ảnh và bản quét thành PDF bất cứ lúc nào</string>
+    <string name="guide_page4_desc">Chuyển hình ảnh thành PDF hoặc quét trực tiếp để tạo PDF ở bất kỳ đâu.</string>
+    <string name="guide_btn_next">Tiếp theo</string>
+
+    <string name="current_language">Ngôn ngữ hiện tại</string>
+    <string name="all_language">Tất cả ngôn ngữ</string>
+
+    <!-- Splash screen loading texts -->
+    <string name="splash_initialize">Đang khởi tạo...</string>
+    <string name="splash_load_resources">Đang tải tài nguyên...</string>
+    <string name="splash_load_files">Đang tải tệp tin...</string>
+
+    <!-- Language setting button -->
+    <string name="language_btn_done">Xong</string>
+    
+    <!-- Hộp thoại lựa chọn ngôn ngữ -->
+    <string name="language_skip_title">Xác nhận bỏ qua</string>
+    <string name="language_skip_message">Bạn sắp tiếp tục với [%1$s] là ngôn ngữ mặc định của mình.\n\nNhấn Tiếp theo để tiếp tục.</string>
+    <string name="language_skip_next">Tiếp theo</string>
+    <string name="language_default">Ngôn ngữ mặc định</string>
+    
+    <!-- Hộp thoại bỏ qua hướng dẫn -->
+    <string name="guide_skip_message">Bạn sắp bỏ qua hướng dẫn và đi thẳng đến giao diện chính. Bạn luôn có thể xem thêm giới thiệu tính năng trong phần cài đặt.\n\nNhấn Tiếp theo để tiếp tục.</string>
+    
+    <!-- Guide Click Text -->
+    <string name="guide_doc_click_text">Đọc tập tin của bạn ngay bây giờ</string>
+    
+    <!-- PDF Guide Text -->
+    <string name="pdf_guide_annotation_title">Công cụ chú thích phong phú</string>
+    <string name="pdf_guide_annotation_desc">Sau khi chọn văn bản, bạn có thể sử dụng các công cụ chú thích khác nhau:\nSao chép, Tô sáng, Gạch chân, Gạch ngang</string>
+    <string name="pdf_guide_btn_next">Đã hiểu</string>
+    <string name="pdf_guide_btn_continue">Tiếp tục</string>
+    <string name="pdf_guide_btn_more">Tìm hiểu thêm</string>
+    
+    <!-- Exit App Dialog -->
+    <string name="exit_app_dialog_title">Bạn có chắc chắn muốn thoát ứng dụng?</string>
+    <string name="exit_app_dialog_positive">Xác Nhận Thoát</string>
+    <string name="exit_app_dialog_negative">Hủy</string>
+    
+    <!-- App Shortcuts -->
+    <string name="shortcut_uninstall_short">Gỡ cài đặt</string>
+    <string name="shortcut_uninstall_title">Gỡ cài đặt ứng dụng có thể dẫn đến mất các tài liệu đã lưu hoặc tập tin gần đây. Bạn có chắc chắn muốn tiếp tục?</string>
+    <string name="shortcut_uninstall_title_highlight">mất các tài liệu đã lưu hoặc tập tin gần đây</string>
+    <string name="shortcut_uninstall_content">Vui lòng thử kích hoạt ứng dụng một lần nữa và cho chúng tôi biết lý do.</string>
+    <string name="shortcut_uninstall_btn_agree">Chưa gỡ cài đặt</string>
+    <string name="shortcut_uninstall_btn_still">Vẫn gỡ cài đặt</string>
+    <string name="shortcut_uninstall_title2">Có vấn đề khi sử dụng ứng dụng?</string>
+    <string name="shortcut_uninstall_option1">Tính năng không hoạt động</string>
+    <string name="shortcut_uninstall_option2">Tôi không còn cần ứng dụng này</string>
+    <string name="shortcut_uninstall_option3">Quá nhiều quảng cáo</string>
+    <string name="shortcut_uninstall_option4">Quá nhiều thông báo</string>
+    <string name="shortcut_uninstall_option5">Khác</string>
+    <string name="shortcut_uninstall_edit_tip">Vui lòng cung cấp thêm chi tiết để chúng tôi có thể xác định và giải quyết vấn đề của bạn nhanh hơn…</string>
+    <string name="shortcut_uninstall_btn_cancel">Hủy</string>
+    <string name="shortcut_uninstall_btn_uninstall">Gỡ cài đặt</string>
+
+    <string name="action_search">Tìm kiếm</string>
+    <string name="tool_merge_pdf">Gộp PDF</string>
+    <string name="merge_button_text_selected">Gộp %1$d PDF</string>
+    <string name="merge_button_text_default">Chọn ít nhất 2 PDF</string>
+    <string name="merge_pdf_title">Gộp PDF</string>
+    <string name="split_pdf_title">Tách PDF</string>
+    <string name="split_button_text_selected">Tách %1$d PDF</string>
+    <string name="split_button_text_default">Chọn ít nhất 1 PDF</string>
+    <string name="pdf_page_grid_merge_title">Chọn trang để gộp</string>
+    <string name="pdf_page_grid_split_title">Chọn trang để tách</string>
+    <string name="merge_pages_button_text">Gộp %1$d trang</string>
+    <string name="split_pages_button_text">Tách %1$d trang</string>
+    <string name="merge_button_default_text">Chọn các trang để gộp</string>
+    <string name="split_button_default_text">Chọn các trang để tách</string>
+    <string name="select_all_pages">Chọn tất cả</string>
+    <string name="deselect_all_pages">Bỏ chọn tất cả</string>
+    <string name="pages_selected_info">Đã chọn %1$d trong %2$d trang</string>
+    <string name="no_pdf_pages_found">Không tìm thấy trang PDF</string>
+    <string name="action_split">Tách</string>
+    <string name="pages_selected_format">%1$d đã chọn</string>
+    <string name="pdf_encrypt_failed">Mã hóa PDF thất bại</string>
+    <string name="pdf_decrypt_failed">Giải mã PDF thất bại</string>
+    <string name="pdf_process_failed">Xử lý PDF thất bại</string>
+    <string name="external_file_no_encryption">Tập tin bên ngoài không hỗ trợ mã hóa/giải mã</string>
+    <string name="added_to_favorites">Đã thêm vào yêu thích</string>
+    <string name="removed_from_favorites">Đã xóa khỏi yêu thích</string>
+    <string name="saving_pdf">Đang lưu PDF...</string>
+    <string name="save_as_copy_exiting">Lưu bản sao thành công, đang thoát...</string>
+    <string name="incremental_save_exiting">Lưu thay đổi thành công, đang thoát...</string>
+    <string name="save_success_exiting">Lưu thành công, đang thoát...</string>
+    <string name="incremental_save_success">Lưu tăng dần thành công</string>
+    <string name="save_success">Lưu thành công</string>
+    <string name="save_failed">Lưu thất bại: %1$s</string>
+    <string name="annotation_added">Đã thêm chú thích %1$s</string>
+    <string name="annotation_add_failed">Thêm chú thích %1$s thất bại</string>
+    <string name="annotation_add_error">Thêm chú thích thất bại: %1$s</string>
+    <string name="annotation_no_page_info">Không thể thêm chú thích: thiếu thông tin trang</string>
+    <string name="pdf_text_label">Văn bản PDF</string>
+    <string name="copy_failed">Sao chép thất bại</string>
+    <string name="annotation_clear_no_page">Không thể xóa chú thích: thiếu thông tin trang</string>
+    <string name="annotations_cleared">Đã xóa %1$d chú thích</string>
+    <string name="no_annotations_on_page">Không có chú thích nào trên trang hiện tại</string>
+    <string name="clear_annotations_failed">Xóa chú thích thất bại: %1$s</string>
+
+    <!-- Missing annotation strings -->
+    <string name="already_first_page">Đã ở trang đầu tiên</string>
+    <string name="already_last_page">Đã ở trang cuối cùng</string>
+    <string name="annotation_highlight">Tô sáng</string>
+    <string name="annotation_strikethrough">Gạch ngang</string>
+    <string name="text_copied">Đã sao chép</string>
+    <string name="annotation_underline">Gạch chân</string>
+
+    <!-- floating dialog-->
+    <string name="floatng_dialog_allow">Cho phép</string>
+    <string name="floatng_dialog_appear">hiển thị trên các ứng dụng khác</string>
+    <string name="floatng_dialog_content">Để bật trình đọc Mini nổi và tham khảo nhanh tài liệu của bạn khi sử dụng các ứng dụng khác.</string>
+    <string name="floatng_dialog_required">(bắt buộc)</string>
+
+    <!-- Floating Window -->
+    <string name="floating_window_title">Tệp Gần Đây</string>
+    <string name="floating_window_empty">Không có tệp gần đây</string>
+    <string name="floating_window_resize_handle">Thay đổi kích thước cửa sổ</string>
+    <string name="floating_window_permission_required">Cần quyền cửa sổ nổi</string>
+    <string name="floating_window_show_failed">Không thể hiển thị cửa sổ nổi: %1$s</string>
+    <string name="floating_window_open_file_failed">Không thể mở tệp: %1$s</string>
+
+    <!-- Earthquake -->
+    <string name="earthquake_quick_alert">Cảnh Báo Động Đất Nhanh</string>
+    <string name="earthquake_focal_depth">Độ Sâu Tiêu Điểm</string>
+    <string name="earthquake_tsunami_threat">Mối Đe Dọa Sóng Thần</string>
+    <string name="earthquake_usgs_warning">Cảnh Báo USGS</string>
+    <string name="earthquake_origin_time">Thời Điểm Phát Sinh</string>
+    <string name="earthquake_magnitude_type">Loại Độ Lớn</string>
+    <string name="earthquake_data_status">Trạng Thái Dữ Liệu</string>
+    <string name="earthquake_data_km">KM</string>
+    
+    <!-- Notification - Override notification module strings -->
+    <string name="noti_earthquake_click_text">- Xem Bán Kính Ảnh Hưởng……</string>
+    
+    <string name="lock_screen_slide_to_unlock">Vuốt để mở khóa</string>
+    <string name="lock_screen_scan_pdf">Quét PDF</string>
+
+    <!-- Introduction -->
+    <string name="introduction_title"><![CDATA[Trình đọc <font color="#FB4949">PDF</font> miễn phí &amp; trình chỉnh sửa &amp; chuyển đổi]]></string>
+    <string name="introduction_title_2"><![CDATA[Chọn <font color="#FB4949">PDF Viewer</font> làm ứng dụng màn hình chính mặc định]]></string>
+    <string name="introduction_title_3"><![CDATA[Bắt đầu trong <font color="#FB4949">2 bước</font> đơn giản:]]></string>
+    <string name="introduction_step1_text">Nhấn \"Tiếp tục\" bên dưới</string>
+    <string name="introduction_step2_text">Nhấn \"PDF Viewer\" và đặt làm ứng dụng màn hình chính mặc định</string>
+    <string name="introduction_btn_get_started">Bắt đầu</string>
+    <string name="introduction_btn_continue">Tiếp tục</string>
+    <string name="introduction_not_now">Để sau</string>
+    <string name="introduction_step1_title">Bước 1：</string>
+    <string name="introduction_step2_title">Bước 2：</string>
+    <string name="introduction_privacy_policy">Chính sách bảo mật</string>
+    <string name="introduction_terms_of_service">Điều khoản dịch vụ</string>
+
+    <!-- Custom Dialog -->
+    <string name="custom_dialog_description">Vuốt sang phải để xem tệp, chú thích trang và làm việc hiệu quả</string>
+
+    <!-- Default App Dialog -->
+    <string name="default_app_dialog_title"><![CDATA[Đặt <font color="#FB4949">PDF</font> Viewer làm mặc định]]></string>
+    <string name="default_app_dialog_desc1">Máy quét tài liệu tích hợp, bộ chuyển đổi PDF và trình xem tệp</string>
+    <string name="default_app_dialog_desc2">Hình nền động, công cụ dọn dẹp lưu trữ, thời tiết chính xác.</string>
+    <string name="default_app_dialog_btn_try">Thử ngay</string>
+
+    <!-- About -->
+    <string name="about_section_title">Về chúng tôi</string>
+    <string name="about_content">Tại PDF Reader &amp; PDF Viewer, chúng tôi cam kết cung cấp trải nghiệm quản lý PDF tích hợp, mượt mà và hiệu quả. Cho dù bạn đang xem tài liệu, đánh dấu văn bản, quét tệp ngay lập tức, chuyển đổi hình ảnh sang PDF hay dọn dẹp không gian lưu trữ một cách thông minh, chúng tôi cung cấp giải pháp toàn diện chu đáo cho tất cả nhu cầu của bạn. Đội ngũ của chúng tôi đặt người dùng lên hàng đầu, kết hợp chức năng mạnh mẽ với giao diện sạch sẽ, trực quan để bạn có thể duy trì năng suất và tổ chức bất cứ lúc nào, bất cứ nơi đâu. Chúng tôi liên tục lắng nghe phản hồi của bạn và tiếp tục cải thiện và đổi mới—làm cho việc xử lý PDF đơn giản hơn và thông minh hơn cho mọi người.</string>
+    <string name="about_privacy_policy">Chính Sách Bảo Mật</string>
+    <string name="about_uninstall_instructions">Hướng Dẫn Gỡ Cài Đặt</string>
+
+    <!-- Language Setting -->
+    <string name="language_setting_loading">Đang cài đặt...</string>
+</resources> 

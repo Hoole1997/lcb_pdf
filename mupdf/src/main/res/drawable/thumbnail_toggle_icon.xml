@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <!-- 激活状态（缩略图显示时）- 白色图标 -->
+    <item android:state_activated="true">
+        <vector android:width="24dp"
+            android:height="24dp"
+            android:viewportWidth="24"
+            android:viewportHeight="24"
+            android:tint="@android:color/white">
+            <path android:fillColor="@android:color/white"
+                android:pathData="M4,6H2v14c0,1.1 0.9,2 2,2h14v-2H4V6z"/>
+            <path android:fillColor="@android:color/white"
+                android:pathData="M20,2H8C6.9,2 6,2.9 6,4v12c0,1.1 0.9,2 2,2h12c1.1,0 2,-0.9 2,-2V4C22,2.9 21.1,2 20,2zM11.5,9C10.67,9 10,8.33 10,7.5S10.67,6 11.5,6S13,6.67 13,7.5S12.33,9 11.5,9zM20,15h-8l2.5,-3.21 1.79,2.15 2.5,-3.22L20,15z"/>
+        </vector>
+    </item>
+    
+    <!-- 默认状态（缩略图隐藏时）- 深灰色图标 -->
+    <item>
+        <vector android:width="24dp"
+            android:height="24dp"
+            android:viewportWidth="24"
+            android:viewportHeight="24"
+            android:tint="#616161">
+            <path android:fillColor="#616161"
+                android:pathData="M4,6H2v14c0,1.1 0.9,2 2,2h14v-2H4V6z"/>
+            <path android:fillColor="#616161"
+                android:pathData="M20,2H8C6.9,2 6,2.9 6,4v12c0,1.1 0.9,2 2,2h12c1.1,0 2,-0.9 2,-2V4C22,2.9 21.1,2 20,2zM11.5,9C10.67,9 10,8.33 10,7.5S10.67,6 11.5,6S13,6.67 13,7.5S12.33,9 11.5,9zM20,15h-8l2.5,-3.21 1.79,2.15 2.5,-3.22L20,15z"/>
+        </vector>
+    </item>
+    
+</selector>

@@ -1,0 +1,182 @@
+plugins {
+    alias(libs.plugins.android.application)
+    alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.kotlin.parcelize)
+    alias(libs.plugins.google.gms.google.services)
+}
+
+def appConfig = (findProperty("app") ?: [:]) as Map
+def analyticsConfig = (findProperty("analytics") ?: [:]) as Map
+def adMobConfig = (findProperty("admob") ?: [:]) as Map
+def adMobUnitConfig = (adMobConfig["adUnitIds"] ?: [:]) as Map
+def pangleConfig = (findProperty("pangle") ?: [:]) as Map
+def pangleUnitConfig = (pangleConfig["adUnitIds"] ?: [:]) as Map
+def toponConfig = (findProperty("topon") ?: [:]) as Map
+def toponUnitConfig = (toponConfig["adUnitIds"] ?: [:]) as Map
+
+android {
+    namespace = "com.documentpro.office.business.fileviewer"
+
+    defaultConfig {
+        minSdk (appConfig["minSdk"] ?: 26) as Integer
+        targetSdk (appConfig["targetSdk"] ?: 35) as Integer
+
+        def defaultChannel = analyticsConfig["defaultUserChannel"] ?: "default"
+        buildConfigField "String", "DEFAULT_USER_CHANNEL", "\"$defaultChannel\""
+
+        manifestPlaceholders["ADMOB_APPLICATION_ID"] = adMobConfig["applicationId"] ?: ""
+
+        buildConfigField "String", "ADMOB_APPLICATION_ID", "\"${adMobConfig["applicationId"] ?: ""}\""
+        buildConfigField "String", "ADMOB_SPLASH_ID", "\"${adMobUnitConfig["splash"] ?: ""}\""
+        buildConfigField "String", "ADMOB_BANNER_ID", "\"${adMobUnitConfig["banner"] ?: ""}\""
+        buildConfigField "String", "ADMOB_INTERSTITIAL_ID", "\"${adMobUnitConfig["interstitial"] ?: ""}\""
+        buildConfigField "String", "ADMOB_NATIVE_ID", "\"${adMobUnitConfig["native"] ?: ""}\""
+        buildConfigField "String", "ADMOB_FULL_NATIVE_ID", "\"${adMobUnitConfig["full_native"] ?: ""}\""
+        buildConfigField "String", "ADMOB_REWARDED_ID", "\"${adMobUnitConfig["rewarded"] ?: ""}\""
+
+        buildConfigField "String", "PANGLE_APPLICATION_ID", "\"${pangleConfig["applicationId"] ?: ""}\""
+        buildConfigField "String", "PANGLE_SPLASH_ID", "\"${pangleUnitConfig["splash"] ?: ""}\""
+        buildConfigField "String", "PANGLE_BANNER_ID", "\"${pangleUnitConfig["banner"] ?: ""}\""
+        buildConfigField "String", "PANGLE_INTERSTITIAL_ID", "\"${pangleUnitConfig["interstitial"] ?: ""}\""
+        buildConfigField "String", "PANGLE_NATIVE_ID", "\"${pangleUnitConfig["native"] ?: ""}\""
+        buildConfigField "String", "PANGLE_FULL_NATIVE_ID", "\"${pangleUnitConfig["full_native"] ?: ""}\""
+        buildConfigField "String", "PANGLE_REWARDED_ID", "\"${pangleUnitConfig["rewarded"] ?: ""}\""
+
+        def toponAppId = (toponConfig["applicationId"] ?: "") as String
+        def toponAppKey = (toponConfig["appKey"] ?: "") as String
+        buildConfigField "String", "TOPON_APPLICATION_ID", "\"$toponAppId\""
+        buildConfigField "String", "TOPON_APP_KEY", "\"$toponAppKey\""
+        buildConfigField "String", "TOPON_INTERSTITIAL_ID", "\"${toponUnitConfig["interstitial"] ?: ""}\""
+        buildConfigField "String", "TOPON_REWARDED_ID", "\"${toponUnitConfig["rewarded"] ?: ""}\""
+        buildConfigField "String", "TOPON_NATIVE_ID", "\"${toponUnitConfig["native"] ?: ""}\""
+        buildConfigField "String", "TOPON_SPLASH_ID", "\"${toponUnitConfig["splash"] ?: ""}\""
+        buildConfigField "String", "TOPON_FULL_NATIVE_ID", "\"${toponUnitConfig["full_native"] ?: ""}\""
+        buildConfigField "String", "TOPON_BANNER_ID", "\"${toponUnitConfig["banner"] ?: ""}\""
+    }
+
+    flavorDimensions += ["channel"]
+
+    productFlavors {
+        google {
+            dimension "channel"
+            applicationId appConfig["applicationId"] ?: "com.documentpro.office.business.fileviewer"
+            versionCode (appConfig["versionCode"] ?: 1) as Integer
+            versionName appConfig["versionName"] ?: "1.0.0"
+        }
+
+        local {
+            dimension "channel"
+            applicationId appConfig["applicationId"] ?: "com.documentpro.office.business.fileviewer"
+            versionCode (appConfig["versionCode"] ?: 1) as Integer
+            versionName "${appConfig["versionName"] ?: "1.0.0"}-local"
+            isDefault true
+        }
+    }
+
+    buildTypes {
+        debug {
+            versionNameSuffix "-debug"
+        }
+        release {
+            minifyEnabled false
+            shrinkResources false
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
+            )
+        }
+    }
+
+    buildFeatures {
+        viewBinding = true
+        buildConfig = true
+        dataBinding = true
+    }
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
+    }
+
+    kotlinOptions {
+        jvmTarget = "17"
+    }
+
+    packaging {
+        resources {
+            excludes += [
+                "META-INF/AL2.0",
+                "META-INF/LGPL2.1",
+                "META-INF/LICENSE*",
+                "META-INF/NOTICE*",
+                "META-INF/*.version",
+            ]
+        }
+    }
+
+    applicationVariants.configureEach { variant ->
+        variant.outputs.configureEach {
+            outputFileName = "lcb-pdf-${variant.flavorName}-${variant.buildType.name}-${variant.versionName}.apk"
+        }
+    }
+}
+
+configurations.configureEach {
+    exclude group: "com.google.firebase", module: "protolite-well-known-types"
+}
+
+dependencies {
+    implementation libs.remax.core
+    implementation libs.remax.bill
+    implementation project(":metrics")
+    implementation project(":mupdf")
+
+    implementation(libs.androidx.core.ktx)
+    implementation(libs.androidx.appcompat)
+    implementation(libs.material)
+    implementation("androidx.cardview:cardview:1.0.0")
+    implementation("androidx.activity:activity:1.9.2")
+    implementation(libs.androidx.constraintlayout)
+    implementation("androidx.core:core-splashscreen:1.0.1")
+    implementation("androidx.activity:activity-ktx:1.9.2")
+    implementation(libs.androidx.fragment.ktx)
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.9.4")
+
+    implementation("me.majiajie:pager-bottom-tab-strip:2.4.0")
+    implementation("com.github.JavaNoober.BackgroundLibrary:libraryx:1.7.6")
+    implementation("com.github.getActivity:XXPermissions:23.0")
+    implementation("com.blankj:utilcodex:1.31.1")
+    implementation("io.github.cymchad:BaseRecyclerViewAdapterHelper4:4.1.4")
+    implementation("io.github.scwang90:refresh-layout-kernel:3.0.0-alpha")
+    implementation("io.github.scwang90:refresh-header-material:3.0.0-alpha")
+    implementation("com.github.bumptech.glide:glide:4.16.0")
+    implementation("com.github.li-xiaojun:XPopup:2.10.0")
+    implementation("com.itextpdf.android:kernel-android:9.1.0")
+    implementation("com.itextpdf.android:layout-android:9.1.0")
+    implementation("com.itextpdf.android:bouncy-castle-adapter-android:9.1.0")
+    implementation("com.google.android.gms:play-services-mlkit-document-scanner:16.0.0-beta1")
+    implementation(libs.play.services.ads)
+    implementation("com.github.murgupluoglu:flagkit-android:1.0.5")
+    implementation("com.github.svga:SVGAPlayer-Android:2.6.1")
+    implementation("com.github.wdsqjq:AndRatingBar:1.0.6")
+    implementation("com.ethanhua:skeleton:1.1.2")
+    implementation("io.supercharge:shimmerlayout:2.1.0")
+    debugImplementation("com.github.simplepeng.SpiderMan:spiderman:v1.2.3")
+    releaseImplementation("com.github.simplepeng.SpiderMan:spiderman-no-op:v1.2.3")
+    implementation("com.akexorcist:round-corner-progress-bar:2.2.2")
+    implementation("com.geyifeng.immersionbar:immersionbar:3.2.2")
+    implementation("androidx.work:work-runtime-ktx:2.9.0")
+    implementation("com.github.huburt-Hu:NewbieGuide:v2.4.4")
+    implementation("com.github.wwdablu:lottiebottomnav:1.2.0")
+    implementation("me.leolin:ShortcutBadger:1.1.22@aar")
+    implementation(platform(libs.firebase.bom))
+    implementation(libs.firebase.analytics)
+    implementation(libs.firebase.messaging)
+    implementation(libs.firebase.config)
+    implementation("com.google.firebase:firebase-crashlytics-ndk")
+    implementation("com.google.firebase:firebase-perf")
+    implementation(libs.gson)
+    implementation("com.google.android.play:review:2.0.2")
+    implementation(libs.airbnb.lottie)
+    implementation(libs.okhttp)
+}

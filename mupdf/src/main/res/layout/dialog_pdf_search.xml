@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 现代化PDF搜索对话框 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_background"
+    android:elevation="8dp">
+
+    <!-- 搜索输入区域 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/card_background"
+        android:padding="16dp"
+        android:gravity="center_vertical">
+
+        <!-- 搜索图标 -->
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_search"
+            app:tint="@color/text_secondary"
+            android:layout_marginEnd="12dp" />
+
+        <!-- 搜索输入框 -->
+        <EditText
+            android:id="@+id/searchInput"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="@string/search_pdf_content"
+            android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_secondary"
+            android:textSize="16sp"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:maxLines="1"
+            android:layout_marginEnd="8dp" />
+
+        <!-- 清除按钮 -->
+        <ImageButton
+            android:id="@+id/clearBtn"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_clear"
+            android:scaleType="centerInside"
+            app:tint="@color/text_secondary"
+            android:contentDescription="@string/clear"
+            android:visibility="gone" />
+
+        <!-- 关闭按钮 -->
+        <ImageButton
+            android:id="@+id/closeBtn"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_close"
+            android:scaleType="centerInside"
+            app:tint="@color/text_secondary"
+            android:contentDescription="@string/close"
+            android:layout_marginStart="4dp" />
+
+    </LinearLayout>
+
+    <!-- 分隔线 -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_color" />
+
+    <!-- 搜索控制栏 -->
+    <LinearLayout
+        android:id="@+id/searchControls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/surface_color"
+        android:padding="12dp"
+        android:gravity="center_vertical"
+        android:visibility="gone">
+
+        <!-- 搜索结果信息 -->
+        <TextView
+            android:id="@+id/searchResultInfo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/no_results_found"
+            android:textColor="@color/text_secondary"
+            android:textSize="14sp"
+            android:gravity="start|center_vertical" />
+
+        <!-- 搜索导航按钮 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- 上一个结果 -->
+            <ImageButton
+                android:id="@+id/prevBtn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_arrow_up"
+                android:scaleType="centerInside"
+                app:tint="@color/text_secondary"
+                android:contentDescription="@string/previous"
+                android:enabled="false"
+                android:layout_marginEnd="4dp" />
+
+            <!-- 下一个结果 -->
+            <ImageButton
+                android:id="@+id/nextBtn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_arrow_down"
+                android:scaleType="centerInside"
+                app:tint="@color/text_secondary"
+                android:contentDescription="@string/next"
+                android:enabled="false" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- 搜索选项区域 -->
+    <LinearLayout
+        android:id="@+id/searchOptions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/surface_color"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="12dp"
+        android:visibility="gone">
+
+        <!-- 匹配选项 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <CheckBox
+                android:id="@+id/matchCaseCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/match_case"
+                android:textColor="@color/text_primary"
+                android:textSize="14sp"
+                android:layout_marginEnd="16dp" />
+
+            <CheckBox
+                android:id="@+id/wholeWordCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/whole_words"
+                android:textColor="@color/text_primary"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- 搜索进度指示器 -->
+    <LinearLayout
+        android:id="@+id/searchProgress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/surface_color"
+        android:padding="16dp"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="12dp"
+            style="?android:attr/progressBarStyleSmall" />
+
+        <TextView
+            android:id="@+id/searchProgressText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/searching"
+            android:textColor="@color/text_secondary"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

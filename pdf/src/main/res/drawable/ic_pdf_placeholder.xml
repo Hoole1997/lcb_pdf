@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+
+    <!-- 文档背景 -->
+    <path
+        android:fillColor="#F5F5F5"
+        android:strokeColor="#E0E0E0"
+        android:strokeWidth="1"
+        android:pathData="M8,4 L32,4 L40,12 L40,44 L8,44 Z"/>
+
+    <!-- 右上角折角 -->
+    <path
+        android:fillColor="#E0E0E0"
+        android:pathData="M32,4 L32,12 L40,12 Z"/>
+
+    <!-- PDF文档图标 -->
+    <path
+        android:fillColor="#666666"
+        android:pathData="M20,20 L20,32 L22,32 L22,26 L26,26 L26,24 L22,24 L22,22 L28,22 L28,20 Z"/>
+        
+    <!-- 添加文档线条 -->
+    <path
+        android:fillColor="#CCCCCC"
+        android:pathData="M12,16 L28,16 L28,17 L12,17 Z"/>
+    <path
+        android:fillColor="#CCCCCC"
+        android:pathData="M12,19 L28,19 L28,20 L12,20 Z"/>
+    <path
+        android:fillColor="#CCCCCC"
+        android:pathData="M12,35 L36,35 L36,36 L12,36 Z"/>
+    <path
+        android:fillColor="#CCCCCC"
+        android:pathData="M12,38 L36,38 L36,39 L12,39 Z"/>
+
+</vector>

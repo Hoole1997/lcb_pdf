@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="noti_tool_scan_pdf" type="mipmap">@mipmap/tool_scan_pdf</item>
+    <item name="noti_tool_image_pdf" type="mipmap">@mipmap/tool_image_pdf</item>
+    <item name="noti_tool_file_clean" type="mipmap">@mipmap/tool_file_clean</item>
+    <item name="noti_timing_notify_btn_long" type="drawable">@drawable/button</item>
+</resources>

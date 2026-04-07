@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:id="@+id/main"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/color_gradient_view"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="#1868FF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <androidx.appcompat.widget.Toolbar
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/toolbar"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:text="@string/process_manager_title_short"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lv"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="110dp"
+        app:lottie_rawRes="@raw/lt_process_start"
+        android:layout_gravity="center_horizontal"
+        app:lottie_imageAssetsFolder="process_loading"
+        app:lottie_loop="false"
+        app:lottie_autoPlay="true"
+        app:lottie_speed="0.5"
+        android:layout_width="285dp"
+        android:layout_height="285dp"/>
+
+   <LinearLayout
+       app:layout_constraintTop_toTopOf="@id/lv"
+       app:layout_constraintBottom_toBottomOf="@id/lv"
+       app:layout_constraintStart_toStartOf="@id/lv"
+       app:layout_constraintEnd_toEndOf="@id/lv"
+       android:orientation="vertical"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content">
+
+       <TextView
+           android:id="@+id/tv_file_size"
+           android:text="0"
+           android:textColor="#fff"
+           android:textSize="48sp"
+           android:includeFontPadding="false"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"/>
+
+       <TextView
+           android:id="@+id/tv_file_size_unit"
+           android:layout_gravity="center_horizontal"
+           android:includeFontPadding="false"
+           android:text="%"
+           android:textColor="#fff"
+           android:textSize="14sp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"/>
+
+   </LinearLayout>
+
+    <ProgressBar
+        android:layout_marginHorizontal="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lv"
+        android:id="@+id/pb_scanning"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="4dp"
+        android:layout_marginTop="50dp"
+        android:max="100"
+        android:progress="0"
+        android:progressTint="@color/white"
+        android:progressBackgroundTint="#80FFFFFF"/>
+
+    <TextView
+        app:layout_constraintStart_toStartOf="@id/pb_scanning"
+        app:layout_constraintTop_toBottomOf="@id/pb_scanning"
+        app:layout_constraintEnd_toEndOf="@id/pb_scanning"
+        android:id="@+id/tv_scanning_state"
+        android:text="@string/process_manager_scan_desc"
+        android:textColor="@color/white"
+        android:ellipsize="end"
+        android:textSize="14sp"
+        android:layout_marginTop="5dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+    <FrameLayout
+        android:id="@+id/ad_Container"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

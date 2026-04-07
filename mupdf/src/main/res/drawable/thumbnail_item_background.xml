@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 缩略图项目背景选择器 - 对应HTML版本的选中/未选中状态 -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <!-- 选中状态 红色圆角背景 对应HTML的active状态 -->
+    <item android:state_selected="true">
+        <shape android:shape="rectangle">
+            <!-- 对应HTML background var(primary-gradient) -->
+            <gradient
+                android:startColor="#ef5350"
+                android:endColor="#d32f2f"
+                android:angle="135" />
+            <corners android:radius="8dp" />
+            <!-- 对应HTML box-shadow var(primary-shadow) -->
+        </shape>
+    </item>
+    
+    <!-- 按下状态 -->
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#ffcdd2" />
+            <corners android:radius="8dp" />
+        </shape>
+    </item>
+    
+    <!-- 悬停状态 对应HTML的hover -->
+    <item android:state_focused="true">
+        <shape android:shape="rectangle">
+            <!-- 对应HTML background var(item-hover-color) -->
+            <solid android:color="#f5f5f5" />
+            <corners android:radius="8dp" />
+        </shape>
+    </item>
+    
+    <!-- 默认状态 - 灰色圆角背景 -->
+    <item>
+        <shape android:shape="rectangle">
+            <!-- 对应HTML默认背景色 -->
+            <solid android:color="#f8f9fa" />
+            <corners android:radius="8dp" />
+            <stroke
+                android:width="1dp"
+                android:color="#e0e0e0" />
+        </shape>
+    </item>
+    
+</selector>

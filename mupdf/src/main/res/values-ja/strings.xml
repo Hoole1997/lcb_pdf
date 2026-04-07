@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="cancel">キャンセル</string>
+	<string name="cannot_open_document">ドキュメントを開けません</string>
+	<string name="cannot_open_document_Reason">ドキュメントを開けません：%1$s</string>
+	<string name="dismiss">閉じる</string>
+	<string name="enter_password">パスワードを入力してください</string>
+	<string name="no_further_occurrences_found">これ以上の該当項目が見つかりません</string>
+	<string name="not_supported">サポートされていません</string>
+	<string name="okay">OK</string>
+	<string name="search">検索&#x2026;</string>
+	<string name="searching_">検索中&#x2026;</string>
+	<string name="text_not_found">テキストが見つかりません</string>
+
+	<!-- PDF相关字符串 -->
+	<string name="pdf_page_content_description">PDFページコンテンツ</string>
+	<string name="pdf_icon_description">PDFドキュメントアイコン</string>
+	<string name="loading_pdf_page">PDFページを読み込み中</string>
+	<string name="please_wait">お待ちください...</string>
+	
+	<!-- Toast messages -->
+	<string name="text_copied">テキストをコピーしました</string>
+	<string name="menu_display_failed">メニュー表示に失敗、テキストを自動的にコピーしました</string>
+	<string name="back_button_clicked">戻るボタンが押されました</string>
+	<string name="search_button_clicked">検索ボタンが押されました</string>
+	<string name="bookmark_added">ブックマークを追加しました</string>
+	<string name="bookmark_removed">ブックマークを削除しました</string>
+	<string name="file_name_format">ファイル：%1$s</string>
+	<string name="unknown_file">不明なファイル</string>
+	<string name="current_page_format">現在のページ：%1$d/%2$d</string>
+	<string name="cannot_jump_to_page">ページ%1$dにジャンプできません</string>
+	<string name="already_first_page">すでに最初のページです</string>
+	<string name="already_last_page">すでに最後のページです</string>
+	<string name="android_file_link_error">Androidはfile://リンクのフォローを許可しません：%1$s</string>
+	<string name="long_press_function_pending">長押し機能は開発中です</string>
+	<string name="search_query_format">検索：「%1$s」</string>
+	<string name="search_result_found_format">「%1$s」がページ%2$dで見つかりました（合計%3$d件のマッチ）</string>
+	<string name="search_not_found_format">「%1$s」が見つかりません</string>
+	<string name="search_result_format">%1$d / %2$d</string>
+	<string name="no_search_results">結果が見つかりません</string>
+	<string name="search_error">検索エラー</string>
+	
+	<!-- PDF Save Options -->
+	<string name="file_size_unavailable">サイズ情報は利用できません</string>
+	<string name="file_size_reduced_format">ファイルサイズが%1$.1f%%削減されました</string>
+	<string name="file_size_increased_format">ファイルサイズが%1$.1f%%増加しました</string>
+	<string name="file_size_no_change">ファイルサイズに変更はありません</string>
+	
+	<!-- Error messages -->
+	<string name="error_loading_page">ページの読み込みエラー</string>
+	<string name="error_rendering_page">ページのレンダリングエラー</string>
+	<string name="error_rendering_patch">パッチのレンダリングエラー</string>
+	<string name="error_updating_page">ページの更新エラー</string>
+	
+	<!-- Enum descriptions -->
+	<string name="action_previous">前のページ</string>
+	<string name="action_next">次のページ</string>
+	<string name="action_jump">ジャンプ</string>
+	<string name="action_first">最初のページ</string>
+	<string name="action_last">最後のページ</string>
+	<string name="category_page_navigation">ページナビゲーション</string>
+	<string name="category_thumbnail">サムネイル</string>
+	<string name="category_direction_toggle">表示方向の切り替え</string>
+	<string name="category_visibility">表示制御</string>
+	<string name="direction_horizontal">水平</string>
+	<string name="direction_vertical">垂直</string>
+	<string name="event_click">クリック</string>
+	<string name="event_long_press">長押し</string>
+	<string name="event_scroll">スクロール</string>
+	<string name="event_load">読み込み</string>
+	<string name="event_visibility_change">表示の変更</string>
+	<string name="state_loading">読み込み中</string>
+	<string name="state_loaded">読み込み完了</string>
+	<string name="state_error">読み込みエラー</string>
+	<string name="state_current">現在のページ</string>
+	<string name="state_normal">通常状態</string>
+	<string name="annotation_highlight">ハイライト</string>
+	<string name="annotation_underline">下線</string>
+	<string name="annotation_strikethrough">取り消し線</string>
+	<string name="annotation_unknown_type">不明なタイプ（%1$d）</string>
+	<string name="pdf_reader_v2">PDF Reader V2</string>
+	
+	<!-- Button labels -->
+	<string name="copy">コピー</string>
+	<string name="clear">クリア</string>
+	
+	<!-- Loading messages -->
+	<string name="loading_pdf_document">PDF文書を読み込み中</string>
+	<string name="preparing_reader">お待ちください、リーダーを準備中...</string>
+	
+	<!-- Search related -->
+	<string name="search_pdf_content">PDFコンテンツを検索...</string>
+	<string name="pdf_search">PDF検索</string>
+	<string name="search_keywords">キーワードを入力...</string>
+	<string name="searching">検索中...</string>
+	<string name="search_progress_format">検索中... %1$d/%2$d</string>
+	<string name="search_results_found_format">%1$d件の結果が見つかりました</string>
+	<string name="search_no_results_format">\"%1$s\"の結果が見つかりません</string>
+	<string name="search_error_message_format">検索エラー: %1$s</string>
+	<string name="start_search_hint">検索を開始するためにキーワードを入力</string>
+	<string name="match_case">大文字・小文字を区別</string>
+	<string name="whole_words">単語全体</string>
+	
+	<!-- UI labels -->
+	<string name="hide_thumbnails">サムネイルを非表示</string>
+	<string name="document_navigation">文書ナビゲーション</string>
+	<string name="page_number_format">ページ %1$d</string>
+	<string name="search_context_text">検索結果のコンテキストテキスト...</string>
+	<string name="matched_keyword">一致したキーワード</string>
+	<string name="zoom_level">100%</string>
+</resources>

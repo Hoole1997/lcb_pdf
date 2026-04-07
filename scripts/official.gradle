@@ -1,0 +1,2 @@
+// Reuse the existing Google flavor config as the official CI config source.
+apply from: "${rootDir}/pdf/src/google/config.gradle"

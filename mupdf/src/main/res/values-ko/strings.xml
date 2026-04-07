@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="cancel">취소</string>
+	<string name="cannot_open_document">문서를 열 수 없습니다</string>
+	<string name="cannot_open_document_Reason">문서를 열 수 없습니다: %1$s</string>
+	<string name="dismiss">닫기</string>
+	<string name="enter_password">비밀번호를 입력하세요</string>
+	<string name="no_further_occurrences_found">더 이상의 일치 항목을 찾을 수 없습니다</string>
+	<string name="not_supported">지원되지 않습니다</string>
+	<string name="okay">확인</string>
+	<string name="search">검색&#x2026;</string>
+	<string name="searching_">검색 중&#x2026;</string>
+	<string name="text_not_found">텍스트를 찾을 수 없습니다</string>
+
+	<!-- PDF相关字符串 -->
+	<string name="pdf_page_content_description">PDF 페이지 내용</string>
+	<string name="pdf_icon_description">PDF 문서 아이콘</string>
+	<string name="loading_pdf_page">PDF 페이지 로딩 중</string>
+	<string name="please_wait">잠시 기다리세요...</string>
+	
+	<!-- Toast messages -->
+	<string name="text_copied">텍스트가 복사되었습니다</string>
+	<string name="menu_display_failed">메뉴 표시 실패, 텍스트가 자동으로 복사되었습니다</string>
+	<string name="back_button_clicked">뒤로 버튼이 클릭되었습니다</string>
+	<string name="search_button_clicked">검색 버튼이 클릭되었습니다</string>
+	<string name="bookmark_added">북마크가 추가되었습니다</string>
+	<string name="bookmark_removed">북마크가 제거되었습니다</string>
+	<string name="file_name_format">파일: %1$s</string>
+	<string name="unknown_file">알 수 없는 파일</string>
+	<string name="current_page_format">현재 페이지: %1$d/%2$d</string>
+	<string name="cannot_jump_to_page">페이지 %1$d로 이동할 수 없습니다</string>
+	<string name="already_first_page">이미 첫 번째 페이지입니다</string>
+	<string name="already_last_page">이미 마지막 페이지입니다</string>
+	<string name="android_file_link_error">Android는 file:// 링크 따라가기를 허용하지 않습니다: %1$s</string>
+	<string name="long_press_function_pending">길게 누르기 기능이 개발 중입니다</string>
+	<string name="search_query_format">검색: \"%1$s\"</string>
+	<string name="search_result_found_format">페이지 %2$d에서 \"%1$s\"을(를) 찾았습니다 (총 %3$d개 일치)</string>
+	<string name="search_not_found_format">\"%1$s\"을(를) 찾을 수 없습니다</string>
+	<string name="search_result_format">%1$d / %2$d</string>
+	<string name="no_search_results">결과를 찾을 수 없습니다</string>
+	<string name="search_error">검색 오류</string>
+	
+	<!-- PDF Save Options -->
+	<string name="file_size_unavailable">크기 정보를 사용할 수 없습니다</string>
+	<string name="file_size_reduced_format">파일 크기가 %1$.1f%% 줄어들었습니다</string>
+	<string name="file_size_increased_format">파일 크기가 %1$.1f%% 늘어났습니다</string>
+	<string name="file_size_no_change">파일 크기가 변경되지 않았습니다</string>
+	
+	<!-- Error messages -->
+	<string name="error_loading_page">페이지 로드 오류</string>
+	<string name="error_rendering_page">페이지 렌더링 오류</string>
+	<string name="error_rendering_patch">패치 렌더링 오류</string>
+	<string name="error_updating_page">페이지 업데이트 오류</string>
+	
+	<!-- Enum descriptions -->
+	<string name="action_previous">이전 페이지</string>
+	<string name="action_next">다음 페이지</string>
+	<string name="action_jump">이동</string>
+	<string name="action_first">첫 번째 페이지</string>
+	<string name="action_last">마지막 페이지</string>
+	<string name="category_page_navigation">페이지 탐색</string>
+	<string name="category_thumbnail">썸네일</string>
+	<string name="category_direction_toggle">보기 방향 전환</string>
+	<string name="category_visibility">가시성 제어</string>
+	<string name="direction_horizontal">가로</string>
+	<string name="direction_vertical">세로</string>
+	<string name="event_click">클릭</string>
+	<string name="event_long_press">길게 누르기</string>
+	<string name="event_scroll">스크롤</string>
+	<string name="event_load">로드</string>
+	<string name="event_visibility_change">가시성 변경</string>
+	<string name="state_loading">로딩 중</string>
+	<string name="state_loaded">로드됨</string>
+	<string name="state_error">로드 오류</string>
+	<string name="state_current">현재 페이지</string>
+	<string name="state_normal">정상 상태</string>
+	<string name="annotation_highlight">하이라이트</string>
+	<string name="annotation_underline">밑줄</string>
+	<string name="annotation_strikethrough">취소선</string>
+	<string name="annotation_unknown_type">알 수 없는 유형 (%1$d)</string>
+	<string name="pdf_reader_v2">PDF Reader V2</string>
+	
+	<!-- Button labels -->
+	<string name="copy">복사</string>
+	<string name="clear">지우기</string>
+	
+	<!-- Loading messages -->
+	<string name="loading_pdf_document">PDF 문서 로딩 중</string>
+	<string name="preparing_reader">잠시만 기다려주세요, 리더 준비 중...</string>
+	
+	<!-- Search related -->
+	<string name="search_pdf_content">PDF 콘텐츠 검색...</string>
+	<string name="pdf_search">PDF 검색</string>
+	<string name="search_keywords">검색 키워드 입력...</string>
+	<string name="searching">검색 중...</string>
+	<string name="search_progress_format">검색 중... %1$d/%2$d</string>
+	<string name="search_results_found_format">%1$d개의 결과를 찾았습니다</string>
+	<string name="search_no_results_format">\"%1$s\"에 대한 결과를 찾을 수 없습니다</string>
+	<string name="search_error_message_format">검색 오류: %1$s</string>
+	<string name="start_search_hint">검색을 시작하려면 키워드를 입력하세요</string>
+	<string name="match_case">대소문자 일치</string>
+	<string name="whole_words">전체 단어</string>
+	
+	<!-- UI labels -->
+	<string name="hide_thumbnails">썸네일 숨기기</string>
+	<string name="document_navigation">문서 탐색</string>
+	<string name="page_number_format">페이지 %1$d</string>
+	<string name="search_context_text">검색 결과 컨텍스트 텍스트...</string>
+	<string name="matched_keyword">일치하는 키워드</string>
+	<string name="zoom_level">100%</string>
+</resources>

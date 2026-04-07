@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="cancel">Cancelar</string>
+	<string name="cannot_open_document">No se puede abrir el documento</string>
+	<string name="cannot_open_document_Reason">No se puede abrir el documento: %1$s</string>
+	<string name="dismiss">Descartar</string>
+	<string name="enter_password">Ingrese contraseña</string>
+	<string name="no_further_occurrences_found">No se encontraron más ocurrencias</string>
+	<string name="not_supported">No compatible</string>
+	<string name="okay">Aceptar</string>
+	<string name="search">Buscar&#x2026;</string>
+	<string name="searching_">Buscando&#x2026;</string>
+	<string name="text_not_found">Texto no encontrado</string>
+
+	<!-- PDF相关字符串 -->
+	<string name="pdf_page_content_description">Contenido de página PDF</string>
+	<string name="pdf_icon_description">Icono de documento PDF</string>
+	<string name="loading_pdf_page">Cargando página PDF</string>
+	<string name="please_wait">Por favor espere...</string>
+	
+	<!-- Toast messages -->
+	<string name="text_copied">Texto copiado</string>
+	<string name="menu_display_failed">Falló la visualización del menú, texto copiado automáticamente</string>
+	<string name="back_button_clicked">Botón atrás presionado</string>
+	<string name="search_button_clicked">Botón buscar presionado</string>
+	<string name="bookmark_added">Marcador agregado</string>
+	<string name="bookmark_removed">Marcador eliminado</string>
+	<string name="file_name_format">Archivo: %1$s</string>
+	<string name="unknown_file">Archivo desconocido</string>
+	<string name="current_page_format">Página actual: %1$d/%2$d</string>
+	<string name="cannot_jump_to_page">No se puede saltar a la página %1$d</string>
+	<string name="already_first_page">Ya está en la primera página</string>
+	<string name="already_last_page">Ya está en la última página</string>
+	<string name="android_file_link_error">Android no permite seguir enlace file://: %1$s</string>
+	<string name="long_press_function_pending">Función de pulsación larga en desarrollo</string>
+	<string name="search_query_format">Buscar: \"%1$s\"</string>
+	<string name="search_result_found_format">Encontrado \"%1$s\" en página %2$d (total %3$d coincidencias)</string>
+	<string name="search_not_found_format">No encontrado \"%1$s\"</string>
+	<string name="search_result_format">%1$d / %2$d</string>
+	<string name="no_search_results">No se encontraron resultados</string>
+	<string name="search_error">Error de búsqueda</string>
+	
+	<!-- PDF Save Options -->
+	<string name="file_size_unavailable">Información de tamaño no disponible</string>
+	<string name="file_size_reduced_format">Tamaño de archivo reducido en %1$.1f%%</string>
+	<string name="file_size_increased_format">Tamaño de archivo aumentado en %1$.1f%%</string>
+	<string name="file_size_no_change">Tamaño de archivo sin cambios</string>
+	
+	<!-- Error messages -->
+	<string name="error_loading_page">Error al cargar página</string>
+	<string name="error_rendering_page">Error al renderizar página</string>
+	<string name="error_rendering_patch">Error al renderizar parche</string>
+	<string name="error_updating_page">Error al actualizar página</string>
+	
+	<!-- Enum descriptions -->
+	<string name="action_previous">Página anterior</string>
+	<string name="action_next">Página siguiente</string>
+	<string name="action_jump">Saltar</string>
+	<string name="action_first">Primera página</string>
+	<string name="action_last">Última página</string>
+	<string name="category_page_navigation">Navegación de páginas</string>
+	<string name="category_thumbnail">Miniatura</string>
+	<string name="category_direction_toggle">Alternar dirección de vista</string>
+	<string name="category_visibility">Control de visibilidad</string>
+	<string name="direction_horizontal">Horizontal</string>
+	<string name="direction_vertical">Vertical</string>
+	<string name="event_click">Clic</string>
+	<string name="event_long_press">Pulsación larga</string>
+	<string name="event_scroll">Desplazar</string>
+	<string name="event_load">Cargar</string>
+	<string name="event_visibility_change">Cambio de visibilidad</string>
+	<string name="state_loading">Cargando</string>
+	<string name="state_loaded">Cargado</string>
+	<string name="state_error">Error de carga</string>
+	<string name="state_current">Página actual</string>
+	<string name="state_normal">Estado normal</string>
+	<string name="annotation_highlight">Resaltado</string>
+	<string name="annotation_underline">Subrayado</string>
+	<string name="annotation_strikethrough">Tachado</string>
+	<string name="annotation_unknown_type">Tipo desconocido (%1$d)</string>
+	<string name="pdf_reader_v2">PDF Reader V2</string>
+	
+	<!-- Button labels -->
+	<string name="copy">Copiar</string>
+	<string name="clear">Limpiar</string>
+	
+	<!-- Loading messages -->
+	<string name="loading_pdf_document">Cargando documento PDF</string>
+	<string name="preparing_reader">Por favor espere, preparando lector...</string>
+	
+	<!-- Search related -->
+	<string name="search_pdf_content">Buscar contenido PDF...</string>
+	<string name="pdf_search">Búsqueda PDF</string>
+	<string name="search_keywords">Ingrese palabras clave...</string>
+	<string name="searching">Buscando...</string>
+	<string name="search_progress_format">Buscando... %1$d/%2$d</string>
+	<string name="search_results_found_format">Se encontraron %1$d resultados</string>
+	<string name="search_no_results_format">No se encontraron resultados para \"%1$s\"</string>
+	<string name="search_error_message_format">Error de búsqueda: %1$s</string>
+	<string name="start_search_hint">Ingrese palabras clave para iniciar búsqueda</string>
+	<string name="match_case">Coincidir mayúsculas/minúsculas</string>
+	<string name="whole_words">Palabras completas</string>
+	
+	<!-- UI labels -->
+	<string name="hide_thumbnails">Ocultar miniaturas</string>
+	<string name="document_navigation">Navegación del documento</string>
+	<string name="page_number_format">Página %1$d</string>
+	<string name="search_context_text">Texto de contexto del resultado de búsqueda...</string>
+	<string name="matched_keyword">Palabra clave coincidente</string>
+	<string name="zoom_level">100%</string>
+</resources>

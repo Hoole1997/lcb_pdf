@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <!-- 主内容卡片 -->
+    <com.noober.background.view.BLLinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/card_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:bl_solid_color="#fff"
+        app:bl_corners_topRadius="16dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp">
+
+            <!-- 关闭按钮 -->
+            <ImageView
+                android:id="@+id/iv_close"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/cancel_icon"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp" />
+
+            <!-- Logo -->
+            <ImageView
+                android:id="@+id/iv_logo"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@mipmap/app_icon_round"
+                android:scaleType="centerCrop"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="15dp" />
+
+            <!-- 标题 -->
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/iv_logo"
+                tools:text="Set PDF Viewer as default" />
+
+            <!-- 描述文本1容器 -->
+            <LinearLayout
+                android:id="@+id/ll_desc1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_title"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp">
+
+                <!-- Scanner 图标 -->
+                <ImageView
+                    android:id="@+id/iv_scanner"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/scanner_icon"
+                    android:layout_marginEnd="14dp" />
+
+                <!-- 描述文本1 -->
+                <TextView
+                    android:id="@+id/tv_desc1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/default_app_dialog_desc1"
+                    android:textColor="#666666"
+                    android:textSize="14sp"
+                    android:textStyle="normal"
+                    android:lineSpacingMultiplier="1.326"
+                    tools:text="Integrated Document Scanner, PDF Converter &amp; File Viewer" />
+
+            </LinearLayout>
+
+            <!-- 描述文本2容器 -->
+            <LinearLayout
+                android:id="@+id/ll_desc2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="24dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ll_desc1"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp">
+
+                <!-- Wallpapers 图标 -->
+                <ImageView
+                    android:id="@+id/iv_wallpapers"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/wallpapers_icon"
+                    android:layout_marginEnd="14dp" />
+
+                <!-- 描述文本2 -->
+                <TextView
+                    android:id="@+id/tv_desc2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/default_app_dialog_desc2"
+                    android:textColor="#666666"
+                    android:textSize="14sp"
+                    android:textStyle="normal"
+                    android:lineSpacingMultiplier="1.326"
+                    tools:text="Live Wallpapers, Storage Cleaner, Precise Weather." />
+
+            </LinearLayout>
+
+            <!-- Try it now 按钮 -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_try_it_now"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:text="@string/default_app_dialog_btn_try"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                android:fontFamily="sans-serif-medium"
+                app:cornerRadius="24dp"
+                android:backgroundTint="#FB4949"
+                android:layout_marginTop="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ll_desc2"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.noober.background.view.BLLinearLayout>
+
+

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:paddingVertical="12dp">
+
+    <!-- 应用图标 -->
+    <ImageView
+        android:id="@+id/iv_app_icon"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:scaleType="fitCenter"
+        app:bl_corners_radius="8dp"/>
+
+    <!-- 应用名称 -->
+    <TextView
+        android:id="@+id/tv_app_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginStart="10dp"
+        android:text="App name"
+        android:textSize="14sp"
+        android:textColor="#333333"
+        android:singleLine="true"
+        android:ellipsize="end"/>
+
+    <!-- Stop 按钮 -->
+    <com.noober.background.view.BLTextView
+        android:id="@+id/btn_stop"
+        android:layout_width="60dp"
+        android:layout_height="26dp"
+        android:text="@string/process_manager_clean_st"
+        android:textSize="14sp"
+        android:textColor="#FB4949"
+        android:gravity="center"
+        app:bl_corners_radius="24dp"
+        app:bl_solid_color="#FFF6F6"/>
+
+</LinearLayout>
+

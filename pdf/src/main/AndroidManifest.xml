@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+<!--    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />-->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.DETECT_SCREEN_CAPTURE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+
+    <!-- 查询其他应用信息 -->
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.MAIN" />
+        </intent>
+    </queries>
+
+    <application
+        android:name="com.documentpro.office.business.fileviewer.StandalonePdfApplication"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name_main"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PDFViewer"
+        tools:replace="android:label">
+        <activity
+            android:name="com.documentpro.office.business.fileviewer.ui.splash.BusinessSplashScreenActivity"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PDFViewer">
+        </activity>
+
+        <!-- Launcher 加载遮罩 Activity，用于非默认桌面场景覆盖白屏 -->
+        <activity
+            android:name="com.documentpro.office.business.fileviewer.ui.splash.LauncherLoadingActivity"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.LauncherGuide" />
+
+        <activity
+            android:name="com.documentpro.office.business.fileviewer.ui.pdf.BusinessDocumentActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PDFViewer">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="application/pdf" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.documentpro.office.business.fileviewer.ui.office.OfficeViewActivity"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PDFViewer">
+
+        </activity>
+        <activity
+            android:name="com.documentpro.office.business.fileviewer.ui.pdf.BusinessLockActivity"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PDFViewer" />
+        <activity
+            android:name="com.documentpro.office.business.fileviewer.ui.pdf.PDFScannerActivity"
+            android:process=":scanner"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PDFViewer" />
+        <activity
+            android:name="com.documentpro.office.business.fileviewer.ui.home.ChooseFileActivity"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PDFViewer" />
+        <activity
+            android:name="com.documentpro.office.business.fileviewer.ui.setting.BusinessSettingActivity"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PDFViewer" />
+        <activity
+            android:name="com.documentpro.office.business.fileviewer.ui.pdf.ImagePreviewActivity"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PDFViewer" />
+        <activity
+            android:name="com.documentpro.office.business.fileviewer.ui.clean.CleanActivity"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PDFViewer" />
+        <activity
+            android:name="com.documentpro.office.business.fileviewer.ui.clean.CleanStartLoadingActivity"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PDFViewer" />
+        <activity
+            android:name="com.documentpro.office.business.fileviewer.ui.clean.CleanEndLoadingActivity"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PDFViewer" />
+        <activity
+            android:name="com.documentpro.office.business.fileviewer.ui.process.ProcessStartLoadingActivity"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PDFViewer" />
+        <activity
+            android:name="com.documentpro.office.business.fileviewer.ui.process.ProcessSuccessActivity"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PDFViewer" />
+        <activity
+            android:name="com.documentpro.office.business.fileviewer.ui.process.ProcessDetailActivity"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PDFViewer" />
+        <activity
+            android:name="com.documentpro.office.business.fileviewer.ui.success.CleanerSuccessActivity"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PDFViewer" />
+        <activity
+            android:name="com.documentpro.office.business.fileviewer.ui.search.SearchFileActivity"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PDFViewer" />
+        <activity
+            android:name="com.documentpro.office.business.fileviewer.ui.web.WebActivity"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PDFViewer" />
+        <activity
+            android:name="com.documentpro.office.business.fileviewer.ui.main.BusinessWorkspaceActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PDFViewer">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.documentpro.office.business.fileviewer.ui.language.LanguageActivity"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PDFViewer" />
+        <activity
+            android:name="com.documentpro.office.business.fileviewer.ui.splash.GuideActivity"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PDFViewer" />
+
+        <activity
+            android:name="com.documentpro.office.business.fileviewer.ui.shortcut.UninstallPromptActivity"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PDFViewer" />
+
+        <!-- 默认桌面选择引导页，配置独立任务栈 -->
+        <activity
+            android:name="com.documentpro.office.business.fileviewer.ui.launcher.LauncherGuideActivity"
+            android:exported="false"
+            android:launchMode="singleInstance"
+            android:taskAffinity=".launcher.guide"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait"
+            android:noHistory="true"
+            android:theme="@style/Theme.LauncherGuide" />
+
+        <activity
+            android:name="com.documentpro.office.business.fileviewer.ui.shortcut.UninstallOptionActivity"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            android:theme="@style/Theme.PDFViewer" />
+        <activity
+            android:name="com.documentpro.office.business.fileviewer.ui.pdf.MergePdfActivity"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PDFViewer" />
+        <activity
+            android:name="com.documentpro.office.business.fileviewer.ui.pdf.PdfPageGridActivity"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PDFViewer" />
+        <activity
+            android:name="com.documentpro.office.business.fileviewer.ui.earthquake.EarthquakeDetailActivity"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PDFViewer" />
+        <activity
+            android:name="com.documentpro.office.business.fileviewer.ui.about.AboutActivity"
+            android:exported="true"
+            android:label="@string/about_section_title"
+            android:icon="@mipmap/ic_about_us_icons"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.PDFViewer">
+            <intent-filter>
+                <action android:name="app.lawnchair.action.OPEN_ABOUT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- FileProvider for sharing PDF files -->
+        <!-- Uses custom subclass to avoid manifest merger conflict with overview.fileprovider -->
+        <provider
+            android:name="com.documentpro.office.business.fileviewer.utils.PdfFileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="${ADMOB_APPLICATION_ID}" />
+        <meta-data
+            android:name="com.google.android.gms.ads.flag.OPTIMIZE_INITIALIZATION"
+            android:value="true"/>
+        <meta-data
+            android:name="com.google.android.gms.ads.flag.OPTIMIZE_AD_LOADING"
+            android:value="true"/>
+    </application>
+
+</manifest>

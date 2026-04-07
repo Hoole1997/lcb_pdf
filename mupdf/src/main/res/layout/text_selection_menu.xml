@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/text_selection_menu_background"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="2dp"
+    app:strokeColor="@color/text_selection_menu_border"
+    app:strokeWidth="0.5dp">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:gravity="center">
+
+            <!-- 复制按钮 -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_copy"
+                style="@style/Widget.Material3.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="72dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/text_menu_button_ripple"
+                android:drawableTop="@drawable/ic_copy"
+                android:drawableTint="@color/text_selection_menu_icon"
+                android:drawablePadding="8dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/copy"
+                android:textColor="@color/text_selection_menu_text"
+                android:textSize="10sp"
+                android:textAllCaps="false"
+                android:minWidth="60dp"
+                android:letterSpacing="0"
+                android:fontFamily="sans-serif-medium"
+                app:backgroundTint="@android:color/transparent"
+                app:rippleColor="@color/text_selection_menu_button_pressed" />
+
+            <!-- 高亮按钮 -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_highlight"
+                style="@style/Widget.Material3.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="72dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/text_menu_button_ripple"
+                android:drawableTop="@drawable/ic_highlight"
+                android:drawablePadding="8dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/annotation_highlight"
+                android:textColor="@color/text_selection_menu_text"
+                android:textSize="10sp"
+                android:textAllCaps="false"
+                android:minWidth="60dp"
+                android:letterSpacing="0"
+                android:fontFamily="sans-serif-medium"
+                app:backgroundTint="@android:color/transparent"
+                app:rippleColor="@color/annotation_highlight_ripple" />
+
+            <!-- 下划线按钮 -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_underline"
+                style="@style/Widget.Material3.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="72dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/text_menu_button_ripple"
+                android:drawableTop="@drawable/ic_underline"
+                android:drawablePadding="8dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/annotation_underline"
+                android:textColor="@color/text_selection_menu_text"
+                android:textSize="10sp"
+                android:textAllCaps="false"
+                android:minWidth="60dp"
+                android:letterSpacing="0"
+                android:fontFamily="sans-serif-medium"
+                app:backgroundTint="@android:color/transparent"
+                app:rippleColor="@color/annotation_underline_ripple" />
+
+            <!-- 删除线按钮 -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_strikethrough"
+                style="@style/Widget.Material3.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="72dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/text_menu_button_ripple"
+                android:drawableTop="@drawable/ic_strikethrough"
+                android:drawablePadding="8dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/annotation_strikethrough"
+                android:textColor="@color/text_selection_menu_text"
+                android:textSize="10sp"
+                android:textAllCaps="false"
+                android:minWidth="60dp"
+                android:letterSpacing="0"
+                android:fontFamily="sans-serif-medium"
+                app:backgroundTint="@android:color/transparent"
+                app:rippleColor="@color/annotation_strikethrough_ripple" />
+
+            <!-- 清除注释按钮 -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_clear_annotation"
+                style="@style/Widget.Material3.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="72dp"
+                android:background="@drawable/text_menu_button_ripple"
+                android:drawableTop="@drawable/ic_eraser"
+                android:drawableTint="@color/text_selection_menu_icon"
+                android:drawablePadding="8dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/clear"
+                android:textColor="@color/text_selection_menu_text"
+                android:textSize="10sp"
+                android:textAllCaps="false"
+                android:minWidth="60dp"
+                android:letterSpacing="0"
+                android:fontFamily="sans-serif-medium"
+                app:backgroundTint="@android:color/transparent"
+                app:rippleColor="@color/text_selection_menu_button_pressed" />
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+</com.google.android.material.card.MaterialCardView>

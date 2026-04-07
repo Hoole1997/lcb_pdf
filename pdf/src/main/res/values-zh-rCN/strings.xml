@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 应用名称 -->
+    <!-- 主页面 -->
+    <string name="main_home_sort_title">排序</string>
+    <string name="main_home_sort_modified">修改时间</string>
+    <string name="main_home_sort_modified_desc">（从近到远）</string>
+    <string name="main_home_sort_modified_asc">（从远到近）</string>
+    <string name="main_home_sort_name">名字</string>
+    <string name="main_home_sort_name_asc">（从A到Z）</string>
+    <string name="main_home_sort_name_desc">（从Z到A）</string>
+    <string name="main_home_sort_size">文件大小</string>
+    <string name="main_home_sort_size_desc">（从大到小）</string>
+    <string name="main_home_sort_size_asc">（从小到大）</string>
+    <string name="fragment_home_title">PDF阅读器</string>
+    <string name="fragment_home_search_hint">搜索...</string>
+
+    <string name="main_home_menu_choose">选择</string>
+    <string name="main_tab_pdf">PDF</string>
+    <string name="main_tab_word">WORD</string>
+    <string name="main_tab_excel">EXCEL</string>
+    <string name="main_tab_ppt">PPT</string>
+    <string name="main_tab_txt">TXT</string>
+    <string name="main_tab_image">图片</string>
+    <string name="main_tab_all">全部</string>
+    <string name="main_tab_recent">最近</string>
+    <string name="main_tab_clean">清理</string>
+    <string name="main_tab_tools">工具</string>
+    <string name="main_tab_file">文件</string>
+    <string name="main_tab_favorite">收藏</string>
+
+    <!-- 文件操作 -->
+    <string name="file_not_found">文件不存在</string>
+    <string name="file_name">文件名称</string>
+    <string name="file_path">文件路径</string>
+    <string name="file_size">文件大小</string>
+    <string name="action_favorite">收藏</string>
+    <string name="action_share">分享</string>
+    <string name="action_add_to_desktop">添加到桌面</string>
+    <string name="action_rename">重命名</string>
+    <string name="action_details">详细信息</string>
+    <string name="action_delete">删除</string>
+    <string name="action_set_password">设置密码</string>
+    <string name="action_cancel">取消</string>
+    <string name="action_ok">确定</string>
+    <string name="action_skip">跳过</string>
+    <string name="action_merge">合并</string>
+    <string name="action_split">拆分</string>
+    <string name="pages_selected_format">%1$d 选中</string>
+
+
+    <!-- 工具页面 -->
+    <string name="tool_import_file">导入文件</string>
+    <string name="tool_scan_pdf">扫描PDF</string>
+    <string name="tool_lock_pdf">锁定PDF</string>
+    <string name="tool_unlock_pdf">解锁PDF</string>
+    <string name="tool_image_pdf">图片转PDF</string>
+    <string name="tool_file_clean">文件清理</string>
+    <string name="tool_print_pdf">打印PDF</string>
+    <string name="tool_percent">%1$d%%</string>
+    <string name="tool_clean_size_total"> / </string>
+    <string name="tool_clean_btn">清理</string>
+    <string name="tool_add_widget">添加小部件</string>
+
+    <!-- 清理功能 -->
+    <string name="clean_junk_files">垃圾文件</string>
+    <string name="clean_junk_scan">垃圾扫描</string>
+    <string name="clean_junk_title">垃圾清理</string>
+    <string name="clean_junk_clean">清理</string>
+    <string name="clean_junk_cleaning">正在清理您的设备，请稍候…</string>
+    <string name="clean_junk_clean_suc">清理完成！%1$s</string>
+
+    <!--进程管理器-->
+    <string name="process_manager_title">进程管理器</string>
+    <string name="process_manager_title_short">进程</string>
+    <string name="process_manager_desc">管理后台运行的进程</string>
+    <string name="process_manager_scan">立即扫描</string>
+    <string name="process_manager_scan_desc">正在扫描运行中的进程</string>
+    <string name="process_manager_suc_tip">已停止 %1$s 个后台运行的应用程序</string>
+    <string name="process_manager_clean_now">立即清理</string>
+    <string name="process_manager_clean_tip">扫描并清理手机垃圾</string>
+    <string name="process_manager_clean_used">已使用</string>
+    <string name="process_manager_clean_ba">后台应用</string>
+    <string name="process_manager_clean_st">停止</string>
+    <string name="process_manager_clean_done">完成</string>
+    
+    <string name="clean_obsolete_apk">过时安装包</string>
+    <string name="clean_temp_files">临时文件</string>
+    <string name="clean_log_files">日志文件</string>
+    <string name="clean_scanning">扫描中</string>
+    <string name="clean_scanning_folder">正在扫描: %1$s</string>
+    <string name="clean_button_text">清理 %1$s</string>
+    <string name="clean_button_scanning">扫描中...</string>
+    <string name="clean_button_scanning_text">扫描中</string>
+
+    <!-- 文件锁定 -->
+    <string name="lock_set_password">设置密码</string>
+    <string name="lock_set_password_desc">设置密码来保护PDF</string>
+    <string name="lock_remove_password">取消锁定</string>
+    <string name="lock_remove_password_desc">该PDF文件不再受密码保护</string>
+    <string name="lock_title_set_password">设置密码</string>
+    <string name="lock_password_hint">输入密码</string>
+    <string name="lock_confirm_password_hint">确认密码</string>
+    <string name="dialog_password_incorrect">密码错误！</string>
+
+    <!-- 图片预览 -->
+    <string name="image_preview_save_developing">保存功能开发中</string>
+    <string name="image_preview_load_failed">图片加载失败</string>
+    <string name="image_preview_unsupported_type">不支持的文件类型</string>
+    <string name="image_preview_pager_indicator">%1$d/%2$d</string>
+
+    <!-- 文件选择 -->
+    <string name="choose_file_selected_count">%1$d 选中</string>
+    <string name="choose_file_delete_confirm_title">提示</string>
+    <string name="choose_file_delete_confirm_message">是否要删除这 %1$d 个文件？如果删除将不可恢复</string>
+    <string name="choose_file_delete_confirm_cancel">取消</string>
+    <string name="choose_file_delete_confirm_ok">确定</string>
+    <string name="choose_file_delete_single_confirm_message">是否要删除 %1$s？如果删除将不可恢复</string>
+    <string name="choose_file_title_selected_count">%1$d 选中</string>
+    <string name="choose_file_delete">删除</string>
+    <string name="choose_file_share">分享</string>
+
+    <!-- 设置页面 -->
+    <string name="setting_feedback_email">1286041359@qq.com</string>
+    <string name="setting_google_play_url">https://play.google.com/store/apps/details?id=%1$s</string>
+    
+    <!-- 语言选择对话框 -->
+    <string name="language_skip_title">确认跳过</string>
+    <string name="language_skip_message">您即将以【%1$s】作为默认语言进入应用。\n\n点击下一步继续。</string>
+    <string name="language_skip_next">下一步</string>
+    <string name="language_default">默认语言</string>
+    
+    <!-- 引导页跳过对话框 -->
+    <string name="guide_skip_message">您即将跳过引导并直接进入主界面。您可以随时在设置中查看更多功能介绍。\n\n点击下一步继续。</string>
+    <string name="setting_privacy_policy_url">https://www.baidu.com</string>
+    <string name="setting_user_agreement_url">https://www.baidu.com</string>
+    <string name="setting_title">设置</string>
+    <string name="setting_floating_window_enable">显示锁屏</string>
+    <string name="setting_language">语言</string>
+    <string name="setting_night_mode">夜间模式</string>
+    <string name="setting_feedback">反馈</string>
+    <string name="setting_rate_us">评分</string>
+    <string name="setting_privacy_policy">隐私政策</string>
+    <string name="setting_terms_of_service">服务条款</string>
+    <string name="setting_lang_tip">选择您的语言。您可以稍后在设置中更改。</string>
+
+    <!-- 成功页面 -->
+    <string name="success_import_pdf_title">导入PDF</string>
+    <string name="success_import_pdf_desc">从系统文件夹导入查看PDF</string>
+    <string name="success_import_pdf_btn">立即导入</string>
+    <string name="success_scan_pdf_title">扫描PDF</string>
+    <string name="success_scan_pdf_desc">摄像头扫描图片生成PDF</string>
+    <string name="success_scan_pdf_btn">立即扫描</string>
+    <string name="success_lock_pdf_title">锁定PDF</string>
+    <string name="success_lock_pdf_desc">为PDF文件增加密码</string>
+    <string name="success_lock_pdf_btn">立即锁定</string>
+    <string name="success_unlock_pdf_title">解锁PDF</string>
+    <string name="success_unlock_pdf_desc">解锁加密PDF</string>
+    <string name="success_unlock_pdf_btn">立即查看</string>
+    <string name="success_clean_title">文件清理</string>
+    <string name="success_clean_desc">清理系统垃圾文件</string>
+    <string name="success_clean_btn">立即清理</string>
+    <string name="success_complete">完成</string>
+    <string name="success_function_file_antivirus">文件防病毒</string>
+    <string name="success_function_file_antivirus_desc">保守您的文件免受病毒侵害</string>
+    <string name="success_function_scan_now">立即扫描</string>
+
+    <!-- 权限相关 -->
+    <string name="permission_storage_denied">获取权限失败。请在系统设置中手动启用文件权限。</string>
+    <string name="permission_dialog_later">稍后</string>
+    <string name="permission_dialog_allow_all_files">允许访问所有文件</string>
+    <string name="permission_dialog_needed">需要权限</string>
+    <string name="permission_dialog_allow_access">允许访问</string>
+    <string name="permission_dialog_allow_access_desc">允许PDF Viewer访问所有文件</string>
+    <string name="permission_dialog_detail">为了您的便利，请允许应用访问您的所有文件。我们整理的文件信息仅会在当前设备上使用</string>
+    <string name="permission_dialog_description">要读取和编辑您的文件，请允许 <font color="#fc4949">PDF Viewer</font> 访问您的所有文件</string>
+    <string name="permission_dialog_allow">允许</string>
+    <string name="permission_access_message">PDF Viewer需要访问您的文件才能正常工作。请允许访问以享受所有功能。</string>
+    <string name="permission_access_message_html"><font color="#fc4949">PDF Viewer</font>需要访问您的文件才能正常工作。请允许访问以享受所有功能。</string>
+    <string name="permission_continue">继续</string>
+    <string name="permission_tips">提示</string>
+    <string name="permission_dialog_confirm">确认</string>
+    <string name="permission_dialog_noti_content">我们希望及时为您推送更新。启用通知以接收重要的提醒和及时的警报。</string>
+    <string name="permission_holder_message">允许文件访问权限，以便在应用中直接显示和管理您的PDF文件。</string>
+
+    <!-- 退出提示 -->
+    <string name="exit_press_again">再按一次返回键退出应用</string>
+
+    <!-- 文件大小单位 -->
+    <string name="file_size_b">B</string>
+    <string name="file_size_kb">KB</string>
+    <string name="file_size_mb">MB</string>
+    <string name="file_size_gb">GB</string>
+    <string name="file_size_tb">TB</string>
+
+    <!-- 搜索 -->
+    <string name="search_title">搜索</string>
+    <string name="search_hint">搜索...</string>
+
+    <!-- PDF锁定 -->
+    <string name="pdf_lock_title">锁定PDF</string>
+
+    <!-- 空状态 -->
+    <string name="empty_data">暂无数据</string>
+
+    <!-- 文件详情 -->
+    <string name="file_detail_title">详细信息</string>
+    <string name="file_detail_format">文件格式</string>
+    <string name="file_detail_path">存储路径</string>
+    <string name="file_detail_last_modified">最后修改时间</string>
+
+    <!-- 文件重命名 -->
+    <string name="file_rename_title">重命名</string>
+    <string name="file_rename_cancel">取消</string>
+    <string name="file_rename_ok">确定</string>
+
+    <!-- 其他 -->
+    <string name="unknown_file_name">unknown.pdf</string>
+    <string name="error_activity_result_launcher">ActivityResultLauncher not registered or already destroyed</string>
+    <string name="toast_get_permission_failed">获取权限失败，请在系统设置页手动打开文件权限</string>
+    <string name="pdf_move_success">PDF已移动到APP私有目录:</string>
+    <string name="pdf_move_failed">PDF移动失败，仍在:</string>
+    <string name="print_job_name">文档打印任务 %1$s</string>
+    <string name="error_writing_print_content">写入打印内容时出错</string>
+    <string name="toast_invalid_url">无效的URL</string>
+    <string name="splash_screen_slogan">管理您的文档。掌握您的工作。</string>
+    <string name="loading_text">加载中...</string>
+    <string name="default_file_path">/storage/emulated/0/xxx/storage/emulated/0/xxx/storage/emulated/0/xxx</string>
+
+
+
+
+
+    <!-- Language Names -->
+    <string name="chinese_simplified">简体中文</string>
+    <string name="english">English</string>
+    <string name="chinese_traditional">繁体中文</string>
+    <string name="language_button_default">安装</string>
+    <string name="language_button_selected">打开</string>
+
+    <string name="dialog_pdf_default_launch_content">设置 <font color="#fc4949">PDF Viewer</font> 为默认PDF阅读器以提高阅读速度。</string>
+    
+    <string name="guide_scan_text_1">扫描为PDF</string>
+    <string name="guide_scan_text_2">点击此按钮使用扫描功能</string>
+    <string name="guide_scan_text_3">立即体验</string>
+
+    <!-- Notification Tool Strings -->
+    <string name="notification_tool_title">PDF工具</string>
+    <string name="notification_tool_text">快捷工具栏</string>
+    <string name="notification_btn_doc">文档</string>
+    <string name="notification_btn_scan">扫描</string>
+    <string name="notification_btn_clean">清理</string>
+
+    <!-- PDF Default Launcher -->
+    <string name="choose_default_pdf_reader">选择默认PDF阅读器</string>
+    <string name="pdf_default_just_once">仅一次</string>
+    <string name="pdf_default_always">始终</string>
+    
+    <!-- Store Score Dialog -->
+    <string name="store_score_title">感谢您使用PDF阅读器</string>
+    <string name="store_score_desc">如果您能为我们评分，我们将非常感激。</string>
+    <string name="store_score_button">评分</string>
+    <string name="store_score_feedback_thanks">感谢您的反馈！</string>
+    <string name="store_score_badge">给我们最好的评分</string>
+    
+    <!-- Guide Pages -->
+    <string name="guide_page1_title">多合一文档阅读器</string>
+    <string name="guide_page1_desc">随时随地轻松访问、整理和管理您的所有文件。</string>
+    <string name="guide_page2_title">便捷的文档扫描仪</string>
+    <string name="guide_page2_desc">轻松扫描您所有重要文档。</string>
+    <string name="guide_page3_title">快速文件清理</string>
+    <string name="guide_page3_desc">清除垃圾文件，提升安全性和性能。</string>
+    <string name="guide_page4_title">随时将图片和扫描件转换为PDF</string>
+    <string name="guide_page4_desc">在任何地方将图片转换为PDF或直接扫描创建PDF。</string>
+    <string name="guide_btn_next">下一步</string>
+    <string name="current_language">当前语言</string>
+    <string name="all_language">全部语言</string>
+
+    <!-- Splash screen loading texts -->
+    <string name="splash_initialize">初始化中...</string>
+    <string name="splash_load_resources">加载资源中...</string>
+    <string name="splash_load_files">加载文件中...</string>
+
+    <!-- Language setting button -->
+    <string name="language_btn_done">完成</string>
+    
+    <!-- Guide Click Text -->
+    <string name="guide_doc_click_text">现在阅读您的文件</string>
+    
+    <!-- PDF Guide Text -->
+    <string name="pdf_guide_annotation_title">丰富的标注工具</string>
+    <string name="pdf_guide_annotation_desc">选择文本后，您可以使用各种标注工具：\n复制、高亮、下划线、删除线</string>
+    <string name="pdf_guide_btn_next">明白了</string>
+    <string name="pdf_guide_btn_continue">继续</string>
+    <string name="pdf_guide_btn_more">了解更多</string>
+    
+    <!-- Exit App Dialog -->
+    <string name="exit_app_dialog_title">确定要退出应用吗？</string>
+    <string name="exit_app_dialog_positive">确认退出</string>
+    <string name="exit_app_dialog_negative">取消</string>
+    
+    <!-- App Shortcuts -->
+    <string name="shortcut_uninstall_short">卸载</string>
+    <string name="shortcut_uninstall_title">卸载应用可能会导致已保存文档或最近文件的丢失。您确定要继续吗？</string>
+    <string name="shortcut_uninstall_title_highlight">已保存文档或最近文件的丢失</string>
+    <string name="shortcut_uninstall_content">请再次尝试激活应用并告诉我们原因。</string>
+    <string name="shortcut_uninstall_btn_agree">暂不卸载</string>
+    <string name="shortcut_uninstall_btn_still">仍要卸载</string>
+    <string name="shortcut_uninstall_title2">使用应用时遇到问题了吗？</string>
+    <string name="shortcut_uninstall_option1">功能无法正常工作</string>
+    <string name="shortcut_uninstall_option2">我不再需要这个应用</string>
+    <string name="shortcut_uninstall_option3">广告太多</string>
+    <string name="shortcut_uninstall_option4">通知太多</string>
+    <string name="shortcut_uninstall_option5">其他</string>
+    <string name="shortcut_uninstall_edit_tip">请提供更多详细信息，以便我们更快地识别和解决您的问题…</string>
+    <string name="shortcut_uninstall_btn_cancel">取消</string>
+    <string name="shortcut_uninstall_btn_uninstall">卸载</string>
+
+    <!-- PDF Operations -->
+    <string name="external_file_no_encryption">外部文件不支持加密/解密</string>
+    <string name="added_to_favorites">已添加到收藏</string>
+    <string name="removed_from_favorites">已从收藏中移除</string>
+    <string name="already_first_page">已是第一页</string>
+    <string name="already_last_page">已是最后一页</string>
+    <string name="saving_pdf">正在保存PDF...</string>
+    <string name="save_as_copy_exiting">副本保存成功，正在退出...</string>
+    <string name="incremental_save_exiting">更改保存成功，正在退出...</string>
+    <string name="save_success_exiting">保存成功，正在退出...</string>
+    <string name="incremental_save_success">增量保存成功</string>
+    <string name="save_success">保存成功</string>
+    <string name="save_failed">保存失败：%1$s</string>
+    
+    <!-- Text Selection and Annotation -->
+    <string name="annotation_highlight">高亮</string>
+    <string name="annotation_underline">下划线</string>
+    <string name="annotation_strikethrough">删除线</string>
+    <string name="annotation_added">已添加 %1$s 注释</string>
+    <string name="annotation_add_failed">添加 %1$s 注释失败</string>
+    <string name="annotation_add_error">添加注释失败：%1$s</string>
+    <string name="annotation_no_page_info">无法添加注释：页面信息丢失</string>
+    <string name="pdf_text_label">PDF文本</string>
+    <string name="text_copied">已复制</string>
+    <string name="copy_failed">复制失败</string>
+    <string name="annotation_clear_no_page">无法清除注释：页面信息丢失</string>
+    <string name="annotations_cleared">已清除 %1$d 个注释</string>
+    <string name="no_annotations_on_page">当前页面无注释</string>
+    <string name="clear_annotations_failed">清除注释失败：%1$s</string>
+
+    <!-- PDF Merge -->
+    <string name="merge_button_text_selected">合并 %1$d 个PDF</string>
+    <string name="merge_button_text_default">至少选择2个PDF</string>
+    <string name="merge_pdf_title">合并PDF</string>
+    <string name="split_pdf_title">拆分PDF</string>
+    <string name="split_button_text_selected">拆分 %1$d 个PDF</string>
+    <string name="split_button_text_default">至少选择1个PDF</string>
+
+    <!-- PDF Page Grid -->
+    <string name="pdf_page_grid_merge_title">选择页面进行合并</string>
+    <string name="pdf_page_grid_split_title">选择页面进行拆分</string>
+    <string name="merge_pages_button_text">合并 %1$d 页</string>
+    <string name="split_pages_button_text">拆分 %1$d 页</string>
+    <string name="merge_button_default_text">选择页面合并</string>
+    <string name="split_button_default_text">选择页面拆分</string>
+    <string name="select_all_pages">全选</string>
+    <string name="deselect_all_pages">取消全选</string>
+    <string name="pages_selected_info">已选择 %1$d / %2$d 页</string>
+    <string name="no_pdf_pages_found">未找到PDF页面</string>
+    <string name="action_search">搜索</string>
+    <string name="tool_merge_pdf">合并PDF</string>
+
+    <!-- PDF保存对话框 -->
+    <string name="pdf_save_dialog_title">保存PDF文档</string>
+    <string name="pdf_save_dialog_subtitle">选择保存方式并设置文件名</string>
+    <string name="pdf_save_options_title">保存选项</string>
+    <string name="pdf_save_as_new">保存为新文件</string>
+    <string name="pdf_save_as_new_desc">创建一个新的副本，保留原文件</string>
+    <string name="pdf_save_overwrite">覆盖当前文件</string>
+    <string name="pdf_save_file_name_label">文件名</string>
+    <string name="pdf_save_file_name_hint">输入文件名</string>
+    <string name="pdf_save_file_name_helper">支持中文、英文和数字</string>
+    <string name="pdf_save_button">保存</string>
+    
+    <!-- PDF保存对话框 - 退出模式 -->
+    <string name="pdf_save_unsaved_changes_title">检测到未保存的修改</string>
+    <string name="pdf_save_back_options_title">退出前请选择操作</string>
+    <string name="pdf_save_dont_save_and_exit">不保存并退出</string>
+    <string name="pdf_save_copy_and_exit">保存副本并退出</string>
+    <string name="pdf_save_overwrite_and_exit">保存修改并退出</string>
+    <string name="pdf_save_new_file_hint">新文件名（仅在保存副本时需要）</string>
+    <string name="pdf_save_copy_desc">保存副本将创建新文件，原文件保持不变</string>
+
+    <!-- Introduction -->
+    <string name="introduction_title"><![CDATA[免费 <font color="#FB4949">PDF 阅读器</font> &amp; 编辑器 &amp; 转换器]]></string>
+    <string name="introduction_title_2"><![CDATA[选择 <font color="#FB4949">PDF Viewer</font> 作为您的默认主屏幕应用]]></string>
+    <string name="introduction_title_3"><![CDATA[只需 <font color="#FB4949">2 步</font> 即可开始：]]></string>
+    <string name="introduction_step1_text">点击下方"继续"</string>
+    <string name="introduction_step2_text">点击 \"PDF Viewer\" 并设为默认主屏幕应用</string>
+    <string name="introduction_btn_get_started">开始使用</string>
+    <string name="introduction_btn_continue">继续</string>
+    <string name="introduction_not_now">暂不设置</string>
+    <string name="introduction_step1_title">第1步：</string>
+    <string name="introduction_step2_title">第2步：</string>
+    <string name="introduction_privacy_policy">隐私政策</string>
+    <string name="introduction_terms_of_service">服务条款</string>
+
+    <!-- Custom Dialog -->
+    <string name="custom_dialog_description">向右滑动以查看文件、注释页面并高效工作</string>
+
+    <!-- Default App Dialog -->
+    <string name="default_app_dialog_title"><![CDATA[将 <font color="#FB4949">PDF</font> 查看器设为默认]]></string>
+    <string name="default_app_dialog_desc1">集成文档扫描仪、PDF 转换器和文件查看器</string>
+    <string name="default_app_dialog_desc2">动态壁纸、存储清理器、精准天气。</string>
+    <string name="default_app_dialog_btn_try">立即试用</string>
+    <string name="pdf_save_current_file_hint">当前文件：%1$s</string>
+    <string name="pdf_save_overwrite_desc">将直接覆盖当前文件</string>
+    <string name="pdf_save_suggested_name_hint">建议文件名</string>
+    
+    <!-- PDF保存对话框 - 验证 -->
+    <string name="pdf_save_error_empty_name">文件名不能为空</string>
+    <string name="pdf_save_error_name_too_long">文件名过长</string>
+    <string name="pdf_save_error_invalid_chars">文件名包含非法字符</string>
+    <string name="pdf_save_error_must_end_pdf">文件名必须以.pdf结尾</string>
+    
+    <!-- PDF操作消息 -->
+    <string name="pdf_encrypt_error">PDF加密失败</string>
+    <string name="pdf_decrypt_error">PDF解密失败</string>
+    <string name="pdf_process_error">PDF处理失败</string>
+    <string name="external_files_no_crypto">外部文件不支持加解密操作</string>
+    <string name="thumbnail_not_initialized">缩略图功能尚未初始化</string>
+
+    <!-- floating dialog-->
+    <string name="floatng_dialog_allow">允许</string>
+    <string name="floatng_dialog_appear">显示在其他应用上方</string>
+    <string name="floatng_dialog_content">启用浮动迷你阅读器，在使用其他应用时快速参考您的文档。</string>
+    <string name="floatng_dialog_required">（必需）</string>
+
+    <!-- Floating Window -->
+    <string name="floating_window_title">最近打开</string>
+    <string name="floating_window_empty">暂无最近打开的文件</string>
+    <string name="floating_window_resize_handle">调整窗口大小</string>
+    <string name="floating_window_permission_required">需要悬浮窗权限才能显示</string>
+    <string name="floating_window_show_failed">显示悬浮窗失败: %1$s</string>
+    <string name="floating_window_open_file_failed">打开文件失败: %1$s</string>
+
+    <!-- Earthquake -->
+    <string name="earthquake_quick_alert">地震快速警报</string>
+    <string name="earthquake_focal_depth">震源深度</string>
+    <string name="earthquake_tsunami_threat">海啸威胁</string>
+    <string name="earthquake_usgs_warning">USGS警报</string>
+    <string name="earthquake_origin_time">发震时间</string>
+    <string name="earthquake_magnitude_type">震级类型</string>
+    <string name="earthquake_data_status">数据状态</string>
+    <string name="earthquake_data_km">公里</string>
+    
+    <!-- Notification - Override notification module strings -->
+    <string name="noti_earthquake_click_text">- 查看影响范围……</string>
+    
+    <string name="lock_screen_slide_to_unlock">滑动解锁</string>
+    <string name="lock_screen_scan_pdf">扫描PDF</string>
+
+    <!-- About -->
+    <string name="about_section_title">关于我们</string>
+    <string name="about_content">在 PDF Reader &amp; PDF Viewer，我们致力于提供集成、流畅、高效的PDF管理体验。无论您是查看文档、突出显示文本、即时扫描文件、将图像转换为PDF，还是智能清理存储空间，我们都为您的所有需求提供周到的端到端解决方案。我们的团队以用户为先，将强大的功能与简洁直观的界面相结合，让您随时随地保持高效和井然有序。我们持续倾听您的反馈，不断改进和创新——让每个人的PDF处理更简单、更智能。</string>
+    <string name="about_privacy_policy">隐私政策</string>
+    <string name="about_uninstall_instructions">卸载说明</string>
+
+    <!-- Language Setting -->
+    <string name="language_setting_loading">设置中...</string>
+</resources> 

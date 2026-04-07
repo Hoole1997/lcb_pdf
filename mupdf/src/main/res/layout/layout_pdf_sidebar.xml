@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- PDF侧边栏模块 (按需加载) -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/pdfSidebar"
+    android:layout_width="300dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/card_background"
+    android:elevation="4dp">
+
+    <!-- 侧边栏头部 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="16dp"
+        android:background="@color/card_background">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/document_navigation"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary" />
+
+        <ImageButton
+            android:id="@+id/closeSidebarBtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_close"
+            android:scaleType="centerInside"
+            app:tint="@color/text_secondary"
+            android:contentDescription="@string/close_sidebar" />
+
+    </LinearLayout>
+
+    <!-- Tab标签切换 -->
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/sidebarTabs"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/card_background"
+        app:tabMode="fixed"
+        app:tabGravity="fill"
+        app:tabTextColor="@color/text_secondary"
+        app:tabSelectedTextColor="@color/primary_color"
+        app:tabIndicatorColor="@color/primary_color" />
+
+    <!-- 内容区域 -->
+    <FrameLayout
+        android:id="@+id/sidebarContent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

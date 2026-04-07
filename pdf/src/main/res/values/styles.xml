@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 底部面板圆角样式 -->
+    <style name="BottomSheetCorners" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">24dp</item>
+        <item name="cornerSizeTopRight">24dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+    </style>
+    
+    <!-- PDF页面卡片样式 -->
+    <style name="PdfPageCardStyle" parent="Widget.MaterialComponents.CardView">
+        <item name="cardCornerRadius">16dp</item>
+        <item name="cardElevation">4dp</item>
+        <item name="cardUseCompatPadding">true</item>
+        <item name="strokeWidth">0dp</item>
+    </style>
+    
+    <!-- 现代化按钮样式 */
+    <style name="ModernButtonStyle" parent="Widget.MaterialComponents.Button">
+        <item name="cornerRadius">16dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="elevation">4dp</item>
+    </style>
+
+    <! 现代化边框按钮样式 -->
+    <style name="ModernOutlinedButtonStyle" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="cornerRadius">16dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="strokeWidth">2dp</item>
+    </style>
+
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+    </style>
+
+    <style name="Toolbar.Tools.TitleText" parent="Toolbar.TitleText">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!-- PDF保存对话框动画样式 -->
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/dialog_enter</item>
+        <item name="android:windowExitAnimation">@anim/dialog_exit</item>
+    </style>
+
+    <!-- RadioButton 主题样式 -->
+    <style name="RadioButtonTheme" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:layout_marginVertical">4dp</item>
+        <item name="colorAccent">@color/radio_button_red</item>
+        <item name="colorControlNormal">@color/text_secondary</item>
+        <item name="colorControlActivated">@color/radio_button_red</item>
+    </style>
+
+    <style name="HomeTabSelectTextAppearance">
+        <item name="android:textSize">16sp</item>
+<!--        <item name="android:textColor">@color/primary_color</item>-->
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="HomeTabUnSelectTextAppearance">
+        <item name="android:textSize">16sp</item>
+<!--        <item name="android:textColor">@color/primary_color</item>-->
+        <item name="android:textStyle">normal</item>
+    </style>
+</resources>

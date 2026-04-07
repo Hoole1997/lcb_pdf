@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_gravity="bottom"
+    android:paddingHorizontal="16dp"
+    android:paddingBottom="40dp"
+    android:id="@+id/rootLL"
+    android:paddingTop="16dp"
+    android:background="@drawable/bg_exit_dialog_gradient"
+    android:orientation="vertical">
+
+
+    <!-- 标题 -->
+    <TextView
+        android:id="@+id/tv_title"
+        android:text="@string/exit_app_dialog_title"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <androidx.cardview.widget.CardView
+        app:cardElevation="0dp"
+        app:cardCornerRadius="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:id="@+id/ad_Container"
+            tools:layout_height="200dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- 按钮区域 -->
+    <LinearLayout
+        android:layout_marginTop="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_confirm"
+            android:text="@string/exit_app_dialog_positive"
+            android:textColor="#666666"
+            android:backgroundTint="#F5F5F5"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            app:cornerRadius="24dp"
+            android:elevation="2dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_cancel"
+            android:text="@string/exit_app_dialog_negative"
+            android:textColor="@color/white"
+            android:backgroundTint="#FB4949"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:textSize="16sp"
+            app:cornerRadius="24dp"
+            android:elevation="2dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

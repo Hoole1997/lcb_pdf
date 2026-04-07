@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/main"
+    android:background="@color/default_background">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/default_background"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:text="@string/search_title"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.noober.background.view.BLEditText
+        android:id="@+id/et_search"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        app:bl_solid_color="#F9F9F9"
+        app:bl_corners_radius="7dp"
+        app:bl_stroke_width="0.8dp"
+        app:bl_stroke_color="#F0F0F0"
+        android:drawableEnd="@drawable/search_24px"
+        android:textSize="13sp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="6dp"
+        android:paddingEnd="6dp"
+        android:background="@android:color/transparent"
+        app:tabSelectedTextAppearance="@style/HomeTabSelectTextAppearance"
+        app:tabTextAppearance="@style/HomeTabUnSelectTextAppearance"
+        app:tabBackground="@android:color/transparent"
+        app:tabMode="auto"
+        app:tabRippleColor="@android:color/transparent"
+        app:tabIndicatorColor="@color/theme_color"
+        app:tabTextColor="@color/main_home_tab_unselected"
+        app:tabSelectedTextColor="@color/black"/>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/vp_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

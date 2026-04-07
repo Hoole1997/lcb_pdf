@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tv_after"
+        android:text="@string/permission_dialog_later"
+        android:textSize="14sp"
+        android:padding="15dp"
+        android:layout_marginTop="20dp"
+        android:textColor="#333"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <com.noober.background.view.BLConstraintLayout
+        android:id="@+id/cl_1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        app:bl_solid_color="@android:color/white"
+        android:paddingHorizontal="16dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="16dp"
+        app:bl_corners_radius="16dp">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:text="@string/permission_dialog_allow_access"
+            android:textSize="18sp"
+            android:textColor="#333333"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv"
+            android:layout_marginTop="24dp"
+            app:contentPadding="10dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="1dp"
+            app:layout_constraintTop_toBottomOf="@id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+               <LinearLayout
+                   app:layout_constraintVertical_chainStyle="packed"
+                   app:layout_constraintTop_toTopOf="parent"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintBottom_toTopOf="@id/tv_2"
+                   android:id="@+id/ll"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content">
+                   <TextView
+                       android:text="PDF"
+                       android:textSize="18sp"
+                       android:textColor="#E90100"
+                       android:textStyle="bold"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"/>
+                   <TextView
+                       android:layout_marginStart="4dp"
+                       android:text="Viewer"
+                       android:textSize="18sp"
+                       android:textColor="#333"
+                       android:textStyle="bold"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"/>
+               </LinearLayout>
+                <TextView
+                    android:id="@+id/tv_2"
+                    app:layout_constraintTop_toBottomOf="@id/ll"
+                    app:layout_constraintStart_toStartOf="@id/ll"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/permission_switch"
+                    android:text="@string/permission_dialog_allow_access_desc"
+                    android:textSize="11sp"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:textColor="#666666"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/permission_switch"
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/lt_permission_check"
+                    app:lottie_repeatMode="restart" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/tv_4"
+            android:textSize="14sp"
+            android:layout_marginTop="16dp"
+            android:text="@string/permission_dialog_detail"
+            app:layout_constraintTop_toBottomOf="@id/cv"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:gravity="center"
+            android:lineSpacingExtra="3dp"
+            android:layout_width="0dp"
+            android:textColor="#333"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:text="@string/permission_dialog_allow"
+            app:cornerRadius="24dp"
+            android:backgroundTint="#FB4949"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/tv_4"
+            android:id="@+id/btn_confirm"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </com.noober.background.view.BLConstraintLayout>
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
