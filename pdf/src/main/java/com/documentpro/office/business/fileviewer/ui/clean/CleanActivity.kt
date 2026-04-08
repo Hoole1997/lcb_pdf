@@ -1,10 +1,12 @@
 package com.documentpro.office.business.fileviewer.ui.clean
 
+import android.content.res.ColorStateList
 import android.os.Environment
 import android.view.ViewGroup
 import androidx.activity.OnBackPressedCallback
 import androidx.activity.viewModels
 import androidx.appcompat.widget.Toolbar
+import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.lifecycle.lifecycleScope
@@ -195,13 +197,17 @@ class CleanActivity : BaseActivity<ActivityCleanBinding, BusinessCleanModel>() {
                         R.string.clean_button_text,
                         model.totalSize.value.toFileSizeString()
                     )
-                binding.btnClean.setBackgroundColor(
-                    if (isScanning) 0xFFDFE0E4.toInt()  // 扫描中：灰色
-                    else 0xFFFB4949.toInt()            // 扫描完成：红色
+                binding.btnClean.backgroundTintList = ColorStateList.valueOf(
+                    ContextCompat.getColor(
+                        this@CleanActivity,
+                        if (isScanning) R.color.clean_button_disabled_background else R.color.theme_color
+                    )
                 )
                 binding.btnClean.setTextColor(
-                    if (isScanning) 0xFF666666.toInt()  // 扫描中：灰色文字
-                    else 0xFFFFFFFF.toInt()            // 扫描完成：白色文字
+                    ContextCompat.getColor(
+                        this@CleanActivity,
+                        if (isScanning) R.color.clean_button_disabled_text else R.color.white
+                    )
                 )
 
                 cleanAdapter.setScanning(isScanning)

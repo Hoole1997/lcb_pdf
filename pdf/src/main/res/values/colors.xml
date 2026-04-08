@@ -36,6 +36,9 @@
     <color name="sample_progress_text_color">#1F2937</color>
 
     <color name="theme_color">#2DB3FA</color>
+    <color name="theme_color_soft_background">#1A2DB3FA</color>
+    <color name="clean_button_disabled_background">#DFE0E4</color>
+    <color name="clean_button_disabled_text">#666666</color>
     <color name="font_bold">#111827</color>
     
     <!-- PDF保存对话框颜色 -->

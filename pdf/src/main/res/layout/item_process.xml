@@ -36,10 +36,9 @@
         android:layout_height="26dp"
         android:text="@string/process_manager_clean_st"
         android:textSize="14sp"
-        android:textColor="#FB4949"
+        android:textColor="@color/theme_color"
         android:gravity="center"
         app:bl_corners_radius="24dp"
-        app:bl_solid_color="#FFF6F6"/>
+        app:bl_solid_color="@color/theme_color_soft_background"/>
 
 </LinearLayout>
-

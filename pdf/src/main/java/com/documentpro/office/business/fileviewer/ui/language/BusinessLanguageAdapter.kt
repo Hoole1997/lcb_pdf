@@ -23,11 +23,11 @@ class BusinessLanguageAdapter(
         fun bind(languageItem: BusinessLanguageItem) {
             binding.tvLanguageName.text = languageItem.nativeName
             binding.ivSelectedIndicator.setImageResource(
-                if (languageItem.isSelected) R.mipmap.ic_checkbox_selected
+                if (languageItem.isSelected) R.drawable.ic_language_selected_indicator
                 else 0
             )
             binding.tvLanguageName.setTextColor(
-                if (languageItem.isSelected) ContextCompat.getColor(binding.root.context, R.color.radio_button_red)
+                if (languageItem.isSelected) ContextCompat.getColor(binding.root.context, R.color.theme_color)
                 else ContextCompat.getColor(binding.root.context, R.color.black)
             )
             // 使用 FlagKit 设置国旗图标

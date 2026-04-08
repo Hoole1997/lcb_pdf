@@ -204,23 +204,19 @@ class LanguageActivity : BaseActivity<ActivityLanguageBinding, BusinessMainModel
      * 确认语言选择
      */
     private fun confirmLanguageSelection() {
-        lifecycleScope.launch {
+        lifecycleScope.launch {//
             try {
-                loadInterstitial(
-                    call = {
-                    changeLang()
-
-                        if(!fromSetting){
-                        BusinessPointLog.logEvent("Guide", mapOf("Guide" to 2))
-                        val isGuide = SPUtils.getInstance().getBoolean("isGuide", true)
-                        if (isGuide) {
-                            ActivityUtils.startActivity(BusinessWorkspaceActivity::class.java)
-                        } else {
-                            ActivityUtils.startActivity(GuideActivity::class.java)
-                        }
+                changeLang()
+                if(!fromSetting){
+                    BusinessPointLog.logEvent("Guide", mapOf("Guide" to 2))
+                    val isGuide = SPUtils.getInstance().getBoolean("isGuide", true)
+                    if (isGuide) {
+                        ActivityUtils.startActivity(BusinessWorkspaceActivity::class.java)
+                    } else {
+                        ActivityUtils.startActivity(GuideActivity::class.java)
                     }
-                    finish()
-                })
+                }
+                finish()
             } catch (e: Exception) {
                 e.printStackTrace()
             }
