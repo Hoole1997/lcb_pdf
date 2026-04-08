@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find /Users/rickyyao/touka/lcb_pdf/pdf/src/main/res/values* -name \"strings.xml\")",
+      "Bash(xargs ls:*)",
+      "Bash(find:*)",
+      "Bash(rm /Users/rickyyao/touka/lcb_pdf/pdf/src/main/java/io/docview/push/earthquake/EarthquakeModels.kt)",
+      "Bash(rmdir /Users/rickyyao/touka/lcb_pdf/pdf/src/main/java/io/docview/push/earthquake)"
+    ]
+  }
+}

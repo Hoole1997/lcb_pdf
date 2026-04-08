@@ -79,6 +79,8 @@
     <string name="process_manager_clean_now">Jetzt bereinigen</string>
     <string name="process_manager_clean_tip">Junk auf Ihrem Telefon scannen und bereinigen</string>
     <string name="process_manager_clean_used">Verwendet</string>
+    <string name="tool_storage_used_title">Genutzter Speicher</string>
+    <string name="tool_storage_summary">%1$s von %2$s verwendet</string>
     <string name="process_manager_clean_ba">Hintergrund-Apps</string>
     <string name="process_manager_clean_st">Stoppen</string>
     <string name="process_manager_clean_done">Fertig</string>

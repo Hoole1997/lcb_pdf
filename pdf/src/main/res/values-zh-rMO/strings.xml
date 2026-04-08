@@ -78,6 +78,8 @@
     <string name="process_manager_clean_now">立即清理</string>
     <string name="process_manager_clean_tip">掃描並清理手機垃圾</string>
     <string name="process_manager_clean_used">已使用</string>
+    <string name="tool_storage_used_title">已用儲存</string>
+    <string name="tool_storage_summary">已使用 %1$s / %2$s</string>
     <string name="process_manager_clean_ba">後台應用</string>
     <string name="process_manager_clean_st">停止</string>
     <string name="process_manager_clean_done">完成</string>

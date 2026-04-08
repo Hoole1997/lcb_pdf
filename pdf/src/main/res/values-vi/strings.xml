@@ -77,6 +77,8 @@
     <string name="process_manager_clean_now">Dọn dẹp ngay</string>
     <string name="process_manager_clean_tip">Quét và dọn dẹp rác trên điện thoại của bạn</string>
     <string name="process_manager_clean_used">Đã sử dụng</string>
+    <string name="tool_storage_used_title">Dung lượng đã dùng</string>
+    <string name="tool_storage_summary">Đã dùng %1$s / %2$s</string>
     <string name="process_manager_clean_ba">Ứng dụng nền</string>
     <string name="process_manager_clean_st">Dừng</string>
     <string name="process_manager_clean_done">Hoàn thành</string>

@@ -6,7 +6,6 @@ import com.hjq.permissions.OnPermissionCallback
 import com.hjq.permissions.Permission
 import com.hjq.permissions.XXPermissions
 import com.documentpro.office.business.fileviewer.dialog.BusinessPermissionDialog
-import io.docview.push.controller.BgNotiInterceptController
 import net.corekit.core.report.ReportDataManager
 
 object BusinessPermissionDialogUtils {
@@ -38,7 +37,6 @@ object BusinessPermissionDialogUtils {
 
         val requestPermission = {
             ReportDataManager.reportData("permission_read_files_show",mapOf())
-            BgNotiInterceptController.markNextIntercept()
             BusinessSplashForegroundController.markNextIntercept()
             XXPermissions.with(context)
                 .permission(Permission.MANAGE_EXTERNAL_STORAGE)

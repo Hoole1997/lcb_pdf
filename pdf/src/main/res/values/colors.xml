@@ -2,10 +2,14 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="main_home_tab_selected">#5B7EFB</color>
-    <color name="main_home_tab_unselected">#8A8A8A</color>
-    <color name="main_home_sort_item_select">#F55959</color>
+    <color name="main_home_tab_selected">#2DB3FA</color>
+    <color name="main_home_tab_unselected">#666666</color>
+    <color name="main_home_sort_item_select">#2DB3FA</color>
     <color name="main_home_sort_item_normal">#666666</color>
+    <color name="main_bottom_nav_selected">#339DF3</color>
+    <color name="main_bottom_nav_selected_secondary">#8FC9F8</color>
+    <color name="main_bottom_nav_unselected_icon">#C7C7C7</color>
+    <color name="main_bottom_nav_unselected_text">#999999</color>
     
     <!-- 文本颜色 -->
     <color name="text_primary">#1F2937</color>
@@ -31,7 +35,7 @@
     <color name="sample_progress_secondary">#40F87171</color>
     <color name="sample_progress_text_color">#1F2937</color>
 
-    <color name="theme_color">#F87171</color>
+    <color name="theme_color">#2DB3FA</color>
     <color name="font_bold">#111827</color>
     
     <!-- PDF保存对话框颜色 -->
@@ -80,7 +84,7 @@
     <color name="pdf_page_background">#F8FAFC</color>
     
     <!-- RadioButton红色主题颜色 -->
-    <color name="radio_button_red">#FB4949</color>
+    <color name="radio_button_red">#2DB3FA</color>
 
     <!-- 新增：从硬编码整理的颜色 -->
     
@@ -126,6 +130,11 @@
     <!-- 进度条和内存相关颜色 -->
     <color name="progress_background">#E5E7EB</color>
     <color name="memory_text_secondary">#6B7280</color>
+    <color name="tools_primary_text">#333333</color>
+    <color name="tools_secondary_text">#A9A9A9</color>
+    <color name="tools_storage_card_background">#EDF7FF</color>
+    <color name="tools_storage_ring_background">#D4E1EC</color>
+    <color name="tools_icon_tile_background">#F3F6F9</color>
 
     <!-- 语言选择背景渐变色 -->
     <color name="language_selected_gradient_start">#FDE2E4</color>

@@ -79,6 +79,8 @@
     <string name="process_manager_clean_now">Limpiar ahora</string>
     <string name="process_manager_clean_tip">Escanear y limpiar basura en tu teléfono</string>
     <string name="process_manager_clean_used">Usado</string>
+    <string name="tool_storage_used_title">Almacenamiento usado</string>
+    <string name="tool_storage_summary">%1$s de %2$s usado</string>
     <string name="process_manager_clean_ba">Apps en segundo plano</string>
     <string name="process_manager_clean_st">Detener</string>
     <string name="process_manager_clean_done">Hecho</string>

@@ -79,6 +79,8 @@
     <string name="process_manager_clean_now">Очистить сейчас</string>
     <string name="process_manager_clean_tip">Сканирование и очистка мусора на телефоне</string>
     <string name="process_manager_clean_used">Использовано</string>
+    <string name="tool_storage_used_title">Используемое хранилище</string>
+    <string name="tool_storage_summary">Использовано %1$s из %2$s</string>
     <string name="process_manager_clean_ba">Фоновые приложения</string>
     <string name="process_manager_clean_st">Остановить</string>
     <string name="process_manager_clean_done">Готово</string>

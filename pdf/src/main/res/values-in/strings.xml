@@ -79,6 +79,8 @@
     <string name="process_manager_clean_now">Bersihkan Sekarang</string>
     <string name="process_manager_clean_tip">Pindai dan bersihkan sampah di ponsel Anda</string>
     <string name="process_manager_clean_used">Digunakan</string>
+    <string name="tool_storage_used_title">Penyimpanan terpakai</string>
+    <string name="tool_storage_summary">%1$s dari %2$s digunakan</string>
     <string name="process_manager_clean_ba">Aplikasi Latar Belakang</string>
     <string name="process_manager_clean_st">Hentikan</string>
     <string name="process_manager_clean_done">Selesai</string>

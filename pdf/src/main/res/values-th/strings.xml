@@ -77,6 +77,8 @@
     <string name="process_manager_clean_now">ล้างทันที</string>
     <string name="process_manager_clean_tip">สแกนและล้างขยะในโทรศัพท์ของคุณ</string>
     <string name="process_manager_clean_used">ใช้แล้ว</string>
+    <string name="tool_storage_used_title">พื้นที่เก็บข้อมูลที่ใช้ไป</string>
+    <string name="tool_storage_summary">ใช้ไป %1$s จาก %2$s</string>
     <string name="process_manager_clean_ba">แอปพื้นหลัง</string>
     <string name="process_manager_clean_st">หยุด</string>
     <string name="process_manager_clean_done">เสร็จสิ้น</string>

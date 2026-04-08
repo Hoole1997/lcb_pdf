@@ -79,6 +79,8 @@
     <string name="process_manager_clean_now">Nettoyer maintenant</string>
     <string name="process_manager_clean_tip">Scanner et nettoyer les fichiers indésirables sur votre téléphone</string>
     <string name="process_manager_clean_used">Utilisé</string>
+    <string name="tool_storage_used_title">Stockage utilisé</string>
+    <string name="tool_storage_summary">%1$s sur %2$s utilisés</string>
     <string name="process_manager_clean_ba">Applications en arrière-plan</string>
     <string name="process_manager_clean_st">Arrêter</string>
     <string name="process_manager_clean_done">Terminé</string>

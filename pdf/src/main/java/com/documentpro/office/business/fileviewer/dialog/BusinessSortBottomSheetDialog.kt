@@ -1,8 +1,6 @@
 package com.documentpro.office.business.fileviewer.dialog
 
 import android.content.Context
-import android.graphics.Color
-import android.graphics.Typeface
 import android.view.LayoutInflater
 import android.widget.ImageView
 import android.widget.LinearLayout
@@ -33,17 +31,23 @@ class BusinessSortBottomSheetDialog(
     init {
         val view = LayoutInflater.from(context).inflate(R.layout.layout_sort_bottom_sheet, null)
         val layoutOptions = view.findViewById<LinearLayout>(R.id.layout_options)
+        val itemSpacing = context.resources.displayMetrics.density.times(20).toInt()
 
-        sortOptions.forEach { option ->
+        sortOptions.forEachIndexed { index, option ->
             val optionView = LayoutInflater.from(context).inflate(R.layout.item_sort_option, layoutOptions, false)
             val tvTitle = optionView.findViewById<TextView>(R.id.tv_option_title)
             val tvSub = optionView.findViewById<TextView>(R.id.tv_option_sub)
             val ivCheck = optionView.findViewById<ImageView>(R.id.iv_check)
+
+            (optionView.layoutParams as? LinearLayout.LayoutParams)?.let { params ->
+                params.topMargin = if (index == 0) 0 else itemSpacing
+                optionView.layoutParams = params
+            }
+
             tvTitle.text = context.getString(option.type.titleRes)
             tvSub.text = context.getString(option.type.subRes)
             tvTitle.isSelected = option.type == selectedType
             optionView.isSelected = option.type == selectedType
-//            tvTitle.setTypeface(null, if (option.type == selectedType) Typeface.BOLD else Typeface.NORMAL)
             tvTitle.setTextColor(ContextCompat.getColor(context, if (option.type == selectedType) R.color.main_home_sort_item_select else R.color.main_home_sort_item_normal))
             tvSub.setTextColor(ContextCompat.getColor(context, if (option.type == selectedType) R.color.main_home_sort_item_select else R.color.main_home_sort_item_normal))
             ivCheck.isVisible = option.type == selectedType

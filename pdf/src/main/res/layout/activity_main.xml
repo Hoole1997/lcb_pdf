@@ -16,20 +16,147 @@
         android:layout_height="0dp"
         android:layout_weight="1" />
     <View
-        android:background="#e5e5e5"
         android:layout_width="match_parent"
-        android:layout_height="0.5dp" />
+        android:layout_height="1dp"
+        android:background="@color/divider" />
 
-    <com.wwdablu.soumya.lottiebottomnav.LottieBottomNav
-        android:id="@+id/lottie_bottom_nav"
+    <LinearLayout
+        android:id="@+id/bottom_nav"
         android:layout_width="match_parent"
-        android:layout_height="58dp"
+        android:layout_height="49dp"
         android:background="@android:color/white"
-        app:menu_selected_height="28dp"
-        app:menu_selected_width="28dp"
-        app:menu_unselected_height="28dp"
-        app:menu_unselected_width="28dp"
-        app:menu_text_show_on_unselected="true" />
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/nav_file"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_main_bottom_nav_item_ripple"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="5dp"
+            android:paddingBottom="4dp">
+
+            <ImageView
+                android:id="@+id/nav_file_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:contentDescription="@string/main_tab_file"
+                android:src="@drawable/ic_main_navigation_file_24px" />
+
+            <TextView
+                android:id="@+id/nav_file_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:fontFamily="sans-serif-medium"
+                android:includeFontPadding="false"
+                android:text="@string/main_tab_file"
+                android:textColor="@color/main_bottom_nav_selected"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/nav_recent"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_main_bottom_nav_item_ripple"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="5dp"
+            android:paddingBottom="4dp">
+
+            <ImageView
+                android:id="@+id/nav_recent_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:contentDescription="@string/main_tab_recent"
+                android:src="@drawable/ic_main_navigation_recent_24px" />
+
+            <TextView
+                android:id="@+id/nav_recent_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:fontFamily="sans-serif-medium"
+                android:includeFontPadding="false"
+                android:text="@string/main_tab_recent"
+                android:textColor="@color/main_bottom_nav_unselected_text"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/nav_favorite"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_main_bottom_nav_item_ripple"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="5dp"
+            android:paddingBottom="4dp">
+
+            <ImageView
+                android:id="@+id/nav_favorite_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:contentDescription="@string/main_tab_favorite"
+                android:src="@drawable/ic_main_navigation_favorite_24px" />
+
+            <TextView
+                android:id="@+id/nav_favorite_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:fontFamily="sans-serif-medium"
+                android:includeFontPadding="false"
+                android:text="@string/main_tab_favorite"
+                android:textColor="@color/main_bottom_nav_unselected_text"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/nav_tools"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_main_bottom_nav_item_ripple"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="5dp"
+            android:paddingBottom="4dp">
+
+            <ImageView
+                android:id="@+id/nav_tools_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:contentDescription="@string/main_tab_tools"
+                android:src="@drawable/ic_main_navigation_tools_24px" />
+
+            <TextView
+                android:id="@+id/nav_tools_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:fontFamily="sans-serif-medium"
+                android:includeFontPadding="false"
+                android:text="@string/main_tab_tools"
+                android:textColor="@color/main_bottom_nav_unselected_text"
+                android:textSize="11sp" />
+        </LinearLayout>
+    </LinearLayout>
 
     <FrameLayout
         android:id="@+id/ad_view_container"

@@ -79,6 +79,8 @@
     <string name="process_manager_clean_now">अभी साफ़ करें</string>
     <string name="process_manager_clean_tip">अपने फ़ोन पर जंक स्कैन करें और साफ़ करें</string>
     <string name="process_manager_clean_used">उपयोग में</string>
+    <string name="tool_storage_used_title">उपयोग किया गया स्टोरेज</string>
+    <string name="tool_storage_summary">%2$s में से %1$s उपयोग किया गया</string>
     <string name="process_manager_clean_ba">बैकग्राउंड ऐप्स</string>
     <string name="process_manager_clean_st">बंद करें</string>
     <string name="process_manager_clean_done">पूर्ण</string>

@@ -1,9 +1,7 @@
 package com.documentpro.office.business.fileviewer.ui.splash
 
 import android.content.Intent
-import android.net.Uri
 import android.os.CountDownTimer
-import android.provider.Settings
 import android.util.Log
 import android.view.GestureDetector
 import android.view.MotionEvent
@@ -23,17 +21,10 @@ import com.documentpro.office.business.fileviewer.R
 import com.documentpro.office.business.fileviewer.ad.BusinessPointLog
 import com.documentpro.office.business.fileviewer.base.BaseActivity
 import com.documentpro.office.business.fileviewer.databinding.ActivityGuideBinding
-import com.documentpro.office.business.fileviewer.dialog.BusinessCardNativeAdDialog
 import com.documentpro.office.business.fileviewer.ui.language.LanguageActivity
 import com.documentpro.office.business.fileviewer.ui.main.BusinessMainModel
 import com.documentpro.office.business.fileviewer.ui.main.BusinessWorkspaceActivity
-import com.documentpro.office.business.fileviewer.utils.BusinessPermissionDetector
 import com.documentpro.office.business.fileviewer.utils.loadInterstitial
-import com.documentpro.office.business.fileviewer.utils.loadNative
-import com.hjq.permissions.Permission
-import com.hjq.permissions.XXPermissions
-import io.docview.push.controller.BgNotiInterceptController
-import net.corekit.core.report.ReportDataManager
 import kotlin.math.abs
 
 class GuideActivity : BaseActivity<ActivityGuideBinding, BusinessMainModel>() {

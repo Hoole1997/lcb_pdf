@@ -116,6 +116,8 @@
     <string name="process_manager_clean_now">Clean Now</string>
     <string name="process_manager_clean_tip">Scan and clean junk on your phone</string>
     <string name="process_manager_clean_used">Used</string>
+    <string name="tool_storage_used_title">Used Storage</string>
+    <string name="tool_storage_summary">%1$s of %2$s used</string>
     <string name="process_manager_clean_ba">Background Apps</string>
     <string name="process_manager_clean_st">Stop</string>
     <string name="process_manager_clean_done">Done</string>
@@ -465,8 +467,8 @@
     <string name="thumbnail_not_initialized">Thumbs not ready</string>
 
     <!-- Home branding -->
-    <string name="home_fragment_title" translatable="false"><font color="#fc4949">File </font>Viewer</string>
-    <string name="home_fragment_title_white" translatable="false"><font color="#ffffff">File </font>Viewer</string>
+    <string name="home_fragment_title" translatable="false"><font color="#2DB3FA">PDF </font>Viewer</string>
+    <string name="home_fragment_title_white" translatable="false"><font color="#ffffff">PDF </font>Viewer</string>
 
     <!-- floating dialog-->
     <string name="floatng_dialog_allow">Allow</string>

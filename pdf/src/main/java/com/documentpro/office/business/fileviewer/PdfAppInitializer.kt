@@ -2,29 +2,16 @@ package com.documentpro.office.business.fileviewer
 
 import android.app.Application
 import android.content.Context
-import android.content.Intent
 import androidx.appcompat.app.AppCompatDelegate
-import androidx.lifecycle.DefaultLifecycleObserver
-import androidx.lifecycle.LifecycleOwner
-import androidx.lifecycle.ProcessLifecycleOwner
 import com.android.common.bill.ads.log.AdLogger
-import com.blankj.utilcode.util.ActivityUtils
 import com.blankj.utilcode.util.ProcessUtils
 import com.documentpro.office.business.fileviewer.ad.PdfAdInitializer
-import com.documentpro.office.business.fileviewer.ui.language.LanguageActivity
-import com.documentpro.office.business.fileviewer.ui.shortcut.UninstallOptionActivity
-import com.documentpro.office.business.fileviewer.ui.shortcut.UninstallPromptActivity
-import com.documentpro.office.business.fileviewer.ui.splash.GuideActivity
 import com.documentpro.office.business.fileviewer.utils.BusinessSPConfig
 import com.documentpro.office.business.fileviewer.utils.BusinessStorageUtils
-import com.documentpro.office.business.fileviewer.utils.BusinessSplashForegroundController
 import com.google.mlkit.common.sdkinternal.MlKitContext
-import io.docview.push.utils.Logger
-import net.corekit.core.ext.isDefaultLauncher
-import net.corekit.metrics.log.MetricsLogger
-import net.corekit.core.log.CoreLogger
 import net.corekit.core.controller.ChannelUserController
-import net.corekit.core.utils.RemoteConfigParams
+import net.corekit.core.log.CoreLogger
+import net.corekit.metrics.log.MetricsLogger
 
 object PdfAppInitializer {
 
@@ -39,7 +26,6 @@ object PdfAppInitializer {
         AdLogger.setLogEnabled(appLogEnable)
         MetricsLogger.enableLog(appLogEnable)
         CoreLogger.setLogEnabled(appLogEnable)
-        Logger.setLogEnabled(appLogEnable)
 
         ChannelUserController.setDefaultChannel(BuildConfig.DEFAULT_USER_CHANNEL)
     }

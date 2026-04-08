@@ -65,7 +65,7 @@ data class BusinessURIDocumentInfo(
      * 获取文件图标
      */
     fun icon(): Int {
-        return com.documentpro.office.business.fileviewer.R.mipmap.ic_pdf
+        return com.documentpro.office.business.fileviewer.R.drawable.ic_file_type_pdf
     }
 
     /**

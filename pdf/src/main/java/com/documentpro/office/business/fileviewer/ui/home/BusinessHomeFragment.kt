@@ -325,7 +325,7 @@ class BusinessHomeFragment : BaseLazyFragment<FragmentHomeBinding, BusinessHomeM
         
         // 根据position设置PDF的颜色
         val pdfColor = if (position == 0) {
-            ContextCompat.getColor(requireContext(), R.color.theme_color) // #fc4949 红色
+            ContextCompat.getColor(requireContext(), R.color.theme_color) // 蓝色主题
         } else {
             ContextCompat.getColor(requireContext(), android.R.color.white) // 白色
         }
@@ -361,12 +361,12 @@ class BusinessHomeFragment : BaseLazyFragment<FragmentHomeBinding, BusinessHomeM
     private fun updateTabTextColors(position: Int) {
         when (position) {
             0 -> {
-                // All标签选中时：未选中为灰色，选中为红色
+                // All标签选中时：未选中为灰色，选中为蓝色
                 val selectedColor = ContextCompat.getColor(requireContext(), R.color.theme_color)
                 val unselectedColor = ContextCompat.getColor(requireContext(), R.color.main_home_tab_unselected)
                 binding.tab.setTabTextColors(unselectedColor, selectedColor)
                 
-                // TabIndicator设置为黑色
+                // TabIndicator设置为蓝色
                 val indicatorColor = ContextCompat.getColor(requireContext(), R.color.theme_color)
                 binding.tab.setSelectedTabIndicatorColor(indicatorColor)
             }

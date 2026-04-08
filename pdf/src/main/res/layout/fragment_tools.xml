@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     android:fitsSystemWindows="true"
     android:orientation="vertical">
 
@@ -11,581 +12,519 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="44dp"
+        android:background="@color/white"
         android:paddingTop="0dp"
         android:paddingBottom="0dp"
-        android:background="@color/white"
+        app:contentInsetStart="16dp"
+        app:contentInsetStartWithNavigation="16dp"
+        app:contentInsetEnd="16dp"
+        app:contentInsetEndWithActions="16dp"
         app:title="@string/main_tab_tools"
         app:titleTextAppearance="@style/Toolbar.TitleText" />
 
     <androidx.core.widget.NestedScrollView
-        android:background="#F7F7F9"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:clipToPadding="false"
+        android:fillViewport="true"
+        android:overScrollMode="never">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="16dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="32dp">
 
-            <com.noober.background.view.BLConstraintLayout
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/topLayout"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginStart="15dp"
-                android:layout_marginEnd="15dp"
-                android:padding="15dp"
-                app:bl_corners_radius="8dp"
-                app:bl_solid_color="@color/white">
+                android:layout_height="148dp"
+                android:background="@drawable/bg_tools_storage_card"
+                android:paddingStart="16dp"
+                android:paddingTop="24dp"
+                android:paddingEnd="16dp"
+                android:paddingBottom="24dp">
 
-                <com.documentpro.office.business.fileviewer.widget.BusinessMultiColorCircleProgressView
-                    android:id="@+id/circleProgress"
+                <FrameLayout
+                    android:id="@+id/storageRingContainer"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    app:cpv_bgColor="@color/progress_background"
-                    app:cpv_roundCap="true"
-                    app:cpv_strokeWidth="10dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent">
 
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
-                    android:orientation="vertical"
-                    android:layout_margin="15dp"
-                    android:gravity="center"
-                    android:background="@mipmap/bg_tool_percent"
-                    app:layout_constraintBottom_toBottomOf="@id/circleProgress"
-                    app:layout_constraintEnd_toEndOf="@id/circleProgress"
-                    app:layout_constraintStart_toStartOf="@id/circleProgress"
-                    app:layout_constraintTop_toTopOf="@id/circleProgress">
+                    <com.documentpro.office.business.fileviewer.widget.BusinessMultiColorCircleProgressView
+                        android:id="@+id/circleProgress"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:cpv_bgColor="@color/tools_storage_ring_background"
+                        app:cpv_roundCap="true"
+                        app:cpv_strokeWidth="10dp" />
 
-                    <TextView
-                        android:id="@+id/tv_used_memory_1"
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:gravity="center"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:text="0"
-                        android:textColor="#333333"
-                        android:textSize="13sp" />
-                    <TextView
-                        android:id="@+id/tv_used_memory_1_unit"
-                        android:gravity="center"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:text="GB"
-                        android:textColor="#999999"
-                        android:textSize="11sp" />
+                        android:orientation="vertical">
 
-                </LinearLayout>
+                        <TextView
+                            android:id="@+id/tv_used_memory_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="0%"
+                            android:textColor="@color/tools_primary_text"
+                            android:textSize="28sp"
+                            android:textStyle="bold" />
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
+                        <TextView
+                            android:id="@+id/tv_used_memory_1_unit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone" />
+                    </LinearLayout>
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/tvStorageTitle"
+                    android:layout_width="182dp"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    app:layout_constraintEnd_toEndOf="@id/btn_clean_top"
-                    app:layout_constraintStart_toStartOf="@id/btn_clean_top"
-                    app:layout_constraintTop_toTopOf="@id/circleProgress">
+                    android:layout_marginStart="16dp"
+                    android:includeFontPadding="false"
+                    android:text="@string/tool_storage_used_title"
+                    android:textColor="@color/tools_secondary_text"
+                    android:textSize="14sp"
+                    android:textStyle="normal"
+                    app:layout_constraintStart_toEndOf="@id/storageRingContainer"
+                    app:layout_constraintTop_toTopOf="@id/storageRingContainer" />
+
+                <FrameLayout
+                    android:id="@+id/storageValueRow"
+                    android:layout_width="182dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    app:layout_constraintStart_toStartOf="@id/tvStorageTitle"
+                    app:layout_constraintTop_toBottomOf="@id/tvStorageTitle">
 
                     <TextView
                         android:id="@+id/tv_used_memory"
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="0GB"
-                        android:textColor="@color/black"
-                        android:textSize="16sp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text=" / "
-                        android:textColor="@color/memory_text_secondary"
-                        android:textSize="16sp" />
+                        android:ellipsize="end"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/tools_primary_text"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        tools:text="0GB of 0GB used" />
 
                     <TextView
                         android:id="@+id/tv_total_memory"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="0GB"
-                        android:textColor="@color/memory_text_secondary"
-                        android:textSize="16sp" />
-                </LinearLayout>
+                        android:visibility="gone" />
+                </FrameLayout>
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/btn_clean_top"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
-                    android:backgroundTint="#05061A"
+                    android:layout_width="182dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/theme_color"
+                    android:minHeight="0dp"
+                    android:minWidth="0dp"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp"
                     android:text="@string/tool_clean_btn"
+                    android:textAllCaps="false"
                     android:textColor="@color/white"
-                    app:cornerRadius="90dp"
+                    android:textSize="14sp"
+                    app:cornerRadius="20dp"
                     app:icon="@drawable/ic_main_navigation_cleaning_24px"
                     app:iconGravity="textStart"
+                    app:iconPadding="4dp"
+                    app:iconSize="14dp"
                     app:iconTint="@color/white"
-                    app:layout_constraintBottom_toBottomOf="@id/circleProgress"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@id/circleProgress"
-                    app:layout_constraintTop_toTopOf="@id/circleProgress" />
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:orientation="horizontal"
-                    app:layout_constraintBottom_toBottomOf="@id/circleProgress"
-                    app:layout_constraintStart_toEndOf="@id/circleProgress"
-                    app:layout_constraintEnd_toEndOf="parent">
-
-                    <com.noober.background.view.BLView
-                        android:layout_width="8dp"
-                        android:layout_height="8dp"
-                        app:bl_corners_radius="90dp"
-                        app:bl_solid_color="@color/file_type_app" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="3dp"
-                        android:singleLine="true"
-                        android:text="Apps"
-                        android:textSize="11sp" />
-
-                    <com.noober.background.view.BLView
-                        android:layout_width="8dp"
-                        android:layout_height="8dp"
-                        android:layout_marginStart="7dp"
-                        app:bl_corners_radius="90dp"
-                        app:bl_solid_color="@color/file_type_video" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="3dp"
-                        android:singleLine="true"
-                        android:text="Videos"
-                        android:textSize="11sp" />
-
-                    <com.noober.background.view.BLView
-                        android:layout_width="8dp"
-                        android:layout_height="8dp"
-                        android:layout_marginStart="7dp"
-                        app:bl_corners_radius="90dp"
-                        app:bl_solid_color="@color/file_type_image" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="3dp"
-                        android:singleLine="true"
-                        android:text="Images"
-                        android:textSize="11sp" />
-
-                    <com.noober.background.view.BLView
-                        android:layout_width="8dp"
-                        android:layout_height="8dp"
-                        android:layout_marginStart="7dp"
-                        app:bl_corners_radius="90dp"
-                        app:bl_solid_color="@color/file_type_music" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="3dp"
-                        android:singleLine="true"
-                        android:text="Music"
-                        android:textSize="11sp" />
-                </LinearLayout>
-
-            </com.noober.background.view.BLConstraintLayout>
-
-            <com.noober.background.view.BLLinearLayout
-                android:background="@color/white"
-                android:layout_marginStart="15dp"
-                android:layout_marginEnd="15dp"
-                android:layout_marginTop="15dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:bl_corners_radius="8dp"
-                app:bl_solid_color="@color/white"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginTop="15dp"
-                    android:text="Conver"
-                    android:textColor="@color/black"
-                    android:textSize="15sp"
-                    android:textStyle="bold" />
-
-                <LinearLayout
-                    android:layout_marginTop="10dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <LinearLayout
-                        android:id="@+id/btn_scan_pdf"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="9dp"
-                        android:layout_marginBottom="7.5dp"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="45dp"
-                            android:layout_height="45dp"
-                            android:src="@mipmap/noti_tool_scan_pdf" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:layout_marginTop="7dp"
-                            android:singleLine="true"
-                            android:text="@string/tool_scan_pdf"
-                            android:textSize="12sp" />
-
-                    </LinearLayout>
-
-                    <Space
-                        android:layout_width="5dp"
-                        android:layout_height="wrap_content" />
-
-                    <LinearLayout
-                        android:id="@+id/btn_image_to_pdf"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="9dp"
-                        android:layout_marginBottom="7.5dp"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="45dp"
-                            android:layout_height="45dp"
-                            android:src="@mipmap/noti_tool_image_pdf" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:layout_marginTop="7dp"
-                            android:singleLine="true"
-                            android:text="@string/tool_image_pdf"
-                            android:textSize="12sp" />
-
-                    </LinearLayout>
-
-                    <Space
-                        android:layout_width="5dp"
-                        android:layout_height="wrap_content" />
-
-                    <LinearLayout
-                        android:id="@+id/btn_merge_pdf"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="9dp"
-                        android:layout_marginBottom="7.5dp"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="45dp"
-                            android:layout_height="45dp"
-                            android:src="@mipmap/tool_merge_pdf" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:layout_marginTop="7dp"
-                            android:singleLine="true"
-                            android:text="@string/tool_merge_pdf"
-                            android:textSize="12sp" />
-
-                    </LinearLayout>
-
-                    <Space
-                        android:layout_width="5dp"
-                        android:layout_height="wrap_content" />
-
-                    <LinearLayout
-                        android:id="@+id/btn_split_pdf"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="9dp"
-                        android:layout_marginBottom="7.5dp"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="45dp"
-                            android:layout_height="45dp"
-                            android:src="@mipmap/tool_split_pdf" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:layout_marginTop="7dp"
-                            android:singleLine="true"
-                            android:text="@string/split_pdf_title"
-                            android:textSize="12sp" />
-
-                    </LinearLayout>
-
-                </LinearLayout>
-
-            </com.noober.background.view.BLLinearLayout>
+                    app:layout_constraintBottom_toBottomOf="@id/storageRingContainer"
+                    app:layout_constraintStart_toStartOf="@id/tvStorageTitle"
+                    app:layout_constraintTop_toBottomOf="@id/storageValueRow" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
             <FrameLayout
-                android:background="@color/white"
                 android:id="@+id/ad_Container"
-                android:visibility="gone"
-                android:layout_width="match_parent"
-                android:layout_marginHorizontal="15dp"
-                android:layout_marginTop="15dp"
-                android:layout_height="wrap_content"/>
-
-            <com.noober.background.view.BLLinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="15dp"
-                android:layout_marginEnd="15dp"
-                android:layout_marginTop="15dp"
-                app:bl_corners_radius="8dp"
-                app:bl_solid_color="@color/white"
-                android:orientation="vertical">
+                android:layout_marginTop="16dp"
+                android:visibility="gone" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginTop="15dp"
-                    android:text="Manage"
-                    android:textColor="@color/black"
-                    android:textSize="15sp"
-                    android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Convert"
+                android:textColor="@color/tools_primary_text"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
 
                 <LinearLayout
-                    android:layout_marginTop="10dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:id="@+id/btn_scan_pdf"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
 
-                    <LinearLayout
-                        android:id="@+id/btn_import_pdf"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="9dp"
-                        android:layout_marginBottom="7.5dp"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:orientation="vertical">
+                    <FrameLayout
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        android:background="@drawable/bg_tools_icon_tile">
 
                         <ImageView
-                            android:layout_width="45dp"
-                            android:layout_height="45dp"
-                            android:src="@mipmap/tool_import_file" />
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:layout_marginTop="7dp"
-                            android:singleLine="true"
-                            android:text="@string/tool_import_file"
-                            android:textSize="12sp" />
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_gravity="center"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_tool_fg_scan_pdf" />
+                    </FrameLayout>
 
-                    </LinearLayout>
-
-                    <Space
-                        android:layout_width="5dp"
-                        android:layout_height="wrap_content" />
-
-                    <LinearLayout
-                        android:id="@+id/btn_print_pdf"
-                        android:layout_width="0dp"
+                    <TextView
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="9dp"
-                        android:layout_marginBottom="7.5dp"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="45dp"
-                            android:layout_height="45dp"
-                            android:src="@mipmap/tool_print_pdf" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:layout_marginTop="7dp"
-                            android:singleLine="true"
-                            android:text="@string/tool_print_pdf"
-                            android:textSize="12sp" />
-
-                    </LinearLayout>
-
-                    <Space
-                        android:layout_width="5dp"
-                        android:layout_height="wrap_content" />
-
-                    <LinearLayout
-                        android:id="@+id/btn_lock_pdf"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="9dp"
-                        android:layout_marginBottom="7.5dp"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="45dp"
-                            android:layout_height="45dp"
-                            android:src="@mipmap/tool_lock_pdf" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:layout_marginTop="7dp"
-                            android:singleLine="true"
-                            android:text="@string/tool_lock_pdf"
-                            android:textSize="12sp" />
-
-                    </LinearLayout>
-
-                    <Space
-                        android:layout_width="5dp"
-                        android:layout_height="wrap_content" />
-
-                    <LinearLayout
-                        android:id="@+id/btn_unlock_pdf"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="9dp"
-                        android:layout_marginBottom="7.5dp"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="45dp"
-                            android:layout_height="45dp"
-                            android:src="@mipmap/tool_unlock_pdf" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:layout_marginTop="7dp"
-                            android:singleLine="true"
-                            android:text="@string/tool_unlock_pdf"
-                            android:textSize="12sp" />
-
-                    </LinearLayout>
-
+                        android:layout_marginTop="10dp"
+                        android:singleLine="true"
+                        android:text="@string/tool_scan_pdf"
+                        android:textColor="@color/tools_primary_text"
+                        android:textSize="12sp" />
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="match_parent"
+                    android:id="@+id/btn_image_to_pdf"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
 
-                    <LinearLayout
-                        android:id="@+id/btn_clean"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="9dp"
-                        android:layout_marginBottom="7.5dp"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:orientation="vertical">
+                    <FrameLayout
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        android:background="@drawable/bg_tools_icon_tile">
 
                         <ImageView
-                            android:layout_width="45dp"
-                            android:layout_height="45dp"
-                            android:src="@mipmap/noti_tool_file_clean" />
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_gravity="center"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_tool_fg_image_to_pdf" />
+                    </FrameLayout>
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:layout_marginTop="7dp"
-                            android:singleLine="true"
-                            android:text="@string/tool_clean_btn"
-                            android:textSize="12sp" />
-
-                    </LinearLayout>
-
-                    <Space
-                        android:layout_width="5dp"
-                        android:layout_height="wrap_content" />
-
-                    <LinearLayout
-                        android:id="@+id/btn_process"
-                        android:layout_width="0dp"
+                    <TextView
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="9dp"
-                        android:layout_marginBottom="7.5dp"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="45dp"
-                            android:layout_height="45dp"
-                            android:src="@drawable/tool_progress_manager" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:layout_marginTop="7dp"
-                            android:singleLine="true"
-                            android:text="@string/process_manager_title_short"
-                            android:textSize="12sp" />
-
-                    </LinearLayout>
-
-                    <Space
-                        android:layout_width="5dp"
-                        android:layout_height="wrap_content" />
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:orientation="vertical" />
-                    <Space
-                        android:layout_width="5dp"
-                        android:layout_height="wrap_content" />
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:orientation="vertical" />
+                        android:layout_marginTop="10dp"
+                        android:singleLine="true"
+                        android:text="@string/tool_image_pdf"
+                        android:textColor="@color/tools_primary_text"
+                        android:textSize="12sp" />
                 </LinearLayout>
 
-            </com.noober.background.view.BLLinearLayout>
+                <LinearLayout
+                    android:id="@+id/btn_merge_pdf"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        android:background="@drawable/bg_tools_icon_tile">
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_gravity="center"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_tool_fg_merge_pdf" />
+                    </FrameLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:singleLine="true"
+                        android:text="@string/tool_merge_pdf"
+                        android:textColor="@color/tools_primary_text"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/btn_split_pdf"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        android:background="@drawable/bg_tools_icon_tile">
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_gravity="center"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_tool_fg_split_pdf" />
+                    </FrameLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:singleLine="true"
+                        android:text="@string/split_pdf_title"
+                        android:textColor="@color/tools_primary_text"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:text="Manage"
+                android:textColor="@color/tools_primary_text"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/btn_import_pdf"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        android:background="@drawable/bg_tools_icon_tile">
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_gravity="center"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_tool_fg_import_file" />
+                    </FrameLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:singleLine="true"
+                        android:text="@string/tool_import_file"
+                        android:textColor="@color/tools_primary_text"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/btn_print_pdf"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        android:background="@drawable/bg_tools_icon_tile">
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_gravity="center"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_tool_fg_print_pdf" />
+                    </FrameLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:singleLine="true"
+                        android:text="@string/tool_print_pdf"
+                        android:textColor="@color/tools_primary_text"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/btn_lock_pdf"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        android:background="@drawable/bg_tools_icon_tile">
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_gravity="center"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_tool_fg_lock_pdf" />
+                    </FrameLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:singleLine="true"
+                        android:text="@string/tool_lock_pdf"
+                        android:textColor="@color/tools_primary_text"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/btn_unlock_pdf"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        android:background="@drawable/bg_tools_icon_tile">
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_gravity="center"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_tool_fg_unlock_pdf" />
+                    </FrameLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:singleLine="true"
+                        android:text="@string/tool_unlock_pdf"
+                        android:textColor="@color/tools_primary_text"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/btn_clean"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        android:background="@drawable/bg_tools_icon_tile">
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_gravity="center"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_tool_fg_clean" />
+                    </FrameLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:singleLine="true"
+                        android:text="@string/tool_clean_btn"
+                        android:textColor="@color/tools_primary_text"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/btn_process"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        android:background="@drawable/bg_tools_icon_tile">
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_gravity="center"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_tool_fg_process" />
+                    </FrameLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:singleLine="true"
+                        android:text="@string/process_manager_title_short"
+                        android:textColor="@color/tools_primary_text"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
-
-    <View
-        android:background="#F7F7F9"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
 </LinearLayout>

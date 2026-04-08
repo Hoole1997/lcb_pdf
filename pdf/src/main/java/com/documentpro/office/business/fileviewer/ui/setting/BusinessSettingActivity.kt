@@ -11,8 +11,6 @@ import com.documentpro.office.business.fileviewer.ad.BusinessPointLog
 import com.documentpro.office.business.fileviewer.dialog.BusinessStoreScoreDialog
 import com.documentpro.office.business.fileviewer.ui.language.LanguageActivity
 import com.documentpro.office.business.fileviewer.utils.BusinessSplashForegroundController
-import io.docview.push.controller.TriggerCtrl
-import net.corekit.core.report.ReportDataManager
 
 class BusinessSettingActivity : BaseActivity<ActivityBusinessSettingBinding, BusinessSettingModel>() {
 

@@ -758,7 +758,7 @@ class BusinessFileListFragment : BaseLazyFragment<FragmentFileListBinding, Busin
             val newList: MutableList<BusinessFileInfo> = if (keyword.isBlank()) {
                 allFiles.toMutableList()
             } else {
-                allFiles.filter { it.name.contains(keyword) }.toMutableList()
+                allFiles.filter { it.name.contains(keyword, ignoreCase = true) }.toMutableList()
             }
 
             // 在非选择模式、非搜索状态下添加广告

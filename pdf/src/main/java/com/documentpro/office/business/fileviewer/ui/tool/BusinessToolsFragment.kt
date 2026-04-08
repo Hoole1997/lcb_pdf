@@ -7,6 +7,7 @@ import android.view.View
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
+import androidx.core.content.ContextCompat
 import androidx.fragment.app.activityViewModels
 import com.blankj.utilcode.util.ActivityUtils
 import com.blankj.utilcode.util.BarUtils
@@ -27,14 +28,14 @@ import com.documentpro.office.business.fileviewer.utils.BusinessSplashForeground
 import com.documentpro.office.business.fileviewer.utils.loadInterstitial
 import com.documentpro.office.business.fileviewer.utils.loadNative
 import com.documentpro.office.business.fileviewer.utils.queryfile.fileInfoFromUri
-import com.documentpro.office.business.fileviewer.utils.toFileSizeNumString
 import com.documentpro.office.business.fileviewer.utils.toFileSizeString
-import com.documentpro.office.business.fileviewer.utils.toFileSizeUnitString
 import com.documentpro.office.business.fileviewer.widget.BusinessProgressSegment
 import androidx.lifecycle.lifecycleScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
+import java.util.Locale
+import kotlin.math.roundToInt
 
 class BusinessToolsFragment : BaseLazyFragment<FragmentToolsBinding, BusinessMainModel>() {
 
@@ -221,105 +222,68 @@ class BusinessToolsFragment : BaseLazyFragment<FragmentToolsBinding, BusinessMai
     private fun refreshStorage() {
         viewLifecycleOwner.lifecycleScope.launch(Dispatchers.IO) {
             try {
-                // 获取总存储空间
                 val total = BusinessCleanUtils.getDeviceTotalStorage().toFloat()
                 val used = BusinessCleanUtils.getDeviceUsedStorage().toFloat()
-
-                // 获取各类存储大小
-                val context = context ?: return@launch
-                val contentResolver = context.contentResolver
-
-                val appsSize = BusinessCleanUtils.getAllAppsStorageSize(context).toFloat()
-                val videosSize =
-                    BusinessCleanUtils.getAllVideosStorageSize(contentResolver).toFloat()
-                val imagesSize =
-                    BusinessCleanUtils.getAllImagesStorageSize(contentResolver).toFloat()
-                val musicSize = BusinessCleanUtils.getAllMusicStorageSize(contentResolver).toFloat()
-
-                // 计算百分比
-                val appsPercent = if (total > 0) (appsSize / total) * 100f else 0f
-                val videosPercent = if (total > 0) (videosSize / total) * 100f else 0f
-                val imagesPercent = if (total > 0) (imagesSize / total) * 100f else 0f
-                val musicPercent = if (total > 0) (musicSize / total) * 100f else 0f
-
-                // 计算其他存储（总使用量减去已知类型）
-                val knownUsedSize = appsSize + videosSize + imagesSize + musicSize
-                val otherSize = if (used > knownUsedSize) used - knownUsedSize else 0f
-                val otherPercent = if (total > 0) (otherSize / total) * 100f else 0f
-
-                // 在主线程更新UI
                 withContext(Dispatchers.Main) {
-                    binding.tvUsedMemory.text = used.toLong().toFileSizeString()
-                    binding.tvTotalMemory.text = total.toLong().toFileSizeString()
-                    binding.tvUsedMemory1.text = used.toLong().toFileSizeNumString()
-                    binding.tvUsedMemory1Unit.text = total.toLong().toFileSizeUnitString()
-                    // 创建进度段列表
-                    val segments = mutableListOf<BusinessProgressSegment>()
-
-                    // 添加各类存储段（只添加占用大于0的）
-                    if (appsPercent > 0) {
-                        segments.add(
-                            BusinessProgressSegment(
-                                percentage = appsPercent,
-                                color = resources.getColor(R.color.file_type_app)
-                            )
-                        )
-                    }
-
-                    if (videosPercent > 0) {
-                        segments.add(
-                            BusinessProgressSegment(
-                                percentage = videosPercent,
-                                color = resources.getColor(R.color.file_type_video)
-                            )
-                        )
-                    }
-
-                    if (imagesPercent > 0) {
-                        segments.add(
-                            BusinessProgressSegment(
-                                percentage = imagesPercent,
-                                color = resources.getColor(R.color.file_type_image)
-                            )
-                        )
-                    }
-
-                    if (musicPercent > 0) {
-                        segments.add(
-                            BusinessProgressSegment(
-                                percentage = musicPercent,
-                                color = resources.getColor(R.color.file_type_music)
-                            )
-                        )
-                    }
-
-                    // 设置进度段
-                    if (segments.isNotEmpty()) {
-                        // 内部控制首次动画
-                        binding.circleProgress.setProgressSegments(segments)
-                    }
+                    updateStorageCard(used, total)
                 }
             } catch (e: Exception) {
                 e.printStackTrace()
-                // 出错时在主线程显示默认值
                 withContext(Dispatchers.Main) {
                     val used = BusinessCleanUtils.getDeviceUsedStorage().toFloat()
                     val total = BusinessCleanUtils.getDeviceTotalStorage().toFloat()
-                    binding.tvUsedMemory.text = used.toLong().toFileSizeString()
-                    binding.tvTotalMemory.text = total.toLong().toFileSizeString()
-                    binding.tvUsedMemory1.text = used.toLong().toFileSizeNumString()
-                    binding.tvUsedMemory1Unit.text = total.toLong().toFileSizeUnitString()
-                    binding.circleProgress.setProgressSegments(
-                        listOf(
-                            BusinessProgressSegment(
-                                percentage = if (total > 0) (used / total) * 100f else 0f,
-                                color = resources.getColor(R.color.theme_color)
-                            )
-                        )
-                    )
+                    updateStorageCard(used, total)
                 }
             }
         }
+    }
+
+    private fun updateStorageCard(used: Float, total: Float) {
+        val usedPercent = if (total > 0f) {
+            ((used / total) * 100f).coerceIn(0f, 100f)
+        } else {
+            0f
+        }
+
+        binding.tvUsedMemory.text = buildStorageSummary(used.toLong(), total.toLong())
+        binding.tvTotalMemory.text = total.toLong().toFileSizeString()
+        binding.tvUsedMemory1.text = "${usedPercent.roundToInt()}%"
+        binding.circleProgress.setProgressSegments(
+            listOf(
+                BusinessProgressSegment(
+                    percentage = usedPercent,
+                    color = ContextCompat.getColor(requireContext(), R.color.theme_color)
+                )
+            )
+        )
+    }
+
+    private fun buildStorageSummary(used: Long, total: Long): String {
+        return getString(
+            R.string.tool_storage_summary,
+            formatCompactFileSize(used, keepDecimals = true),
+            formatCompactFileSize(total)
+        )
+    }
+
+    private fun formatCompactFileSize(sizeInBytes: Long, keepDecimals: Boolean = false): String {
+        val units = arrayOf("B", "KB", "MB", "GB", "TB")
+        var size = sizeInBytes.toDouble()
+        var unitIndex = 0
+
+        while (size >= 1024 && unitIndex < units.lastIndex) {
+            size /= 1024
+            unitIndex++
+        }
+
+        val formatted = if (keepDecimals && size % 1.0 != 0.0) {
+            String.format(Locale.US, "%.2f", size)
+        } else if (size % 1.0 == 0.0) {
+            String.format(Locale.US, "%.0f", size)
+        } else {
+            String.format(Locale.US, "%.2f", size).trimEnd('0').trimEnd('.')
+        }
+        return "$formatted${units[unitIndex]}"
     }
 
 }

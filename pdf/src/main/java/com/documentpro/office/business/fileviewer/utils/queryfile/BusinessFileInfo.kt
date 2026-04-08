@@ -36,12 +36,12 @@ data class BusinessFileInfo(
 
     fun icon(): Int {
         return when (equalsFileType(type)) {
-            BusinessFileType.PDF -> com.documentpro.office.business.fileviewer.R.mipmap.ic_pdf
-            BusinessFileType.EXCEL -> com.documentpro.office.business.fileviewer.R.mipmap.ic_excel
-            BusinessFileType.IMAGE -> com.documentpro.office.business.fileviewer.R.mipmap.ic_image
-            BusinessFileType.WORD -> com.documentpro.office.business.fileviewer.R.mipmap.ic_word
-            BusinessFileType.PPT -> com.documentpro.office.business.fileviewer.R.mipmap.ic_ppt
-            BusinessFileType.TXT -> com.documentpro.office.business.fileviewer.R.mipmap.ic_txt
+            BusinessFileType.PDF -> com.documentpro.office.business.fileviewer.R.drawable.ic_file_type_pdf
+            BusinessFileType.EXCEL -> com.documentpro.office.business.fileviewer.R.drawable.ic_file_type_xls
+            BusinessFileType.IMAGE -> com.documentpro.office.business.fileviewer.R.drawable.ic_file_type_img
+            BusinessFileType.WORD -> com.documentpro.office.business.fileviewer.R.drawable.ic_file_type_doc
+            BusinessFileType.PPT -> com.documentpro.office.business.fileviewer.R.drawable.ic_file_type_ppt
+            BusinessFileType.TXT -> com.documentpro.office.business.fileviewer.R.drawable.ic_file_type_txt
             else -> 0
         }
     }

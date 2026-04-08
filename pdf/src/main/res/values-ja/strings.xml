@@ -79,6 +79,8 @@
     <string name="process_manager_clean_now">今すぐクリーン</string>
     <string name="process_manager_clean_tip">スマートフォンのジャンクをスキャンしてクリーン</string>
     <string name="process_manager_clean_used">使用中</string>
+    <string name="tool_storage_used_title">使用済みストレージ</string>
+    <string name="tool_storage_summary">%2$s中%1$sを使用</string>
     <string name="process_manager_clean_ba">バックグラウンドアプリ</string>
     <string name="process_manager_clean_st">停止</string>
     <string name="process_manager_clean_done">完了</string>

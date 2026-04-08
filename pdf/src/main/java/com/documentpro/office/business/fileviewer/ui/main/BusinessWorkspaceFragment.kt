@@ -40,7 +40,6 @@ import com.documentpro.office.business.fileviewer.utils.BusinessGuideCallbackCon
 import com.documentpro.office.business.fileviewer.utils.BusinessShareUtils
 import com.documentpro.office.business.fileviewer.utils.BusinessSplashForegroundController
 import com.documentpro.office.business.fileviewer.utils.BusinessStorageUtils
-import com.documentpro.office.business.fileviewer.utils.DefaultLauncherController
 import com.documentpro.office.business.fileviewer.utils.LauncherApplyTrack
 import com.documentpro.office.business.fileviewer.utils.loadInterstitial
 import com.hjq.permissions.Permission
@@ -268,8 +267,7 @@ class BusinessWorkspaceFragment : BaseFragment<ActivityMainBinding, BusinessMain
         }
 
         // 初始化TabController
-        val lottieBottomNav = binding.lottieBottomNav
-        tabController = BusinessTabController(requireActivity(), lottieBottomNav, binding.pageContainer)
+        tabController = BusinessTabController(binding, binding.pageContainer)
         // 设置tab选中监听器
         tabController.setOnTabSelectedListener { position ->
             binding.pageContainer.setCurrentItem(position, false)
