@@ -20,7 +20,6 @@ import com.documentpro.office.business.fileviewer.utils.queryfile.notifySystemTo
 import android.content.Context
 import android.view.inputmethod.InputMethodManager
 import androidx.activity.OnBackPressedCallback
-import com.documentpro.office.business.fileviewer.utils.loadInterstitial
 
 class SearchFileActivity : BaseActivity<ActivitySearchFileBinding, BusinessHomeModel>() {
 
@@ -37,12 +36,6 @@ class SearchFileActivity : BaseActivity<ActivitySearchFileBinding, BusinessHomeM
 
     override fun initModel(): BusinessHomeModel {
         return viewModels<BusinessHomeModel>().value
-    }
-
-    override fun finish() {
-        loadInterstitial {
-            super.finish()
-        }
     }
 
     override fun initView() {

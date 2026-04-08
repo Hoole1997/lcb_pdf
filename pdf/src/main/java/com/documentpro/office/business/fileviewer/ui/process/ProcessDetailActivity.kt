@@ -22,8 +22,6 @@ import com.documentpro.office.business.fileviewer.base.BaseActivity
 import com.documentpro.office.business.fileviewer.databinding.ActivityProcessDetailBinding
 import com.documentpro.office.business.fileviewer.ui.success.BusinessSuccessModel
 import com.documentpro.office.business.fileviewer.utils.BusinessSplashForegroundController
-import com.documentpro.office.business.fileviewer.utils.RandomInterstitialController
-import com.documentpro.office.business.fileviewer.utils.loadInterstitial
 import com.documentpro.office.business.fileviewer.utils.loadNative
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -50,12 +48,6 @@ class ProcessDetailActivity : BaseActivity<ActivityProcessDetailBinding, Busines
 
     override fun initModel(): BusinessSuccessModel {
         return viewModels<BusinessSuccessModel>().value
-    }
-
-    override fun finish() {
-        RandomInterstitialController.showRandomInterstitial(this, onAdDismissed = {
-            super.finish()
-        })
     }
 
     override fun initView() {
@@ -299,4 +291,3 @@ class ProcessDetailActivity : BaseActivity<ActivityProcessDetailBinding, Busines
         super.onDestroy()
     }
 }
-

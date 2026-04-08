@@ -27,7 +27,6 @@ import com.documentpro.office.business.fileviewer.base.BaseActivity
 import com.documentpro.office.business.fileviewer.databinding.ActivityImagePreviewBinding
 import com.documentpro.office.business.fileviewer.dialog.BusinessStoreScoreDialog
 import com.documentpro.office.business.fileviewer.ui.main.BusinessMainModel
-import com.documentpro.office.business.fileviewer.utils.RandomInterstitialController
 import com.documentpro.office.business.fileviewer.utils.queryfile.BusinessFileInfo
 import com.documentpro.office.business.fileviewer.utils.queryfile.BusinessFileType
 import com.documentpro.office.business.fileviewer.utils.queryfile.equalsFileType
@@ -65,12 +64,6 @@ class ImagePreviewActivity : BaseActivity<ActivityImagePreviewBinding, BusinessM
 
     override fun initModel(): BusinessMainModel {
         return viewModels<BusinessMainModel>().value
-    }
-
-    override fun finish() {
-        RandomInterstitialController.showRandomInterstitial(this, onAdDismissed = {
-            super.finish()
-        })
     }
 
     @Suppress("DEPRECATION")

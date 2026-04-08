@@ -19,7 +19,6 @@ import com.documentpro.office.business.fileviewer.dialog.BusinessStoreScoreDialo
 import com.documentpro.office.business.fileviewer.ui.main.BusinessMainModel
 import com.documentpro.office.business.fileviewer.utils.BusinessPdfUtils
 import com.documentpro.office.business.fileviewer.utils.BusinessRecentStorage
-import com.documentpro.office.business.fileviewer.utils.RandomInterstitialController
 import com.documentpro.office.business.fileviewer.utils.loadNative
 import com.documentpro.office.business.fileviewer.utils.queryfile.BusinessFileInfo
 import com.documentpro.office.business.fileviewer.utils.queryfile.equalsFileType
@@ -204,12 +203,6 @@ class OfficeViewActivity : BaseActivity<ActivityOfficeViewBinding, BusinessMainM
                 }
             }
         }
-    }
-
-    override fun finish() {
-        RandomInterstitialController.showRandomInterstitial(this, onAdDismissed = {
-            super.finish()
-        })
     }
 
     private fun execLoad_1(fileInfo: BusinessFileInfo) {

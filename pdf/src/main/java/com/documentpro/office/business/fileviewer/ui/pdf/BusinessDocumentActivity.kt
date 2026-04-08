@@ -29,7 +29,6 @@ import com.documentpro.office.business.fileviewer.utils.BusinessPdfUtils
 import com.documentpro.office.business.fileviewer.utils.BusinessRecentStorage
 import com.documentpro.office.business.fileviewer.utils.BusinessShareUtils
 import com.documentpro.office.business.fileviewer.utils.BusinessGuideCallbackController
-import com.documentpro.office.business.fileviewer.utils.RandomInterstitialController
 import com.documentpro.office.business.fileviewer.utils.loadNative
 import com.documentpro.office.business.fileviewer.utils.queryfile.BusinessFileInfo
 import com.documentpro.office.business.fileviewer.utils.queryfile.BusinessURIDocumentInfo
@@ -142,12 +141,6 @@ class BusinessDocumentActivity : BaseActivity<ActivityPdfViewBinding, BusinessMa
 
     override fun initModel(): BusinessMainModel {
         return viewModels<BusinessMainModel>().value
-    }
-
-    override fun finish() {
-        RandomInterstitialController.showRandomInterstitial(this, onAdDismissed = {
-            super.finish()
-        })
     }
 
     override fun initView() {

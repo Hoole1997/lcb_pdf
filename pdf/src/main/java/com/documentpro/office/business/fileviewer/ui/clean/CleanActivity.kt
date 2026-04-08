@@ -17,7 +17,6 @@ import com.documentpro.office.business.fileviewer.base.BaseActivity
 import com.documentpro.office.business.fileviewer.databinding.ActivityCleanBinding
 import com.documentpro.office.business.fileviewer.utils.BusinessCleanUtils
 import com.documentpro.office.business.fileviewer.utils.BusinessPermissionDialogUtils
-import com.documentpro.office.business.fileviewer.utils.loadInterstitial
 import com.documentpro.office.business.fileviewer.utils.loadNative
 import com.documentpro.office.business.fileviewer.utils.toFileSizeNumString
 import com.documentpro.office.business.fileviewer.utils.toFileSizeString
@@ -55,9 +54,7 @@ class CleanActivity : BaseActivity<ActivityCleanBinding, BusinessCleanModel>() {
 
         onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
             override fun handleOnBackPressed() {
-                loadInterstitial {
-                    closePage()
-                }
+                closePage()
             }
         })
 
@@ -277,7 +274,7 @@ class CleanActivity : BaseActivity<ActivityCleanBinding, BusinessCleanModel>() {
                 )
             )
         }
-        onBackPressedDispatcher.onBackPressed()
+        finish()
     }
 
     override fun useDefaultToolbar(toolbar: Toolbar, title: String) {
