@@ -1,11 +1,13 @@
 package com.documentpro.office.business.fileviewer.ui.home
 
+import android.content.res.ColorStateList
 import android.content.Context
 import android.content.Intent
 import android.view.Menu
 import android.view.MenuItem
 import androidx.activity.viewModels
 import androidx.appcompat.app.AlertDialog
+import androidx.core.content.ContextCompat
 import androidx.lifecycle.lifecycleScope
 import com.blankj.utilcode.util.FileUtils
 import com.documentpro.office.business.fileviewer.R
@@ -49,7 +51,8 @@ class ChooseFileActivity : BaseActivity<ActivityChooseFileBinding, BusinessChoos
     override fun initView() {
         useDefaultToolbar(binding.toolbar,"")
         binding.tvTitle.text = getString(R.string.choose_file_selected_count, 0)
-mField_1 = intent.getStringExtra(PARAM_QUERY_TYPE) ?: BusinessFileType.PDF.name
+        updateBottomActionButtons(0)
+        mField_1 = intent.getStringExtra(PARAM_QUERY_TYPE) ?: BusinessFileType.PDF.name
 
         listFragment = BusinessFileListFragment.newInstance(mField_1,true)
         supportFragmentManager.beginTransaction().replace(R.id.fl_container,listFragment).commit()
@@ -73,6 +76,7 @@ mField_1 = intent.getStringExtra(PARAM_QUERY_TYPE) ?: BusinessFileType.PDF.name
                 it.select
             }
             binding.tvTitle.text = getString(R.string.choose_file_selected_count, selectCount)
+            updateBottomActionButtons(selectCount)
         }
         model.allChooseEvent.observe(this) {
             execAction_1 ()
@@ -85,15 +89,45 @@ mField_1 = intent.getStringExtra(PARAM_QUERY_TYPE) ?: BusinessFileType.PDF.name
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.toolbar_menu_choose,menu)
-mField_2 = menu?.findItem(R.id.action_choose)
+        mField_2 = menu?.findItem(R.id.action_choose)
         execAction_1 ()
         return super.onCreateOptionsMenu(menu)
     }
 
     private fun execAction_1() {
         val isAllChoose = model.allChooseEvent.value == true
-mField_2?.setIcon(
+        mField_2?.setIcon(
             if (isAllChoose) R.mipmap.ic_checkbox_selected else R.mipmap.ic_checkbox_unselected
+        )
+    }
+
+    private fun updateBottomActionButtons(selectCount: Int) {
+        val hasSelection = selectCount > 0
+        binding.btnDelete.isEnabled = hasSelection
+        binding.btnShare.isEnabled = hasSelection
+        binding.btnDelete.backgroundTintList = ColorStateList.valueOf(
+            ContextCompat.getColor(
+                this,
+                if (hasSelection) R.color.theme_color_soft_background else R.color.clean_button_disabled_background
+            )
+        )
+        binding.btnDelete.setTextColor(
+            ContextCompat.getColor(
+                this,
+                if (hasSelection) R.color.theme_color else R.color.clean_button_disabled_text
+            )
+        )
+        binding.btnShare.backgroundTintList = ColorStateList.valueOf(
+            ContextCompat.getColor(
+                this,
+                if (hasSelection) R.color.theme_color else R.color.clean_button_disabled_background
+            )
+        )
+        binding.btnShare.setTextColor(
+            ContextCompat.getColor(
+                this,
+                if (hasSelection) R.color.white else R.color.clean_button_disabled_text
+            )
         )
     }
 
