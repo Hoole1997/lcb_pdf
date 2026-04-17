@@ -27,7 +27,7 @@
         android:roundIcon="@mipmap/app_icon_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PDFViewer"
-        tools:replace="android:label">
+        tools:replace="android:label,android:name">
 
         <activity
             android:name="com.documentpro.office.business.fileviewer.ui.pdf.BusinessDocumentActivity"
@@ -140,10 +140,7 @@
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.PDFViewer">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+
         </activity>
         <activity
             android:name="com.documentpro.office.business.fileviewer.ui.language.LanguageActivity"
@@ -221,9 +218,6 @@
                 android:resource="@xml/file_paths" />
         </provider>
 
-        <meta-data
-            android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="${ADMOB_APPLICATION_ID}" />
         <meta-data
             android:name="com.google.android.gms.ads.flag.OPTIMIZE_INITIALIZATION"
             android:value="true"/>

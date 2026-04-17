@@ -9,10 +9,10 @@ import androidx.annotation.DrawableRes
 import androidx.core.content.ContextCompat
 import androidx.viewpager2.widget.ViewPager2
 import com.documentpro.office.business.fileviewer.R
-import com.documentpro.office.business.fileviewer.databinding.ActivityMainBinding
+import com.documentpro.office.business.fileviewer.databinding.ActivityMainHomeBinding
 
 class BusinessTabController(
-    private val binding: ActivityMainBinding,
+    private val binding: ActivityMainHomeBinding,
     private val viewPager: ViewPager2
 ) {
 

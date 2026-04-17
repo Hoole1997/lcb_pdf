@@ -441,7 +441,8 @@
     <string name="default_app_dialog_btn_try">Essayer maintenant</string>
 
     <!-- About -->
-    <string name="about_section_title">À propos de nous</string>
+    <string name="about">&#192; propos</string>
+    <string name="about_section_title">&#192; propos de nous</string>
     <string name="about_content">Chez PDF Reader &amp; PDF Viewer, nous nous engageons à fournir une expérience de gestion PDF intégrée, fluide et efficace. Que vous consultiez des documents, surlignez du texte, numérisez des fichiers instantanément, convertissiez des images en PDF ou nettoyiez intelligemment l\'espace de stockage, nous offrons une solution de bout en bout réfléchie pour tous vos besoins. Notre équipe place les utilisateurs en premier, en combinant des fonctionnalités puissantes avec une interface propre et intuitive afin que vous puissiez rester productif et organisé à tout moment, n\'importe où. Nous écoutons continuellement vos commentaires et continuons à améliorer et innover, rendant la gestion des PDF plus simple et plus intelligente pour tous.</string>
     <string name="about_privacy_policy">Politique de Confidentialité</string>
     <string name="about_uninstall_instructions">Instructions de Désinstallation</string>

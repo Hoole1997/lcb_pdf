@@ -14,11 +14,13 @@ import com.bytedance.sdk.openadsdk.api.nativeAd.PAGNativeAdData
 import com.bytedance.sdk.openadsdk.api.nativeAd.PAGViewBinder
 import com.documentpro.office.business.fileviewer.R
 
-class DefaultPangleNativeAdRenderer : PangleNativeAdRenderer {
+class DefaultPangleNativeAdRenderer(
+    private val layoutResId: Int = R.layout.layout_pangle_native_ads
+) : PangleNativeAdRenderer {
 
-    override fun createLayout(context: Context, style: PangleNativeAdStyle): ViewGroup {
+    override fun createLayout(context: Context): ViewGroup {
         return LayoutInflater.from(context)
-            .inflate(style.layoutResId, null) as ViewGroup
+            .inflate(layoutResId, null) as ViewGroup
     }
 
     override fun bindData(context: Context, adView: ViewGroup, nativeAdData: PAGNativeAdData) {

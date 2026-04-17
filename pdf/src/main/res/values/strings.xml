@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- App -->
-    <string name="app_name_main" translatable="false">PDF Viewer</string>
+    <string name="app_name_main" translatable="false">PDF Reader</string>
     <string name="loading">Loading…</string>
 
     <!-- Launcher Guide -->

@@ -13,11 +13,13 @@ import com.documentpro.office.business.fileviewer.R
 import com.thinkup.nativead.api.TUNativeMaterial
 import com.thinkup.nativead.api.TUNativePrepareInfo
 
-class DefaultToponNativeAdRenderer : ToponNativeAdRenderer {
+class DefaultToponNativeAdRenderer(
+    private val layoutResId: Int = R.layout.layout_topon_native_ads
+) : ToponNativeAdRenderer {
 
-    override fun createLayout(context: Context, style: ToponNativeAdStyle): ViewGroup {
+    override fun createLayout(context: Context): ViewGroup {
         return LayoutInflater.from(context)
-            .inflate(style.layoutResId, null) as ViewGroup
+            .inflate(layoutResId, null) as ViewGroup
     }
 
     override fun bindData(adView: ViewGroup, material: TUNativeMaterial) {

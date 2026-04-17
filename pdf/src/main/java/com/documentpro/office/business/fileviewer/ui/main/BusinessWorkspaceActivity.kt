@@ -1,6 +1,7 @@
 package com.documentpro.office.business.fileviewer.ui.main
 
 import android.content.Intent
+import androidx.activity.OnBackPressedCallback
 import androidx.activity.viewModels
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
@@ -8,6 +9,7 @@ import androidx.fragment.app.commit
 import androidx.lifecycle.lifecycleScope
 import com.android.common.bill.ads.PreloadController
 import com.documentpro.office.business.fileviewer.R
+import com.documentpro.office.business.fileviewer.StandalonePdfApplication
 import com.documentpro.office.business.fileviewer.base.BaseActivity
 import com.documentpro.office.business.fileviewer.databinding.ActivityWorkspaceContainerBinding
 import com.documentpro.office.business.fileviewer.ui.splash.DemoFileCopyController
@@ -51,6 +53,11 @@ class BusinessWorkspaceActivity : BaseActivity<ActivityWorkspaceContainerBinding
         }
         copyDemoFilesIfNeeded()
         PreloadController.preloadAll(this)
+        onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
+            override fun handleOnBackPressed() {
+                StandalonePdfApplication.pdfApp?.primemap()
+            }
+        })
     }
 
     private fun copyDemoFilesIfNeeded() {

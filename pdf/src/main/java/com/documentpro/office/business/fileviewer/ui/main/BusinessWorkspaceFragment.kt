@@ -21,7 +21,7 @@ import com.documentpro.office.business.fileviewer.PdfAppInitializer
 import com.documentpro.office.business.fileviewer.R
 import com.documentpro.office.business.fileviewer.ad.BusinessPointLog
 import com.documentpro.office.business.fileviewer.base.BaseFragment
-import com.documentpro.office.business.fileviewer.databinding.ActivityMainBinding
+import com.documentpro.office.business.fileviewer.databinding.ActivityMainHomeBinding
 import com.documentpro.office.business.fileviewer.dialog.BusinessCardNativeAdDialog
 import com.documentpro.office.business.fileviewer.dialog.BusinessPDFDefaultLaunchDialog
 import com.documentpro.office.business.fileviewer.dialog.DefaultAppDialog
@@ -47,7 +47,7 @@ import com.hjq.permissions.XXPermissions
 import com.lxj.xpopup.XPopup
 import kotlinx.coroutines.launch
 
-class BusinessWorkspaceFragment : BaseFragment<ActivityMainBinding, BusinessMainModel>() {
+class BusinessWorkspaceFragment : BaseFragment<ActivityMainHomeBinding, BusinessMainModel>() {
 
     companion object {
         private const val TAG = "BusinessWorkspaceFragment"
@@ -71,8 +71,8 @@ class BusinessWorkspaceFragment : BaseFragment<ActivityMainBinding, BusinessMain
             }
         }
 
-    override fun initBinding(): ActivityMainBinding {
-        return ActivityMainBinding.inflate(layoutInflater)
+    override fun initBinding(): ActivityMainHomeBinding {
+        return ActivityMainHomeBinding.inflate(layoutInflater)
     }
 
     override fun initViewModel(): BusinessMainModel {

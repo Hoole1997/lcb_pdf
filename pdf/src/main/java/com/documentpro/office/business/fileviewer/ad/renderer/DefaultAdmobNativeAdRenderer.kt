@@ -11,11 +11,13 @@ import com.documentpro.office.business.fileviewer.R
 import com.google.android.gms.ads.nativead.NativeAd
 import com.google.android.gms.ads.nativead.NativeAdView
 
-class DefaultAdmobNativeAdRenderer : AdmobNativeAdRenderer {
+class DefaultAdmobNativeAdRenderer(
+    private val layoutResId: Int = R.layout.layout_native_ads
+) : AdmobNativeAdRenderer {
 
-    override fun createLayout(context: Context, style: NativeAdStyle): NativeAdView {
+    override fun createLayout(context: Context): NativeAdView {
         return LayoutInflater.from(context)
-            .inflate(style.layoutResId, null) as NativeAdView
+            .inflate(layoutResId, null) as NativeAdView
     }
 
     override fun bindData(adView: NativeAdView, nativeAd: NativeAd) {

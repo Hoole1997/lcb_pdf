@@ -16,8 +16,8 @@ class BusinessSettingActivity : BaseActivity<ActivityBusinessSettingBinding, Bus
 
     companion object {
         private const val TAG = "BusinessSettingActivity"
-        private const val FEEDBACK_EMAIL = "tk202507101@outlook.com"
-        const val PRIVACY_URL = "https://devs343.com/privacy.html"
+        private const val FEEDBACK_EMAIL = "liminatope@gmail.com"
+        const val PRIVACY_URL = "https://liminatope.com/privacy.html"
     }
 
     override fun initBinding(): ActivityBusinessSettingBinding {

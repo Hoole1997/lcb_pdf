@@ -13,13 +13,64 @@ def pangleConfig = (findProperty("pangle") ?: [:]) as Map
 def pangleUnitConfig = (pangleConfig["adUnitIds"] ?: [:]) as Map
 def toponConfig = (findProperty("topon") ?: [:]) as Map
 def toponUnitConfig = (toponConfig["adUnitIds"] ?: [:]) as Map
+def booleanGradleProperty = { String name, boolean defaultValue ->
+    def rawValue = providers.gradleProperty(name).orNull
+    if (rawValue == null) {
+        return defaultValue
+    }
+    if (rawValue.equalsIgnoreCase("true")) {
+        return true
+    }
+    if (rawValue.equalsIgnoreCase("false")) {
+        return false
+    }
+    return defaultValue
+}
+def secretValue = { String name ->
+    def propertyValue = findProperty(name)?.toString()?.trim()
+    if (propertyValue) {
+        return propertyValue
+    }
+    return System.getenv(name)?.trim() ?: ""
+}
+def resolveSigningFile = { String path ->
+    File configuredFile = new File(path)
+    if (configuredFile.isAbsolute()) {
+        return configuredFile
+    }
+    return rootProject.file(path)
+}
+def resolvedVersionName = (appConfig["versionName"] ?: "1.0.0") as String
+def googleReleaseKeystorePath = secretValue("ANDROID_SIGNING_STORE_FILE")
+File googleReleaseKeystoreFile = googleReleaseKeystorePath
+        ? resolveSigningFile(googleReleaseKeystorePath)
+        : file("src/google/google-release.keystore")
+def googleReleaseStorePassword = secretValue("ANDROID_SIGNING_STORE_PASSWORD") ?: "google123456"
+def googleReleaseKeyAlias = secretValue("ANDROID_SIGNING_KEY_ALIAS") ?: "google"
+def googleReleaseKeyPassword = secretValue("ANDROID_SIGNING_KEY_PASSWORD") ?: "google123456"
+def hasGoogleReleaseSigning = googleReleaseKeystoreFile.isFile() &&
+        googleReleaseKeystoreFile.length() > 0L &&
+        googleReleaseStorePassword &&
+        googleReleaseKeyAlias &&
+        googleReleaseKeyPassword
+def requiresGoogleReleaseSigning = gradle.startParameter.taskNames.any { taskName ->
+    def lowerTaskName = taskName.toLowerCase()
+    lowerTaskName.contains("google") && lowerTaskName.contains("release")
+}
+def googleReleaseAabName = "lcb_pdf_release_${resolvedVersionName}.aab"
+def releaseMinifyEnabled = booleanGradleProperty("android.release.minifyEnabled", true)
+def releaseShrinkResourcesEnabled = booleanGradleProperty("android.release.shrinkResourcesEnabled", false)
+def releaseOptimizeEnabled = booleanGradleProperty("android.release.optimizeEnabled", releaseMinifyEnabled)
+def releaseDefaultProguardFile = (releaseMinifyEnabled && releaseOptimizeEnabled)
+        ? "proguard-android-optimize.txt"
+        : "proguard-android.txt"
 
 android {
     namespace = "com.documentpro.office.business.fileviewer"
 
     defaultConfig {
-        minSdk (appConfig["minSdk"] ?: 26) as Integer
-        targetSdk (appConfig["targetSdk"] ?: 35) as Integer
+        minSdk(appConfig["minSdk"] ?: 26) as Integer
+        targetSdk(appConfig["targetSdk"] ?: 35) as Integer
 
         def defaultChannel = analyticsConfig["defaultUserChannel"] ?: "default"
         buildConfigField "String", "DEFAULT_USER_CHANNEL", "\"$defaultChannel\""
@@ -60,30 +111,50 @@ android {
         google {
             dimension "channel"
             applicationId appConfig["applicationId"] ?: "com.documentpro.office.business.fileviewer"
-            versionCode (appConfig["versionCode"] ?: 1) as Integer
-            versionName appConfig["versionName"] ?: "1.0.0"
+            versionCode(appConfig["versionCode"] ?: 1) as Integer
+            versionName resolvedVersionName
         }
 
         local {
             dimension "channel"
             applicationId appConfig["applicationId"] ?: "com.documentpro.office.business.fileviewer"
-            versionCode (appConfig["versionCode"] ?: 1) as Integer
-            versionName "${appConfig["versionName"] ?: "1.0.0"}-local"
+            versionCode(appConfig["versionCode"] ?: 1) as Integer
+            versionName "${resolvedVersionName}-local"
             isDefault true
+        }
+    }
+
+    signingConfigs {
+        googleRelease {
+            if (hasGoogleReleaseSigning) {
+                storeFile googleReleaseKeystoreFile
+                storePassword googleReleaseStorePassword
+                keyAlias googleReleaseKeyAlias
+                keyPassword googleReleaseKeyPassword
+            }
         }
     }
 
     buildTypes {
         debug {
+            shrinkResources false
             versionNameSuffix "-debug"
         }
         release {
-            minifyEnabled true
-            shrinkResources true
-            proguardFiles(
-                getDefaultProguardFile("proguard-android-optimize.txt"),
-                "proguard-rules.pro"
-            )
+            minifyEnabled releaseMinifyEnabled
+            shrinkResources releaseMinifyEnabled && releaseShrinkResourcesEnabled
+            if (hasGoogleReleaseSigning || requiresGoogleReleaseSigning) {
+                signingConfig signingConfigs.googleRelease
+            }
+            if (requiresGoogleReleaseSigning && !hasGoogleReleaseSigning) {
+                throw new GradleException(
+                        "Missing google release signing config. Ensure pdf/src/google/google-release.keystore exists or set " +
+                                "ANDROID_SIGNING_STORE_FILE, ANDROID_SIGNING_STORE_PASSWORD, ANDROID_SIGNING_KEY_ALIAS, " +
+                                "and ANDROID_SIGNING_KEY_PASSWORD."
+                )
+            }
+            proguardFiles(getDefaultProguardFile(releaseDefaultProguardFile),
+                    "proguard-rules.pro")
         }
     }
 
@@ -104,13 +175,11 @@ android {
 
     packaging {
         resources {
-            excludes += [
-                "META-INF/AL2.0",
-                "META-INF/LGPL2.1",
-                "META-INF/LICENSE*",
-                "META-INF/NOTICE*",
-                "META-INF/*.version",
-            ]
+            excludes += ["META-INF/AL2.0",
+                         "META-INF/LGPL2.1",
+                         "META-INF/LICENSE*",
+                         "META-INF/NOTICE*",
+                         "META-INF/*.version",]
         }
     }
 
@@ -121,13 +190,29 @@ android {
     }
 }
 
+tasks.register("printGoogleReleaseVersionName") {
+    group = "help"
+    description = "Prints the versionName used for google release builds."
+    doLast {
+        println(resolvedVersionName)
+    }
+}
+
+tasks.register("printGoogleReleaseAabName") {
+    group = "help"
+    description = "Prints the expected output file name for google release AAB builds."
+    doLast {
+        println(googleReleaseAabName)
+    }
+}
+
 configurations.configureEach {
     exclude group: "com.google.firebase", module: "protolite-well-known-types"
 }
 
 dependencies {
-    implementation libs.remax.core
-    implementation libs.remax.bill
+    implementation(project(":bill"))
+    implementation(project(":core"))
     implementation project(":metrics")
     implementation project(":mupdf")
 
