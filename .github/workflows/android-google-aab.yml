@@ -25,8 +25,8 @@ jobs:
       KEYSTORE_ALIAS: google
       KEYSTORE_PASSWORD: google123456
       KEY_PASSWORD: google123456
-      GRADLE_JVM_ARGS: -Xmx4096m -XX:MaxMetaspaceSize=768m -XX:+UseParallelGC -Dfile.encoding=UTF-8
-      KOTLIN_DAEMON_JVM_ARGS: -Xmx512m
+      GRADLE_JVM_ARGS: -Xmx6144m -XX:MaxMetaspaceSize=1024m -XX:+UseParallelGC -Dfile.encoding=UTF-8
+      KOTLIN_DAEMON_JVM_ARGS: -Xmx1024m
 
     steps:
       - name: Checkout main
@@ -108,6 +108,8 @@ jobs:
           mkdir -p "$HOME/.gradle"
           {
             echo "android.enableR8.fullMode=false"
+            echo "android.r8.maxWorkers=1"
+            echo "android.r8.threadPoolSize=1"
             echo "org.gradle.daemon.performance.disable-logging=true"
             echo "org.gradle.parallel=false"
             echo "org.gradle.workers.max=1"
@@ -181,11 +183,9 @@ jobs:
           )
           BUILD_ARGS=(
             -Pandroid.release.optimizeEnabled=false
-            -Pandroid.release.minifyEnabled=false
-            -Pandroid.release.shrinkResourcesEnabled=false
           )
 
-          echo "Building googleRelease with CI-safe release settings: minify disabled, shrinkResources disabled, optimize disabled."
+          echo "Building googleRelease with minify enabled, optimize disabled, and R8 thread pool limited to 1."
 
           ./gradlew :pdf:bundleGoogleRelease \
             -x lint \
