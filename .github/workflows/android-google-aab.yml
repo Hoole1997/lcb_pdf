@@ -181,9 +181,11 @@ jobs:
           )
           BUILD_ARGS=(
             -Pandroid.release.optimizeEnabled=false
+            -Pandroid.release.minifyEnabled=false
+            -Pandroid.release.shrinkResourcesEnabled=false
           )
 
-          echo "Building googleRelease with minify enabled, optimize disabled, and R8 compat mode."
+          echo "Building googleRelease with CI-safe release settings: minify disabled, shrinkResources disabled, optimize disabled."
 
           ./gradlew :pdf:bundleGoogleRelease \
             -x lint \
