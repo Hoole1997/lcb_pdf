@@ -25,8 +25,8 @@ jobs:
       KEYSTORE_ALIAS: google
       KEYSTORE_PASSWORD: google123456
       KEY_PASSWORD: google123456
-      GRADLE_JVM_ARGS: -Xmx6144m -XX:MaxMetaspaceSize=1024m -XX:+UseParallelGC -Dfile.encoding=UTF-8
-      KOTLIN_DAEMON_JVM_ARGS: -Xmx1024m
+      GRADLE_JVM_ARGS: -Xmx4096m -XX:MaxMetaspaceSize=768m -XX:+UseParallelGC -Dfile.encoding=UTF-8
+      KOTLIN_DAEMON_JVM_ARGS: -Xmx512m
 
     steps:
       - name: Checkout main
@@ -43,6 +43,17 @@ jobs:
 
       - name: Set up Gradle
         uses: gradle/actions/setup-gradle@v4
+
+      - name: Enable swap for Android bundle build
+        run: |
+          set -euo pipefail
+          sudo swapoff -a || true
+          sudo fallocate -l 6G /swapfile || sudo dd if=/dev/zero of=/swapfile bs=1M count=6144
+          sudo chmod 600 /swapfile
+          sudo mkswap /swapfile
+          sudo swapon /swapfile
+          echo "Swap after setup:"
+          free -h
 
       - name: Ensure google release keystore exists
         id: ensure_keystore
@@ -98,6 +109,12 @@ jobs:
           {
             echo "android.enableR8.fullMode=false"
             echo "org.gradle.daemon.performance.disable-logging=true"
+            echo "org.gradle.parallel=false"
+            echo "org.gradle.workers.max=1"
+            echo "org.gradle.vfs.watch=false"
+            echo "kotlin.incremental=false"
+            echo "kotlin.parallel.tasks.in.project=false"
+            echo "kotlin.compiler.execution.strategy=in-process"
           } >> "$HOME/.gradle/gradle.properties"
           echo "CI gradle.properties:"
           cat "$HOME/.gradle/gradle.properties"
@@ -132,8 +149,10 @@ jobs:
           COMMON_GRADLE_ARGS=(
             "-Dorg.gradle.jvmargs=${GRADLE_JVM_ARGS}"
             "-Dkotlin.daemon.jvmargs=${KOTLIN_DAEMON_JVM_ARGS}"
+            "-Dkotlin.compiler.execution.strategy=in-process"
             --max-workers=1
             --no-parallel
+            --no-watch-fs
             --build-cache
           )
 
@@ -154,8 +173,10 @@ jobs:
           COMMON_GRADLE_ARGS=(
             "-Dorg.gradle.jvmargs=${GRADLE_JVM_ARGS}"
             "-Dkotlin.daemon.jvmargs=${KOTLIN_DAEMON_JVM_ARGS}"
+            "-Dkotlin.compiler.execution.strategy=in-process"
             --max-workers=1
             --no-parallel
+            --no-watch-fs
             --build-cache
           )
           BUILD_ARGS=(
