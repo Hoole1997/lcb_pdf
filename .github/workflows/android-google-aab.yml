@@ -26,7 +26,7 @@ jobs:
       KEYSTORE_ALIAS: google
       KEYSTORE_PASSWORD: google123456
       KEY_PASSWORD: google123456
-      GRADLE_JVM_ARGS: -Xmx6144m -XX:MaxMetaspaceSize=1024m -XX:+UseParallelGC -Dfile.encoding=UTF-8
+      GRADLE_JVM_ARGS: -Xmx7168m -XX:MaxMetaspaceSize=1024m -XX:+UseParallelGC -Dfile.encoding=UTF-8 -Djava.util.concurrent.ForkJoinPool.common.parallelism=1
       KOTLIN_DAEMON_JVM_ARGS: -Xmx1024m
       GITHUB_ACTOR: ${{ github.actor }}
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -199,6 +199,7 @@ jobs:
             --no-parallel
             --no-watch-fs
             --build-cache
+            --no-daemon
           )
 
           VERSION_NAME="$(./gradlew -q :pdf:printGoogleReleaseVersionName --console=plain "${COMMON_GRADLE_ARGS[@]}")"
@@ -206,6 +207,13 @@ jobs:
 
           echo "version_name=$VERSION_NAME" >> "$GITHUB_OUTPUT"
           echo "aab_name=$AAB_NAME" >> "$GITHUB_OUTPUT"
+
+      - name: Stop background Gradle daemons before bundle build
+        run: |
+          set -euo pipefail
+          ./gradlew --stop || true
+          echo "Java processes before bundle build:"
+          jps -l || true
 
       - name: Build signed googleRelease AAB
         env:
