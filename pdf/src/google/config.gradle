@@ -9,6 +9,15 @@ ext {
                              rewarded    : "ca-app-pub-7869168547621070/6787396087"         // 激励广告测试ID
              ]]
 
+    // Google Ad Manager 配置（官方测试 ID）
+    gam = [adUnitIds: [banner      : "",
+                       interstitial: "/23312177113/PDF_Reader_All_PDF_Viewer_GP_IV",
+                       splash      : "/23312177113/PDF_Reader_All_PDF_Viewer_GP_SP",
+                       native      : "",
+                       full_native : "",
+                       rewarded    : "/23312177113/PDF_Reader_All_PDF_Viewer_GP_RV"
+    ]]
+
     // Pangle配置
     pangle = [applicationId: "8810707", // Pangle测试应用ID
               adUnitIds    : [splash      : "890141279",        // 开屏广告测试ID（竖屏）
@@ -42,11 +51,11 @@ ext {
 
     // 应用版本配置
     app = [applicationId: "com.fluid.document.reader.tool",
-           compileSdk   : 35,
+           compileSdk   : 36,
            minSdk       : 26,
-           targetSdk    : 35,
-           versionCode  : 1,
-           versionName  : "1.0.0"]
+           targetSdk    : 36,
+           versionCode  : 2,
+           versionName  : "1.0.1"]
 
     // 统计归因配置
     analytics = [adjustAppToken: "hopjs50gmuww",           // Adjust App Token

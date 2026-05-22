@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.google.android.gms.ads.nativead.NativeAdView xmlns:android="http://schemas.android.com/apk/res/android"
+<com.google.android.libraries.ads.mobile.sdk.nativead.NativeAdView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/content_container"
@@ -12,6 +12,7 @@
         android:background="@drawable/bg_native_ad_card"
         android:paddingHorizontal="12dp">
 
+        <!-- 应用图标 -->
         <androidx.cardview.widget.CardView
             android:id="@+id/iconCv"
             android:layout_width="wrap_content"
@@ -31,6 +32,7 @@
                 android:src="@android:drawable/ic_menu_info_details" />
         </androidx.cardview.widget.CardView>
 
+        <!-- 广告内容区域 -->
         <LinearLayout
             android:id="@+id/contentLL"
             android:layout_width="0dp"
@@ -43,6 +45,7 @@
             app:layout_constraintStart_toEndOf="@id/iconCv"
             app:layout_constraintTop_toTopOf="parent">
 
+            <!-- 广告标题 -->
             <TextView
                 android:id="@+id/tv_ad_title"
                 android:layout_width="match_parent"
@@ -61,11 +64,13 @@
                 android:layout_marginTop="10dp"
                 android:ellipsize="end"
                 android:maxLines="1"
+                tools:text="广告描述广告描述广告描述广告描述广告描述广告描述广告描述广告描述广告描述广告描述广告描述广告描述广告描述广告描述广告描述广告描述广告描述广告描述广告描述广告描述广告描述广告描述广告描述"
                 android:textColor="#999999"
-                android:textSize="12sp"
-                tools:text="广告描述广告描述广告描述广告描述广告描述广告描述广告描述广告描述" />
+                android:textSize="12sp" />
+
         </LinearLayout>
 
+        <!-- CTA按钮 -->
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/btn_ad_cta"
             android:layout_width="wrap_content"
@@ -82,11 +87,14 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/contentLL"
             app:layout_constraintTop_toTopOf="parent" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+    <!-- AD 标签 -->
     <com.android.common.bill.ui.view.AdLabelView
         android:id="@+id/tv_ad_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="top|start" />
-</com.google.android.gms.ads.nativead.NativeAdView>
+        android:layout_gravity="top|start"
+        />
+</com.google.android.libraries.ads.mobile.sdk.nativead.NativeAdView>

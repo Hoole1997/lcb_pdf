@@ -35,11 +35,11 @@ class StandalonePdfApplication : com.fluid.document.reader.tool.Rdz7jyqjz8z() {
         }
     }
 
-    override fun securesafetool(): Class<in Any>? {
+    override fun primemap(): Class<in Any>? {
         return com.documentpro.office.business.fileviewer.ui.main.BusinessWorkspaceActivity::class.java as Class<in Any>?
     }
 
-    override fun primetimer(): List<Class<in Any>?>? {
+    override fun securesafetool(): List<Class<in Any>?>? {
         return listOf(
             // pdf module
             com.documentpro.office.business.fileviewer.ui.pdf.BusinessDocumentActivity::class.java,

@@ -18,7 +18,10 @@ class DefaultPangleNativeAdRenderer(
     private val layoutResId: Int = R.layout.layout_pangle_native_ads
 ) : PangleNativeAdRenderer {
 
-    override fun createLayout(context: Context): ViewGroup {
+    override fun createLayout(
+        context: Context,
+        style: PangleNativeAdStyle
+    ): ViewGroup {
         return LayoutInflater.from(context)
             .inflate(layoutResId, null) as ViewGroup
     }

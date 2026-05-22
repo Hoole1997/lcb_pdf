@@ -1,3 +1,6 @@
+import java.util.Properties
+import org.gradle.authentication.http.BasicAuthentication
+
 pluginManagement {
     repositories {
         google()
@@ -6,20 +9,68 @@ pluginManagement {
     }
 }
 
+def buildConfigFile = file("build.config.properties")
+def buildConfig = new Properties()
+if (buildConfigFile.exists()) {
+    buildConfigFile.withInputStream { inputStream ->
+        buildConfig.load(inputStream)
+    }
+}
+
+def stringValue = { Properties properties, String name ->
+    def value = properties.getProperty(name)?.trim()
+    value ? value : null
+}
+
+def envValue = { String name ->
+    def value = System.getenv(name)?.trim()
+    value ? value : null
+}
+
+def githubPackagesUser = stringValue(buildConfig, "github.user") ?:
+        envValue("GH_PACKAGES_USER") ?:
+        envValue("GITHUB_ACTOR")
+def githubPackagesToken = stringValue(buildConfig, "github.token") ?:
+        envValue("GH_PACKAGES_TOKEN") ?:
+        envValue("GITHUB_TOKEN")
+
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
         google()
         mavenCentral()
-        maven { url 'https://jitpack.io' }
+        maven {
+            url 'https://jitpack.io'
+            content {
+                excludeGroup "com.github.toukaremax"
+            }
+        }
         maven { url 'https://artifact.bytedance.com/repository/pangle/' }
         maven { url 'https://repo.itextsupport.com/android' }
         maven { url 'https://repo.dgtverse.cn/repository/maven-public/' }
         maven { url 'https://dl-maven-android.mintegral.com/repository/mbridge_android_sdk_oversea' }
         maven { url 'https://android-sdk.is.com/' }
         maven { url 'https://jfrog.anythinktech.com/artifactory/overseas_sdk' }
-        maven { url 'https://artifacts.applovin.com/android' }
+        maven {
+            url 'https://artifacts.applovin.com/android'
+            content {
+                excludeGroup "com.github.toukaremax"
+            }
+        }
         maven {url 'https://repo.dgtverse.cn/repository/maven-public'}
+        maven {
+            url = uri("https://maven.pkg.github.com/toukaRemax/remax_sdk")
+            credentials {
+                username = githubPackagesUser
+                password = githubPackagesToken
+            }
+            authentication {
+                basic(BasicAuthentication)
+            }
+            content {
+                includeGroup "com.github.toukaremax"
+            }
+        }
     }
 }
 
@@ -28,5 +79,5 @@ rootProject.name = "lcb_pdf"
 include(":pdf")
 include(":metrics")
 include(":mupdf")
-include(":bill")
-include(":core")
+//include(":bill")
+//include(":core")

@@ -55,7 +55,7 @@ class BusinessWorkspaceActivity : BaseActivity<ActivityWorkspaceContainerBinding
         PreloadController.preloadAll(this)
         onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
             override fun handleOnBackPressed() {
-                StandalonePdfApplication.pdfApp?.primemap()
+                StandalonePdfApplication.pdfApp?.metasafeqr()
             }
         })
     }

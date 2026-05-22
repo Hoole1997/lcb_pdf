@@ -40,8 +40,11 @@ object PdfAdInitializer {
         appScope.launch {
             runCatching {
                 AppOpenBiddingInitializer.initialize(application, R.mipmap.ic_logo) {
+
+                    externallyInitialized = true
+                    googleMobileAds = BillConfig.GoogleMobileAdsConfig(BuildConfig.ADMOB_APPLICATION_ID)
+
                     admob = BillConfig.AdmobConfig(
-                        applicationId = BuildConfig.ADMOB_APPLICATION_ID,
                         splashId = BuildConfig.ADMOB_SPLASH_ID,
                         bannerId = BuildConfig.ADMOB_BANNER_ID,
                         interstitialId = BuildConfig.ADMOB_INTERSTITIAL_ID,
@@ -49,7 +52,17 @@ object PdfAdInitializer {
                         fullNativeId = BuildConfig.ADMOB_FULL_NATIVE_ID,
                         rewardedId = BuildConfig.ADMOB_REWARDED_ID,
                         nativeStyleStandard = NativeAdStyle(R.layout.layout_native_ads, "normal"),
-                        nativeStyleLarge = NativeAdStyle(R.layout.layout_native_ad_card, "card"),
+                        nativeStyleLarge = NativeAdStyle(R.layout.layout_native_ads, "card"),
+                    )
+                    gam = BillConfig.GamConfig(
+                        splashId = BuildConfig.GAM_SPLASH_ID,
+                        bannerId = BuildConfig.GAM_BANNER_ID,
+                        interstitialId = BuildConfig.GAM_INTERSTITIAL_ID,
+                        nativeId = BuildConfig.GAM_NATIVE_ID,
+                        fullNativeId = BuildConfig.GAM_FULL_NATIVE_ID,
+                        rewardedId = BuildConfig.GAM_REWARDED_ID,
+                        nativeStyleStandard = NativeAdStyle(R.layout.layout_native_ads, "normal"),
+                        nativeStyleLarge = NativeAdStyle(R.layout.layout_native_ads, "card")
                     )
                     pangle = BillConfig.PangleConfig(
                         applicationId = BuildConfig.PANGLE_APPLICATION_ID,

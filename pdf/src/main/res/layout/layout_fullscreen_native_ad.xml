@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.google.android.gms.ads.nativead.NativeAdView xmlns:android="http://schemas.android.com/apk/res/android"
+<com.google.android.libraries.ads.mobile.sdk.nativead.NativeAdView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -10,7 +10,8 @@
         android:layout_height="match_parent"
         android:background="@android:color/black">
 
-        <com.google.android.gms.ads.nativead.MediaView
+        <!-- 媒体内容（视频/图片） -->
+        <com.google.android.libraries.ads.mobile.sdk.nativead.MediaView
             android:id="@+id/mv_ad_media"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -25,12 +26,14 @@
             android:paddingHorizontal="22dp"
             android:paddingVertical="16dp">
 
+            <!-- 顶部区域：图标和标题 -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
                 android:orientation="horizontal">
 
+                <!-- 应用图标 -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/iconCv"
                     android:layout_width="wrap_content"
@@ -50,12 +53,14 @@
                         android:src="@android:drawable/ic_menu_info_details" />
                 </androidx.cardview.widget.CardView>
 
+                <!-- 标题和评分区域 -->
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:orientation="vertical">
 
+                    <!-- 广告标题 -->
                     <TextView
                         android:id="@+id/tv_ad_title"
                         android:layout_width="match_parent"
@@ -66,8 +71,8 @@
                         android:textColor="#fff"
                         android:textSize="14sp"
                         android:textStyle="bold"
-                        tools:text="广告标题广告标题广告标题广告标题广告标题" />
-
+                        tools:text="广告标题广告标题广告标题广告标题广告标题asasa" />
+                    <!-- 广告描述 -->
                     <TextView
                         android:id="@+id/tv_ad_description"
                         android:layout_width="match_parent"
@@ -77,10 +82,14 @@
                         android:maxLines="1"
                         android:textColor="#666666"
                         android:textSize="12sp"
-                        tools:text="广告描述广告描述广告描述广告描述广告描述广告描述广告描述广告描述" />
+                        tools:text="广告描述广告描述广告描述广告描述广告描述广告描述广告描述广告描述广告描述广告描述广告描述广告描述广告描述广告描述广告描述广告描述广告描述广告描述广告描述广告描述广告描述广告描述广告描述" />
+
                 </LinearLayout>
+
             </LinearLayout>
 
+
+            <!-- CTA按钮 -->
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
@@ -99,6 +108,9 @@
                     android:textStyle="bold"
                     tools:text="INSTALL" />
             </androidx.cardview.widget.CardView>
+
         </LinearLayout>
+
     </RelativeLayout>
-</com.google.android.gms.ads.nativead.NativeAdView>
+
+</com.google.android.libraries.ads.mobile.sdk.nativead.NativeAdView>

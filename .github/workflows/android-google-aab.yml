@@ -10,6 +10,7 @@ on:
 
 permissions:
   contents: write
+  packages: read
 
 concurrency:
   group: google-aab-main
@@ -27,6 +28,10 @@ jobs:
       KEY_PASSWORD: google123456
       GRADLE_JVM_ARGS: -Xmx6144m -XX:MaxMetaspaceSize=1024m -XX:+UseParallelGC -Dfile.encoding=UTF-8
       KOTLIN_DAEMON_JVM_ARGS: -Xmx1024m
+      GITHUB_ACTOR: ${{ github.actor }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GH_PACKAGES_USER: ${{ secrets.GH_PACKAGES_USER || github.actor }}
+      GH_PACKAGES_TOKEN: ${{ secrets.GH_PACKAGES_TOKEN || secrets.GITHUB_TOKEN }}
 
     steps:
       - name: Checkout main
@@ -43,6 +48,44 @@ jobs:
 
       - name: Set up Gradle
         uses: gradle/actions/setup-gradle@v4
+
+      - name: Validate GitHub Packages credentials
+        run: |
+          set -euo pipefail
+
+          if [ -z "${GH_PACKAGES_USER:-}" ]; then
+            echo "::error::Missing GitHub Packages user. Configure GH_PACKAGES_USER or rely on github.actor."
+            exit 1
+          fi
+
+          if [ -z "${GH_PACKAGES_TOKEN:-}" ]; then
+            echo "::error::Missing GitHub Packages token. Configure GH_PACKAGES_TOKEN or rely on GITHUB_TOKEN."
+            exit 1
+          fi
+
+          echo "GitHub Packages user: ${GH_PACKAGES_USER}"
+          echo "GitHub Packages token: configured"
+
+      - name: Check GitHub Packages access
+        run: |
+          set -euo pipefail
+
+          POM_URL="https://maven.pkg.github.com/toukaRemax/remax_sdk/com/github/toukaremax/core/1.0.11/core-1.0.11.pom"
+          HTTP_CODE="$(curl \
+            --silent \
+            --show-error \
+            --location \
+            --output /dev/null \
+            --write-out "%{http_code}" \
+            --user "${GH_PACKAGES_USER}:${GH_PACKAGES_TOKEN}" \
+            "$POM_URL")"
+
+          if [ "$HTTP_CODE" != "200" ]; then
+            echo "::error::Cannot read GitHub Packages dependency metadata. HTTP status: $HTTP_CODE. Check GH_PACKAGES_USER/GH_PACKAGES_TOKEN permissions for toukaRemax/remax_sdk."
+            exit 1
+          fi
+
+          echo "GitHub Packages access check passed."
 
       - name: Enable swap for Android bundle build
         run: |

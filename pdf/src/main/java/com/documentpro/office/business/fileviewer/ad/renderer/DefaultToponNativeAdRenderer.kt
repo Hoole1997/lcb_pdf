@@ -17,7 +17,10 @@ class DefaultToponNativeAdRenderer(
     private val layoutResId: Int = R.layout.layout_topon_native_ads
 ) : ToponNativeAdRenderer {
 
-    override fun createLayout(context: Context): ViewGroup {
+    override fun createLayout(
+        context: Context,
+        style: ToponNativeAdStyle
+    ): ViewGroup {
         return LayoutInflater.from(context)
             .inflate(layoutResId, null) as ViewGroup
     }

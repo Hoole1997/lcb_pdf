@@ -7,3 +7,5 @@ local.properties
 *.iml
 captures/
 .DS_Store
+/build.config.properties
+/build.config.local.properties

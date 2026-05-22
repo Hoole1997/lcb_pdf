@@ -9,6 +9,8 @@ def appConfig = (findProperty("app") ?: [:]) as Map
 def analyticsConfig = (findProperty("analytics") ?: [:]) as Map
 def adMobConfig = (findProperty("admob") ?: [:]) as Map
 def adMobUnitConfig = (adMobConfig["adUnitIds"] ?: [:]) as Map
+def gamConfig = (findProperty("gam") ?: [:]) as Map
+def gamUnitConfig = (gamConfig["adUnitIds"] ?: [:]) as Map
 def pangleConfig = (findProperty("pangle") ?: [:]) as Map
 def pangleUnitConfig = (pangleConfig["adUnitIds"] ?: [:]) as Map
 def toponConfig = (findProperty("topon") ?: [:]) as Map
@@ -84,6 +86,13 @@ android {
         buildConfigField "String", "ADMOB_NATIVE_ID", "\"${adMobUnitConfig["native"] ?: ""}\""
         buildConfigField "String", "ADMOB_FULL_NATIVE_ID", "\"${adMobUnitConfig["full_native"] ?: ""}\""
         buildConfigField "String", "ADMOB_REWARDED_ID", "\"${adMobUnitConfig["rewarded"] ?: ""}\""
+
+        buildConfigField "String", "GAM_SPLASH_ID", "\"${gamUnitConfig["splash"] ?: ""}\""
+        buildConfigField "String", "GAM_BANNER_ID", "\"${gamUnitConfig["banner"] ?: ""}\""
+        buildConfigField "String", "GAM_INTERSTITIAL_ID", "\"${gamUnitConfig["interstitial"] ?: ""}\""
+        buildConfigField "String", "GAM_NATIVE_ID", "\"${gamUnitConfig["native"] ?: ""}\""
+        buildConfigField "String", "GAM_FULL_NATIVE_ID", "\"${gamUnitConfig["full_native"] ?: ""}\""
+        buildConfigField "String", "GAM_REWARDED_ID", "\"${gamUnitConfig["rewarded"] ?: ""}\""
 
         buildConfigField "String", "PANGLE_APPLICATION_ID", "\"${pangleConfig["applicationId"] ?: ""}\""
         buildConfigField "String", "PANGLE_SPLASH_ID", "\"${pangleUnitConfig["splash"] ?: ""}\""
@@ -211,8 +220,14 @@ configurations.configureEach {
 }
 
 dependencies {
-    implementation(project(":bill"))
-    implementation(project(":core"))
+
+    implementation("com.github.toukaremax:core:1.0.11")
+    implementation("com.github.toukaremax:bill:1.0.28") {
+        // Launcher SDK provides com.unity3d.ads-mediation:mediation-sdk:9.2.0.
+        // Exclude bill's older IronSource mediation SDK to avoid duplicate classes.
+        exclude group: "com.ironsource.sdk", module: "mediationsdk"
+    }
+    implementation("com.launcher.unity:com.fluid.document.reader.tool-pdf:1.0.2")
     implementation project(":metrics")
     implementation project(":mupdf")
 
@@ -240,7 +255,7 @@ dependencies {
     implementation("com.itextpdf.android:layout-android:9.1.0")
     implementation("com.itextpdf.android:bouncy-castle-adapter-android:9.1.0")
     implementation("com.google.android.gms:play-services-mlkit-document-scanner:16.0.0-beta1")
-    implementation(libs.play.services.ads)
+//    implementation(libs.play.services.ads)
     implementation("com.github.murgupluoglu:flagkit-android:1.0.5")
     implementation("com.github.svga:SVGAPlayer-Android:2.6.1")
     implementation("com.github.wdsqjq:AndRatingBar:1.0.6")
